@@ -6523,6 +6523,27 @@
       "mealType": "dinner",
       "role": "soup",
       "count": 1
+    },
+    {
+      "type": "frequency",
+      "id": 1,
+      "frequency": 1,
+      "scope": "meal",
+      "frequencyType": "exact",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "KÜFTEK"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
     }
   ],
   "mealTemplates": [
