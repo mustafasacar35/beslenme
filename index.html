@@ -5152,7 +5152,6 @@ function addCurrentMealToTemplates(mealType) {
 document.addEventListener("DOMContentLoaded", function() {
     loadJSONFromGitHub(); // Otomatik yükleme
 });
-}
 
 // Sayfa yüklendiğinde çalıştır
 document.addEventListener("DOMContentLoaded", function() {
@@ -5173,7 +5172,62 @@ document.addEventListener("DOMContentLoaded", function() {
     searchEditFood('');
 });
 }
+function processJSONData(data) {
+    // Yemek listesini yükle
+    if (data.categories) {
+        localStorage.setItem("foodList", JSON.stringify(data.categories));
+        loadCategories(); // Sidebar'ı güncelle
+    } else {
+        console.warn("JSON'da 'categories' bulunamadı.");
+    }
 
+    // Haftalık planları yükle
+    if (data.weeks) {
+        localStorage.setItem("weeks", JSON.stringify(data.weeks));
+        initializeWeeks(); // Haftaları başlat
+        renderWeekTabs();  // Hafta sekmelerini güncelle
+        renderDayTabs();   // Gün sekmelerini güncelle
+        renderMeals();     // Yemekleri render et
+    } else {
+        console.warn("JSON'da 'weeks' bulunamadı.");
+    }
+
+    // Kuralları yükle
+    if (data.rules) {
+        localStorage.setItem("rules", JSON.stringify(data.rules));
+        loadRules(); // Kuralları uygula
+    } else {
+        console.warn("JSON'da 'rules' bulunamadı.");
+    }
+
+    // Yemek şablonlarını yükle
+    if (data.mealTemplates) {
+        localStorage.setItem("mealTemplates", JSON.stringify(data.mealTemplates));
+        loadMealTemplates(); // Şablonları güncelle
+    } else {
+        console.warn("JSON'da 'mealTemplates' bulunamadı.");
+    }
+
+    // Uyumluluk tablosunu yükle
+    if (data.compatibilityTable) {
+        localStorage.setItem("compatibilityTable", JSON.stringify(data.compatibilityTable));
+        loadCompatibilityRules(); // Uyumluluk kurallarını güncelle
+    } else {
+        console.warn("JSON'da 'compatibilityTable' bulunamadı.");
+    }
+
+    // Hasta bilgilerini yükle
+    if (data.patients) {
+        localStorage.setItem("patients", JSON.stringify(data.patients));
+        loadPatientSelect(); // Hasta seçimini güncelle
+    } else {
+        console.warn("JSON'da 'patients' bulunamadı.");
+    }
+
+    // Ekstra güncellemeler
+    calculateMacros(); // Makroları hesapla
+    searchEditFood(''); // Arama alanını temizle
+}
 </script>
 <!-- Günlük ve Haftalık için Popup -->
 <div id="macroModal" class="macro-modal">
