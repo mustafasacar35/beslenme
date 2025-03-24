@@ -20,7 +20,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "KAHVALTI"
         }
       ]
     },
@@ -44,7 +45,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
         },
         {
           "name": "Keto Tost",
@@ -82,7 +84,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
         }
       ]
     },
@@ -106,7 +109,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "AKŞAM"
         },
         {
           "name": "Tavuk Çorbası",
@@ -125,7 +129,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "AKŞAM"
         }
       ]
     },
@@ -149,7 +154,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
-          "fillerDinner": true
+          "fillerDinner": true,
+          "category": "DİĞER"
         },
         {
           "name": "Keten Tohumu",
@@ -168,7 +174,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
-          "fillerDinner": true
+          "fillerDinner": true,
+          "category": "DİĞER"
         },
         {
           "name": "Kollajen",
@@ -187,7 +194,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
-          "fillerDinner": true
+          "fillerDinner": true,
+          "category": "DİĞER"
         }
       ]
     },
@@ -211,7 +219,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "KURUYEMİŞLER"
         }
       ]
     },
@@ -235,7 +244,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "TATLILAR"
         }
       ]
     }
@@ -245,51 +255,316 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Yumurtalı Ispanak Kavurma",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "Tavuk Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter Çikolata",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              }
+            ]
           }
         },
         "tuesday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Yumurtalı Ispanak Kavurma",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter Çikolata",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "Köfte",
+                "quantity": 1
+              }
+            ]
           }
         },
         "wednesday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Yumurtalı Ispanak Kavurma",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Sabah Yeşillikleri",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Köfte",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter Çikolata",
+                "quantity": 1
+              }
+            ]
           }
         },
         "thursday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Yumurtalı Ispanak Kavurma",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Badem",
+                "quantity": 1
+              },
+              {
+                "name": "Köfte",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              }
+            ]
           }
         },
         "friday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter Çikolata",
+                "quantity": 1
+              },
+              {
+                "name": "Sabah Yeşillikleri",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Badem",
+                "quantity": 1
+              },
+              {
+                "name": "Köfte",
+                "quantity": 1
+              }
+            ]
           }
         },
         "saturday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter Çikolata",
+                "quantity": 1
+              },
+              {
+                "name": "Sabah Yeşillikleri",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Badem",
+                "quantity": 1
+              },
+              {
+                "name": "Köfte",
+                "quantity": 1
+              }
+            ]
           }
         },
         "sunday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter Çikolata",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Sabah Yeşillikleri",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Badem",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Tavuk Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytinyağı",
+                "quantity": 1
+              }
+            ]
           }
         }
       }
@@ -319,6 +594,13 @@
       "mealType": "dinner",
       "role": "soup",
       "count": 1
+    },
+    {
+      "type": "dependOn",
+      "id": 1,
+      "food": "mayones",
+      "requiredFood": "domates",
+      "scope": "meal"
     }
   ],
   "mealTemplates": [],
