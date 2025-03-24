@@ -5130,7 +5130,7 @@ function addCurrentMealToTemplates(mealType) {
 
         // GitHub'dan JSON dosyasını otomatik yükleme fonksiyonu
         function loadJSONFromGitHub() {
-    const githubURL = "https://raw.githubusercontent.com/mustafasacar35/beslenme/main/sistem_JSON.json"; // Doğru raw link
+    const githubURL = "https://raw.githubusercontent.com/mustafasacar35/beslenme/main/sistem_JSON.json";
     fetch(githubURL)
         .then(response => {
             if (!response.ok) {
@@ -5139,68 +5139,19 @@ function addCurrentMealToTemplates(mealType) {
             return response.json();
         })
         .then(data => {
-            // Yemek listesini yükle
-            if (data.categories) {
-                localStorage.setItem("foodList", JSON.stringify(data.categories));
-                loadCategories();
-            } else {
-                console.warn("JSON'da 'categories' bulunamadı.");
-            }
-
-            // Haftalık planları yükle
-            if (data.weeks) {
-                localStorage.setItem("weeks", JSON.stringify(data.weeks));
-                initializeWeeks(); // Haftaları başlat
-                renderWeekTabs();  // Hafta sekmelerini güncelle
-                renderDayTabs();   // Gün sekmelerini güncelle
-                renderMeals();     // Yemekleri render et
-            } else {
-                console.warn("JSON'da 'weeks' bulunamadı.");
-            }
-
-            // Kuralları yükle
-            if (data.rules) {
-                localStorage.setItem("rules", JSON.stringify(data.rules));
-                loadRules();
-            } else {
-                console.warn("JSON'da 'rules' bulunamadı.");
-            }
-
-            // Yemek şablonlarını yükle
-            if (data.mealTemplates) {
-                localStorage.setItem("mealTemplates", JSON.stringify(data.mealTemplates));
-                loadMealTemplates();
-            } else {
-                console.warn("JSON'da 'mealTemplates' bulunamadı.");
-            }
-
-            // Uyumluluk tablosunu yükle
-            if (data.compatibilityTable) {
-                localStorage.setItem("compatibilityTable", JSON.stringify(data.compatibilityTable));
-                loadCompatibilityRules();
-            } else {
-                console.warn("JSON'da 'compatibilityTable' bulunamadı.");
-            }
-
-            // Hasta bilgilerini yükle
-            if (data.patients) {
-                localStorage.setItem("patients", JSON.stringify(data.patients));
-                loadPatientSelect(); // Hasta seçimini güncelle
-            } else {
-                console.warn("JSON'da 'patients' bulunamadı.");
-            }
-
-            // Başarı bildirimi
+            processJSONData(data); // Veriyi işle
             showNotification("GitHub'dan tüm sistem verileri başarıyla yüklendi!", "success");
-
-            // Ekstra güncellemeler (isteğe bağlı)
-            calculateMacros(); // Makroları hesapla
-            searchEditFood(''); // Arama alanını temizle
         })
         .catch(error => {
             console.error("Hata:", error);
             showNotification("JSON dosyası yüklenirken bir hata oluştu!", "warning");
         });
+}
+
+// Sayfa yüklendiğinde çalıştır
+document.addEventListener("DOMContentLoaded", function() {
+    loadJSONFromGitHub(); // Otomatik yükleme
+});
 }
 
 // Sayfa yüklendiğinde çalıştır
@@ -5221,7 +5172,7 @@ document.addEventListener("DOMContentLoaded", function() {
     calculateMacros();
     searchEditFood('');
 });
-
+}
 
 </script>
 <!-- Günlük ve Haftalık için Popup -->
