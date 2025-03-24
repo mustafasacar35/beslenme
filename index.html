@@ -4930,13 +4930,7 @@ function moveFoodCategory() {
 
 
 
-        initializeWeeks();
-        loadCategories();
-        renderWeekTabs();
-        renderDayTabs();
-        renderMeals();
-        loadPatientSelect();
-        loadRules();
+            <script>
         loadMealTemplates();
         loadCompatibilityRules();
         loadSettingsTemplates();
@@ -4944,10 +4938,10 @@ function moveFoodCategory() {
         calculateMacros();
         searchEditFood('');
         document.getElementById("editFoodPanel").addEventListener("click", function(event) {
-    if (event.target.tagName !== "SELECT") {
-        loadCategoryOptions();
-    }
-});
+            if (event.target.tagName !== "SELECT") {
+                loadCategoryOptions();
+            }
+        });
     </script>
     <script>
         function addCurrentMealToTemplates(mealType) {
@@ -4978,256 +4972,209 @@ function moveFoodCategory() {
         }
         
         document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(() => {
-        document.querySelectorAll(".meal-card .card-header").forEach(header => {
-            const title = header.childNodes[0].textContent.trim().toLowerCase(); // İlk metin düğümünü al
+            setTimeout(() => {
+                document.querySelectorAll(".meal-card .card-header").forEach(header => {
+                    const title = header.childNodes[0].textContent.trim().toLowerCase(); // İlk metin düğümünü al
+                    
+                    if (title.includes("öğle") || title.includes("akşam")) {
+                        const mealType = title.includes("öğle") ? "lunch" : "dinner";
+
+                        // Eğer buton zaten eklenmişse tekrar ekleme
+                        if (header.querySelector(".template-add-btn")) return;
+                        
+                        const addButton = document.createElement("button");
+                        addButton.className = "btn btn-primary template-add-btn";
+                        addButton.innerHTML = "Şablona Ekle";
+                        addButton.onclick = () => addCurrentMealToTemplates(mealType);
+                        
+                        header.appendChild(addButton);
+                    }
+                });
+            }, 1000); // Sayfa yüklendikten sonra butonları ekler
+        });
+    </script>
+
+    <script>
+        function formatQuantityWithText(text) {
+            // "0.5" veya "0.25" miktarlarını doğru şekilde değiştirme
+            return text.replace(/\b(0.5|0.25)\b\s*(dilim|kase|bardak|yemek|porsiyon|adet|tatlı kaşığı|çorba kaşığı|tabak|fincan|yemek kaşığı)/gi, function(match, quantity, unit) {
+                if (quantity === '0.5') return `yarım ${unit}`;
+                if (quantity === '0.25') return `çeyrek ${unit}`;
+                return match;
+            });
+        }
+
+        function updateQuantities() {
+            const quantityCells = document.querySelectorAll('.quantity-cell'); // Miktar hücrelerinin sınıfı
+            quantityCells.forEach(cell => {
+                const text = cell.innerText.trim();
+                const formattedText = formatQuantityWithText(text);
+                if (formattedText !== text) {
+                    cell.innerText = formattedText;
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', updateQuantities);
+
+        document.getElementById('freqCatCheck').addEventListener('change', function() {
+            const freqCat = document.getElementById('freqCat');
+            freqCat.disabled = !this.checked;
+            if (this.checked && freqCat.options.length <= 1) { // Eğer boşsa
+                populateCategoryDropdown(); // Tekrar doldur
+            }
+            console.log("freqCatCheck değişti, freqCat içeriği:", freqCat.innerHTML);
+        });
+    </script>
+
+    <script>
+        function convertMeasurements(text) {
+            // "0.5 yemek kaşığı" veya "yarım yemek kaşığı" -> "1 tatlı kaşığı"
+            text = text.replace(/\b0\.5\s*yemek kaşığı\b/gi, "1 tatlı kaşığı");
+            text = text.replace(/\byarım yemek kaşığı\b/gi, "1 tatlı kaşığı");
             
-            if (title.includes("öğle") || title.includes("akşam")) {
-                const mealType = title.includes("öğle") ? "lunch" : "dinner";
+            // "2 tatlı kaşığı" -> "1 yemek kaşığı"
+            text = text.replace(/\b2\s*tatlı kaşığı\b/gi, "1 yemek kaşığı");
+            
+            // "0.25 yemek kaşığı" -> "çeyrek yemek kaşığı"
+            text = text.replace(/\b0\.25\s*yemek kaşığı\b/gi, "çeyrek yemek kaşığı");
+            
+            return text;
+        }
 
-                // Eğer buton zaten eklenmişse tekrar ekleme
-                if (header.querySelector(".template-add-btn")) return;
-                
-                const addButton = document.createElement("button");
-                addButton.className = "btn btn-primary template-add-btn";
-                addButton.innerHTML = "Şablona Ekle";
-                addButton.onclick = () => addCurrentMealToTemplates(mealType);
-                
-                header.appendChild(addButton);
+        function applyConversions() {
+            const rows = document.querySelectorAll('#mealTable td');
+            rows.forEach(cell => {
+                const originalText = cell.innerText.trim();
+                const convertedText = convertMeasurements(originalText);
+
+                if (originalText !== convertedText) {
+                    cell.innerText = convertedText;
+                }
+            });
+        }
+
+        function updateSidebar() {
+            const sidebarContent = document.getElementById('categories'); // 'categories' ID’sini kullanıyoruz
+            if (!sidebarContent) {
+                console.error("categories elementi bulunamadı!");
+                return;
             }
-        });
-    }, 1000); // Sayfa yüklendikten sonra butonları ekler
-});
-
-function addCurrentMealToTemplates(mealType) {
-    const selectedMeals = weeks[selectedWeek - 1].days[selectedDay].meals[mealType];
-    if (!selectedMeals || selectedMeals.length === 0) {
-        showNotification("Bu öğünde yemek bulunmuyor!", "warning");
-        return;
-    }
-
-    const templateName = prompt("Şablon için bir ad girin:", mealType + " şablonu");
-    if (!templateName) return;
-
-    const items = selectedMeals.map(meal => ({
-        keyword: meal.name,
-        role: meal.role || "mainDish",
-        quantity: meal.quantity || 1
-    }));
-
-    mealTemplates.push({
-        mealType,
-        frequency: 1, 
-        items,
-        name: templateName
-    });
-
-    loadMealTemplates();
-    showNotification("Öğün şablonlara eklendi!");
-}
-        </script>
-
-<script>
-    function formatQuantityWithText(text) {
-        // "0.5" veya "0.25" miktarlarını doğru şekilde değiştirme
-        return text.replace(/\b(0.5|0.25)\b\s*(dilim|kase|bardak|yemek|porsiyon|adet|tatlı kaşığı|çorba kaşığı|tabak|fincan|yemek kaşığı)/gi, function(match, quantity, unit) {
-            if (quantity === '0.5') return `yarım ${unit}`;
-            if (quantity === '0.25') return `çeyrek ${unit}`;
-            return match;
-        });
-    }
-
-    function updateQuantities() {
-        const quantityCells = document.querySelectorAll('.quantity-cell'); // Miktar hücrelerinin sınıfı
-        quantityCells.forEach(cell => {
-            const text = cell.innerText.trim();
-            const formattedText = formatQuantityWithText(text);
-            if (formattedText !== text) {
-                cell.innerText = formattedText;
-            }
-        });
-    }
-
-    document.addEventListener('DOMContentLoaded', updateQuantities);
-
-    document.getElementById('freqCatCheck').addEventListener('change', function() {
-    const freqCat = document.getElementById('freqCat');
-    freqCat.disabled = !this.checked;
-    if (this.checked && freqCat.options.length <= 1) { // Eğer boşsa
-        populateCategoryDropdown(); // Tekrar doldur
-    }
-    console.log("freqCatCheck değişti, freqCat içeriği:", freqCat.innerHTML);
-});
-</script>
-
-
-<script>
-    function convertMeasurements(text) {
-        // "0.5 yemek kaşığı" veya "yarım yemek kaşığı" -> "1 tatlı kaşığı"
-        text = text.replace(/\b0\.5\s*yemek kaşığı\b/gi, "1 tatlı kaşığı");
-        text = text.replace(/\byarım yemek kaşığı\b/gi, "1 tatlı kaşığı");
-        
-        // "2 tatlı kaşığı" -> "1 yemek kaşığı"
-        text = text.replace(/\b2\s*tatlı kaşığı\b/gi, "1 yemek kaşığı");
-        
-        // "0.25 yemek kaşığı" -> "çeyrek yemek kaşığı"
-        text = text.replace(/\b0\.25\s*yemek kaşığı\b/gi, "çeyrek yemek kaşığı");
-        
-        return text;
-    }
-
-    function applyConversions() {
-        const rows = document.querySelectorAll('#mealTable td');
-        rows.forEach(cell => {
-            const originalText = cell.innerText.trim();
-            const convertedText = convertMeasurements(originalText);
-
-            if (originalText !== convertedText) {
-                cell.innerText = convertedText;
-            }
-        });
-    }
-    function updateSidebar() {
-    const sidebarContent = document.getElementById('categories'); // 'categories' ID’sini kullanıyoruz
-    if (!sidebarContent) {
-        console.error("categories elementi bulunamadı!");
-        return;
-    }
-    sidebarContent.innerHTML = '';
-    categories.forEach((category, index) => {
-        const itemCount = category.items.length;
-        const accordionItem = `
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading${index}">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
-                        ${category.name} (${itemCount})
-                    </button>
-                </h2>
-                <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}">
-                    <div class="accordion-body">
-                        ${category.items.map(food => `
-                            <div class="category-item">
-                                <span>${food.name} (${food.calories} kcal)</span>
-                                <div class="food-checkboxes">
-                                    <input type="checkbox" class="meal-checkbox" data-name="${food.name}" data-meal="breakfast" title="Sabah"> S
-                                    <input type="checkbox" class="meal-checkbox" data-name="${food.name}" data-meal="lunch" title="Öğle"> Ö
-                                    <input type="checkbox" class="meal-checkbox" data-name="${food.name}" data-meal="dinner" title="Akşam"> A
-                                </div>
+            sidebarContent.innerHTML = '';
+            categories.forEach((category, index) => {
+                const itemCount = category.items.length;
+                const accordionItem = `
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading${index}">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
+                                ${category.name} (${itemCount})
+                            </button>
+                        </h2>
+                        <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}">
+                            <div class="accordion-body">
+                                ${category.items.map(food => `
+                                    <div class="category-item">
+                                        <span>${food.name} (${food.calories} kcal)</span>
+                                        <div class="food-checkboxes">
+                                            <input type="checkbox" class="meal-checkbox" data-name="${food.name}" data-meal="breakfast" title="Sabah"> S
+                                            <input type="checkbox" class="meal-checkbox" data-name="${food.name}" data-meal="lunch" title="Öğle"> Ö
+                                            <input type="checkbox" class="meal-checkbox" data-name="${food.name}" data-meal="dinner" title="Akşam"> A
+                                        </div>
+                                    </div>
+                                `).join('')}
                             </div>
-                        `).join('')}
+                        </div>
                     </div>
-                </div>
-            </div>
-        `;
-        sidebarContent.innerHTML += accordionItem;
-    });
-    console.log("Sidebar güncellendi!");
-}
+                `;
+                sidebarContent.innerHTML += accordionItem;
+            });
+            console.log("Sidebar güncellendi!");
+        }
 
-    document.addEventListener('DOMContentLoaded', applyConversions);
-
-
+        document.addEventListener('DOMContentLoaded', applyConversions);
 
         // GitHub'dan JSON dosyasını otomatik yükleme fonksiyonu
         function loadJSONFromGitHub() {
-    const githubURL = "https://raw.githubusercontent.com/mustafasacar35/beslenme/main/sistem_JSON.json";
-    fetch(githubURL)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("JSON dosyası yüklenemedi! Hata kodu: " + response.status);
-            }
-            return response.json();
-        })
-        .then(data => {
-            processJSONData(data); // Veriyi işle
-            showNotification("GitHub'dan tüm sistem verileri başarıyla yüklendi!", "success");
-        })
-        .catch(error => {
-            console.error("Hata:", error);
-            showNotification("JSON dosyası yüklenirken bir hata oluştu!", "warning");
+            const githubURL = "https://raw.githubusercontent.com/mustafasacar35/beslenme/main/sistem_JSON.json";
+            fetch(githubURL)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("JSON dosyası yüklenemedi! Hata kodu: " + response.status);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    processJSONData(data); // Veriyi işle
+                    showNotification("GitHub'dan tüm sistem verileri başarıyla yüklendi!", "success");
+                })
+                .catch(error => {
+                    console.error("Hata:", error);
+                    showNotification("JSON dosyası yüklenirken bir hata oluştu!", "warning");
+                });
+        }
+
+        // Tüm sistemi başlatma
+        document.addEventListener("DOMContentLoaded", function() {
+            loadJSONFromGitHub(); // Otomatik yükleme
+            initializeWeeks();
+            loadCategories();
+            renderWeekTabs();
+            renderDayTabs();
+            renderMeals();
+            loadPatientSelect();
+            loadRules();
+            loadMealTemplates();
+            loadCompatibilityRules();
+            loadSettingsTemplates();
+            loadRuleTemplates();
+            calculateMacros();
+            searchEditFood('');
         });
-}
 
-// Sayfa yüklendiğinde çalıştır
-document.addEventListener("DOMContentLoaded", function() {
-    loadJSONFromGitHub(); // Otomatik yükleme
-});
+        function processJSONData(data) {
+            // Yemek listesini yükle
+            if (data.categories) {
+                localStorage.setItem("foodList", JSON.stringify(data.categories));
+                loadCategories(); // Sidebar'ı güncelle
+            } else {
+                console.warn("JSON'da 'categories' bulunamadı.");
+            }
 
-// Sayfa yüklendiğinde çalıştır
-document.addEventListener("DOMContentLoaded", function() {
-    loadJSONFromGitHub(); // Tüm sistemi otomatik yükle
-    // Mevcut diğer başlangıç fonksiyonları
-    initializeWeeks();
-    loadCategories();
-    renderWeekTabs();
-    renderDayTabs();
-    renderMeals();
-    loadPatientSelect();
-    loadRules();
-    loadMealTemplates();
-    loadCompatibilityRules();
-    loadSettingsTemplates();
-    loadRuleTemplates();
-    calculateMacros();
-    searchEditFood('');
-});
-}
-function processJSONData(data) {
-    // Yemek listesini yükle
-    if (data.categories) {
-        localStorage.setItem("foodList", JSON.stringify(data.categories));
-        loadCategories(); // Sidebar'ı güncelle
-    } else {
-        console.warn("JSON'da 'categories' bulunamadı.");
-    }
+            // Haftalık planları yükle
+            if (data.weeks) {
+                localStorage.setItem("weeks", JSON.stringify(data.weeks));
+                initializeWeeks(); // Haftaları başlat
+                renderWeekTabs();  // Hafta sekmelerini güncelle
+                renderDayTabs();   // Gün sekmelerini güncelle
+                renderMeals();     // Yemekleri render et
+            } else {
+                console.warn("JSON'da 'weeks' bulunamadı.");
+            }
 
-    // Haftalık planları yükle
-    if (data.weeks) {
-        localStorage.setItem("weeks", JSON.stringify(data.weeks));
-        initializeWeeks(); // Haftaları başlat
-        renderWeekTabs();  // Hafta sekmelerini güncelle
-        renderDayTabs();   // Gün sekmelerini güncelle
-        renderMeals();     // Yemekleri render et
-    } else {
-        console.warn("JSON'da 'weeks' bulunamadı.");
-    }
+            // Kuralları yükle
+            if (data.rules) {
+                localStorage.setItem("rules", JSON.stringify(data.rules));
+                loadRules(); // Kuralları uygula
+            } else {
+                console.warn("JSON'da 'rules' bulunamadı.");
+            }
 
-    // Kuralları yükle
-    if (data.rules) {
-        localStorage.setItem("rules", JSON.stringify(data.rules));
-        loadRules(); // Kuralları uygula
-    } else {
-        console.warn("JSON'da 'rules' bulunamadı.");
-    }
+            // Yemek şablonlarını yükle
+            if (data.mealTemplates) {
+                localStorage.setItem("mealTemplates", JSON.stringify(data.mealTemplates));
+                loadMealTemplates(); // Şablonları güncelle
+            } else {
+                console.warn("JSON'da 'mealTemplates' bulunamadı.");
+            }
 
-    // Yemek şablonlarını yükle
-    if (data.mealTemplates) {
-        localStorage.setItem("mealTemplates", JSON.stringify(data.mealTemplates));
-        loadMealTemplates(); // Şablonları güncelle
-    } else {
-        console.warn("JSON'da 'mealTemplates' bulunamadı.");
-    }
-
-    // Uyumluluk tablosunu yükle
-    if (data.compatibilityTable) {
-        localStorage.setItem("compatibilityTable", JSON.stringify(data.compatibilityTable));
-        loadCompatibilityRules(); // Uyumluluk kurallarını güncelle
-    } else {
-        console.warn("JSON'da 'compatibilityTable' bulunamadı.");
-    }
-
-    // Hasta bilgilerini yükle
-    if (data.patients) {
-        localStorage.setItem("patients", JSON.stringify(data.patients));
-        loadPatientSelect(); // Hasta seçimini güncelle
-    } else {
-        console.warn("JSON'da 'patients' bulunamadı.");
-    }
-
-    // Ekstra güncellemeler
-    calculateMacros(); // Makroları hesapla
-    searchEditFood(''); // Arama alanını temizle
-}
+            // Uyumluluk tablosunu yükle
+            if (data.compatibilityTable) {
+                localStorage.setItem("compatibilityTable", JSON.stringify(data.compatibilityTable));
+                loadCompatibilityRules(); // Uyumluluk kurallarını güncelle
+            } else {
+                console.warn("JSON'da 'compatibilityTable' bulunamadı.");
+            }
+        }
 </script>
 <!-- Günlük ve Haftalık için Popup -->
 <div id="macroModal" class="macro-modal">
