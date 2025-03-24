@@ -5116,44 +5116,97 @@ function addCurrentMealToTemplates(mealType) {
 
         // GitHub'dan JSON dosyasını otomatik yükleme fonksiyonu
         function loadJSONFromGitHub() {
-            const githubURL = "https://raw.githubusercontent.com/mustafasacar35/beslenme/main/sistem_JSON.json"; // Token'sız raw link
-            fetch(githubURL)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error("JSON dosyası yüklenemedi! Hata kodu: " + response.status);
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    // JSON verisini mevcut sisteme entegre et
-                    localStorage.setItem("foodList", JSON.stringify(data)); // Veriyi localStorage'a kaydet
-                    loadCategories(); // Kategorileri güncelle
-                    showNotification("GitHub'dan sistem_JSON.json başarıyla yüklendi!", "success");
-                })
-                .catch(error => {
-                    console.error("Hata:", error);
-                    showNotification("JSON dosyası yüklenirken bir hata oluştu!", "warning");
-                });
-        }
+    const githubURL = "https://raw.githubusercontent.com/mustafasacar35/beslenme/main/sistem_JSON.json"; // Doğru raw link
+    fetch(githubURL)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("JSON dosyası yüklenemedi! Hata kodu: " + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Yemek listesini yükle
+            if (data.categories) {
+                localStorage.setItem("foodList", JSON.stringify(data.categories));
+                loadCategories();
+            } else {
+                console.warn("JSON'da 'categories' bulunamadı.");
+            }
 
-        // Sayfa yüklendiğinde otomatik çalıştır
-        document.addEventListener("DOMContentLoaded", function() {
-            loadJSONFromGitHub(); // JSON'ı otomatik yükle
-            // Mevcut diğer başlangıç fonksiyonlarınızı burada tutabilirsiniz
-            initializeWeeks();
-            loadCategories();
-            renderWeekTabs();
-            renderDayTabs();
-            renderMeals();
-            loadPatientSelect();
-            loadRules();
-            loadMealTemplates();
-            loadCompatibilityRules();
-            loadSettingsTemplates();
-            loadRuleTemplates();
-            calculateMacros();
-            searchEditFood('');
+            // Haftalık planları yükle
+            if (data.weeks) {
+                localStorage.setItem("weeks", JSON.stringify(data.weeks));
+                initializeWeeks(); // Haftaları başlat
+                renderWeekTabs();  // Hafta sekmelerini güncelle
+                renderDayTabs();   // Gün sekmelerini güncelle
+                renderMeals();     // Yemekleri render et
+            } else {
+                console.warn("JSON'da 'weeks' bulunamadı.");
+            }
+
+            // Kuralları yükle
+            if (data.rules) {
+                localStorage.setItem("rules", JSON.stringify(data.rules));
+                loadRules();
+            } else {
+                console.warn("JSON'da 'rules' bulunamadı.");
+            }
+
+            // Yemek şablonlarını yükle
+            if (data.mealTemplates) {
+                localStorage.setItem("mealTemplates", JSON.stringify(data.mealTemplates));
+                loadMealTemplates();
+            } else {
+                console.warn("JSON'da 'mealTemplates' bulunamadı.");
+            }
+
+            // Uyumluluk tablosunu yükle
+            if (data.compatibilityTable) {
+                localStorage.setItem("compatibilityTable", JSON.stringify(data.compatibilityTable));
+                loadCompatibilityRules();
+            } else {
+                console.warn("JSON'da 'compatibilityTable' bulunamadı.");
+            }
+
+            // Hasta bilgilerini yükle
+            if (data.patients) {
+                localStorage.setItem("patients", JSON.stringify(data.patients));
+                loadPatientSelect(); // Hasta seçimini güncelle
+            } else {
+                console.warn("JSON'da 'patients' bulunamadı.");
+            }
+
+            // Başarı bildirimi
+            showNotification("GitHub'dan tüm sistem verileri başarıyla yüklendi!", "success");
+
+            // Ekstra güncellemeler (isteğe bağlı)
+            calculateMacros(); // Makroları hesapla
+            searchEditFood(''); // Arama alanını temizle
+        })
+        .catch(error => {
+            console.error("Hata:", error);
+            showNotification("JSON dosyası yüklenirken bir hata oluştu!", "warning");
         });
+}
+
+// Sayfa yüklendiğinde çalıştır
+document.addEventListener("DOMContentLoaded", function() {
+    loadJSONFromGitHub(); // Tüm sistemi otomatik yükle
+    // Mevcut diğer başlangıç fonksiyonları
+    initializeWeeks();
+    loadCategories();
+    renderWeekTabs();
+    renderDayTabs();
+    renderMeals();
+    loadPatientSelect();
+    loadRules();
+    loadMealTemplates();
+    loadCompatibilityRules();
+    loadSettingsTemplates();
+    loadRuleTemplates();
+    calculateMacros();
+    searchEditFood('');
+});
 
 
 </script>
