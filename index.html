@@ -3000,6 +3000,20 @@ function handleRuleSave() {
 
 // loadRules fonksiyonu
 function loadRules() {
+    
+    
+    const rules = JSON.parse(localStorage.getItem("rules")) || [];
+    rules.forEach(rule => {
+        if (rule.type === "maxRoleCount") {
+            console.log("maxRoleCount kuralı işleniyor:", rule);
+            // Örnek: Öğüne yemek eklerken bu kuralı kontrol et
+            // applyMaxRoleCount(rule.mealType, rule.role, rule.count);
+        } else {
+            console.warn("Bilinmeyen kural tipi:", rule.type);
+    
+    
+    
+    
     const rulesList = document.getElementById('rulesList');
     if (!rulesList) {
         console.warn("rulesList elementi bulunamadı.");
