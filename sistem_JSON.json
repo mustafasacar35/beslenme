@@ -123,7 +123,8 @@
           "role": "sideDish",
           "mealType": "lunch",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "ÖĞLEN"
         },
         {
           "name": "Sebzeli Krep",
@@ -2077,7 +2078,8 @@
           "fillerDinner": false,
           "maxQuantity": null,
           "minQuantity": 0.5,
-          "step": 1
+          "step": 1,
+          "category": "ÖĞLEN"
         },
         {
           "name": "Avokado (yarım)",
@@ -6475,51 +6477,332 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Hindi Füme)",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "5 Adet Çilek",
+                "quantity": 1
+              },
+              {
+                "name": "Fırında Tavuk Kanat",
+                "quantity": 1
+              }
+            ]
           }
         },
         "tuesday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "Biberli Peynir (3 yeşil biber, 30 gr lor peyniri, 1 tatlı kaşığı zeytinyağı, tuz ve baharatlar)",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "5 Adet Çilek",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik Tiramisu",
+                "quantity": 1
+              }
+            ]
           }
         },
         "wednesday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış Yumurta (1 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+                "quantity": 1
+              },
+              {
+                "name": "Kaymak",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "5 Adet Çilek",
+                "quantity": 1
+              },
+              {
+                "name": "Kıymalı Bamya (veya Kıymalı Lahana) Yemeği (100 gr kıyma ile)",
+                "quantity": 1
+              }
+            ]
           }
         },
         "thursday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keten Tohumu Ekmeği",
+                "quantity": 1
+              },
+              {
+                "name": "Pastırma",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "5 Adet Çilek",
+                "quantity": 1
+              },
+              {
+                "name": "Köfteli Pırasa Yemeği",
+                "quantity": 1
+              }
+            ]
           }
         },
         "friday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "3 Cherry Domates + Zeytinyağı, Kekik ve Pul Biber",
+                "quantity": 1
+              },
+              {
+                "name": "1 yemek kaşığı tahin",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "5 Adet Çilek",
+                "quantity": 1
+              },
+              {
+                "name": "Domatesli Kabak Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Biberli Peynir",
+                "quantity": 1
+              },
+              {
+                "name": "1 tatlı kaşığı keten tohumu (salata üzerine)",
+                "quantity": 1
+              }
+            ]
           }
         },
         "saturday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "3 Cherry Domates + 1 Yemek Kaşığı Zeytinyağı, Kekik ve Pul Biber",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "5 Adet Çilek",
+                "quantity": 1
+              },
+              {
+                "name": "Kuzu Güveç",
+                "quantity": 1
+              }
+            ]
           }
         },
         "sunday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "10 adet Zeytin",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter Çikolata?",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "5 Adet Çilek",
+                "quantity": 1
+              },
+              {
+                "name": "Domatesli Kabak Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "1 tatlı kaşığı keten tohumu (salata üzerine)",
+                "quantity": 1
+              },
+              {
+                "name": "Biberli Peynir",
+                "quantity": 1
+              },
+              {
+                "name": "1 Kase Sote Edilmiş Ispanak + 1 Tatlı Kaşığı Zeytinyağı",
+                "quantity": 1
+              }
+            ]
           }
         }
       }
