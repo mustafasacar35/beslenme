@@ -86,6 +86,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
     .macro-modal-body{flex-direction:column;gap:10px;}
     .macro-modal-chart,.macro-modal-analysis{flex:none;width:100%;}
     .macro-modal-analysis{max-height:200px;}
+    
 }
         </style>
         
@@ -225,17 +226,13 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                             <label for="editRuleType" class="form-label">Kural Türü</label>
                                             <select id="editRuleType" class="form-select" onchange="updateRuleForm(true)">
                                                 <option value="frequency">Sıklık</option>
-                                                <option value="exclude">Hariç Tut</option>
-                                                <option value="include">Ekle</option>
-                                                <option value="minCount">Min. Sayı</option>
-                                                <option value="maxCount">Maks. Sayı</option>
-                                                <option value="pairWith">Birlikte Ekle</option>
-                                                <option value="avoidPair">Birlikte Ekleme</option>
                                                 <option value="singleItem">Tek Başına</option>
+                                                <option value="noDuplicates">Tekrarlama</option>
+                                                <option value="dependOn">Bağımlı Olsun</option>
+                                                <option value="categoryLock">Kategori Kilidi</option>
+                                                <option value="compatibility">Uyumluluk Kuralı</option>
                                             </select>
                                         </div>
-                                        
-  
                                         <div id="editRuleFormDetails">
                                             <div class="mb-2">
                                                 <label>Kriterler:</label>
@@ -268,14 +265,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                                 <label for="editRuleFrequency" class="form-label">Haftada Kaç Kez</label>
                                                 <input type="number" id="editRuleFrequency" class="form-control" min="0" max="21" value="1">
                                             </div>
-                                            <div class="mb-2" id="editCountInput" style="display: none;">
-                                                <label for="editRuleCount" class="form-label">Sayı</label>
-                                                <input type="number" id="editRuleCount" class="form-control" min="1" value="1">
-                                            </div>
-                                            <div class="mb-2" id="editPairInput" style="display: none;">
-                                                <label for="editRulePair" class="form-label">Eşleşecek Yemek</label>
-                                                <input type="text" id="editRulePair" class="form-control" placeholder="örn: Salata">
-                                            </div>
                                             <div class="mb-2">
                                                 <label for="editRuleScope" class="form-label">Kapsam</label>
                                                 <select id="editRuleScope" class="form-select">
@@ -296,18 +285,15 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                     <label for="ruleType" class="form-label">Kural Türü</label>
                                     <select id="ruleType" class="form-select" onchange="updateRuleForm()">
                                         <option value="frequency">Sıklık Kuralı</option>
-                                        <option value="exclude">Hariç Tut</option>
-                                        <option value="pairWith">Birlikte Olsun</option>
-                                        <option value="avoidPair">Birlikte Olmasın</option>
                                         <option value="singleItem">Tek Başına</option>
                                         <option value="noDuplicates">Tekrarlama</option>
-                                        <option value="dependOn">Bağımlı Olsun</option> <!-- Yeni eklenen -->
+                                        <option value="dependOn">Bağımlı Olsun</option>
                                         <option value="categoryLock">Kategori Kilidi</option>
+                                        <option value="compatibility">Uyumluluk Kuralı</option>
                                     </select>
-                                </div>                             
+                                </div>
                                 <div id="ruleForm" class="mb-2">
-                                    <!-- Genel Kriterler (Mevcut) -->
-                                    <div id="defaultRuleForm">
+                                    <div id="defaultRuleForm" style="display: none;">
                                         <div class="mb-2">
                                             <label>Kriterler:</label>
                                             <div>
@@ -339,14 +325,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                             <label for="ruleFrequency" class="form-label">Haftada Kaç Kez</label>
                                             <input type="number" id="ruleFrequency" class="form-control" min="0" max="21" value="1">
                                         </div>
-                                        <div class="mb-2" id="countInput" style="display: none;">
-                                            <label for="ruleCount" class="form-label">Sayı</label>
-                                            <input type="number" id="ruleCount" class="form-control" min="1" value="1">
-                                        </div>
-                                        <div class="mb-2" id="pairInput" style="display: none;">
-                                            <label for="rulePair" class="form-label">Eşleşecek Yemek</label>
-                                            <input type="text" id="rulePair" class="form-control" placeholder="örn: Salata">
-                                        </div>
                                         <div class="mb-2">
                                             <label for="ruleScope" class="form-label">Kapsam</label>
                                             <select id="ruleScope" class="form-select">
@@ -359,7 +337,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                             <input type="text" id="ruleWeekRange" class="form-control" placeholder="örn: 1-2 veya 3">
                                         </div>
                                     </div>
-                                
                                     <div id="frequencyRuleForm" style="display: none;">
                                         <h5>Sıklık Kuralı</h5>
                                         <div class="form-group mb-2">
@@ -373,11 +350,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                                 <option value="sideDish">Yan Yemek</option>
                                                 <option value="soup">Çorba</option>
                                                 <option value="dessert">Tatlı</option>
-                                                <option value="drink">İçecek</option>
-                                                <option value="fruit">Meyve</option>
-                                                <option value="bread">Ekmek</option>
-                                                <option value="snack">Atıştırmalık</option>
-                                                <option value="supplement">Ek</option>
                                             </select><br>
                                             <input type="checkbox" id="freqCatCheck"> Kategori: 
                                             <select id="freqCat" class="form-select" disabled>
@@ -403,11 +375,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                                 <option value="day">Gün</option>
                                                 <option value="week">Hafta</option>
                                             </select>
-                                            <select id="freqMeal" class="form-select" style="display: none;">
-                                                <option value="breakfast">Sabah</option>
-                                                <option value="lunch">Öğle</option>
-                                                <option value="dinner">Akşam</option>
-                                            </select>
                                         </div>
                                         <div class="form-group mb-2">
                                             <label>Hafta Aralığı (örn: 1-2, boş bırakılırsa her hafta):</label>
@@ -415,7 +382,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                         </div>
                                         <button type="button" onclick="handleRuleSave()" class="btn btn-success">Kuralı Kaydet</button>
                                     </div>
-                            
                                     <div id="dependOnRuleForm" style="display: none;">
                                         <h5>Bağımlı Olsun Kuralı</h5>
                                         <div class="form-group mb-2">
@@ -435,8 +401,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                         </div>
                                         <button type="button" class="btn btn-success w-100" onclick="handleRuleSave()" title="Kuralı Kaydet">Kuralı Kaydet</button>
                                     </div>
-                                    
-                                    
                                     <div id="categoryLockRuleForm" style="display: none;">
                                         <h5>Kategori Kilidi Kuralı</h5>
                                         <div class="form-group mb-2">
@@ -451,91 +415,38 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                                                 <option value="week">Hafta</option>
                                             </select>
                                         </div>
+                                        <button type="button" class="btn btn-success w-100" onclick="handleRuleSave()" title="Kuralı Kaydet">Kuralı Kaydet</button>
                                     </div>
-                                    <!-- Yeni Birliktelik Kuralı Formu -->
-                                    <div id="pairRuleForm" style="display: none;">
-                                        <h5>Birliktelik Kuralı</h5>
-                                        <div class="form-group mb-2">
-                                            <label>Birinci Kelime:</label><br>
-                                            <input type="checkbox" id="pair1NameCheck"> İsim: <input type="text" id="pair1Name" class="form-control" placeholder="örn: Balık" disabled><br>
-                                            <input type="checkbox" id="pair1TagCheck"> Tag: <input type="text" id="pair1Tag" class="form-control" placeholder="örn: balık, keto" disabled><br>
-                                            <input type="checkbox" id="pair1RoleCheck"> Rol: 
-                                            <select id="pair1Role" class="form-select" disabled>
-                                                <option value="">Seç</option>
-                                                <option value="mainDish">Ana Yemek</option>
-                                                <option value="sideDish">Yan Yemek</option>
-                                                <option value="soup">Çorba</option>
-                                                <option value="dessert">Tatlı</option>
-                                            </select><br>
-                                            <input type="checkbox" id="pair1CatCheck"> Kategori: 
-                                            <select id="pair1Cat" class="form-select" disabled>
-                                                <option value="">Seç</option>
-                                                <option value="KAHVALTI">Kahvaltı</option>
-                                                <option value="ÖĞLEN">Öğlen</option>
-                                                <option value="AKŞAM">Akşam</option>
-                                            </select>
+                                    <div id="compatibilityRuleForm" style="display: none;">
+                                        <h5>Uyumluluk Kuralı</h5>
+                                        <div class="mb-2">
+                                            <label for="compatKeyword1" class="form-label">Kelime 1</label>
+                                            <input type="text" id="compatKeyword1" class="form-control" placeholder="örn: balık">
                                         </div>
-                                        <div class="form-group mb-2">
-                                            <label>İkinci Kelime:</label><br>
-                                            <input type="checkbox" id="pair2NameCheck"> İsim: <input type="text" id="pair2Name" class="form-control" placeholder="örn: Salata" disabled><br>
-                                            <input type="checkbox" id="pair2TagCheck"> Tag: <input type="text" id="pair2Tag" class="form-control" placeholder="örn: salata, keto" disabled><br>
-                                            <input type="checkbox" id="pair2RoleCheck"> Rol: 
-                                            <select id="pair2Role" class="form-select" disabled>
-                                                <option value="">Seç</option>
-                                                <option value="mainDish">Ana Yemek</option>
-                                                <option value="sideDish">Yan Yemek</option>
-                                                <option value="soup">Çorba</option>
-                                                <option value="dessert">Tatlı</option>
-                                            </select><br>
-                                            <input type="checkbox" id="pair2CatCheck"> Kategori: 
-                                            <select id="pair2Cat" class="form-select" disabled>
-                                                <option value="">Seç</option>
-                                                <option value="KAHVALTI">Kahvaltı</option>
-                                                <option value="ÖĞLEN">Öğlen</option>
-                                                <option value="AKŞAM">Akşam</option>
-                                            </select>
+                                        <div class="mb-2">
+                                            <label for="compatKeyword2" class="form-label">Kelime 2 (Virgülle ayırın)</label>
+                                            <input type="text" id="compatKeyword2" class="form-control" placeholder="örn: süt,yoğurt">
                                         </div>
-                                        <div class="form-group mb-2">
-                                            <label>Birliktelik Türü:</label>
-                                            <select id="pairType" class="form-select">
-                                                <option value="together">Birlikte Olsun</option>
-                                                <option value="apart">Birlikte Olmasın</option>
-                                            </select>
+                                        <div class="mb-2">
+                                            <label for="compatDegree" class="form-label">Derece (-5: Asla, +5: Her Zaman)</label>
+                                            <input type="number" id="compatDegree" class="form-control" min="-5" max="5" value="0">
                                         </div>
-                                        <div class="form-group mb-2">
-                                            <label>Bağlaç:</label>
-                                            <select id="pairConjunction" class="form-select">
-                                                <option value="or">Veya</option>
-                                                <option value="and">Ve</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group mb-2">
-                                            <label>Yön:</label>
-                                            <select id="pairDirection" class="form-select">
-                                                <option value="bidirectional">Çift Yönlü</option>
-                                                <option value="unidirectional">Tek Yönlü</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group mb-2">
-                                            <label>Kapsam:</label>
-                                            <select id="pairScope" class="form-select">
+                                        <div class="mb-2">
+                                            <label for="compatScope" class="form-label">Kapsam</label>
+                                            <select id="compatScope" class="form-select">
                                                 <option value="meal">Öğün</option>
                                                 <option value="day">Gün</option>
                                                 <option value="week">Hafta</option>
                                             </select>
-                                            <select id="pairMeal" class="form-select" style="display: none;">
+                                            <select id="compatMeal" class="form-select" style="display: none;">
                                                 <option value="breakfast">Sabah</option>
                                                 <option value="lunch">Öğle</option>
                                                 <option value="dinner">Akşam</option>
                                             </select>
                                         </div>
-                                        <div class="form-group mb-2">
-                                            <label>Hafta Aralığı (örn: 1-2, boş bırakılırsa her hafta):</label>
-                                            <input type="text" id="pairWeekRange" class="form-control" placeholder="örn: 1-2 veya 3">
-                                        </div>
+                                        <button type="button" class="btn btn-success w-100" onclick="handleRuleSave()" title="Kuralı Kaydet">Kuralı Kaydet</button>
                                     </div>
                                 </div>
-                                
                                 <div class="mb-2">
                                     <label for="templateName" class="form-label">Şablon Adı</label>
                                     <input type="text" id="templateName" class="form-control" placeholder="Şablon Adı">
@@ -550,44 +461,9 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="compatibilityHeading">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#compatibilityCollapse" aria-expanded="false" aria-controls="compatibilityCollapse">
-                                Uyumluluk Kuralları
-                            </button>
-                        </h2>
-                        <div id="compatibilityCollapse" class="accordion-collapse collapse" aria-labelledby="compatibilityHeading">
-                            <div class="accordion-body" style="max-height: 300px; overflow-y: auto;">
-                                <div id="compatibilityList" class="mb-2"></div>
-                                <div class="mb-2">
-                                    <label for="compatKeyword1" class="form-label">Kelime 1</label>
-                                    <input type="text" id="compatKeyword1" class="form-control" placeholder="örn: balık">
-                                </div>
-                                <div class="mb-2">
-                                    <label for="compatKeyword2" class="form-label">Kelime 2 (Virgülle ayırın)</label>
-                                    <input type="text" id="compatKeyword2" class="form-control" placeholder="örn: süt,yoğurt">
-                                </div>
-                                <div class="mb-2">
-                                    <label for="compatDegree" class="form-label">Derece (-5: Çok Uyumsuz, +5: Çok Uyumlu)</label>
-                                    <input type="number" id="compatDegree" class="form-control" min="-5" max="5" value="0">
-                                </div>
-                                <div class="mb-2">
-                                    <label for="compatConjunction" class="form-label">Bağlaç</label>
-                                    <select id="compatConjunction" class="form-select">
-                                        <option value="or">Veya</option>
-                                        <option value="and">Ve</option>
-                                    </select>
-                                </div>
-                                <button class="btn btn-primary w-100" onclick="addCompatibilityRule()" title="Uyumluluk Ekle">Uyumluluk Ekle</button>
-                                <button class="btn btn-primary w-100 mt-2" onclick="importFoodList()" title="Liste Al"><i class="bi bi-upload"></i> Liste Al</button>
-                                <button class="btn btn-success w-100 mt-2" onclick="exportFoodList()" title="Son Listeyi Ver"><i class="bi bi-download"></i> Son Listeyi Ver</button> 
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-
         <div class="resizer" id="resizer"></div>
 
         <div class="main-content" id="mainContent">
@@ -1007,6 +883,34 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                         <tbody id="macroTotals"></tbody>
                     </table>
                 </div>
+                <div id="userPanel" class="p-3" style="display: none;">
+                    <h5>Kullanıcı Profili</h5>
+                    <form id="userForm" onsubmit="handleUserFormSubmit(event)">
+                        <div class="mb-2">
+                            <label for="userName" class="form-label">İsim</label>
+                            <input type="text" id="userName" class="form-control" required autocomplete="off">
+                        </div>
+                        <div class="mb-2">
+                            <label for="userWeight" class="form-label">Kilo (kg)</label>
+                            <input type="number" id="userWeight" class="form-control" required min="0" step="0.1" autocomplete="off">
+                        </div>
+                        <div class="mb-2">
+                            <label for="userActivity" class="form-label">Aktivite Seviyesi (1-5)</label>
+                            <input type="number" id="userActivity" class="form-control" required min="1" max="5" step="1" autocomplete="off">
+                        </div>
+                        <div class="mb-2">
+                            <label for="likedFoodsInput" class="form-label">Sevdiği Yemekler (virgülle ayırın)</label>
+                            <input type="text" id="likedFoodsInput" class="form-control" autocomplete="off">
+                        </div>
+                        <div class="mb-2">
+                            <label for="dislikedFoodsInput" class="form-label">Sevmediği Yemekler (virgülle ayırın)</label>
+                            <input type="text" id="dislikedFoodsInput" class="form-control" autocomplete="off">
+                        </div>
+                        <button type="submit" class="btn btn-primary" title="Profil Kaydet">Kaydet</button>
+                    </form>
+                </div>
+                
+                
                 <div class="mt-2">
                     <div class="input-group">
                         <label for="editSearchFilterType" class="visually-hidden">Arama Filtresi</label>
@@ -1025,34 +929,10 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
                     </div>
                     <div id="editCategories" class="accordion"></div>
                 </div>
+                
             </div>
 
-            <div id="userPanel" class="p-3" style="display: none;">
-                <h5>Kullanıcı Profili</h5>
-                <form id="userForm" onsubmit="handleUserFormSubmit(event)">
-                    <div class="mb-2">
-                        <label for="userName" class="form-label">İsim</label>
-                        <input type="text" id="userName" class="form-control" required autocomplete="off">
-                    </div>
-                    <div class="mb-2">
-                        <label for="userWeight" class="form-label">Kilo (kg)</label>
-                        <input type="number" id="userWeight" class="form-control" required min="0" step="0.1" autocomplete="off">
-                    </div>
-                    <div class="mb-2">
-                        <label for="userActivity" class="form-label">Aktivite Seviyesi (1-5)</label>
-                        <input type="number" id="userActivity" class="form-control" required min="1" max="5" step="1" autocomplete="off">
-                    </div>
-                    <div class="mb-2">
-                        <label for="likedFoodsInput" class="form-label">Sevdiği Yemekler (virgülle ayırın)</label>
-                        <input type="text" id="likedFoodsInput" class="form-control" autocomplete="off">
-                    </div>
-                    <div class="mb-2">
-                        <label for="dislikedFoodsInput" class="form-label">Sevmediği Yemekler (virgülle ayırın)</label>
-                        <input type="text" id="dislikedFoodsInput" class="form-control" autocomplete="off">
-                    </div>
-                    <button type="submit" class="btn btn-primary" title="Profil Kaydet">Kaydet</button>
-                </form>
-            </div>
+            
 
             <div id="editFoodPanel" class="edit-food-panel">
                 <h5>Yemek Düzenle</h5>
@@ -2750,7 +2630,7 @@ function showNotification(message, type = 'success', duration = 5000) {
 
 
         async function exportAllData() {
-    const token = document.getElementById('githubToken')?.value || "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";
+    const token = document.getElementById('githubToken')?.value || "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";
     const repoOwner = "mustafasacar35";
     const repoName = "beslenme";
     const filePath = "sistem_JSON.json";
@@ -3032,20 +2912,34 @@ function importTemplatesFromTXT(event) {
 
         // addRule fonksiyonu
 // addRule fonksiyonu
+// addRule fonksiyonu
 function addRule() {
     console.log("addRule fonksiyonu çağrıldı!");
 
     const frequencyForm = document.getElementById('frequencyRuleForm');
     const dependOnForm = document.getElementById('dependOnRuleForm');
+    const categoryLockForm = document.getElementById('categoryLockRuleForm');
+    const compatibilityForm = document.getElementById('compatibilityRuleForm');
+    const defaultForm = document.getElementById('defaultRuleForm');
     let activeForm = null;
-    let ruleType = null;
+    let ruleType = document.getElementById('ruleType').value;
 
+    // Aktif formu belirle
     if (frequencyForm && frequencyForm.style.display !== 'none') {
         activeForm = frequencyForm;
         ruleType = 'frequency';
     } else if (dependOnForm && dependOnForm.style.display !== 'none') {
         activeForm = dependOnForm;
         ruleType = 'dependOn';
+    } else if (categoryLockForm && categoryLockForm.style.display !== 'none') {
+        activeForm = categoryLockForm;
+        ruleType = 'categoryLock';
+    } else if (compatibilityForm && compatibilityForm.style.display !== 'none') {
+        activeForm = compatibilityForm;
+        ruleType = 'compatibility';
+    } else if (defaultForm && defaultForm.style.display !== 'none') {
+        activeForm = defaultForm;
+        // ruleType zaten ruleType select’ten geliyor (singleItem veya noDuplicates)
     } else {
         console.warn("Hiçbir kural formu aktif değil!");
         return;
@@ -3096,7 +2990,6 @@ function addRule() {
                 rule.nameOperator = 'OR';
                 rule.names = [nameInput];
             }
-            delete rule.name;
         } else {
             rule.names = [];
         }
@@ -3127,7 +3020,6 @@ function addRule() {
         rule.mealTypeCheck = rule.scope === 'meal';
         rule.mealType = rule.mealTypeCheck ? document.getElementById('freqMeal')?.value : '';
 
-        console.log("Oluşturulan/Güncellenen kural (frequency):", JSON.stringify(rule, null, 2));
         if (!rule.nameCheck && !rule.tagsCheck && !rule.roleCheck && !rule.catCheck) {
             showNotification("Hata: Frequency kuralı için isim, etiket, rol veya kategoriden en az biri belirtilmeli!", "error");
             console.log("Hata: Hiçbir kriter seçilmedi.");
@@ -3148,12 +3040,57 @@ function addRule() {
             console.log("Hata: Eksik yemek bilgisi.");
             return;
         }
+    } else if (ruleType === 'categoryLock' && activeForm === categoryLockForm) {
+        rule.category = document.getElementById('categoryLockCategory')?.value;
+        rule.scope = document.getElementById('categoryLockScope')?.value || 'week';
 
-        console.log("Oluşturulan/Güncellenen kural (dependOn):", JSON.stringify(rule, null, 2));
+        if (!['week'].includes(rule.scope)) { // Şu an sadece hafta destekleniyor
+            console.warn(`Geçersiz scope değeri: ${rule.scope}. Varsayılan olarak 'week' kullanılıyor.`);
+            rule.scope = 'week';
+        }
+
+        if (!rule.category) {
+            showNotification("Hata: Kategori Kilidi için kategori belirtilmeli!", "error");
+            return;
+        }
+    } else if (ruleType === 'compatibility' && activeForm === compatibilityForm) {
+        rule.keyword1 = document.getElementById('compatKeyword1')?.value.trim();
+        rule.keyword2 = document.getElementById('compatKeyword2')?.value.split(',').map(k => k.trim()).filter(k => k);
+        rule.degree = parseInt(document.getElementById('compatDegree')?.value) || 0;
+        rule.scope = document.getElementById('compatScope')?.value || 'meal';
+        rule.mealType = rule.scope === 'meal' ? document.getElementById('compatMeal')?.value : '';
+
+        if (!['meal', 'day', 'week'].includes(rule.scope)) {
+            console.warn(`Geçersiz scope değeri: ${rule.scope}. Varsayılan olarak 'meal' kullanılıyor.`);
+            rule.scope = 'meal';
+        }
+
+        if (!rule.keyword1 || rule.keyword2.length === 0) {
+            showNotification("Hata: Compatibility kuralı için Kelime 1 ve Kelime 2 belirtilmeli!", "error");
+            return;
+        }
+    } else if (ruleType === 'singleItem' || ruleType === 'noDuplicates') {
+        rule.nameCheck = document.getElementById('ruleNameCheck')?.checked || false;
+        rule.name = rule.nameCheck ? document.getElementById('ruleName')?.value.trim() : '';
+        rule.tagsCheck = document.getElementById('ruleTagsCheck')?.checked || false;
+        rule.tags = rule.tagsCheck ? document.getElementById('ruleTags')?.value.split(',').map(t => t.trim()).filter(t => t) : [];
+        rule.categoryCheck = document.getElementById('ruleCategoryCheck')?.checked || false;
+        rule.category = rule.categoryCheck ? document.getElementById('ruleCategory')?.value : '';
+        rule.mealTypeCheck = document.getElementById('ruleMealTypeCheck')?.checked || false;
+        rule.mealType = rule.mealTypeCheck ? document.getElementById('ruleMealType')?.value : '';
+        rule.scope = document.getElementById('ruleScope')?.value || 'daily';
+        rule.weekRange = document.getElementById('ruleWeekRange')?.value.trim() || 'all';
+
+        if (!rule.nameCheck && !rule.tagsCheck && !rule.categoryCheck && !rule.mealTypeCheck) {
+            showNotification("Hata: SingleItem/NoDuplicates kuralı için en az bir kriter belirtilmeli!", "error");
+            return;
+        }
     } else {
         console.warn(`Desteklenmeyen kural tipi: ${ruleType}`);
         return;
     }
+
+    console.log("Oluşturulan/Güncellenen kural:", JSON.stringify(rule, null, 2));
 
     if (isEditing) {
         rules[editIndex] = rule;
@@ -3170,9 +3107,13 @@ function addRule() {
 
 // handleRuleSave fonksiyonu
 function handleRuleSave() {
-    addRule();
+    const indexValue = document.getElementById('editRuleIndex').value;
+    if (indexValue !== '') {
+        saveEditedRule(new Event('submit'));
+    } else {
+        addRule();
+    }
 }
-
 
 // loadRules fonksiyonu
 function loadRules() {
@@ -3184,53 +3125,79 @@ function loadRules() {
 
     rulesList.innerHTML = rules.map((rule, index) => {
         let description = '';
+
         switch (rule.type) {
             case 'frequency':
-                const criteriaText = [];
+                const freqCriteria = [];
                 if (rule.nameCheck && rule.names?.length) {
                     const connector = rule.nameOperator === 'OR' ? 'veya' : 've';
-                    criteriaText.push(`İsim: ${rule.names.join(` ${connector} `)}`);
-                } else if (rule.nameCheck && rule.name) { // Eski format için geri uyumluluk
-                    criteriaText.push(`İsim: ${rule.name}`);
+                    freqCriteria.push(`İsim: ${rule.names.join(` ${connector} `)}`);
                 }
                 if (rule.tagsCheck && rule.tags?.length) {
                     const connector = rule.tagOperator === 'OR' ? 'veya' : 've';
-                    criteriaText.push(`Etiket: ${rule.tags.join(` ${connector} `)}`);
+                    freqCriteria.push(`Etiket: ${rule.tags.join(` ${connector} `)}`);
                 }
-                if (rule.roleCheck && rule.role) criteriaText.push(`Rol: ${rule.role}`);
-                if (rule.catCheck && rule.category) criteriaText.push(`Kategori: ${rule.category}`);
-                const criteriaDisplay = criteriaText.length ? criteriaText.join(', ') : 'Herhangi bir yemek';
-                const scopeText = rule.scope === 'meal' ? `her ${rule.mealType}` :
-                                 rule.scope === 'day' ? 'günde' :
-                                 'haftada';
-                const frequencyText = rule.frequencyType === 'min' ? 'en az' :
-                                     rule.frequencyType === 'max' ? 'en fazla' :
-                                     ''; // 'exact' için ek metin yok
-                description = `(${rule.id}) ${criteriaDisplay} ${scopeText} ${frequencyText} ${rule.frequency} kez`.trim();
+                if (rule.roleCheck && rule.role) freqCriteria.push(`Rol: ${rule.role}`);
+                if (rule.catCheck && rule.category) freqCriteria.push(`Kategori: ${rule.category}`);
+                const freqCriteriaDisplay = freqCriteria.length ? freqCriteria.join(', ') : 'Herhangi bir yemek';
+                const freqScopeText = rule.scope === 'meal' ? `her ${rule.mealType || 'öğünde'}` :
+                                    rule.scope === 'day' ? 'günde' :
+                                    'haftada';
+                const freqText = rule.frequencyType === 'min' ? 'en az' :
+                                rule.frequencyType === 'max' ? 'en fazla' :
+                                '';
+                description = `(${rule.id}) ${freqCriteriaDisplay} ${freqScopeText} ${freqText} ${rule.frequency || 1} kez`;
                 break;
-            case 'pairWith':
-            case 'avoidPair':
-                const pairText = rule.type === 'pairWith' ? 'birlikte olsun' : 'birlikte olmasın';
-                const scopePairText = rule.scope === 'meal' ? `her ${rule.meal}` :
-                                     rule.scope === 'day' ? 'günde' :
-                                     'haftada';
-                description = `(${rule.id}) ${rule.pair1Name} ile ${rule.pair2Name} ${scopePairText} ${pairText}`;
-                break;
+
             case 'dependOn':
                 const dependScopeText = rule.scope === 'meal' ? 'her öğünde' : 'her gün';
-                description = `(${rule.id}) ${rule.food} yalnızca ${rule.requiredFood} ile ${dependScopeText} eklensin`;
+                description = `(${rule.id}) ${rule.food || 'Belirsiz'} yalnızca ${rule.requiredFood || 'Belirsiz'} ile ${dependScopeText} eklensin`;
                 break;
+
             case 'categoryLock':
                 const lockScopeText = rule.scope === 'week' ? 'hafta boyunca' : 'her zaman';
-                description = `(${rule.id}) ${rule.category} kategorisinde ${lockScopeText} sadece ${rule.item} kullanılsın`;
+                description = `(${rule.id}) ${rule.category || 'Belirsiz'} kategorisi ${lockScopeText} kilitli`;
                 break;
+
+            case 'singleItem':
+                const singleCriteria = [];
+                if (rule.nameCheck && rule.name) singleCriteria.push(`İsim: ${rule.name}`);
+                if (rule.tagsCheck && rule.tags?.length) singleCriteria.push(`Etiket: ${rule.tags.join(', ')}`);
+                if (rule.categoryCheck && rule.category) singleCriteria.push(`Kategori: ${rule.category}`);
+                if (rule.mealTypeCheck && rule.mealType) singleCriteria.push(`Öğün: ${rule.mealType}`);
+                const singleCriteriaDisplay = singleCriteria.length ? singleCriteria.join(', ') : 'Herhangi bir yemek';
+                const singleScopeText = rule.scope === 'daily' ? 'günde' : 'haftada';
+                description = `(${rule.id}) ${singleCriteriaDisplay} ${singleScopeText} tek başına`;
+                break;
+
+            case 'noDuplicates':
+                const dupCriteria = [];
+                if (rule.nameCheck && rule.name) dupCriteria.push(`İsim: ${rule.name}`);
+                if (rule.tagsCheck && rule.tags?.length) dupCriteria.push(`Etiket: ${rule.tags.join(', ')}`);
+                if (rule.categoryCheck && rule.category) dupCriteria.push(`Kategori: ${rule.category}`);
+                if (rule.mealTypeCheck && rule.mealType) dupCriteria.push(`Öğün: ${rule.mealType}`);
+                const dupCriteriaDisplay = dupCriteria.length ? dupCriteria.join(', ') : 'Herhangi bir yemek';
+                const dupScopeText = rule.scope === 'daily' ? 'günde' : 'haftada';
+                description = `(${rule.id}) ${dupCriteriaDisplay} ${dupScopeText} tekrarlanmasın`;
+                break;
+
+            case 'compatibility':
+                const compatScopeText = rule.scope === 'meal' ? `her ${rule.mealType || 'öğünde'}` :
+                                       rule.scope === 'day' ? 'günde' :
+                                       'haftada';
+                const degreeText = rule.degree > 0 ? `birlikte olsun (${rule.degree}/5)` : `birlikte olmasın (${-rule.degree}/5)`;
+                description = `(${rule.id}) ${rule.keyword1} ile ${rule.keyword2.join(', ')} ${compatScopeText} ${degreeText}`;
+                break;
+
             default:
                 description = `(${rule.id}) Bilinmeyen kural tipi: ${rule.type}`;
                 console.warn(`Bilinmeyen kural tipi: ${JSON.stringify(rule)}`);
         }
+
         if (rule.weekRange && rule.weekRange !== 'all') {
             description += ` [Hafta ${rule.weekRange}]`;
         }
+
         return `
             <div class="mb-1 d-flex justify-content-between align-items-center">
                 <span>${description}</span>
@@ -3259,7 +3226,7 @@ function editRule(index) {
         document.getElementById('freqType').value = rule.frequencyType || 'exact';
         document.getElementById('freqWeekRange').value = rule.weekRange === 'all' ? '' : rule.weekRange;
         document.getElementById('freqNameCheck').checked = rule.nameCheck || false;
-        document.getElementById('freqName').value = rule.name || '';
+        document.getElementById('freqName').value = rule.names?.join(', ') || '';
         document.getElementById('freqName').disabled = !rule.nameCheck;
         document.getElementById('freqTagCheck').checked = rule.tagsCheck || false;
         document.getElementById('freqTag').value = rule.tags?.join(', ') || '';
@@ -3270,7 +3237,7 @@ function editRule(index) {
         document.getElementById('freqCatCheck').checked = rule.catCheck || false;
         document.getElementById('freqCat').value = rule.category || '';
         document.getElementById('freqCat').disabled = !rule.catCheck;
-        document.getElementById('freqMeal').style.display = rule.scope === 'meal' ? 'inline-block' : 'none';
+        document.getElementById('freqMeal').style.display = rule.scope === 'meal' ? 'inline' : 'none';
         document.getElementById('freqMeal').value = rule.mealType || 'breakfast';
         form.dataset.editIndex = index;
     } else if (rule.type === 'dependOn') {
@@ -3280,15 +3247,59 @@ function editRule(index) {
         document.getElementById('dependOnRequiredFood').value = rule.requiredFood || '';
         document.getElementById('dependOnScope').value = rule.scope || 'meal';
         form.dataset.editIndex = index;
+    } else if (rule.type === 'categoryLock') {
+        const form = document.getElementById('categoryLockRuleForm');
+        form.style.display = 'block';
+        document.getElementById('categoryLockCategory').value = rule.category || '';
+        document.getElementById('categoryLockScope').value = rule.scope || 'week';
+        form.dataset.editIndex = index;
+    } else if (rule.type === 'compatibility') {
+        const form = document.getElementById('compatibilityRuleForm');
+        form.style.display = 'block';
+        document.getElementById('compatKeyword1').value = rule.keyword1 || '';
+        document.getElementById('compatKeyword2').value = rule.keyword2?.join(', ') || '';
+        document.getElementById('compatDegree').value = rule.degree || 0;
+        document.getElementById('compatScope').value = rule.scope || 'meal';
+        document.getElementById('compatMeal').style.display = rule.scope === 'meal' ? 'inline' : 'none';
+        document.getElementById('compatMeal').value = rule.mealType || 'breakfast';
+        form.dataset.editIndex = index;
+    } else if (rule.type === 'singleItem' || rule.type === 'noDuplicates') {
+        const form = document.getElementById('defaultRuleForm');
+        form.style.display = 'block';
+        document.getElementById('ruleNameCheck').checked = rule.nameCheck || false;
+        document.getElementById('ruleName').value = rule.name || '';
+        document.getElementById('ruleName').disabled = !rule.nameCheck;
+        document.getElementById('ruleTagsCheck').checked = rule.tagsCheck || false;
+        document.getElementById('ruleTags').value = rule.tags?.join(', ') || '';
+        document.getElementById('ruleTags').disabled = !rule.tagsCheck;
+        document.getElementById('ruleCategoryCheck').checked = rule.categoryCheck || false;
+        document.getElementById('ruleCategory').value = rule.category || '';
+        document.getElementById('ruleCategory').disabled = !rule.categoryCheck;
+        document.getElementById('ruleMealTypeCheck').checked = rule.mealTypeCheck || false;
+        document.getElementById('ruleMealType').value = rule.mealType || 'breakfast';
+        document.getElementById('ruleMealType').disabled = !rule.mealTypeCheck;
+        document.getElementById('ruleScope').value = rule.scope || 'daily';
+        document.getElementById('ruleWeekRange').value = rule.weekRange === 'all' ? '' : rule.weekRange;
+        form.dataset.editIndex = index;
     }
 
-    // Checkbox olay dinleyicileri (frequency için)
     toggleInput('freqNameCheck', 'freqName');
     toggleInput('freqTagCheck', 'freqTag');
     toggleInput('freqRoleCheck', 'freqRole');
     toggleInput('freqCatCheck', 'freqCat');
+    toggleInput('ruleNameCheck', 'ruleName');
+    toggleInput('ruleTagsCheck', 'ruleTags');
+    toggleInput('ruleCategoryCheck', 'ruleCategory');
+    toggleInput('ruleMealTypeCheck', 'ruleMealType');
 }
 
+// saveEditedRule fonksiyonu
+function saveEditedRule(event) {
+    event.preventDefault();
+    addRule(); // Edit modunda da addRule’u kullanıyoruz
+}
+
+// toggleInput fonksiyonu
 function toggleInput(checkboxId, inputId) {
     const checkbox = document.getElementById(checkboxId);
     const input = document.getElementById(inputId);
@@ -3300,119 +3311,7 @@ function toggleInput(checkboxId, inputId) {
     }
 }
 
-// saveEditedRule fonksiyonu
-function saveEditedRule(event) {
-    event.preventDefault();
-
-    const indexField = document.getElementById('editRuleIndex');
-    const isEditMode = indexField.value !== '';
-    const index = parseInt(indexField.value);
-
-    const rule = {
-        type: 'frequency',
-        frequency: parseInt(document.getElementById('freqCount').value) || 1,
-        scope: document.getElementById('freqScope').value,
-        weekRange: document.getElementById('freqWeekRange').value
-    };
-
-    rule.nameCheck = document.getElementById('freqNameCheck').checked;
-    rule.name = rule.nameCheck ? document.getElementById('freqName').value.trim() : '';
-    rule.tagsCheck = document.getElementById('freqTagCheck').checked;
-    rule.tags = rule.tagsCheck ? document.getElementById('freqTag').value.split(',').map(t => t.trim()).filter(t => t) : [];
-    rule.roleCheck = document.getElementById('freqRoleCheck').checked;
-    rule.role = rule.roleCheck ? document.getElementById('freqRole').value : '';
-    rule.catCheck = document.getElementById('freqCatCheck').checked;
-    rule.category = rule.catCheck ? document.getElementById('freqCat').value : '';
-    rule.mealTypeCheck = rule.scope === 'meal';
-    rule.mealType = rule.mealTypeCheck ? document.getElementById('freqMeal').value : '';
-
-    if (isEditMode) {
-        rules[index] = rule;
-        showNotification("Kural güncellendi!", "success");
-        console.log("Güncellenen kural:", JSON.stringify(rule, null, 2));
-    } else {
-        rules.push(rule);
-        showNotification("Yeni kural eklendi!", "success");
-        console.log("Eklenen kural:", JSON.stringify(rule, null, 2));
-    }
-
-    loadRules();
-    cancelEditRule();
-}
-
-// handleRuleSave fonksiyonu
-function handleRuleSave() {
-    const indexValue = document.getElementById('editRuleIndex').value;
-    if (indexValue !== '') {
-        saveEditedRule(new Event('submit'));
-    } else {
-        addRule();
-    }
-}
-
-// Diğer yardımcı fonksiyonlar
-function cancelEditRule() {
-    document.getElementById('editRuleForm').style.display = 'none';
-    document.getElementById('frequencyRuleForm').style.display = 'none';
-
-    const addRuleButton = document.getElementById('addRuleButton');
-    if (addRuleButton) addRuleButton.textContent = "Kural Ekle";
-    else console.warn("addRuleButton bulunamadı.");
-}
-
-function deleteRule(index) {
-    rules.splice(index, 1);
-    loadRules();
-    showNotification("Kural silindi!", "success");
-}
-
-function populateCategoryDropdown() {
-    const catSelect = document.getElementById('freqCat');
-    if (!catSelect) return console.error("freqCat bulunamadı!");
-    catSelect.innerHTML = '<option value="">Seç</option>';
-    categories.forEach(category => {
-        const option = document.createElement('option');
-        option.value = category.name;
-        option.textContent = category.name;
-        catSelect.appendChild(option);
-    });
-}
-
-function openFrequencyRuleForm() {
-    const form = document.getElementById('frequencyRuleForm');
-    form.style.display = 'block';
-
-    document.getElementById('freqName').value = '';
-    document.getElementById('freqTag').value = '';
-    document.getElementById('freqCount').value = 1;
-    document.getElementById('freqWeekRange').value = '';
-    document.getElementById('freqScope').value = 'week';
-    document.getElementById('freqMeal').value = 'lunch';
-    document.getElementById('freqNameCheck').checked = false;
-    document.getElementById('freqTagCheck').checked = false;
-    document.getElementById('freqRoleCheck').checked = false;
-    document.getElementById('freqCatCheck').checked = false;
-    document.getElementById('freqName').disabled = true;
-    document.getElementById('freqTag').disabled = true;
-    document.getElementById('freqRole').disabled = true;
-    document.getElementById('freqCat').disabled = true;
-
-    populateCategoryDropdown();
-    
-    const addRuleButton = document.getElementById('addRuleButton');
-    if (addRuleButton) addRuleButton.textContent = "Kural Ekle";
-}
-
-function toggleInput(checkboxId, inputId) {
-    const checkbox = document.getElementById(checkboxId);
-    const input = document.getElementById(inputId);
-    if (checkbox && input) {
-        checkbox.addEventListener('change', function() {
-            input.disabled = !this.checked;
-        });
-    }
-}
-
+// toggleMealSelect fonksiyonu
 function toggleMealSelect(scopeId, mealId) {
     const scopeSelect = document.getElementById(scopeId);
     const mealSelect = document.getElementById(mealId);
@@ -3424,89 +3323,40 @@ function toggleMealSelect(scopeId, mealId) {
     }
 }
 
-// Event Listener'lar ve Başlatma
-document.getElementById('freqNameCheck').addEventListener('change', function() {
-    document.getElementById('freqName').disabled = !this.checked;
-});
-document.getElementById('freqScope').addEventListener('change', function() {
-    document.getElementById('freqMeal').style.display = this.value === 'meal' ? 'block' : 'none';
-});
-
-toggleInput('freqNameCheck', 'freqName');
-toggleInput('freqTagCheck', 'freqTag');
-toggleInput('freqRoleCheck', 'freqRole');
-toggleInput('freqCatCheck', 'freqCat');
-toggleInput('pair1NameCheck', 'pair1Name');
-toggleInput('pair2NameCheck', 'pair2Name');
-
-toggleMealSelect('freqScope', 'freqMeal');
-toggleMealSelect('pairScope', 'pairMeal');
-
-initializeWeeks();
-loadCategories();
-renderWeekTabs();
-renderDayTabs();
-renderMeals();
-loadPatientSelect();
-loadRules();
-loadMealTemplates();
-loadCompatibilityRules();
-loadSettingsTemplates();
-loadRuleTemplates();
-calculateMacros();
-searchEditFood('');
-updateRuleForm();
-
-// Eklenmesi gereken satırlar
-toggleMealSelect('freqScope', 'freqMeal'); // Sıklık Kuralı için ilk durumu ayarla
-toggleMealSelect('pairScope', 'pairMeal'); // Birliktelik Kuralı için ilk durumu ayarla
+// updateRuleForm fonksiyonu
 function updateRuleForm(isEdit = false) {
     const type = isEdit ? document.getElementById('editRuleType').value : document.getElementById('ruleType').value;
 
-    // Tüm formları önce gizle
-    document.getElementById('frequencyRuleForm').style.display = 'none';
-    document.getElementById('defaultRuleForm').style.display = 'none';
-    document.getElementById('pairRuleForm').style.display = 'none';
-    document.getElementById('dependOnRuleForm').style.display = 'none';
-    document.getElementById('categoryLockRuleForm').style.display = 'none';
+    const defaultForm = document.getElementById('defaultRuleForm');
+    const frequencyForm = document.getElementById('frequencyRuleForm');
+    const dependOnForm = document.getElementById('dependOnRuleForm');
+    const categoryLockForm = document.getElementById('categoryLockRuleForm');
+    const compatibilityForm = document.getElementById('compatibilityRuleForm');
 
-    // Seçilen kural türüne göre ilgili formu göster
+    defaultForm.style.display = 'none';
+    frequencyForm.style.display = 'none';
+    dependOnForm.style.display = 'none';
+    categoryLockForm.style.display = 'none';
+    compatibilityForm.style.display = 'none';
+
     if (type === 'frequency') {
-        document.getElementById('frequencyRuleForm').style.display = 'block';
-    } else if (type === 'pairWith' || type === 'avoidPair') {
-        document.getElementById('pairRuleForm').style.display = 'block';
+        frequencyForm.style.display = 'block';
+        toggleMealSelect('freqScope', 'freqMeal');
     } else if (type === 'dependOn') {
-        document.getElementById('dependOnRuleForm').style.display = 'block';
+        dependOnForm.style.display = 'block';
     } else if (type === 'categoryLock') {
-        document.getElementById('categoryLockRuleForm').style.display = 'block';
+        categoryLockForm.style.display = 'block';
+    } else if (type === 'compatibility') {
+        compatibilityForm.style.display = 'block';
+        toggleMealSelect('compatScope', 'compatMeal');
+    } else { // singleItem, noDuplicates
+        defaultForm.style.display = 'block';
+        const frequencyInput = document.getElementById('frequencyInput');
+        frequencyInput.style.display = 'none';
     }
 }
 
-    // Tüm formları varsayılan olarak gizle
-    defaultForm.style.display = 'none';
-    frequencyForm.style.display = 'none';
-    pairForm.style.display = 'none';
-    dependOnForm.style.display = 'none'; // Yeni eklenen
-    categoryLockForm.style.display = 'none'; // Yeni eklenen
-
-    // Seçilen türe göre doğru formu göster
-    if (type === 'frequency') {
-        frequencyForm.style.display = 'block';
-    } else if (type === 'pairWith' || type === 'avoidPair') {
-        pairForm.style.display = 'block';
-    } else if (type === 'dependOn') { // Yeni eklenen: Bağımlı Olsun kuralı
-        dependOnForm.style.display = 'block';
-    } else if (type === 'categoryLock') { // Yeni eklenen: Kategori Kilidi kuralı
-        categoryLockForm.style.display = 'block';
-    } else {
-        defaultForm.style.display = 'block';
-        frequencyInput.style.display = type === 'frequency' ? 'block' : 'none';
-        countInput.style.display = 'none'; // Min ve Max kalktığı için hep gizli
-        pairInput.style.display = ['pairWith', 'avoidPair'].includes(type) ? 'block' : 'none';
-    }
-
-
-
+// saveRuleTemplate fonksiyonu
 function saveRuleTemplate() {
     const templateName = document.getElementById('templateName').value;
     if (!templateName) {
@@ -3518,34 +3368,14 @@ function saveRuleTemplate() {
     showNotification("Şablon kaydedildi!");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// loadRuleTemplates fonksiyonu
 function loadRuleTemplates() {
     const templateSelect = document.getElementById('templateSelect');
     const templates = Object.keys(localStorage).filter(key => key.startsWith('ruleTemplate_')).map(key => key.replace('ruleTemplate_', ''));
     templateSelect.innerHTML = '<option value="">Şablon Yükle</option>' + templates.map(t => `<option value="${t}">${t}</option>`).join('');
 }
 
+// loadRuleTemplate fonksiyonu
 function loadRuleTemplate() {
     const templateName = document.getElementById('templateSelect').value;
     if (!templateName) return;
@@ -3555,6 +3385,7 @@ function loadRuleTemplate() {
     showNotification("Şablon yüklendi!");
 }
 
+// deleteRuleTemplate fonksiyonu
 function deleteRuleTemplate() {
     const templateName = document.getElementById('templateSelect').value;
     if (!templateName) return;
@@ -3563,20 +3394,41 @@ function deleteRuleTemplate() {
     showNotification("Şablon silindi!");
 }
 
+// addCompatibilityRule fonksiyonu (eski kullanım için, artık addRule ile işleniyor)
 function addCompatibilityRule() {
-    const keyword1 = document.getElementById('compatKeyword1').value.trim();
-    const keyword2Input = document.getElementById('compatKeyword2').value.trim();
-    const degree = parseInt(document.getElementById('compatDegree').value);
-    const conjunction = document.getElementById('compatConjunction').value;
-    if (!keyword1) {
-        showNotification("Lütfen birinci kelimeyi girin!", 'warning');
-        return;
-    }
-    const keyword2 = keyword2Input ? keyword2Input.split(',').map(k => k.trim()).filter(k => k) : [];
-    compatibilityTable.push({ keyword1, keyword2, degree, conjunction });
-    loadCompatibilityRules();
-    showNotification("Uyumluluk kuralı eklendi!");
+    console.warn("addCompatibilityRule çağrıldı ama artık addRule kullanılıyor!");
+    addRule(); // Compatibility eklemek için addRule’u yönlendiriyoruz
 }
+
+// Event Listener’lar ve Başlatma
+document.addEventListener('DOMContentLoaded', () => {
+    toggleInput('freqNameCheck', 'freqName');
+    toggleInput('freqTagCheck', 'freqTag');
+    toggleInput('freqRoleCheck', 'freqRole');
+    toggleInput('freqCatCheck', 'freqCat');
+    toggleInput('ruleNameCheck', 'ruleName');
+    toggleInput('ruleTagsCheck', 'ruleTags');
+    toggleInput('ruleCategoryCheck', 'ruleCategory');
+    toggleInput('ruleMealTypeCheck', 'ruleMealType');
+
+    toggleMealSelect('freqScope', 'freqMeal');
+    toggleMealSelect('compatScope', 'compatMeal');
+
+    initializeWeeks();
+    loadCategories();
+    renderWeekTabs();
+    renderDayTabs();
+    renderMeals();
+    loadPatientSelect();
+    loadRules();
+    loadMealTemplates();
+    loadCompatibilityRules();
+    loadSettingsTemplates();
+    loadRuleTemplates();
+    calculateMacros();
+    searchEditFood('');
+    updateRuleForm();
+});
 
 function importFoodList() {
     const input = document.createElement('input');
@@ -3982,43 +3834,114 @@ function getPlanningSettings() {
 
 // applyAllRules fonksiyonu
 function applyAllRules() {
-    const settings = getPlanningSettings();
-    settings.rulePriority = 100; // Kurallara maksimum öncelik ver
-    generatePlan(settings); // Gereksiz ikinci parametre kaldırıldı
-    showNotification("Tüm kurallar uygulandı!");
+    try {
+        const settings = getPlanningSettings();
+        if (!settings) {
+            throw new Error("Planlama ayarları alınamadı!");
+        }
+
+        settings.rulePriority = 100; // Kurallara maksimum öncelik ver
+        generatePlan(settings); // Planı oluştur
+        showNotification("Tüm kurallar başarıyla uygulandı!", "success");
+    } catch (error) {
+        console.error("Kurallar uygulanırken hata oluştu:", error);
+        showNotification(`Kurallar uygulanamadı: ${error.message}`, "danger");
+    }
 }
 
 
-// Formları tanımla
-const frequencyForm = document.getElementById('frequencyRuleForm');
-const pairForm = document.getElementById('pairRuleForm');
-const dependOnForm = document.getElementById('dependOnRuleForm');
-const categoryLockForm = document.getElementById('categoryLockRuleForm');
-const defaultForm = document.getElementById('defaultForm');
+// Formları tanımla (const yerine let kullanılabilir, ancak burada const yeterli)
+const forms = {
+    frequency: document.getElementById('frequencyRuleForm'),
+    pair: document.getElementById('pairRuleForm'),
+    dependOn: document.getElementById('dependOnRuleForm'),
+    categoryLock: document.getElementById('categoryLockRuleForm'),
+    default: document.getElementById('defaultForm')
+};
 
-// Tüm formları gizle (null kontrolü ile)
-[frequencyForm, pairForm, dependOnForm, categoryLockForm, defaultForm].forEach(form => {
-    if (form) form.style.display = 'none';
-});
-
-// Seçilen türe göre doğru formu göster
-if (type === 'frequency' && frequencyForm) {
-    frequencyForm.style.display = 'block';
-} else if ((type === 'pairWith' || type === 'avoidPair') && pairForm) {
-    pairForm.style.display = 'block';
-} else if (type === 'dependOn' && dependOnForm) {
-    dependOnForm.style.display = 'block';
-} else if (type === 'categoryLock' && categoryLockForm) {
-    categoryLockForm.style.display = 'block';
-} else if (defaultForm) {
-    defaultForm.style.display = 'block';
-    // Aşağıdaki değişkenlerin de tanımlı olduğundan emin olun
-    if (typeof frequencyInput !== 'undefined') frequencyInput.style.display = type === 'frequency' ? 'block' : 'none';
-    if (typeof countInput !== 'undefined') countInput.style.display = 'none';
-    if (typeof pairInput !== 'undefined') pairInput.style.display = ['pairWith', 'avoidPair'].includes(type) ? 'block' : 'none';
-} else {
-    console.warn(`Desteklenmeyen kural tipi veya form bulunamadı: ${type}`);
+// Tüm formları gizle
+function hideAllForms() {
+    Object.values(forms).forEach(form => {
+        if (form) form.style.display = 'none';
+    });
 }
+
+// Kural tipine göre formu göster
+function showRuleForm(type) {
+    hideAllForms(); // Önce tüm formları gizle
+
+    switch (type) {
+        case 'frequency':
+            if (forms.frequency) {
+                forms.frequency.style.display = 'block';
+            } else {
+                console.warn("frequencyRuleForm bulunamadı!");
+            }
+            break;
+
+        case 'pairWith':
+        case 'avoidPair':
+            if (forms.pair) {
+                forms.pair.style.display = 'block';
+            } else {
+                console.warn("pairRuleForm bulunamadı!");
+            }
+            break;
+
+        case 'dependOn':
+            if (forms.dependOn) {
+                forms.dependOn.style.display = 'block';
+            } else {
+                console.warn("dependOnRuleForm bulunamadı!");
+            }
+            break;
+
+        case 'categoryLock':
+            if (forms.categoryLock) {
+                forms.categoryLock.style.display = 'block';
+            } else {
+                console.warn("categoryLockRuleForm bulunamadı!");
+            }
+            break;
+
+        default:
+            if (forms.default) {
+                forms.default.style.display = 'block';
+                // Ek input alanlarını kontrol et ve göster/gizle
+                const frequencyInput = document.getElementById('frequencyInput');
+                const countInput = document.getElementById('countInput');
+                const pairInput = document.getElementById('pairInput');
+
+                if (frequencyInput) frequencyInput.style.display = type === 'frequency' ? 'block' : 'none';
+                if (countInput) countInput.style.display = 'none'; // Varsayılan olarak gizli
+                if (pairInput) pairInput.style.display = ['pairWith', 'avoidPair'].includes(type) ? 'block' : 'none';
+            } else {
+                console.warn("defaultForm bulunamadı!");
+            }
+            console.warn(`Desteklenmeyen kural tipi: ${type}`);
+    }
+}
+
+
+const ruleFormMap = {
+    frequency: 'frequencyRuleForm',
+    pairWith: 'pairRuleForm',
+    avoidPair: 'pairRuleForm',
+    dependOn: 'dependOnRuleForm',
+    categoryLock: 'categoryLockRuleForm'
+};
+
+function showRuleForm(type) {
+    hideAllForms();
+    const formId = ruleFormMap[type] || 'defaultForm';
+    const form = document.getElementById(formId);
+    if (form) {
+        form.style.display = 'block';
+    } else {
+        console.warn(`Form bulunamadı: ${formId}`);
+    }
+}
+
 
 // Global form değişkenleri (gerekirse tanımlanır, şimdilik kaldırıldı)
 // Not: Eğer bu değişkenler başka yerlerde kullanılıyorsa, uygun scope'ta tanımlanmalı
@@ -4027,6 +3950,11 @@ if (type === 'frequency' && frequencyForm) {
 // let pairForm = document.getElementById('pairRuleForm');
 // let dependOnForm = document.getElementById('dependOnRuleForm');
 // let categoryLockForm = document.getElementById('categoryLockRuleForm');
+
+if (!forms.frequency) {
+    console.warn("frequencyRuleForm bulunamadı!");
+    showNotification("Frequency kural formu bulunamadı!", "warning");
+}
 
 // generatePlan fonksiyonu (tekrarlanan kısım kaldırıldı)
 function generatePlan(settings) {
@@ -5288,7 +5216,95 @@ function addCurrentMealToTemplates(mealType) {
 
     document.addEventListener('DOMContentLoaded', applyConversions);
 
+    async function handleUserFormSubmit(event) {
+    event.preventDefault(); // Sayfanın yenilenmesini engeller
+    const name = document.getElementById('userName').value;
+    const weight = document.getElementById('userWeight').value;
+    const activity = document.getElementById('userActivity').value;
+    const likedFoods = document.getElementById('likedFoodsInput').value.split(',').map(f => f.trim()).filter(f => f);
+    const dislikedFoods = document.getElementById('dislikedFoodsInput').value.split(',').map(f => f.trim()).filter(f => f);
 
+    const patientData = {
+        name,
+        weight: parseFloat(weight) || 70,
+        activity: parseInt(activity) || 3,
+        likedFoods,
+        dislikedFoods
+    };
+
+    // localStorage'a kaydet
+    localStorage.setItem(`patient_${name}`, JSON.stringify(patientData));
+    currentPatient = name;
+
+    // Hasta seçimini güncelle
+    loadPatientSelect();
+    document.getElementById('patientSelect').value = name;
+    handlePatientChange();
+
+    // GitHub'a güncelle
+    await updateGitHubData();
+
+    showNotification("Kullanıcı profili kaydedildi!", "success");
+}
+async function updateGitHubData() {
+    const token = document.getElementById('githubToken')?.value || "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";
+    const repoOwner = "mustafasacar35";
+    const repoName = "beslenme";
+    const filePath = "sistem_JSON.json";
+    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+
+    const data = {
+        categories: categories || [],
+        weeks: weeks || [],
+        rules: rules || [],
+        mealTemplates: mealTemplates || [],
+        compatibilityTable: compatibilityTable || [],
+        patients: Object.keys(localStorage)
+            .filter(key => key.startsWith('patient_'))
+            .reduce((obj, key) => {
+                obj[key] = JSON.parse(localStorage.getItem(key));
+                return obj;
+            }, {})
+    };
+
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+
+    try {
+        const response = await fetch(apiUrl, {
+            method: "GET",
+            headers: {
+                "Authorization": `Bearer ${token}`,
+                "Accept": "application/vnd.github+json"
+            }
+        });
+        const fileData = await response.json();
+        const sha = fileData.sha;
+
+        const updateResponse = await fetch(apiUrl, {
+            method: "PUT",
+            headers: {
+                "Authorization": `Bearer ${token}`,
+                "Accept": "application/vnd.github+json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                message: "Hasta verileri ve diğer veriler güncellendi",
+                content: content,
+                sha: sha,
+                branch: "main"
+            })
+        });
+
+        if (updateResponse.ok) {
+            showNotification("Veriler GitHub'a başarıyla yüklendi!", "success");
+        } else {
+            const errorData = await updateResponse.json();
+            showNotification("GitHub'a yükleme başarısız: " + errorData.message, "warning");
+        }
+    } catch (error) {
+        showNotification("Bir hata oluştu: " + error.message, "warning");
+    }
+}
 
 </script>
 <!-- Günlük ve Haftalık için Popup -->
