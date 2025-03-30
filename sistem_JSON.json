@@ -25,6 +25,23 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "KAHVALTI"
+        },
+        {
+          "name": "denden",
+          "calories": 122,
+          "protein": 12,
+          "carbs": 12,
+          "fat": 12,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [],
+          "role": "mainDish",
+          "mealType": "breakfast,lunch,dinner",
+          "keto": true,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5
         }
       ]
     },
@@ -6743,13 +6760,6 @@
       "likedFoods": [],
       "dislikedFoods": []
     },
-    "patient_mustafa up3": {
-      "name": "mustafa up3",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [],
-      "dislikedFoods": []
-    },
     "patient_mustafa": {
       "name": "mustafa",
       "weight": 100,
@@ -6760,6 +6770,13 @@
       "dislikedFoods": [
         "zeytin"
       ]
+    },
+    "patient_mustafa up3": {
+      "name": "mustafa up3",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": []
     },
     "patient_m100-2": {
       "name": "m100-2",
