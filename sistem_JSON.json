@@ -25,6 +25,23 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "KAHVALTI"
+        },
+        {
+          "name": "dedede",
+          "calories": 111,
+          "protein": 11,
+          "carbs": 11,
+          "fat": 11,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [],
+          "role": "mainDish",
+          "mealType": "breakfast,lunch,dinner",
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5
         }
       ]
     },
@@ -6689,6 +6706,27 @@
       "nameOperator": "OR",
       "names": [
         "Portakal (1 adet küçük boy)"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "frequency",
+      "id": 8,
+      "frequency": 1,
+      "scope": "meal",
+      "frequencyType": "min",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "5 Adet Çilek"
       ],
       "tagsCheck": false,
       "tags": [],
