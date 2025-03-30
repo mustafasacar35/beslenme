@@ -25,23 +25,6 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "KAHVALTI"
-        },
-        {
-          "name": "dedede",
-          "calories": 111,
-          "protein": 11,
-          "carbs": 11,
-          "fat": 11,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": "breakfast,lunch,dinner",
-          "keto": false,
-          "lowcarb": false,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5
         }
       ]
     },
@@ -6694,48 +6677,6 @@
       "category": "",
       "mealTypeCheck": true,
       "mealType": "dinner"
-    },
-    {
-      "type": "frequency",
-      "id": 7,
-      "frequency": 1,
-      "scope": "meal",
-      "frequencyType": "min",
-      "weekRange": "all",
-      "nameCheck": true,
-      "nameOperator": "OR",
-      "names": [
-        "Portakal (1 adet küçük boy)"
-      ],
-      "tagsCheck": false,
-      "tags": [],
-      "roleCheck": false,
-      "role": "",
-      "catCheck": false,
-      "category": "",
-      "mealTypeCheck": true,
-      "mealType": "dinner"
-    },
-    {
-      "type": "frequency",
-      "id": 8,
-      "frequency": 1,
-      "scope": "meal",
-      "frequencyType": "min",
-      "weekRange": "all",
-      "nameCheck": true,
-      "nameOperator": "OR",
-      "names": [
-        "5 Adet Çilek"
-      ],
-      "tagsCheck": false,
-      "tags": [],
-      "roleCheck": false,
-      "role": "",
-      "catCheck": false,
-      "category": "",
-      "mealTypeCheck": true,
-      "mealType": "dinner"
     }
   ],
   "mealTemplates": [
@@ -6776,6 +6717,13 @@
       "likedFoods": [],
       "dislikedFoods": []
     },
+    "patient_mustafa up3": {
+      "name": "mustafa up3",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": []
+    },
     "patient_mustafa": {
       "name": "mustafa",
       "weight": 100,
@@ -6786,13 +6734,6 @@
       "dislikedFoods": [
         "zeytin"
       ]
-    },
-    "patient_mustafa up3": {
-      "name": "mustafa up3",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [],
-      "dislikedFoods": []
     },
     "patient_m100-2": {
       "name": "m100-2",
