@@ -106,7 +106,8 @@
           "role": "sideDish",
           "mealType": "lunch",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "ÖĞLEN"
         },
         {
           "name": "3 Cherry Domates + Zeytinyağı, Kekik ve Pul Biber",
@@ -595,7 +596,8 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "fillerLunch": true,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
         },
         {
           "name": "Omlet",
@@ -1895,7 +1897,8 @@
           "fillerDinner": false,
           "maxQuantity": null,
           "minQuantity": 0.5,
-          "step": 1
+          "step": 1,
+          "category": "ÖĞLEN"
         },
         {
           "name": "Sahanda Yumurta (2 yumurta, 1 tatlı kaşığı tereyağı)",
@@ -1920,7 +1923,8 @@
           "fillerDinner": false,
           "maxQuantity": 1,
           "minQuantity": 1,
-          "step": 1
+          "step": 1,
+          "category": "ÖĞLEN"
         },
         {
           "name": "Ketojenik Granola (100 gram) + Yarım Su Bardağı Badem Sütü",
@@ -2373,7 +2377,8 @@
           "role": "mainDish",
           "mealType": "dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "AKŞAM"
         },
         {
           "name": "Mantarlı Tavuk Sote",
@@ -2480,7 +2485,8 @@
           "role": "sideDish",
           "mealType": "dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "AKŞAM"
         },
         {
           "name": "Kabak Çökertme Kebabı",
@@ -2959,7 +2965,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "AKŞAM"
         },
         {
           "name": "Kıymalı Bamya (veya Kıymalı Lahana) Yemeği (100 gr kıyma ile)",
@@ -3021,7 +3028,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "AKŞAM"
         },
         {
           "name": "Kabak Sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
@@ -3678,7 +3686,8 @@
           "role": "sideDish",
           "mealType": "lunch,dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "AKŞAM"
         },
         {
           "name": "Susamlı Karnabahar Kızartma",
@@ -3748,7 +3757,8 @@
           "role": "sideDish",
           "mealType": "lunch,dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "AKŞAM"
         },
         {
           "name": "Zeytinyağlı Yer Elması",
@@ -3764,7 +3774,8 @@
           "role": "sideDish",
           "mealType": "lunch,dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "AKŞAM"
         },
         {
           "name": "Peynirli Kabak Mezesi",
@@ -4740,7 +4751,8 @@
           "role": "sideDish",
           "mealType": "lunch,dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "SALATALAR"
         },
         {
           "name": "1 Kase (roka, dereotu, tere)",
@@ -4812,7 +4824,8 @@
           "role": "sideDish",
           "mealType": "lunch,dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "SALATALAR"
         },
         {
           "name": "Lor Salatası",
@@ -4898,7 +4911,8 @@
           "role": "sideDish",
           "mealType": "lunch,dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "SALATALAR"
         },
         {
           "name": "Yeşil Salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
@@ -4920,7 +4934,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "SALATALAR"
         },
         {
           "name": "Semizotu Salatası (2 avuç semizotu, 1 domates, 1 salatalık, 1 biber, 1 yemek kaşığı zeytinyağı)",
@@ -4960,7 +4975,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "SALATALAR"
         },
         {
           "name": "Girit Ezmesi (yeşil peynir mezesi)",
@@ -5001,7 +5017,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "SALATALAR"
         },
         {
           "name": "Yoğurtlu Kırmızı Pancar Salatası (100 gr pancar, 2 yemek kaşığı yoğurt, 1 tatlı kaşığı zeytinyağı)",
@@ -5021,7 +5038,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "SALATALAR"
         },
         {
           "name": "Brüksel Lahana Salatası (100 gr brüksel lahana, 1 yemek kaşığı zeytinyağı)",
@@ -5041,7 +5059,8 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "category": "SALATALAR"
         }
       ]
     },
@@ -6477,51 +6496,344 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "Köz Patlıcan Yoğurtlu",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "Tarhana Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Kırmızı Pancar Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "1 Kase Sote Edilmiş Ispanak + 1 Tatlı Kaşığı Zeytinyağı",
+                "quantity": 1
+              }
+            ]
           }
         },
         "tuesday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (1 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Hindistan Cevizli Ekmek (1 dilim)",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "Brokoli Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Orman Meyveli Muhallebi",
+                "quantity": 1
+              }
+            ]
           }
         },
         "wednesday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Ispanaklı Kabak Böreği",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "Tavuk Sote (200 gr tavuk, 1 domates, 1 biber, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Domatesli Kabak Çorbası",
+                "quantity": 1
+              }
+            ]
           }
         },
         "thursday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "2 dilim Hindi Füme",
+                "quantity": 1
+              },
+              {
+                "name": "Hindistan Cevizli Ekmek (1 dilim)",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "10 Adet Frambuaz",
+                "quantity": 1
+              },
+              {
+                "name": "Sebze Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Biberli Peynir",
+                "quantity": 1
+              },
+              {
+                "name": "1 Kase Sote Edilmiş Ispanak + 1 Tatlı Kaşığı Zeytinyağı",
+                "quantity": 1
+              }
+            ]
           }
         },
         "friday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "2 dilim Hindi Füme",
+                "quantity": 1
+              },
+              {
+                "name": "3 Cherry Domates + 1 Yemek Kaşığı Zeytinyağı, Kekik ve Pul Biber",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "Karnabahar Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Roka Salatası",
+                "quantity": 1
+              }
+            ]
           }
         },
         "saturday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "2 kare Bitter Çikolata",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "Brüksel Lahana Salatası (100 gr brüksel lahana, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Tavuk Çorbası",
+                "quantity": 1
+              }
+            ]
           }
         },
         "sunday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Badem?",
+                "quantity": 1
+              },
+              {
+                "name": "Tuzsuz Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              },
+              {
+                "name": "1 tatlı kaşığı Tereyağı",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Ay Çekirdeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              },
+              {
+                "name": "Kıymalı Mantar Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Brokoli Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış Yumurta (1 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+                "quantity": 1
+              }
+            ]
           }
         }
       }
@@ -6677,6 +6989,34 @@
       "category": "",
       "mealTypeCheck": true,
       "mealType": "dinner"
+    },
+    {
+      "type": "frequency",
+      "id": 7,
+      "frequency": 1,
+      "scope": "meal",
+      "frequencyType": "min",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "Portakal (1 adet küçük boy)"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "dependOn",
+      "id": 8,
+      "food": "Kollajen",
+      "requiredFood": "Badem?",
+      "scope": "meal"
     }
   ],
   "mealTemplates": [
