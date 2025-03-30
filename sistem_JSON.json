@@ -6677,6 +6677,48 @@
       "mealType": "dinner"
     },
     {
+      "type": "frequency",
+      "id": 6,
+      "frequency": 1,
+      "scope": "meal",
+      "frequencyType": "min",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "Mandalina (1 adet)"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "frequency",
+      "id": 7,
+      "frequency": 1,
+      "scope": "meal",
+      "frequencyType": "min",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "Portakal (1 adet küçük boy)"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
       "type": "dependOn",
       "id": 8,
       "food": "Kollajen",
@@ -6722,6 +6764,13 @@
       "likedFoods": [],
       "dislikedFoods": []
     },
+    "patient_mustafa up3": {
+      "name": "mustafa up3",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": []
+    },
     "patient_mustafa": {
       "name": "mustafa",
       "weight": 100,
@@ -6732,13 +6781,6 @@
       "dislikedFoods": [
         "zeytin"
       ]
-    },
-    "patient_mustafa up3": {
-      "name": "mustafa up3",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [],
-      "dislikedFoods": []
     },
     "patient_m100-2": {
       "name": "m100-2",
