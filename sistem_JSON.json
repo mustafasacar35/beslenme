@@ -3583,13 +3583,16 @@
             "keto",
             "ek"
           ],
-          "role": "supplement",
-          "mealType": "dinner",
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "category": "AKŞAM"
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM",
+          "step": 0.5
         },
         {
           "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
@@ -6613,7 +6616,12 @@
         "monday": {
           "meals": {
             "breakfast": [],
-            "lunch": [],
+            "lunch": [
+              {
+                "name": "Kollajen",
+                "quantity": 1
+              }
+            ],
             "dinner": []
           }
         },
@@ -6734,6 +6742,37 @@
       "category": "",
       "mealTypeCheck": true,
       "mealType": "dinner"
+    },
+    {
+      "type": "frequency",
+      "id": 5,
+      "frequency": 1,
+      "frequencyType": "exact",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "Tavuk Çorbası"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "compatibility",
+      "id": 6,
+      "keyword1": "Tavuk Çorbası",
+      "keyword2": [
+        "Kollajen"
+      ],
+      "degree": 5,
+      "conjunction": "and"
     }
   ],
   "mealTemplates": [],
