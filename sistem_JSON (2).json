@@ -1,0 +1,7313 @@
+{
+  "categories": [
+    {
+      "name": "KAHVALTI",
+      "items": [
+        {
+          "name": "Kurşun Geçirmez Kahve",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "içecek"
+          ],
+          "role": "drink",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "KAHVALTI"
+        }
+      ]
+    },
+    {
+      "name": "ÖĞLEN",
+      "items": [
+        {
+          "name": "Yumurtalı Ispanak Kavurma",
+          "calories": 337,
+          "protein": 23,
+          "carbs": 3,
+          "fat": 26,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "yumurta"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Keto Tost",
+          "calories": 250,
+          "protein": 15,
+          "carbs": 5,
+          "fat": 18,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "ekmek"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "80 gram Ton Balığı",
+          "calories": 130,
+          "protein": 20,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 2,
+          "tags": [
+            "balık",
+            "et"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 Kase Sote Edilmiş Ispanak + Zeytinyağı",
+          "calories": 95,
+          "protein": 5,
+          "carbs": 3,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "3 Cherry Domates + Zeytinyağı, Kekik ve Pul Biber",
+          "calories": 134,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "domates",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Sebzeli Krep",
+          "calories": 350,
+          "protein": 25,
+          "carbs": 6,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "sebze",
+            "krep",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Yoğurtlu Çılbır",
+          "calories": 284,
+          "protein": 15,
+          "carbs": 2,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "yoğurt",
+            "yumurta",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Patlıcan Tost",
+          "calories": 140,
+          "protein": 6,
+          "carbs": 2,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "patlıcan",
+            "tost",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Ispanaklı Börek",
+          "calories": 313,
+          "protein": 18,
+          "carbs": 4,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "börek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kabaklı Omlet",
+          "calories": 380,
+          "protein": 23,
+          "carbs": 9,
+          "fat": 28,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "omlet",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 dilim Pırasalı Tava Böreği",
+          "calories": 136,
+          "protein": 6,
+          "carbs": 10,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "pırasa",
+            "börek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 dilim Ketojenik Ispanaklı Börek",
+          "calories": 45.5,
+          "protein": 2.5,
+          "carbs": 1,
+          "fat": 3.5,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "börek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "100 gram Hellim Peynirli Ispanak ",
+          "calories": 386,
+          "protein": 24,
+          "carbs": 5,
+          "fat": 30,
+          "maxQuantity": 1,
+          "tags": [
+            "hellim",
+            "ıspanak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 adet Sebzeli Muffin",
+          "calories": 316,
+          "protein": 20,
+          "carbs": 5,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "sebze",
+            "muffin",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "2 dilim Hindi Füme",
+          "calories": 54,
+          "protein": 6,
+          "carbs": 3,
+          "fat": 2,
+          "maxQuantity": 1,
+          "tags": [
+            "hindi",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma",
+          "calories": 337.2,
+          "protein": 23,
+          "carbs": 2.8,
+          "fat": 26,
+          "maxQuantity": 1,
+          "tags": [
+            "kıyma",
+            "yumurta",
+            "semizotu",
+            "pazı",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 adet Ispanaklı Muffin",
+          "calories": 308,
+          "protein": 18,
+          "carbs": 5,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "muffin",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kıymalı - Yumurtalı Ispanak Kavurma (2 yumurta, 50 gr kıyma, 100 gr ıspanak, 1 yemek kaşığı zeytinyağı, soğan)",
+          "calories": 337.2,
+          "carbs": 2.8,
+          "protein": 23,
+          "fat": 26,
+          "multiplier": 1,
+          "tags": [
+            "kıyma",
+            "yumurta",
+            "ıspanak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 Kase Sote Edilmiş Ispanak + 1 Tatlı Kaşığı Zeytinyağı",
+          "calories": 95,
+          "carbs": 3,
+          "protein": 5,
+          "fat": 7,
+          "multiplier": 1,
+          "tags": [
+            "ıspanak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "3 Cherry Domates + 1 Yemek Kaşığı Zeytinyağı, Kekik ve Pul Biber",
+          "calories": 134,
+          "carbs": 1,
+          "protein": 1,
+          "fat": 14,
+          "multiplier": 1,
+          "tags": [
+            "domates",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": true,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli Krep (2 yumurta, 1 yemek kaşığı lupin unu, 5 mantar, 5 ıspanak, 1 yemek kaşığı zeytinyağı)",
+          "calories": 350,
+          "carbs": 6,
+          "protein": 25,
+          "fat": 24,
+          "multiplier": 1,
+          "tags": [
+            "sebze",
+            "krep",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Ketojenik Ispanaklı Börek (1 dilim)",
+          "calories": 45.5,
+          "carbs": 1,
+          "protein": 2.5,
+          "fat": 3.5,
+          "multiplier": 1,
+          "tags": [
+            "ıspanak",
+            "börek",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Hindi Füme (2 dilim)",
+          "calories": 54,
+          "carbs": 3,
+          "protein": 6,
+          "fat": 2,
+          "multiplier": 1,
+          "tags": [
+            "hindi",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma (2 yumurta, 50 gr kıyma, 100 gr semizotu/pazı, 1 yemek kaşığı zeytinyağı, soğan)",
+          "calories": 337.2,
+          "carbs": 2.8,
+          "protein": 23,
+          "fat": 26,
+          "multiplier": 1,
+          "tags": [
+            "kıyma",
+            "yumurta",
+            "semizotu",
+            "pazı",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Haşlanmış Yumurta",
+          "calories": 68,
+          "protein": 6,
+          "carbs": 0.5,
+          "fat": 5,
+          "maxQuantity": 2,
+          "role": "mainDish",
+          "tags": [
+            "yumurta"
+          ],
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false
+        },
+        {
+          "name": "Omlet",
+          "calories": 240,
+          "protein": 20,
+          "carbs": 2,
+          "fat": 16,
+          "maxQuantity": 1,
+          "tags": [
+            "yumurta"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "50 gram beyaz peynir",
+          "calories": 300,
+          "protein": 10,
+          "carbs": 2,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "süt"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast",
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "10 adet Zeytin",
+          "calories": 115,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "zeytin"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast",
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 yemek kaşığı zeytinyağı",
+          "calories": 120,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "yağ"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "10 adet Zeytin",
+          "calories": 76,
+          "protein": 1,
+          "carbs": 0,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "zeytin",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false
+        },
+        {
+          "name": "50 gram Tulum / Kaşar / Lor Peyniri",
+          "calories": 134,
+          "protein": 10,
+          "carbs": 1,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "30 gram Beyaz Peynir  ",
+          "calories": 86,
+          "protein": 6,
+          "carbs": 1,
+          "fat": 6,
+          "maxQuantity": 2,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 tatlı kaşığı Tereyağı",
+          "calories": 72,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "tereyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false
+        },
+        {
+          "name": "Kaymak",
+          "calories": 54,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 6,
+          "maxQuantity": 1,
+          "tags": [
+            "kaymak",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false
+        },
+        {
+          "name": "Pastırma",
+          "calories": 72,
+          "protein": 9,
+          "carbs": 0,
+          "fat": 4,
+          "maxQuantity": 1,
+          "tags": [
+            "pastırma",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false
+        },
+        {
+          "name": "Yumurta Sarısı",
+          "calories": 57,
+          "protein": 3,
+          "carbs": 0,
+          "fat": 5,
+          "maxQuantity": 1,
+          "tags": [
+            "yumurta",
+            "keto"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false
+        },
+        {
+          "name": "Közlenmiş Kapya Biber",
+          "calories": 16,
+          "protein": 1,
+          "carbs": 3,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "biber",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 dilim Ispanaklı Kabak Böreği",
+          "calories": 154,
+          "protein": 14,
+          "carbs": 2,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "kabak",
+            "börek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 yemek kaşığı tahin",
+          "calories": 92,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "tahin",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "50 gram Kasap Sucuk",
+          "calories": 166,
+          "protein": 8,
+          "carbs": 3,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "sucuk",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Tofu",
+          "calories": 77,
+          "protein": 6,
+          "carbs": 2,
+          "fat": 5,
+          "maxQuantity": 1,
+          "tags": [
+            "tofu",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Lupin Unlu Poğaça",
+          "calories": 208,
+          "protein": 13,
+          "carbs": 3,
+          "fat": 16,
+          "maxQuantity": 1,
+          "tags": [
+            "lupin",
+            "poğaça",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Tatlı Patates Omleti",
+          "calories": 366,
+          "protein": 20,
+          "carbs": 22,
+          "fat": 22,
+          "maxQuantity": 1,
+          "tags": [
+            "tatlı patates",
+            "yumurta"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": false,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Yumurtalı Ispanak",
+          "calories": 370.5,
+          "protein": 17.5,
+          "carbs": 11,
+          "fat": 28.5,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "yumurta",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "100 gram Haşlama Et",
+          "calories": 138,
+          "protein": 18,
+          "carbs": 3,
+          "fat": 6,
+          "maxQuantity": 1,
+          "tags": [
+            "et",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Cherry Domates (2 adet)",
+          "calories": 4,
+          "protein": 0,
+          "carbs": 1,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "domates",
+            "meyve",
+            "keto"
+          ],
+          "role": "fruit",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kurşun Geçirmez Kahve",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "kahve",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "drink",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
+          "calories": 420,
+          "protein": 23,
+          "carbs": 10,
+          "fat": 32,
+          "maxQuantity": 1,
+          "tags": [
+            "soğan",
+            "ceviz",
+            "lor",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "1 dilim Fırında Kabaklı Börek",
+          "calories": 189,
+          "protein": 10,
+          "carbs": 3.5,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "börek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Haşlanmış Yumurta (1 adet) + Tereyağı ve Baharatlar",
+          "calories": 140,
+          "protein": 6,
+          "carbs": 2,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Haşlanmış Yumurta (2 adet) + Tereyağı ve Baharatlar",
+          "calories": 209,
+          "protein": 12,
+          "carbs": 2,
+          "fat": 17,
+          "maxQuantity": 1,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Ispanaklı ve Lor Peynirli Omlet",
+          "calories": 305,
+          "protein": 17,
+          "carbs": 3,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "lor",
+            "omlet",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Avokadolu Omlet",
+          "calories": 331,
+          "protein": 19,
+          "carbs": 3,
+          "fat": 27,
+          "maxQuantity": 1,
+          "tags": [
+            "avokado",
+            "omlet",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Yumurtalı Ispanak Kavurma",
+          "calories": 243.2,
+          "protein": 13,
+          "carbs": 2.8,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "yumurta",
+            "ıspanak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Mantarlı Omlet",
+          "calories": 226,
+          "protein": 14,
+          "carbs": 2,
+          "fat": 18,
+          "maxQuantity": 1,
+          "tags": [
+            "mantar",
+            "omlet",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli Omlet",
+          "calories": 345,
+          "protein": 25,
+          "carbs": 5,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "hindi",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Menemen (2 adet yumurta, 1 adet domates vs.)",
+          "calories": 229,
+          "protein": 14,
+          "carbs": 5,
+          "fat": 17,
+          "maxQuantity": 1,
+          "tags": [
+            "yumurta",
+            "menemen",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kavurmalı Yumurta (50 gram kavurma, 2 adet yumurta)",
+          "calories": 337.2,
+          "protein": 23,
+          "carbs": 2.8,
+          "fat": 26,
+          "maxQuantity": 1,
+          "tags": [
+            "kavurma",
+            "yumurta",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Sahanda Yumurta (1 adet)",
+          "calories": 140,
+          "protein": 7,
+          "carbs": 1,
+          "fat": 12,
+          "maxQuantity": 2,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sahanda Yumurta (2 adet)",
+          "calories": 205,
+          "protein": 12,
+          "carbs": 1,
+          "fat": 17,
+          "maxQuantity": 1,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Ketojenik Granola + Badem Sütü",
+          "calories": 570,
+          "protein": 18,
+          "carbs": 3,
+          "fat": 54,
+          "maxQuantity": 1,
+          "tags": [
+            "granola",
+            "badem sütü",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Yaban Mersinli Smoothie",
+          "calories": 430,
+          "protein": 20,
+          "carbs": 2,
+          "fat": 38,
+          "maxQuantity": 1,
+          "tags": [
+            "yaban mersini",
+            "smoothie",
+            "keto"
+          ],
+          "role": "drink",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Pankek",
+          "calories": 234,
+          "protein": 15,
+          "carbs": 3,
+          "fat": 18,
+          "maxQuantity": 1,
+          "tags": [
+            "pankek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Karnabahar Pankek",
+          "calories": 268,
+          "protein": 15,
+          "carbs": 7,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "pankek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sucuklu Yumurta (30 gram sucuk, 2adet yumurta)",
+          "calories": 337.2,
+          "protein": 23,
+          "carbs": 2.8,
+          "fat": 26,
+          "maxQuantity": 1,
+          "tags": [
+            "sucuk",
+            "yumurta",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Sebzeli Omlet (2 yumurta, 5 mantar, 5 ıspanak yaprağı )",
+          "calories": 279,
+          "protein": 16,
+          "carbs": 2,
+          "fat": 23,
+          "maxQuantity": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli Omlet (1 yumurta, 1 dilim hindi füme, 5 mantar, 5 ıspanak)",
+          "calories": 250,
+          "protein": 10,
+          "carbs": 3,
+          "fat": 22,
+          "maxQuantity": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "hindi",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Susamlı Omlet",
+          "calories": 282,
+          "protein": 16,
+          "carbs": 5,
+          "fat": 22,
+          "maxQuantity": 1,
+          "tags": [
+            "susam",
+            "omlet",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Mantarlı Yumurta",
+          "calories": 160,
+          "protein": 9,
+          "carbs": 4,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "mantar",
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Biberli Peynir",
+          "calories": 157,
+          "protein": 6,
+          "carbs": 4,
+          "fat": 13,
+          "maxQuantity": 1,
+          "tags": [
+            "biber",
+            "lor",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 dilim Fırında Kabaklı Börek (1 dilim)",
+          "calories": 189,
+          "carbs": 3.5,
+          "protein": 10,
+          "fat": 15,
+          "multiplier": 1,
+          "tags": [
+            "kabak",
+            "börek",
+            "keto"
+          ],
+          "mealType": [
+            "breakfast"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "maxQuantity": 2,
+          "minQuantity": 1,
+          "step": 1
+        },
+        {
+          "name": "Haşlanmış Yumurta (1 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+          "calories": 140,
+          "carbs": 2,
+          "protein": 6,
+          "fat": 12,
+          "multiplier": 1,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Haşlanmış Yumurta (2 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+          "calories": 209,
+          "carbs": 2,
+          "protein": 12,
+          "fat": 17,
+          "multiplier": 1,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Yumurtalı Ispanak Kavurma (2 yumurta, 100 gram ıspanak, 1 yemek kaşığı zeytinyağı, soğan)",
+          "calories": 243.2,
+          "carbs": 2.8,
+          "protein": 13,
+          "fat": 20,
+          "multiplier": 1,
+          "tags": [
+            "yumurta",
+            "ıspanak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": [
+            "breakfast"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1
+        },
+        {
+          "name": "Mantarlı Omlet (2 yumurta, 5 mantar, 1 tatlı kaşığı tereyağı)",
+          "calories": 226,
+          "carbs": 2,
+          "protein": 14,
+          "fat": 18,
+          "multiplier": 1,
+          "tags": [
+            "mantar",
+            "omlet",
+            "tereyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli Omlet (2 yumurta, 2 dilim hindi füme, 5 mantar, 5 ıspanak, 1 yemek kaşığı zeytinyağı)",
+          "calories": 345,
+          "carbs": 5,
+          "protein": 25,
+          "fat": 25,
+          "multiplier": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "hindi",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Menemen (2 yumurta ile)",
+          "calories": 229,
+          "carbs": 5,
+          "protein": 14,
+          "fat": 17,
+          "multiplier": 1,
+          "tags": [
+            "yumurta",
+            "menemen",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kavurmalı Yumurta (2 adet yumurta, 50 gram kavurma, baharatlar)",
+          "calories": 337.2,
+          "carbs": 2.8,
+          "protein": 23,
+          "fat": 26,
+          "multiplier": 1,
+          "tags": [
+            "kavurma",
+            "yumurta",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": 2,
+          "minQuantity": 1,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sahanda Yumurta (1 yumurta, 1 tatlı kaşığı tereyağı)",
+          "calories": 140,
+          "carbs": 1,
+          "protein": 7,
+          "fat": 12,
+          "multiplier": 1,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sahanda Yumurta (2 yumurta, 1 tatlı kaşığı tereyağı)",
+          "calories": 205,
+          "carbs": 1,
+          "protein": 12,
+          "fat": 17,
+          "multiplier": 1,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Ketojenik Granola (100 gram) + Yarım Su Bardağı Badem Sütü",
+          "calories": 570,
+          "carbs": 3,
+          "protein": 18,
+          "fat": 54,
+          "multiplier": 1,
+          "tags": [
+            "granola",
+            "badem sütü",
+            "keto"
+          ],
+          "mealType": [
+            "breakfast"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1
+        },
+        {
+          "name": "Sucuklu Yumurta (2 yumurta, 50 gr kasap sucuk, baharatlar)",
+          "calories": 337.2,
+          "carbs": 2.8,
+          "protein": 23,
+          "fat": 26,
+          "multiplier": 1,
+          "tags": [
+            "sucuk",
+            "yumurta",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli Omlet (2 yumurta, 5 mantar, 5 ıspanak, 1 yemek kaşığı zeytinyağı)",
+          "calories": 279,
+          "carbs": 2,
+          "protein": 16,
+          "fat": 23,
+          "multiplier": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli Omlet (1 yumurta, 1 dilim hindi füme, 5 mantar, 5 ıspanak, 1 yemek kaşığı zeytinyağı)",
+          "calories": 250,
+          "carbs": 3,
+          "protein": 10,
+          "fat": 22,
+          "multiplier": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "hindi",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Mantarlı Yumurta (100 gram mantar, 1 yemek kaşığı tereyağı, 1 yumurta, tuz ve baharatlar)",
+          "calories": 160,
+          "carbs": 4,
+          "protein": 9,
+          "fat": 12,
+          "multiplier": 1,
+          "tags": [
+            "mantar",
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "mealType": [
+            "breakfast"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1
+        },
+        {
+          "name": "Biberli Peynir (3 yeşil biber, 30 gr lor peyniri, 1 tatlı kaşığı zeytinyağı, tuz ve baharatlar)",
+          "calories": 157,
+          "carbs": 4,
+          "protein": 6,
+          "fat": 13,
+          "multiplier": 1,
+          "tags": [
+            "biber",
+            "lor",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Avokado (yarım)",
+          "calories": 120,
+          "carbs": 1,
+          "protein": 1,
+          "fat": 12,
+          "multiplier": 1,
+          "tags": [
+            "avokado",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "10 adet Zeytin",
+          "calories": 60,
+          "carbs": 1,
+          "protein": 0,
+          "fat": 6,
+          "multiplier": 1,
+          "tags": [
+            "zeytin",
+            "keto"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Salatalık (1 adet)",
+          "calories": 16,
+          "carbs": 4,
+          "protein": 1,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "salatalık",
+            "keto"
+          ],
+          "mealType": [
+            "snack"
+          ],
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "minQuantity": 0.5,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "name": "AKŞAM",
+      "items": [
+        {
+          "name": "Köfte",
+          "calories": 250,
+          "protein": 20,
+          "carbs": 0,
+          "fat": 18,
+          "maxQuantity": 2,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "et"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuk Çorbası",
+          "calories": 114,
+          "protein": 10,
+          "carbs": 5,
+          "fat": 6,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "çorba"
+          ],
+          "role": "soup",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM",
+          "step": 0.5
+        },
+        {
+          "name": "Balık Izgara",
+          "calories": 200,
+          "protein": 25,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "balık"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Sebze Sote",
+          "calories": 100,
+          "protein": 3,
+          "carbs": 5,
+          "fat": 7,
+          "maxQuantity": 2,
+          "tags": [
+            "sebze"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "250 gr Izgara veya Fırında Balık",
+          "calories": 270,
+          "protein": 45,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "balık",
+            "protein",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Fırında Karnabahar",
+          "calories": 312,
+          "protein": 12,
+          "carbs": 12,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "kaşar",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kıymalı Bamya Yemeği",
+          "calories": 300,
+          "protein": 25,
+          "carbs": 2,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "kıyma",
+            "bamya",
+            "lahana",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Fırında Cevizli Peynirli Mantar Dolması",
+          "calories": 271,
+          "protein": 14,
+          "carbs": 2,
+          "fat": 23,
+          "maxQuantity": 1,
+          "tags": [
+            "ceviz",
+            "peynir",
+            "mantar",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Urfa / Adana Kebap",
+          "calories": 258,
+          "protein": 23,
+          "carbs": 1,
+          "fat": 18,
+          "maxQuantity": 1,
+          "tags": [
+            "kebap",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gr Hindi Izgara Tava",
+          "calories": 227,
+          "protein": 50,
+          "carbs": 0,
+          "fat": 3,
+          "maxQuantity": 1,
+          "tags": [
+            "hindi",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gr Tavuk Pirzola",
+          "calories": 385,
+          "protein": 40,
+          "carbs": 0,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gr Köfte / 250 gr Kuzu Kavurma",
+          "calories": 381,
+          "protein": 36,
+          "carbs": 3,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "köfte",
+            "kuzu",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Mantarlı Tavuk Sote",
+          "calories": 321,
+          "protein": 35,
+          "carbs": 7,
+          "fat": 17,
+          "maxQuantity": 1,
+          "tags": [
+            "mantar",
+            "tavuk",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuk Sote",
+          "calories": 326,
+          "protein": 40,
+          "carbs": 10,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "sebze",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kıymalı Lahana / Kabak / Yeşil Fasulye Yemeği",
+          "calories": 365,
+          "protein": 30,
+          "carbs": 5,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "kıyma",
+            "lahana",
+            "kabak",
+            "fasulye",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "150 gr Ciğer Kavurma",
+          "calories": 340,
+          "protein": 35,
+          "carbs": 5,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "ciğer",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gr Izgara Et",
+          "calories": 385,
+          "protein": 40,
+          "carbs": 0,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "et",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kabak Sote",
+          "calories": 155,
+          "protein": 1,
+          "carbs": 4,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kabak Çökertme Kebabı",
+          "calories": 299,
+          "protein": 19,
+          "carbs": 4,
+          "fat": 23,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "kebap",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kerevizli Çökertme Kebabı",
+          "calories": 577,
+          "protein": 36,
+          "carbs": 7,
+          "fat": 45,
+          "maxQuantity": 1,
+          "tags": [
+            "kereviz",
+            "kıyma",
+            "kebap",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gram Tavuk Eti ile Güveç",
+          "calories": 423,
+          "protein": 40,
+          "carbs": 5,
+          "fat": 27,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "güveç",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gram Kırmızı Et ile Güveç",
+          "calories": 423,
+          "protein": 40,
+          "carbs": 5,
+          "fat": 27,
+          "maxQuantity": 1,
+          "tags": [
+            "et",
+            "güveç",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Patlıcan Kebabı",
+          "calories": 500,
+          "protein": 30,
+          "carbs": 5,
+          "fat": 40,
+          "maxQuantity": 1,
+          "tags": [
+            "patlıcan",
+            "kıyma",
+            "kebap",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gram Somon Fileto",
+          "calories": 305,
+          "protein": 47,
+          "carbs": 0,
+          "fat": 13,
+          "maxQuantity": 1,
+          "tags": [
+            "somon",
+            "balık",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Karnabahar Mantı",
+          "calories": 363,
+          "protein": 30,
+          "carbs": 0,
+          "fat": 27,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "kıyma",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Nohut Yemeği",
+          "calories": 260,
+          "protein": 14,
+          "carbs": 33,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "nohut"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Pırasa Yemeği",
+          "calories": 360,
+          "protein": 19,
+          "carbs": 14,
+          "fat": 19,
+          "maxQuantity": 1,
+          "tags": [
+            "pırasa",
+            "kıyma",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kuzu Güveç",
+          "calories": 312,
+          "protein": 25,
+          "carbs": 8,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "kuzu",
+            "güveç",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Yeşil Mercimekli Kabak Sandal",
+          "calories": 432,
+          "protein": 37,
+          "carbs": 17,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "mercimek",
+            "kabak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kabak Lazanya",
+          "calories": 306,
+          "protein": 15,
+          "carbs": 3,
+          "fat": 26,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "lazanya",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Enginar Mantısı",
+          "calories": 369,
+          "protein": 22,
+          "carbs": 5,
+          "fat": 29,
+          "maxQuantity": 1,
+          "tags": [
+            "enginar",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Fırında Tavuk Kanat",
+          "calories": 398,
+          "protein": 40,
+          "carbs": 1,
+          "fat": 26,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuk Güveç",
+          "calories": 312,
+          "protein": 25,
+          "carbs": 8,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "güveç",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Çıtır Tavuk",
+          "calories": 648,
+          "protein": 48,
+          "carbs": 6,
+          "fat": 48,
+          "maxQuantity": 1,
+          "tags": [
+            "çıtır",
+            "tavuk",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Ciğer Kavurma (200 gram)",
+          "calories": 480,
+          "protein": 45,
+          "carbs": 12,
+          "fat": 28,
+          "maxQuantity": 1,
+          "tags": [
+            "ciğer",
+            "keto",
+            "et"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Etli Kereviz Yemeği",
+          "calories": 401,
+          "protein": 32,
+          "carbs": 21,
+          "fat": 21,
+          "maxQuantity": 1,
+          "tags": [
+            "et",
+            "kereviz"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kıymalı Ispanak Yemeği",
+          "calories": 403,
+          "protein": 38,
+          "carbs": 11,
+          "fat": 23,
+          "maxQuantity": 1,
+          "tags": [
+            "kıyma",
+            "ıspanak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kıymalı Brüksel Lahana Yemeği",
+          "calories": 389,
+          "protein": 25,
+          "carbs": 16,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "kıyma",
+            "brüksel lahana"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Köfteli Pırasa Yemeği",
+          "calories": 286,
+          "protein": 20,
+          "carbs": 11,
+          "fat": 18,
+          "maxQuantity": 1,
+          "tags": [
+            "köfte",
+            "pırasa"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Ketojenik Köfte",
+          "calories": 360,
+          "protein": 23,
+          "carbs": 4,
+          "fat": 28,
+          "maxQuantity": 1,
+          "tags": [
+            "köfte",
+            "keto",
+            "et"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Lahana Lazanya",
+          "calories": 461,
+          "protein": 35,
+          "carbs": 6,
+          "fat": 33,
+          "maxQuantity": 1,
+          "tags": [
+            "lahana",
+            "lazanya",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Fırında Kremalı Karnabahar",
+          "calories": 370,
+          "protein": 15,
+          "carbs": 10,
+          "fat": 30,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "kremalı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "250 gr Izgara veya Fırında Balık (çupra, levrek, alabalık vb.)",
+          "calories": 270,
+          "carbs": 0,
+          "protein": 45,
+          "fat": 10,
+          "multiplier": 1,
+          "tags": [
+            "balık",
+            "protein",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Fırında Karnabahar (150 gr + 1 yemek kaşığı zeytinyağı + 50 gr kaşar)",
+          "calories": 312,
+          "carbs": 12,
+          "protein": 12,
+          "fat": 24,
+          "multiplier": 1,
+          "tags": [
+            "karnabahar",
+            "kaşar",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kıymalı Bamya (veya Kıymalı Lahana) Yemeği (100 gr kıyma ile)",
+          "calories": 300,
+          "carbs": 2,
+          "protein": 25,
+          "fat": 20,
+          "multiplier": 1,
+          "tags": [
+            "kıyma",
+            "bamya",
+            "lahana",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Urfa / Adana Kebap (150 gr, 1 porsiyon)",
+          "calories": 258,
+          "carbs": 1,
+          "protein": 23,
+          "fat": 18,
+          "multiplier": 1,
+          "tags": [
+            "kebap",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuk Sote (200 gr tavuk, 1 domates, 1 biber, 1 yemek kaşığı zeytinyağı)",
+          "calories": 326,
+          "carbs": 10,
+          "protein": 40,
+          "fat": 14,
+          "multiplier": 1,
+          "tags": [
+            "tavuk",
+            "sebze",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kabak Sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+          "calories": 155,
+          "carbs": 4,
+          "protein": 1,
+          "fat": 15,
+          "multiplier": 1,
+          "tags": [
+            "kabak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kerevizli Çökertme Kebabı (200 gr kıyma ve 1 küçük boy kereviz ile)",
+          "calories": 577,
+          "carbs": 7,
+          "protein": 36,
+          "fat": 45,
+          "multiplier": 1,
+          "tags": [
+            "kereviz",
+            "kıyma",
+            "kebap",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gram Tavuk Eti ile Güveç (domates, biber ve soğan ile)",
+          "calories": 423,
+          "carbs": 5,
+          "protein": 40,
+          "fat": 27,
+          "multiplier": 1,
+          "tags": [
+            "tavuk",
+            "güveç",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gram Kırmızı Et ile Güveç (domates, biber ve soğan ile)",
+          "calories": 423,
+          "carbs": 5,
+          "protein": 40,
+          "fat": 27,
+          "multiplier": 1,
+          "tags": [
+            "et",
+            "güveç",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Patlıcan Kebabı (2 orta boy patlıcan, 200 gr kıyma ile)",
+          "calories": 500,
+          "carbs": 5,
+          "protein": 30,
+          "fat": 40,
+          "multiplier": 1,
+          "tags": [
+            "patlıcan",
+            "kıyma",
+            "kebap",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": 1,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "200 gram Somon Fileto (tavada veya ızgarada)",
+          "calories": 305,
+          "carbs": 0,
+          "protein": 47,
+          "fat": 13,
+          "multiplier": 1,
+          "tags": [
+            "somon",
+            "balık",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Karnabahar Mantı (150 gr karnabahar, 150 gr kıyma ile)",
+          "calories": 363,
+          "carbs": 0,
+          "protein": 30,
+          "fat": 27,
+          "multiplier": 1,
+          "tags": [
+            "karnabahar",
+            "kıyma",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Nohut Yemeği (1 su bardağı nohut ile)",
+          "calories": 260,
+          "carbs": 33,
+          "protein": 14,
+          "fat": 8,
+          "multiplier": 1,
+          "tags": [
+            "nohut"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Pırasa Yemeği (100 gr pırasa + 100 gr kıyma ile)",
+          "calories": 360,
+          "carbs": 14,
+          "protein": 19,
+          "fat": 19,
+          "multiplier": 1,
+          "tags": [
+            "pırasa",
+            "kıyma",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Ciğer Kavurma (tam porsiyon)",
+          "calories": 480,
+          "carbs": 12,
+          "protein": 45,
+          "fat": 28,
+          "multiplier": 1,
+          "tags": [
+            "ciğer",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuk Izgara",
+          "calories": 165,
+          "protein": 31,
+          "carbs": 0,
+          "fat": 3.5,
+          "maxQuantity": 2,
+          "tags": [
+            "tavuk"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kıyma Kebap",
+          "calories": 300,
+          "protein": 25,
+          "carbs": 0,
+          "fat": 22,
+          "maxQuantity": 1,
+          "tags": [
+            "et"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tereyağlı Kabak",
+          "calories": 95,
+          "protein": 3,
+          "carbs": 5,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kıymalı - Yumurtalı Ispanak Kavurma",
+          "calories": 337.2,
+          "protein": 23,
+          "carbs": 2.8,
+          "fat": 26,
+          "maxQuantity": 1,
+          "tags": [
+            "kıyma",
+            "yumurta",
+            "ıspanak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuk Döner (100 gram)",
+          "calories": 215,
+          "protein": 17,
+          "carbs": 3,
+          "fat": 15,
+          "maxQuantity": 2,
+          "tags": [
+            "tavuk",
+            "döner",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Sulu Köfte",
+          "calories": 304,
+          "protein": 23,
+          "carbs": 8,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "köfte",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Hünkar Beğendi",
+          "calories": 231,
+          "protein": 18,
+          "carbs": 6,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "patlıcan",
+            "et",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuklu Hünkar Beğendi",
+          "calories": 190,
+          "protein": 20,
+          "carbs": 5,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "patlıcan",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Patlıcan Musakka",
+          "calories": 213,
+          "protein": 18,
+          "carbs": 6,
+          "fat": 13,
+          "maxQuantity": 1,
+          "tags": [
+            "patlıcan",
+            "kıyma",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "İmam Bayıldı",
+          "calories": 211,
+          "protein": 11,
+          "carbs": 8,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "patlıcan",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Mücver",
+          "calories": 541,
+          "protein": 18,
+          "carbs": 7,
+          "fat": 49,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Ispanaklı ya da Pazılı Tavuk Dolması",
+          "calories": 247,
+          "protein": 25,
+          "carbs": 3,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "ıspanak",
+            "pazı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuk Keto Dürüm",
+          "calories": 345,
+          "protein": 43,
+          "carbs": 5,
+          "fat": 17,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Karnabahar Köfte",
+          "calories": 188,
+          "protein": 15,
+          "carbs": 5,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "köfte",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuklu Kekikli Sebzeler",
+          "calories": 669,
+          "protein": 58,
+          "carbs": 8,
+          "fat": 45,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "sebze",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Ketojenik Pizza",
+          "calories": 329,
+          "protein": 20,
+          "carbs": 6,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "pizza",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavuklu Kabak Makarna",
+          "calories": 430,
+          "protein": 35,
+          "carbs": 5,
+          "fat": 30,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "kabak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Lahana Mücver",
+          "calories": 340,
+          "protein": 15,
+          "carbs": 7,
+          "fat": 28,
+          "maxQuantity": 1,
+          "tags": [
+            "lahana",
+            "mücver",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Pırasalı Tava Böreği (1 dilim)",
+          "calories": 136,
+          "carbs": 10,
+          "protein": 6,
+          "fat": 8,
+          "multiplier": 1,
+          "tags": [
+            "pırasa",
+            "börek",
+            "keto"
+          ],
+          "mealType": "lunch",
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "1 tatlı kaşığı keten tohumu (salata üzerine)",
+          "calories": 44,
+          "protein": 2,
+          "carbs": 0,
+          "fat": 4,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "tohum"
+          ],
+          "role": "supplement",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Kollajen",
+          "calories": 40,
+          "protein": 10,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "ek"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM",
+          "step": 0.5
+        },
+        {
+          "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+          "calories": 79,
+          "protein": 4,
+          "carbs": 0,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "kenevirtohumu",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+          "calories": 44,
+          "protein": 2,
+          "carbs": 0,
+          "fat": 4,
+          "maxQuantity": 1,
+          "tags": [
+            "ketentohumu",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Karnabahar Püresi",
+          "calories": 228,
+          "protein": 8,
+          "carbs": 4,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Fırında Karnabahar Kızartma",
+          "calories": 150,
+          "protein": 1,
+          "carbs": 5,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Susamlı Karnabahar Kızartma",
+          "calories": 220,
+          "protein": 3,
+          "carbs": 7,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "susam",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Fırında Kereviz Kızartma",
+          "calories": 150,
+          "protein": 1,
+          "carbs": 5,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "kereviz",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Karnabahar Pirinci",
+          "calories": 146,
+          "protein": 2,
+          "carbs": 3,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Zeytinyağlı Deniz Börülcesi",
+          "calories": 168,
+          "protein": 4,
+          "carbs": 2,
+          "fat": 16,
+          "maxQuantity": 1,
+          "tags": [
+            "deniz börülcesi",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Zeytinyağlı Yer Elması",
+          "calories": 382,
+          "protein": 5,
+          "carbs": 14,
+          "fat": 34,
+          "maxQuantity": 1,
+          "tags": [
+            "yer elması",
+            "zeytinyağı"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Peynirli Kabak Mezesi",
+          "calories": 228,
+          "protein": 8,
+          "carbs": 4,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "peynir",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavada Kaşarlı Mantar",
+          "calories": 196,
+          "protein": 7,
+          "carbs": 6,
+          "fat": 16,
+          "maxQuantity": 1,
+          "tags": [
+            "mantar",
+            "kaşar",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Köz Patlıcan",
+          "calories": 15.4,
+          "protein": 0.9,
+          "carbs": 2.5,
+          "fat": 0.2,
+          "maxQuantity": 1,
+          "tags": [
+            "patlıcan",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Köz Patlıcan Yoğurtlu",
+          "calories": 79,
+          "protein": 1,
+          "carbs": 3,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "patlıcan",
+            "yoğurt",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Fırında Domates Soslu Sebze Kızartması",
+          "calories": 234,
+          "protein": 9,
+          "carbs": 18,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "sebze",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Sebzeli Karnabahar Pilavı",
+          "calories": 206,
+          "protein": 6,
+          "carbs": 14,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "karnabahar",
+            "sebze"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Mantarlı Tatlı Patates",
+          "calories": 520,
+          "protein": 30,
+          "carbs": 28,
+          "fat": 32,
+          "maxQuantity": 1,
+          "tags": [
+            "tatlı patates",
+            "mantar"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Tatlı Patates Püresi",
+          "calories": 422,
+          "protein": 18,
+          "carbs": 20,
+          "fat": 30,
+          "maxQuantity": 1,
+          "tags": [
+            "tatlı patates"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "Yer Elması Kızartması",
+          "calories": 194,
+          "protein": 2,
+          "carbs": 15,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "yer elması"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "1 tatlı kaşığı mayonez",
+          "calories": 164,
+          "protein": 4,
+          "carbs": 1,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "mayonez",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "2 kare Bitter Çikolata",
+          "calories": 52,
+          "protein": 1,
+          "carbs": 3,
+          "fat": 4,
+          "maxQuantity": 1,
+          "tags": [
+            "çikolata",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "2 yemek kaşığı Ev Yoğurdu",
+          "calories": 21,
+          "protein": 1,
+          "carbs": 2,
+          "fat": 1,
+          "maxQuantity": 1,
+          "tags": [
+            "yoğurt",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Enginar Çanağı",
+          "calories": 36,
+          "protein": 3,
+          "carbs": 6,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "enginar",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Keten Tohumu (1 yemek kaşığı)",
+          "calories": 55,
+          "carbs": 3,
+          "protein": 2,
+          "fat": 4,
+          "multiplier": 1,
+          "tags": [
+            "keten tohumu",
+            "keto"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Chia Tohumu (1 yemek kaşığı)",
+          "calories": 58,
+          "carbs": 5,
+          "protein": 2,
+          "fat": 3,
+          "multiplier": 1,
+          "tags": [
+            "chia",
+            "keto"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        }
+      ]
+    },
+    {
+      "name": "KURUYEMİŞLER",
+      "items": [
+        {
+          "name": "Ceviz (5 adet)",
+          "calories": 146,
+          "protein": 4,
+          "carbs": 1,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "ceviz",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Kabak Çekirdeği (1 avuç)",
+          "calories": 118,
+          "protein": 6,
+          "carbs": 1,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak çekirdeği",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Ceviz (3 adet)",
+          "calories": 93,
+          "protein": 2,
+          "carbs": 1,
+          "fat": 9,
+          "maxQuantity": 1,
+          "tags": [
+            "ceviz",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Kabak Çekirdeği (1 yemek kaşığı)",
+          "calories": 74,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 6,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak çekirdeği",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "10 adet Çiğ Badem",
+          "calories": 70,
+          "carbs": 2,
+          "protein": 2,
+          "fat": 6,
+          "multiplier": 1,
+          "tags": [
+            "badem",
+            "keto"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "10 adet Çiğ Fındık",
+          "calories": 63,
+          "carbs": 2,
+          "protein": 2,
+          "fat": 6,
+          "multiplier": 1,
+          "tags": [
+            "fındık",
+            "keto"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "5 adet Ceviz",
+          "calories": 131,
+          "carbs": 3,
+          "protein": 3,
+          "fat": 13,
+          "multiplier": 1,
+          "tags": [
+            "ceviz",
+            "keto"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Kabak Çekirdeği (1 avuç)",
+          "calories": 151,
+          "carbs": 5,
+          "protein": 7,
+          "fat": 13,
+          "multiplier": 1,
+          "tags": [
+            "kabak çekirdeği",
+            "keto"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "snack",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        }
+      ]
+    },
+    {
+      "name": "TATLILAR",
+      "items": [
+        {
+          "name": "Bitter Çikolata?",
+          "calories": 150,
+          "protein": 2,
+          "carbs": 8,
+          "fat": 12,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "tatlı"
+          ],
+          "role": "dessert",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Keto Cheesecake",
+          "calories": 200,
+          "protein": 5,
+          "carbs": 3,
+          "fat": 18,
+          "maxQuantity": 1,
+          "tags": [
+            "tatlı"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Tahin + Ceviz + Tarçın",
+          "calories": 127,
+          "protein": 4,
+          "carbs": 3,
+          "fat": 11,
+          "maxQuantity": 1,
+          "tags": [
+            "tahin",
+            "ceviz",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Chia Tohumlu Puding",
+          "calories": 299,
+          "protein": 7,
+          "carbs": 7,
+          "fat": 27,
+          "maxQuantity": 1,
+          "tags": [
+            "chia",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Frambuazlı Cheesecake",
+          "calories": 359,
+          "protein": 5,
+          "carbs": 6,
+          "fat": 35,
+          "maxQuantity": 1,
+          "tags": [
+            "frambuaz",
+            "cheesecake",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "San Sebastian Cheesecake",
+          "calories": 188,
+          "protein": 23,
+          "carbs": 6,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "cheesecake",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Browni Kurabiye",
+          "calories": 148,
+          "protein": 4,
+          "carbs": 6,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "browni",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Ketojenik Tiramisu",
+          "calories": 371,
+          "protein": 6,
+          "carbs": 8,
+          "fat": 35,
+          "maxQuantity": 1,
+          "tags": [
+            "tiramisu",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Cevizli Browni Kek",
+          "calories": 256,
+          "protein": 5,
+          "carbs": 5,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "ceviz",
+            "browni",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Kabak Tatlısı",
+          "calories": 124,
+          "protein": 3,
+          "carbs": 10,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "tahin",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Orman Meyveli Muhallebi",
+          "calories": 131,
+          "protein": 6,
+          "carbs": 2,
+          "fat": 11,
+          "maxQuantity": 1,
+          "tags": [
+            "orman meyveleri",
+            "muhallebi",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Lupin Unlu Kek",
+          "calories": 30,
+          "protein": 2,
+          "carbs": 1,
+          "fat": 2,
+          "maxQuantity": 1,
+          "tags": [
+            "lupin",
+            "kek",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Ketojenik Kremalı Kek",
+          "calories": 332,
+          "protein": 8,
+          "carbs": 3,
+          "fat": 32,
+          "maxQuantity": 1,
+          "tags": [
+            "kremalı",
+            "kek",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Ketojenik Yaş Pasta",
+          "calories": 286,
+          "protein": 10,
+          "carbs": 3,
+          "fat": 26,
+          "maxQuantity": 1,
+          "tags": [
+            "pasta",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Un Helvası",
+          "calories": 135,
+          "protein": 8,
+          "carbs": 1,
+          "fat": 11,
+          "maxQuantity": 1,
+          "tags": [
+            "helva",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Ketojenik Tuzlu Kurabiye",
+          "calories": 92,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "kurabiye",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TATLILAR"
+        },
+        {
+          "name": "Keto Çikolata",
+          "calories": 160,
+          "carbs": 2,
+          "protein": 2,
+          "fat": 16,
+          "multiplier": 1,
+          "tags": [
+            "çikolata",
+            "keto"
+          ],
+          "mealType": "dessert",
+          "portionFixed": true,
+          "role": "dessert",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Keto Cheesecake",
+          "calories": 320,
+          "carbs": 5,
+          "protein": 8,
+          "fat": 30,
+          "multiplier": 1,
+          "tags": [
+            "cheesecake",
+            "keto"
+          ],
+          "mealType": "dessert",
+          "portionFixed": false,
+          "role": "dessert",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Keto Brownie",
+          "calories": 180,
+          "carbs": 3,
+          "protein": 4,
+          "fat": 17,
+          "multiplier": 1,
+          "tags": [
+            "brownie",
+            "keto"
+          ],
+          "mealType": "dessert",
+          "portionFixed": false,
+          "role": "dessert",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Chia Puding",
+          "calories": 200,
+          "carbs": 5,
+          "protein": 5,
+          "fat": 18,
+          "multiplier": 1,
+          "tags": [
+            "chia",
+            "puding",
+            "keto"
+          ],
+          "mealType": "dessert",
+          "portionFixed": false,
+          "role": "dessert",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Keto Muhallebi",
+          "calories": 150,
+          "carbs": 2,
+          "protein": 3,
+          "fat": 14,
+          "multiplier": 1,
+          "tags": [
+            "muhallebi",
+            "keto"
+          ],
+          "mealType": "dessert",
+          "portionFixed": false,
+          "role": "dessert",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Hindistan Cevizli Kurabiye",
+          "calories": 120,
+          "carbs": 2,
+          "protein": 2,
+          "fat": 11,
+          "multiplier": 1,
+          "tags": [
+            "hindistan cevizi",
+            "kurabiye",
+            "keto"
+          ],
+          "mealType": "dessert",
+          "portionFixed": true,
+          "role": "dessert",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Fıstık Ezmeli Kurabiye",
+          "calories": 150,
+          "carbs": 3,
+          "protein": 5,
+          "fat": 13,
+          "multiplier": 1,
+          "tags": [
+            "fıstık ezmesi",
+            "kurabiye",
+            "keto"
+          ],
+          "mealType": "dessert",
+          "portionFixed": true,
+          "role": "dessert",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Keto Magnolia",
+          "calories": 250,
+          "carbs": 4,
+          "protein": 6,
+          "fat": 23,
+          "multiplier": 1,
+          "tags": [
+            "magnolia",
+            "keto"
+          ],
+          "mealType": "dessert",
+          "portionFixed": false,
+          "role": "dessert",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        }
+      ]
+    },
+    {
+      "name": "SALATALAR",
+      "items": [
+        {
+          "name": "Yeşil Salata",
+          "calories": 50,
+          "protein": 2,
+          "carbs": 5,
+          "fat": 3,
+          "maxQuantity": 2,
+          "tags": [
+            "salata"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Yoğurtlu Kereviz Salatası",
+          "calories": 361,
+          "protein": 9,
+          "carbs": 7,
+          "fat": 33,
+          "maxQuantity": 1,
+          "tags": [
+            "kereviz",
+            "yoğurt",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Semizotu Salatası",
+          "calories": 158,
+          "protein": 3,
+          "carbs": 5,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "semizotu",
+            "salata",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Brokoli Salatası",
+          "calories": 101,
+          "protein": 1,
+          "carbs": 4,
+          "fat": 9,
+          "maxQuantity": 1,
+          "tags": [
+            "brokoli",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Kırmızı Pancar Salatası",
+          "calories": 99,
+          "protein": 3,
+          "carbs": 6,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "pancar",
+            "ceviz",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "1 Kase Yeşil Salata",
+          "calories": 120,
+          "protein": 2,
+          "carbs": 1,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "yeşillik",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "1 Kase (roka, dereotu, tere)",
+          "calories": 16.5,
+          "protein": 2,
+          "carbs": 1,
+          "fat": 0.5,
+          "maxQuantity": 1,
+          "tags": [
+            "roka",
+            "dereotu",
+            "tere",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Labneli Pancar Salatası",
+          "calories": 312,
+          "protein": 4,
+          "carbs": 2,
+          "fat": 32,
+          "maxQuantity": 1,
+          "tags": [
+            "pancar",
+            "labne",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Girit Ezmesi",
+          "calories": 449,
+          "protein": 16,
+          "carbs": 4,
+          "fat": 41,
+          "maxQuantity": 1,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Roka Salatası",
+          "calories": 150,
+          "protein": 2,
+          "carbs": 4,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "roka",
+            "turp",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Lor Salatası",
+          "calories": 262,
+          "protein": 17,
+          "carbs": 8,
+          "fat": 18,
+          "maxQuantity": 1,
+          "tags": [
+            "lor",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Yoğurtlu Kırmızı Pancar Salatası",
+          "calories": 197,
+          "protein": 9,
+          "carbs": 11,
+          "fat": 13,
+          "maxQuantity": 1,
+          "tags": [
+            "pancar",
+            "yoğurt",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Beyaz Lahana Salatası",
+          "calories": 172,
+          "protein": 3,
+          "carbs": 4,
+          "fat": 16,
+          "maxQuantity": 1,
+          "tags": [
+            "lahana",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Mor Lahana Salatası",
+          "calories": 180,
+          "protein": 2,
+          "carbs": 7,
+          "fat": 16,
+          "maxQuantity": 1,
+          "tags": [
+            "lahana",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Brüksel Lahana Salatası",
+          "calories": 155,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "brüksel lahana",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Yeşil Salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
+          "calories": 83,
+          "carbs": 2,
+          "protein": 3,
+          "fat": 7,
+          "multiplier": 1,
+          "tags": [
+            "marul",
+            "roka",
+            "lahana",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Semizotu Salatası (2 avuç semizotu, 1 domates, 1 salatalık, 1 biber, 1 yemek kaşığı zeytinyağı)",
+          "calories": 158,
+          "carbs": 5,
+          "protein": 3,
+          "fat": 14,
+          "multiplier": 1,
+          "tags": [
+            "semizotu",
+            "salata",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Kırmızı Pancar Salatası (100 gr pancar, 1 ceviz, maydanoz, 1 tatlı kaşığı zeytinyağı)",
+          "calories": 99,
+          "carbs": 6,
+          "protein": 3,
+          "fat": 7,
+          "multiplier": 1,
+          "tags": [
+            "pancar",
+            "ceviz",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Girit Ezmesi (yeşil peynir mezesi)",
+          "calories": 449,
+          "carbs": 4,
+          "protein": 16,
+          "fat": 41,
+          "multiplier": 1,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+          "calories": 150,
+          "carbs": 4,
+          "protein": 2,
+          "fat": 14,
+          "multiplier": 1,
+          "tags": [
+            "roka",
+            "turp",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Yoğurtlu Kırmızı Pancar Salatası (100 gr pancar, 2 yemek kaşığı yoğurt, 1 tatlı kaşığı zeytinyağı)",
+          "calories": 197,
+          "carbs": 11,
+          "protein": 9,
+          "fat": 13,
+          "multiplier": 1,
+          "tags": [
+            "pancar",
+            "yoğurt",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Brüksel Lahana Salatası (100 gr brüksel lahana, 1 yemek kaşığı zeytinyağı)",
+          "calories": 155,
+          "carbs": 2,
+          "protein": 3,
+          "fat": 15,
+          "multiplier": 1,
+          "tags": [
+            "brüksel lahana",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "SALATALAR"
+        }
+      ]
+    },
+    {
+      "name": "ÇORBALAR",
+      "items": [
+        {
+          "name": "Mercimek Çorbası",
+          "calories": 150,
+          "protein": 9,
+          "carbs": 20,
+          "fat": 3,
+          "maxQuantity": 1,
+          "tags": [
+            "çorba"
+          ],
+          "role": "soup",
+          "mealType": "lunch,dinner",
+          "keto": false,
+          "lowcarb": false
+        },
+        {
+          "name": "Brokoli Çorbası",
+          "calories": 144,
+          "protein": 5,
+          "carbs": 4,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "brokoli",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Tavuklu Domates Çorbası",
+          "calories": 78,
+          "protein": 7.5,
+          "carbs": 3,
+          "fat": 4,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "domates",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Sebze Çorbası",
+          "calories": 69,
+          "protein": 3,
+          "carbs": 3,
+          "fat": 5,
+          "maxQuantity": 1,
+          "tags": [
+            "sebze",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Tavuk Çorbası",
+          "calories": 114,
+          "protein": 10,
+          "carbs": 5,
+          "fat": 6,
+          "maxQuantity": 1,
+          "tags": [
+            "tavuk",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Kıymalı Mantar Çorbası",
+          "calories": 134,
+          "protein": 7,
+          "carbs": 4,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "kıyma",
+            "mantar",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Tarhana Çorbası",
+          "calories": 119,
+          "protein": 4,
+          "carbs": 10,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "tarhana",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Kabak Çorbası",
+          "calories": 96,
+          "protein": 2,
+          "carbs": 4,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Kelle Paça Çorbası",
+          "calories": 321,
+          "protein": 31,
+          "carbs": 11,
+          "fat": 17,
+          "maxQuantity": 1,
+          "tags": [
+            "kelle paça",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Domatesli Kabak Çorbası",
+          "calories": 56,
+          "protein": 2,
+          "carbs": 3,
+          "fat": 4,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "domates",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Yoğurtlu Köfte Çorbası",
+          "calories": 163,
+          "protein": 11,
+          "carbs": 5,
+          "fat": 11,
+          "maxQuantity": 1,
+          "tags": [
+            "köfte",
+            "yoğurt",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Bal Kabağı Çorbası",
+          "calories": 315,
+          "protein": 4,
+          "carbs": 14,
+          "fat": 27,
+          "maxQuantity": 1,
+          "tags": [
+            "bal kabağı"
+          ],
+          "role": "soup",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Çedar Peynirli Brokoli Çorbası",
+          "calories": 340,
+          "protein": 9,
+          "carbs": 4,
+          "fat": 32,
+          "maxQuantity": 1,
+          "tags": [
+            "brokoli",
+            "çedar",
+            "keto"
+          ],
+          "role": "soup",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Kremalı Kabak Çorbası",
+          "calories": 230,
+          "carbs": 6,
+          "protein": 5,
+          "fat": 20,
+          "multiplier": 1,
+          "tags": [
+            "kabak",
+            "krema",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "soup",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Kremalı Ispanak Çorbası",
+          "calories": 167,
+          "carbs": 4,
+          "protein": 5,
+          "fat": 15,
+          "multiplier": 1,
+          "tags": [
+            "ıspanak",
+            "krema",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "soup",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Karnabahar Çorbası",
+          "calories": 144,
+          "carbs": 5,
+          "protein": 5,
+          "fat": 12,
+          "multiplier": 1,
+          "tags": [
+            "karnabahar",
+            "keto"
+          ],
+          "mealType": "dinner",
+          "portionFixed": false,
+          "role": "soup",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Kemik Suyu",
+          "calories": 86,
+          "carbs": 0,
+          "protein": 9,
+          "fat": 6,
+          "multiplier": 1,
+          "tags": [
+            "kemik suyu",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "soup",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÇORBALAR"
+        },
+        {
+          "name": "Peynirli Brokoli Çorbası",
+          "calories": 260,
+          "carbs": 5,
+          "protein": 10,
+          "fat": 22,
+          "multiplier": 1,
+          "tags": [
+            "brokoli",
+            "peynir",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": false,
+          "role": "soup",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        }
+      ]
+    },
+    {
+      "name": "EKMEKLER",
+      "items": [
+        {
+          "name": "1 dilim Lupin Unlu Ekmek",
+          "calories": 43,
+          "protein": 4,
+          "carbs": 0,
+          "fat": 3,
+          "maxQuantity": 1,
+          "tags": [
+            "lupin",
+            "ekmek",
+            "keto"
+          ],
+          "role": "bread",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "EKMEKLER"
+        },
+        {
+          "name": "1 dilim Keten Tohumu Ekmeği",
+          "calories": 56,
+          "protein": 15,
+          "carbs": 15,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "keten tohumu",
+            "ekmek",
+            "keto"
+          ],
+          "role": "bread",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "EKMEKLER"
+        },
+        {
+          "name": "1 dilim  Badem Unu Ekmeği",
+          "calories": 105,
+          "protein": 5,
+          "carbs": 1,
+          "fat": 9,
+          "maxQuantity": 1,
+          "tags": [
+            "badem",
+            "ekmek",
+            "keto"
+          ],
+          "role": "bread",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "EKMEKLER"
+        },
+        {
+          "name": "Pita Ekmeği",
+          "calories": 105,
+          "protein": 4,
+          "carbs": 2,
+          "fat": 9,
+          "maxQuantity": 1,
+          "tags": [
+            "pita",
+            "ekmek",
+            "keto"
+          ],
+          "role": "bread",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "EKMEKLER"
+        },
+        {
+          "name": "Badem Unlu Ekmek (1 dilim)",
+          "calories": 110,
+          "carbs": 3,
+          "protein": 4,
+          "fat": 10,
+          "multiplier": 1,
+          "tags": [
+            "badem unu",
+            "ekmek",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": true,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": 1,
+          "category": "EKMEKLER"
+        },
+        {
+          "name": "Hindistan Cevizli Ekmek (1 dilim)",
+          "calories": 100,
+          "carbs": 2,
+          "protein": 3,
+          "fat": 9,
+          "multiplier": 1,
+          "tags": [
+            "hindistan cevizi",
+            "ekmek",
+            "keto"
+          ],
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "portionFixed": true,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 0.5,
+          "category": "EKMEKLER"
+        },
+        {
+          "name": "Keten Tohumlu Ekmek (1 dilim)",
+          "calories": 95,
+          "carbs": 2,
+          "protein": 4,
+          "fat": 8,
+          "multiplier": 1,
+          "tags": [
+            "keten tohumu",
+            "ekmek",
+            "keto"
+          ],
+          "mealType": "lunch,dinner",
+          "portionFixed": true,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": null,
+          "category": "EKMEKLER"
+        }
+      ]
+    },
+    {
+      "name": "MEYVELER",
+      "items": [
+        {
+          "name": "Avokado",
+          "calories": 160,
+          "protein": 2,
+          "carbs": 9,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "breakfast,dinner",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "5 Adet Çilek",
+          "calories": 20.7,
+          "protein": 0.5,
+          "carbs": 4,
+          "fat": 0.3,
+          "maxQuantity": 1,
+          "tags": [
+            "çilek",
+            "meyve",
+            "keto"
+          ],
+          "role": "fruit",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "MEYVELER"
+        },
+        {
+          "name": "10 Adet Frambuaz",
+          "calories": 5.7,
+          "protein": 0.2,
+          "carbs": 1,
+          "fat": 0.1,
+          "maxQuantity": 1,
+          "tags": [
+            "frambuaz",
+            "meyve",
+            "keto"
+          ],
+          "role": "fruit",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "MEYVELER"
+        },
+        {
+          "name": "50 gr Kiraz",
+          "calories": 28,
+          "protein": 0,
+          "carbs": 7,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "kiraz",
+            "meyve",
+            "keto"
+          ],
+          "role": "fruit",
+          "mealType": "dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "1/2 Avokado",
+          "calories": 155,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "avokado",
+            "meyve",
+            "keto"
+          ],
+          "role": "fruit",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "MEYVELER"
+        },
+        {
+          "name": "1 Adet Elma",
+          "calories": 44,
+          "protein": 0,
+          "carbs": 11,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "elma",
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "lunch,dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "1 Adet Mandalina",
+          "calories": 44,
+          "protein": 0,
+          "carbs": 11,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "mandalina",
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "Kivi",
+          "calories": 48,
+          "protein": 0,
+          "carbs": 12,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "kivi",
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "5 Adet Orta Boy Yeşil Erik",
+          "calories": 40,
+          "protein": 0,
+          "carbs": 10,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "erik",
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "lunch,dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "2 Adet Kayısı",
+          "calories": 28,
+          "protein": 0,
+          "carbs": 7,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "kayısı",
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "100 gram Karpuz",
+          "calories": 28,
+          "protein": 0,
+          "carbs": 7,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "karpuz",
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "100 gr Şeftali",
+          "calories": 32,
+          "protein": 0,
+          "carbs": 8,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "şeftali",
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "lunch,dinner",
+          "keto": false,
+          "lowcarb": true
+        },
+        {
+          "name": "Hurma",
+          "calories": 36,
+          "protein": 2,
+          "carbs": 7,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "hurma",
+            "meyve"
+          ],
+          "role": "fruit",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "MEYVELER"
+        }
+      ]
+    },
+    {
+      "name": "TOSTLAR",
+      "items": [
+        {
+          "name": "Kabak Çekirdeği Unlu Tost",
+          "calories": 305,
+          "protein": 26,
+          "carbs": 3,
+          "fat": 21,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak çekirdeği",
+            "tost",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "TOSTLAR"
+        },
+        {
+          "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Kaşar + Hindi Füme)",
+          "calories": 236,
+          "protein": 18,
+          "carbs": 5,
+          "fat": 16,
+          "maxQuantity": 1,
+          "tags": [
+            "haşhaş",
+            "kaşar",
+            "hindi",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TOSTLAR"
+        },
+        {
+          "name": "Ketojenik Tost (Tahin Ekmeği + Kaşar)",
+          "calories": 410,
+          "protein": 20,
+          "carbs": 6,
+          "fat": 34,
+          "maxQuantity": 1,
+          "tags": [
+            "tahin",
+            "kaşar",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "TOSTLAR"
+        },
+        {
+          "name": "Ketojenik Tost (Badem Unu Ekmeği + Kaşar)",
+          "calories": 354,
+          "protein": 18,
+          "carbs": 3,
+          "fat": 30,
+          "maxQuantity": 1,
+          "tags": [
+            "badem",
+            "kaşar",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "TOSTLAR"
+        },
+        {
+          "name": "Tost (Karabuğday Ekmeği + Kaşar + Hindi Füme)",
+          "calories": 296,
+          "protein": 21,
+          "carbs": 26,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "karabuğday",
+            "kaşar",
+            "hindi"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TOSTLAR"
+        },
+        {
+          "name": "Tost (Karabuğday Ekmeği + Kaşar)",
+          "calories": 242,
+          "protein": 15,
+          "carbs": 23,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "karabuğday",
+            "kaşar"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TOSTLAR"
+        },
+        {
+          "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Kaşar)",
+          "calories": 186,
+          "protein": 12,
+          "carbs": 3,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "haşhaş",
+            "kaşar",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TOSTLAR"
+        },
+        {
+          "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Hindi Füme)",
+          "calories": 158,
+          "protein": 12,
+          "carbs": 5,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "haşhaş",
+            "hindi",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "category": "TOSTLAR"
+        }
+      ]
+    },
+    {
+      "name": "SABAH YEŞİLLİKLERİ",
+      "items": [
+        {
+          "name": "Yeşillikler (Marul, Roka, Maydanoz + Zeytinyağı)",
+          "calories": 146,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "yeşillik",
+            "sabah",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Yeşillikler (Marul, Roka, Maydanoz)",
+          "calories": 20,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "yeşillik",
+            "sabah",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Yumurta Salatası",
+          "calories": 280,
+          "protein": 13,
+          "carbs": 3,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "yumurta",
+            "yeşillik",
+            "sabah",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Yeşillikler (Marul, Roka, Maydanoz + Limon, Sirke, Zeytinyağı)",
+          "calories": 83,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "yeşillik",
+            "sabah",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Yeşillikler (Marul, Roka, Maydanoz + Limon, Sirke)",
+          "calories": 20,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "yeşillik",
+            "turp",
+            "sabah",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber + Zeytinyağı",
+          "calories": 158,
+          "protein": 1,
+          "carbs": 7,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "salatalık",
+            "domates",
+            "yeşillik",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber + 1 Tatlı Kaşığı Zeytinyağı",
+          "calories": 95,
+          "protein": 1,
+          "carbs": 7,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "salatalık",
+            "domates",
+            "yeşillik",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber",
+          "calories": 32,
+          "protein": 1,
+          "carbs": 7,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "salatalık",
+            "domates",
+            "yeşillik",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "SABAH YEŞİLLİKLERİ",
+          "minQuantity": 1,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Salatalık + Cherry Domates + Roka + Tere + Yeşil Biber",
+          "calories": 32,
+          "protein": 1,
+          "carbs": 7,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "salatalık",
+            "roka",
+            "tere",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Yeşillikler (Dereotu, Roka, Maydanoz, Marul, Turp + Limon, Sirke, Zeytinyağı)",
+          "calories": 83,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 7,
+          "maxQuantity": 1,
+          "tags": [
+            "yeşillik",
+            "sabah",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": "breakfast",
+          "keto": true,
+          "lowcarb": true
+        }
+      ]
+    },
+    {
+      "name": "KOLLAJEN",
+      "items": [
+        {
+          "name": "Kollajen",
+          "calories": 40,
+          "protein": 10,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "kollajen",
+            "protein"
+          ],
+          "role": "supplement",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true
+        }
+      ]
+    },
+    {
+      "name": "ATIŞTIRMALIK",
+      "items": []
+    },
+    {
+      "name": "MEYVE",
+      "items": [
+        {
+          "name": "Elma (1 adet küçük boy)",
+          "calories": 52,
+          "carbs": 14,
+          "protein": 0,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "elma"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "fruit",
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Armut (1 adet küçük boy)",
+          "calories": 57,
+          "carbs": 15,
+          "protein": 0,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "armut"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "fruit",
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Muz (1 adet küçük boy)",
+          "calories": 90,
+          "carbs": 23,
+          "protein": 1,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "muz"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "fruit",
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Çilek (10 adet)",
+          "calories": 32,
+          "carbs": 8,
+          "protein": 1,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "çilek",
+            "keto"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "fruit",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Yaban Mersini (1 avuç)",
+          "calories": 57,
+          "carbs": 14,
+          "protein": 1,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "yaban mersini"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "fruit",
+          "keto": false,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Kivi (1 adet)",
+          "calories": 61,
+          "carbs": 15,
+          "protein": 1,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "kivi"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "fruit",
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Portakal (1 adet küçük boy)",
+          "calories": 47,
+          "carbs": 12,
+          "protein": 1,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "portakal"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "fruit",
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Mandalina (1 adet)",
+          "calories": 53,
+          "carbs": 13,
+          "protein": 1,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "mandalina"
+          ],
+          "mealType": "snack",
+          "portionFixed": true,
+          "role": "fruit",
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false
+        }
+      ]
+    },
+    {
+      "name": "İÇECEKLER",
+      "items": [
+        {
+          "name": "Sade Kahve",
+          "calories": 2,
+          "carbs": 0,
+          "protein": 0,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "kahve",
+            "keto"
+          ],
+          "mealType": "drink",
+          "portionFixed": true,
+          "role": "drink",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Sade Çay",
+          "calories": 0,
+          "carbs": 0,
+          "protein": 0,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "çay",
+            "keto"
+          ],
+          "mealType": "drink",
+          "portionFixed": true,
+          "role": "drink",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Bitki Çayı",
+          "calories": 0,
+          "carbs": 0,
+          "protein": 0,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "bitki çayı",
+            "keto"
+          ],
+          "mealType": "drink",
+          "portionFixed": true,
+          "role": "drink",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Limonlu Su",
+          "calories": 5,
+          "carbs": 1,
+          "protein": 0,
+          "fat": 0,
+          "multiplier": 1,
+          "tags": [
+            "limon",
+            "su",
+            "keto"
+          ],
+          "mealType": "drink",
+          "portionFixed": true,
+          "role": "drink",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Badem Sütü (1 su bardağı)",
+          "calories": 40,
+          "carbs": 1,
+          "protein": 1,
+          "fat": 3,
+          "multiplier": 1,
+          "tags": [
+            "badem sütü",
+            "keto"
+          ],
+          "mealType": "drink",
+          "portionFixed": true,
+          "role": "drink",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Hindistan Cevizi Sütü (1 su bardağı)",
+          "calories": 140,
+          "carbs": 3,
+          "protein": 1,
+          "fat": 14,
+          "multiplier": 1,
+          "tags": [
+            "hindistan cevizi sütü",
+            "keto"
+          ],
+          "mealType": "drink",
+          "portionFixed": true,
+          "role": "drink",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Keto Smoothie",
+          "calories": 200,
+          "carbs": 5,
+          "protein": 3,
+          "fat": 18,
+          "multiplier": 1,
+          "tags": [
+            "smoothie",
+            "keto"
+          ],
+          "mealType": "drink",
+          "portionFixed": false,
+          "role": "drink",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        }
+      ]
+    },
+    {
+      "name": "diğer",
+      "items": [
+        {
+          "name": "Badem?",
+          "calories": 160,
+          "protein": 6,
+          "carbs": 6,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "kuruyemiş"
+          ],
+          "role": "snack",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "diğer"
+        },
+        {
+          "name": "Çiğ Badem",
+          "calories": 150,
+          "protein": 5,
+          "carbs": 1,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "badem",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Fındık",
+          "calories": 128,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "fındık",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Yer Fıstığı",
+          "calories": 179,
+          "protein": 7,
+          "carbs": 4,
+          "fat": 15,
+          "maxQuantity": 1,
+          "tags": [
+            "yer fıstığı",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Ay Çekirdeği",
+          "calories": 76.5,
+          "protein": 2.5,
+          "carbs": 2,
+          "fat": 6.5,
+          "maxQuantity": 1,
+          "tags": [
+            "ay çekirdeği",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "Tuzsuz Ay Çekirdeği",
+          "calories": 148.5,
+          "protein": 5,
+          "carbs": 4,
+          "fat": 12.5,
+          "maxQuantity": 1,
+          "tags": [
+            "ay çekirdeği",
+            "kuruyemiş",
+            "keto"
+          ],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
+          "lowcarb": true
+        },
+        {
+          "name": "1 dilim Keto Ekmek ",
+          "calories": 90,
+          "protein": 5,
+          "carbs": 2,
+          "fat": 7,
+          "maxQuantity": 2,
+          "tags": [
+            "ekmek"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "breakfast",
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "diğer"
+        },
+        {
+          "name": "1 dilim  Badem Unlu Sandviç Ekmeği",
+          "calories": 98,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "badem",
+            "ekmek",
+            "keto"
+          ],
+          "role": "bread",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "diğer"
+        },
+        {
+          "name": "Badem Unlu Lavaş",
+          "calories": 101,
+          "protein": 4,
+          "carbs": 1,
+          "fat": 9,
+          "maxQuantity": 1,
+          "tags": [
+            "badem",
+            "lavaş",
+            "keto"
+          ],
+          "role": "bread",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "diğer"
+        }
+      ]
+    }
+  ],
+  "weeks": [
+    {
+      "days": {
+        "monday": {
+          "meals": {
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "1 adet Ispanaklı Muffin",
+                "quantity": 1
+              },
+              {
+                "name": "30 gram Beyaz Peynir  ",
+                "quantity": 1
+              },
+              {
+                "name": "1 Kase Sote Edilmiş Ispanak + 1 Tatlı Kaşığı Zeytinyağı",
+                "quantity": 0.5
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Ketojenik Köfte",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil Salata",
+                "quantity": 1
+              },
+              {
+                "name": "Domatesli Kabak Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim  Badem Unu Ekmeği",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "tuesday": {
+          "meals": {
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Haşlanmış Yumurta (2 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+                "quantity": 1
+              },
+              {
+                "name": "Hindistan Cevizli Ekmek (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "2 dilim Hindi Füme",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Karnabahar Köfte",
+                "quantity": 1
+              },
+              {
+                "name": "Mor Lahana Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Kremalı Kabak Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim  Badem Unu Ekmeği",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "wednesday": {
+          "meals": {
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Keto Tost",
+                "quantity": 1
+              },
+              {
+                "name": "50 gram Tulum / Kaşar / Lor Peyniri",
+                "quantity": 1
+              },
+              {
+                "name": "1 adet Ispanaklı Muffin",
+                "quantity": 0.5
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Pırasa Yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "10 adet Zeytin",
+                "quantity": 1
+              },
+              {
+                "name": "Tavuk Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim  Badem Unlu Sandviç Ekmeği",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "thursday": {
+          "meals": {
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Sebzeli Krep",
+                "quantity": 1
+              },
+              {
+                "name": "10 adet Zeytin",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Kıymalı Bamya (veya Kıymalı Lahana) Yemeği (100 gr kıyma ile)",
+                "quantity": 1
+              },
+              {
+                "name": "50 gram Kasap Sucuk",
+                "quantity": 1
+              },
+              {
+                "name": "Tavuklu Domates Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim  Badem Unu Ekmeği",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "friday": {
+          "meals": {
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Avokadolu Omlet",
+                "quantity": 1
+              },
+              {
+                "name": "2 dilim Hindi Füme",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Lupin Unlu Ekmek",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "250 gr Izgara veya Fırında Balık",
+                "quantity": 1
+              },
+              {
+                "name": "Lupin Unlu Poğaça",
+                "quantity": 1
+              },
+              {
+                "name": "Çedar Peynirli Brokoli Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "saturday": {
+          "meals": {
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Yoğurtlu Çılbır",
+                "quantity": 1
+              },
+              {
+                "name": "50 gram Tulum / Kaşar / Lor Peyniri",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "1 dilim Ispanaklı Kabak Böreği",
+                "quantity": 1
+              },
+              {
+                "name": "Fırında Domates Soslu Sebze Kızartması",
+                "quantity": 1
+              },
+              {
+                "name": "Karnabahar Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Hindistan Cevizli Ekmek (1 dilim)",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "sunday": {
+          "meals": {
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Ispanaklı Börek",
+                "quantity": 1
+              },
+              {
+                "name": "Lupin Unlu Poğaça",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Kıymalı Brüksel Lahana Yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "Lupin Unlu Poğaça",
+                "quantity": 1
+              },
+              {
+                "name": "Tavuklu Domates Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keto Ekmek ",
+                "quantity": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "type": "frequency",
+      "id": 1,
+      "frequency": 1,
+      "frequencyType": "exact",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "mainDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
+    },
+    {
+      "type": "frequency",
+      "id": 2,
+      "frequency": 1,
+      "frequencyType": "exact",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "mainDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "frequency",
+      "id": 3,
+      "frequency": 1,
+      "frequencyType": "min",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "sideDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
+    },
+    {
+      "type": "frequency",
+      "id": 4,
+      "frequency": 1,
+      "frequencyType": "min",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "sideDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "frequency",
+      "id": 8,
+      "frequency": 1,
+      "frequencyType": "max",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "mainDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
+    },
+    {
+      "type": "compatibility",
+      "id": 13,
+      "keyword1": "tost",
+      "keyword2": [
+        "yumurta",
+        "peynir",
+        "zeytin",
+        "krep",
+        "füme",
+        "avokado",
+        "biberli",
+        "tutlum",
+        "peyniri"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 15,
+      "keyword1": "ıspanaklı",
+      "keyword2": [
+        "ıspanaklı",
+        "ıspanak"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 18,
+      "keyword1": "omlet",
+      "keyword2": [
+        "ekmek"
+      ],
+      "degree": 5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 20,
+      "keyword1": "yumurta",
+      "keyword2": [
+        "yumurta",
+        "yumurtalı",
+        "krep",
+        "omlet"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "frequency",
+      "id": 21,
+      "frequency": 1,
+      "frequencyType": "exact",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "soup",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "compatibility",
+      "id": 22,
+      "keyword1": "Çorbası",
+      "keyword2": [
+        "ekmeği",
+        "ekmek"
+      ],
+      "degree": 5,
+      "conjunction": "or"
+    },
+    {
+      "type": "compatibility",
+      "id": 23,
+      "keyword1": "Keto Tost",
+      "keyword2": [
+        "füme",
+        "omlet",
+        "yumurta",
+        "yumurtalı"
+      ],
+      "degree": -5,
+      "conjunction": "or"
+    },
+    {
+      "type": "dependOn",
+      "id": 24,
+      "food": "Tofu",
+      "requiredFood": "Yoğurtlu Kırmızı Pancar Salatası",
+      "scope": "meal"
+    },
+    {
+      "type": "compatibility",
+      "id": 25,
+      "keyword1": "Menemen",
+      "keyword2": [
+        "yumurta",
+        "omlet",
+        "yumurtalı",
+        "çılbır"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "dependOn",
+      "id": 26,
+      "food": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+      "requiredFood": "salata",
+      "scope": "meal"
+    }
+  ],
+  "mealTemplates": [],
+  "compatibilityTable": [],
+  "patients": {
+    "patient_M": {
+      "name": "M",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "OMLET"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ]
+    },
+    "patient_must6": {
+      "name": "must6",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": []
+    },
+    "patient_deneme3": {
+      "name": "deneme3",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "zittin"
+      ],
+      "dislikedFoods": [
+        "piinir"
+      ]
+    },
+    "patient_mustafa": {
+      "name": "mustafa",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "omlet"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ]
+    },
+    "patient_mustafa up3": {
+      "name": "mustafa up3",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": []
+    },
+    "patient_m100-2": {
+      "name": "m100-2",
+      "weight": 100,
+      "activity": 2,
+      "likedFoods": [],
+      "dislikedFoods": []
+    },
+    "patient_mustafa up4": {
+      "name": "mustafa up4",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "omlet",
+        "balık"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ]
+    },
+    "patient_fff": {
+      "name": "fff",
+      "weight": 56,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": []
+    }
+  }
+}
