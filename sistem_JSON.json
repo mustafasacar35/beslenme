@@ -3391,10 +3391,16 @@
             "keto"
           ],
           "role": "mainDish",
-          "mealType": "lunch",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
         },
         {
           "name": "Patlıcan Musakka",
@@ -4868,7 +4874,8 @@
           "role": "sideDish",
           "mealType": "lunch,dinner",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "SALATALAR"
         },
         {
           "name": "Roka Salatası",
@@ -6719,21 +6726,21 @@
             ],
             "lunch": [
               {
-                "name": "Sebzeli Omlet (2 yumurta, 5 mantar, 5 ıspanak yaprağı )",
-                "quantity": 0.5
+                "name": "Tavuklu Hünkar Beğendi",
+                "quantity": 1
               },
               {
-                "name": "Zeytinyağlı Yer Elması",
+                "name": "50 gram beyaz peynir",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Ketojenik Köfte",
-                "quantity": 0.5
+                "name": "Karnabahar Köfte",
+                "quantity": 1
               },
               {
-                "name": "Yer Elması Kızartması",
+                "name": "Zeytinyağlı Yer Elması",
                 "quantity": 1
               },
               {
@@ -6753,8 +6760,8 @@
             ],
             "lunch": [
               {
-                "name": "Haşlanmış Yumurta (2 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
-                "quantity": 0.5
+                "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma (2 yumurta, 50 gr kıyma, 100 gr semizotu/pazı, 1 yemek kaşığı zeytinyağı, soğan)",
+                "quantity": 1
               },
               {
                 "name": "50 gram beyaz peynir",
@@ -6763,11 +6770,11 @@
             ],
             "dinner": [
               {
-                "name": "Tavuk Döner (100 gram)",
-                "quantity": 0.5
+                "name": "Çıtır Tavuk",
+                "quantity": 1
               },
               {
-                "name": "Sebzeli Karnabahar Pilavı",
+                "name": "Yeşil Salata",
                 "quantity": 1
               },
               {
@@ -6787,21 +6794,21 @@
             ],
             "lunch": [
               {
-                "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma (2 yumurta, 50 gr kıyma, 100 gr semizotu/pazı, 1 yemek kaşığı zeytinyağı, soğan)",
-                "quantity": 0.5
+                "name": "Kavurmalı Yumurta (2 adet yumurta, 50 gram kavurma, baharatlar)",
+                "quantity": 1
               },
               {
-                "name": "10 adet Zeytin",
+                "name": "50 gram beyaz peynir",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Tavuk Sote (200 gr tavuk, 1 domates, 1 biber, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 0.5
+                "name": "200 gram Tavuk Eti ile Güveç",
+                "quantity": 1
               },
               {
-                "name": "Yer Elması Kızartması",
+                "name": "Sebze Sote",
                 "quantity": 1
               },
               {
@@ -6821,21 +6828,21 @@
             ],
             "lunch": [
               {
-                "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma",
-                "quantity": 0.5
+                "name": "Kavurmalı Yumurta (2 adet yumurta, 50 gram kavurma, baharatlar)",
+                "quantity": 1
               },
               {
-                "name": "10 adet Zeytin",
+                "name": "50 gram beyaz peynir",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Tavuk Keto Dürüm",
-                "quantity": 0.5
+                "name": "Pırasa Yemeği (100 gr pırasa + 100 gr kıyma ile)",
+                "quantity": 1
               },
               {
-                "name": "Yeşil Salata",
+                "name": "Sebzeli Karnabahar Pilavı",
                 "quantity": 1
               },
               {
@@ -6855,7 +6862,7 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Hindi Füme)",
+                "name": "Tavuklu Kekikli Sebzeler",
                 "quantity": 1
               },
               {
@@ -6865,11 +6872,11 @@
             ],
             "dinner": [
               {
-                "name": "Tavuk Sote (200 gr tavuk, 1 domates, 1 biber, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 0.5
+                "name": "Ketojenik Pizza",
+                "quantity": 1
               },
               {
-                "name": "Yeşil Salata",
+                "name": "Zeytinyağlı Yer Elması",
                 "quantity": 1
               },
               {
@@ -6889,8 +6896,8 @@
             ],
             "lunch": [
               {
-                "name": "Tavuklu Kekikli Sebzeler",
-                "quantity": 0.5
+                "name": "İmam Bayıldı",
+                "quantity": 1
               },
               {
                 "name": "50 gram beyaz peynir",
@@ -6899,11 +6906,11 @@
             ],
             "dinner": [
               {
-                "name": "200 gram Tavuk Eti ile Güveç",
-                "quantity": 0.5
+                "name": "200 gr Tavuk Pirzola",
+                "quantity": 1
               },
               {
-                "name": "Yer Elması Kızartması",
+                "name": "Yeşil Salata",
                 "quantity": 1
               },
               {
@@ -6923,7 +6930,7 @@
             ],
             "lunch": [
               {
-                "name": "Mantarlı Yumurta",
+                "name": "Kabak Çekirdeği Unlu Tost",
                 "quantity": 1
               },
               {
@@ -6933,11 +6940,11 @@
             ],
             "dinner": [
               {
-                "name": "Köfteli Pırasa Yemeği",
-                "quantity": 0.5
+                "name": "Mantarlı Tavuk Sote",
+                "quantity": 1
               },
               {
-                "name": "Susamlı Karnabahar Kızartma",
+                "name": "Yer Elması Kızartması",
                 "quantity": 1
               },
               {
