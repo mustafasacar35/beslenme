@@ -2208,6 +2208,53 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false
+        },
+        {
+          "name": "Sahanda yumurta (2 adet + 1 tatlı kaşığı tereyağı ile)",
+          "calories": 209,
+          "protein": 12,
+          "carbs": 2,
+          "fat": 17,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "Yeni Eklenenler"
+        },
+        {
+          "name": "Sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
+          "calories": 205,
+          "protein": 12,
+          "carbs": 1,
+          "fat": 17,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "yumurta",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "Yeni Eklenenler"
         }
       ]
     },
@@ -7219,30 +7266,6 @@
           "category": "Yeni Eklenenler"
         },
         {
-          "name": "Sahanda yumurta (2 adet + 1 tatlı kaşığı tereyağı ile)",
-          "calories": 209,
-          "protein": 12,
-          "carbs": 2,
-          "fat": 17,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "yumurta",
-            "tereyağı",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
           "name": "Kasap sucuk (50 gram)",
           "calories": 166,
           "protein": 7,
@@ -7449,29 +7472,6 @@
           "role": "sideDish",
           "mealType": [
             "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
-          "name": "Sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
-          "calories": 205,
-          "protein": 12,
-          "carbs": 1,
-          "fat": 17,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "yumurta",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
           ],
           "keto": true,
           "lowcarb": true,
@@ -13295,39 +13295,9 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kabak Sote",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak sote (1 adet kabak ve 1 tatlı kaşığı zeytinyağı ile)",
-                "quantity": 1
-              }
-            ],
+            "breakfast": [],
             "lunch": [],
-            "dinner": [
-              {
-                "name": "gram köfte",
-                "quantity": 200
-              },
-              {
-                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Toz kollajen 1 ölçek",
-                "quantity": 1
-              },
-              {
-                "name": "SALI",
-                "quantity": 1
-              }
-            ]
+            "dinner": []
           }
         },
         "tuesday": {
