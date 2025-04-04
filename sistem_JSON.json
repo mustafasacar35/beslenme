@@ -4267,6 +4267,28 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "AKŞAM"
+        },
+        {
+          "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
+          "calories": 300,
+          "protein": 5,
+          "carbs": 1,
+          "fat": 20,
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "category": "Tanımsız",
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "kabak"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true
         }
       ]
     },
@@ -13589,28 +13611,6 @@
           "role": "",
           "mealType": "dinner",
           "category": "Tanımsız"
-        },
-        {
-          "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
-          "calories": 300,
-          "protein": 5,
-          "carbs": 1,
-          "fat": 20,
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "category": "Tanımsız",
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "kabak"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true
         }
       ]
     }
