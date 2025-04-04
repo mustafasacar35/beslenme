@@ -2162,6 +2162,26 @@
           "maxQuantity": null,
           "minQuantity": 0.5,
           "step": 1
+        },
+        {
+          "name": "Keto Tost2",
+          "calories": 250,
+          "protein": 15,
+          "carbs": 5,
+          "fat": 18,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "ekmek"
+          ],
+          "role": "mainDish",
+          "mealType": "lunch",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
         }
       ]
     },
@@ -4170,7 +4190,8 @@
           "role": "snack",
           "mealType": "snack",
           "keto": true,
-          "lowcarb": true
+          "lowcarb": true,
+          "category": "KURUYEMİŞLER"
         },
         {
           "name": "Kabak Çekirdeği (1 avuç)",
@@ -6739,6 +6760,130 @@
           "category": "diğer"
         }
       ]
+    },
+    {
+      "name": "Tanımsız",
+      "items": [
+        {
+          "name": "Toz kollajen 1 ölçek",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner",
+          "category": "Tanımsız"
+        },
+        {
+          "name": "SALI",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner",
+          "category": "Tanımsız"
+        },
+        {
+          "name": "1/2 avokado",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "lunch"
+        },
+        {
+          "name": "gram hindi ızgara tava",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner"
+        },
+        {
+          "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner"
+        },
+        {
+          "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "lunch"
+        },
+        {
+          "name": "1/2 avokado",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "lunch"
+        },
+        {
+          "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner"
+        },
+        {
+          "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner"
+        },
+        {
+          "name": "Kıymalı karnabahar / kabak  yemeği (150gr kıyma ile)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner"
+        },
+        {
+          "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 yemek kaşığı zeytinyağı)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner"
+        },
+        {
+          "name": "Yumurtalı ıspanak/pazı/ semizotu kavurma (2 yumurta, 100 gr. Ispanak, 1 yemek kaşığı zeytinyağı, tercihen",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "lunch"
+        },
+        {
+          "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 tatlı kaşığı zeytinyağı)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner"
+        }
+      ]
     }
   ],
   "weeks": [
@@ -6746,37 +6891,60 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
+            "breakfast": [],
             "lunch": [
               {
-                "name": "Menemen (2 adet yumurta, 1 adet domates vs.)",
+                "name": "Sahanda yumurta  (2 yumurta - 1 tatlı kaşığı tereyağı)",
                 "quantity": 1
               },
               {
-                "name": "50 gram Kasap Sucuk",
+                "name": "Badem unu ekmeği (1 dilim ya da yarım avokado ya da 20 çiğ badem)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
+                "quantity": 1
+              },
+              {
+                "name": "Sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Badem unu ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (5 adet)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Kıymalı Brüksel Lahana Yemeği",
+                "name": "gram köfte",
+                "quantity": 200
+              },
+              {
+                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 1
               },
               {
-                "name": "Mor Lahana Salatası",
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "name": "Toz kollajen 1 ölçek",
                 "quantity": 1
               },
               {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "name": "SALI",
                 "quantity": 1
               }
             ]
@@ -6784,214 +6952,44 @@
         },
         "tuesday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Susamlı Omlet",
-                "quantity": 1
-              },
-              {
-                "name": "Hindistan Cevizli Ekmek (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "2 dilim Hindi Füme",
-                "quantity": 0.5
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Fırında Tavuk Kanat",
-                "quantity": 1
-              },
-              {
-                "name": "Sebze Sote",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "wednesday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Sebzeli Omlet (2 yumurta, 5 mantar, 5 ıspanak, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "1 yemek kaşığı tahin",
-                "quantity": 1
-              },
-              {
-                "name": "2 dilim Hindi Füme",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "250 gr Izgara veya Fırında Balık",
-                "quantity": 1
-              },
-              {
-                "name": "Labneli Pancar Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "thursday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Mantarlı Yumurta",
-                "quantity": 1
-              },
-              {
-                "name": "50 gram Tulum / Kaşar / Lor Peyniri",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Kıymalı Brüksel Lahana Yemeği",
-                "quantity": 1
-              },
-              {
-                "name": "Beyaz Lahana Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "friday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Pankek",
-                "quantity": 1
-              },
-              {
-                "name": "10 adet Zeytin",
-                "quantity": 1
-              },
-              {
-                "name": "2 dilim Hindi Füme",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Balık Izgara",
-                "quantity": 1
-              },
-              {
-                "name": "Un Helvası",
-                "quantity": 1
-              },
-              {
-                "name": "Frambuazlı Cheesecake",
-                "quantity": 0.5
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "saturday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Haşlanmış Yumurta (2 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Karnabahar Köfte",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak Sote",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "sunday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Tost (Karabuğday Ekmeği + Kaşar + Hindi Füme)",
-                "quantity": 1
-              },
-              {
-                "name": "3 Cherry Domates + 1 Yemek Kaşığı Zeytinyağı, Kekik ve Pul Biber",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Fırında Kremalı Karnabahar",
-                "quantity": 1
-              },
-              {
-                "name": "Brokoli Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         }
       }
@@ -7217,7 +7215,826 @@
       "conjunction": "and"
     }
   ],
-  "mealTemplates": [],
+  "mealTemplates": [
+    {
+      "mealType": "lunch",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Sahanda yumurta  (2 yumurta - 1 tatlı kaşığı tereyağı)",
+          "quantity": 1,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 7,
+            "fat": 12,
+            "carbs": 1,
+            "calories": 140
+          }
+        },
+        {
+          "keyword": "Badem unu ekmeği (1 dilim ya da yarım avokado ya da 20 çiğ badem)",
+          "quantity": 1,
+          "unit": "",
+          "role": "bread",
+          "macros": {
+            "protein": 5,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 105
+          }
+        },
+        {
+          "keyword": "Zeytin (5 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 5,
+            "fat": 7,
+            "carbs": 3,
+            "calories": 95
+          }
+        },
+        {
+          "keyword": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 3,
+            "fat": 14,
+            "carbs": 2,
+            "calories": 146
+          }
+        }
+      ],
+      "name": "ÖĞLEN 1"
+    },
+    {
+      "mealType": "dinner",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "gram köfte",
+          "quantity": 200,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 4000,
+            "fat": 3600,
+            "carbs": 0,
+            "calories": 50000
+          }
+        },
+        {
+          "keyword": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 1,
+            "fat": 15,
+            "carbs": 4,
+            "calories": 155
+          }
+        },
+        {
+          "keyword": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 2,
+            "fat": 3,
+            "carbs": 5,
+            "calories": 50
+          }
+        },
+        {
+          "keyword": "Toz kollajen 1 ölçek",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "SALI",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        }
+      ],
+      "name": "AKŞAM 1"
+    },
+    {
+      "mealType": "lunch",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Mantarlı omlet (2 adet yumurta,5 adet mantar,1 tatlı kaşığı tereyağı)",
+          "quantity": 1,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 14,
+            "fat": 18,
+            "carbs": 2,
+            "calories": 226
+          }
+        },
+        {
+          "keyword": "1/2 avokado",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Zeytin (5 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 5,
+            "fat": 7,
+            "carbs": 3,
+            "calories": 95
+          }
+        },
+        {
+          "keyword": "Badem unu ekmeği (1 dilim)",
+          "quantity": 1,
+          "unit": "",
+          "role": "bread",
+          "macros": {
+            "protein": 5,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 105
+          }
+        },
+        {
+          "keyword": "Ceviz (3 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "snack",
+          "macros": {
+            "protein": 2,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 93
+          }
+        },
+        {
+          "keyword": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 3,
+            "fat": 14,
+            "carbs": 2,
+            "calories": 146
+          }
+        }
+      ],
+      "name": "ÖĞLEN 2"
+    },
+    {
+      "mealType": "dinner",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "gram hindi ızgara tava",
+          "quantity": 150,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Fındık (10 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "snack",
+          "macros": {
+            "protein": 2,
+            "fat": 6,
+            "carbs": 2,
+            "calories": 63
+          }
+        }
+      ],
+      "name": "AKŞAM 2"
+    },
+    {
+      "mealType": "lunch",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Sahanda yumurta (2 adet + 1 tatlı kaşığı tereyağı ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 7,
+            "fat": 12,
+            "carbs": 1,
+            "calories": 140
+          }
+        },
+        {
+          "keyword": "Kasap sucuk (50 gram)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 8,
+            "fat": 20,
+            "carbs": 3,
+            "calories": 166
+          }
+        },
+        {
+          "keyword": "Zeytin (5 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 5,
+            "fat": 7,
+            "carbs": 3,
+            "calories": 95
+          }
+        },
+        {
+          "keyword": "Badem unu ekmeği (1 dilim)",
+          "quantity": 1,
+          "unit": "",
+          "role": "bread",
+          "macros": {
+            "protein": 5,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 105
+          }
+        },
+        {
+          "keyword": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Fındık (10 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "snack",
+          "macros": {
+            "protein": 2,
+            "fat": 6,
+            "carbs": 2,
+            "calories": 63
+          }
+        }
+      ],
+      "name": "ÖĞLEN 3"
+    },
+    {
+      "mealType": "dinner",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Patlıcan musakka (150 gr kıyma ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 18,
+            "fat": 13,
+            "carbs": 6,
+            "calories": 213
+          }
+        },
+        {
+          "keyword": "Roka salatası (yarım bağ roka, 1 adet küçük salatalık, 3 adet cherry domates, yarım kırmızı soğan + limon, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlar ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 2,
+            "fat": 14,
+            "carbs": 4,
+            "calories": 150
+          }
+        },
+        {
+          "keyword": "Badem unu ekmeği (1 dilim)",
+          "quantity": 1,
+          "unit": "",
+          "role": "bread",
+          "macros": {
+            "protein": 5,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 105
+          }
+        },
+        {
+          "keyword": "Kollajen (1 ölçek 10 gram)",
+          "quantity": 1,
+          "unit": "",
+          "role": "supplement",
+          "macros": {
+            "protein": 10,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 40
+          }
+        }
+      ],
+      "name": "AKŞAM 3"
+    },
+    {
+      "mealType": "lunch",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)",
+          "quantity": 1,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 25,
+            "fat": 25,
+            "carbs": 5,
+            "calories": 345
+          }
+        },
+        {
+          "keyword": "Zeytin (10 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 5,
+            "fat": 7,
+            "carbs": 3,
+            "calories": 95
+          }
+        },
+        {
+          "keyword": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke ve limon ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 3,
+            "fat": 14,
+            "carbs": 2,
+            "calories": 146
+          }
+        },
+        {
+          "keyword": "1/2 avokado",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        }
+      ],
+      "name": "ÖĞLEN 4"
+    },
+    {
+      "mealType": "dinner",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+          "quantity": 200,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 3,
+            "fat": 14,
+            "carbs": 2,
+            "calories": 146
+          }
+        },
+        {
+          "keyword": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Kollajen (1 ölçek 10 gram)",
+          "quantity": 1,
+          "unit": "",
+          "role": "supplement",
+          "macros": {
+            "protein": 10,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 40
+          }
+        }
+      ],
+      "name": "AKŞAM 4"
+    },
+    {
+      "mealType": "lunch",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
+          "quantity": 1,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 7,
+            "fat": 12,
+            "carbs": 1,
+            "calories": 140
+          }
+        },
+        {
+          "keyword": "Salatalık (orta boy) + Cherry domates (2 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 1,
+            "fat": 14,
+            "carbs": 7,
+            "calories": 158
+          }
+        },
+        {
+          "keyword": "Badem unu ekmeği (1 dilim)",
+          "quantity": 1,
+          "unit": "",
+          "role": "bread",
+          "macros": {
+            "protein": 5,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 105
+          }
+        },
+        {
+          "keyword": "Ceviz (5 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "snack",
+          "macros": {
+            "protein": 4,
+            "fat": 14,
+            "carbs": 1,
+            "calories": 146
+          }
+        }
+      ],
+      "name": "ÖĞLEN 5"
+    },
+    {
+      "mealType": "dinner",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Kıymalı karnabahar / kabak  yemeği (150gr kıyma ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 yemek kaşığı zeytinyağı)",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Badem unu ekmeği (1 dilim)",
+          "quantity": 1,
+          "unit": "",
+          "role": "bread",
+          "macros": {
+            "protein": 5,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 105
+          }
+        },
+        {
+          "keyword": "Kollajen (1 ölçek 10 gram)",
+          "quantity": 1,
+          "unit": "",
+          "role": "supplement",
+          "macros": {
+            "protein": 10,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 40
+          }
+        }
+      ],
+      "name": "AKŞAM 5"
+    },
+    {
+      "mealType": "lunch",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Yumurtalı ıspanak/pazı/ semizotu kavurma (2 yumurta, 100 gr. Ispanak, 1 yemek kaşığı zeytinyağı, tercihen",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Zeytin (10 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 5,
+            "fat": 7,
+            "carbs": 3,
+            "calories": 95
+          }
+        },
+        {
+          "keyword": "Badem unu ekmeği (1 dilim)",
+          "quantity": 1,
+          "unit": "",
+          "role": "bread",
+          "macros": {
+            "protein": 5,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 105
+          }
+        },
+        {
+          "keyword": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 3,
+            "fat": 14,
+            "carbs": 2,
+            "calories": 146
+          }
+        },
+        {
+          "keyword": "cherry domates",
+          "quantity": 3,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 3,
+            "fat": 42,
+            "carbs": 3,
+            "calories": 402
+          }
+        },
+        {
+          "keyword": "Ceviz (5 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "snack",
+          "macros": {
+            "protein": 4,
+            "fat": 14,
+            "carbs": 1,
+            "calories": 146
+          }
+        },
+        {
+          "keyword": "Bitter çikolata (2 kare)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 1,
+            "fat": 4,
+            "carbs": 3,
+            "calories": 52
+          }
+        }
+      ],
+      "name": "ÖĞLEN 6"
+    },
+    {
+      "mealType": "dinner",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "gram kırmızı et ile güveç (domates, biber ve soğan ile)",
+          "quantity": 200,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 8000,
+            "fat": 5400,
+            "carbs": 1000,
+            "calories": 84600
+          }
+        },
+        {
+          "keyword": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 tatlı kaşığı zeytinyağı)",
+          "quantity": 1,
+          "unit": "",
+          "role": "",
+          "macros": {
+            "protein": 0,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 0
+          }
+        },
+        {
+          "keyword": "Fındık (20 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "snack",
+          "macros": {
+            "protein": 2,
+            "fat": 6,
+            "carbs": 2,
+            "calories": 63
+          }
+        }
+      ],
+      "name": "AKŞAM 6"
+    },
+    {
+      "mealType": "lunch",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Menemen (2  yumurta ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 14,
+            "fat": 17,
+            "carbs": 5,
+            "calories": 229
+          }
+        },
+        {
+          "keyword": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 3,
+            "fat": 14,
+            "carbs": 2,
+            "calories": 146
+          }
+        },
+        {
+          "keyword": "Badem unu ekmeği (1 dilim)",
+          "quantity": 1,
+          "unit": "",
+          "role": "bread",
+          "macros": {
+            "protein": 5,
+            "fat": 9,
+            "carbs": 1,
+            "calories": 105
+          }
+        },
+        {
+          "keyword": "Zeytin (5 adet)",
+          "quantity": 1,
+          "unit": "",
+          "role": "sideDish",
+          "macros": {
+            "protein": 5,
+            "fat": 7,
+            "carbs": 3,
+            "calories": 95
+          }
+        }
+      ],
+      "name": "ÖĞLEN 7"
+    },
+    {
+      "mealType": "dinner",
+      "frequency": 1,
+      "items": [
+        {
+          "keyword": "Patlıcan kebabı (2 adet orta boy patlıcan,200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. Fırında ya da airfry da pişirilir)",
+          "quantity": 1,
+          "unit": "",
+          "role": "mainDish",
+          "macros": {
+            "protein": 30,
+            "fat": 40,
+            "carbs": 5,
+            "calories": 500
+          }
+        },
+        {
+          "keyword": "Kollajen (1 ölçek 10 gram)",
+          "quantity": 1,
+          "unit": "",
+          "role": "supplement",
+          "macros": {
+            "protein": 10,
+            "fat": 0,
+            "carbs": 0,
+            "calories": 40
+          }
+        }
+      ],
+      "name": "AKŞAM 7"
+    }
+  ],
   "compatibilityTable": [],
   "patients": {
     "patient_M": {
