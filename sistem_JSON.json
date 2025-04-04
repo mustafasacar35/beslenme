@@ -2255,6 +2255,29 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "ÖĞLEN"
+        },
+        {
+          "name": "Haşlanmış yumurta (2 adet)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "yumurta",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "Yeni Eklenenler"
         }
       ]
     },
@@ -8503,7 +8526,7 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "ÖĞLEN"
+          "category": "Yeni Eklenenler"
         },
         {
           "name": "Ceviz (3 adet )",
@@ -8550,29 +8573,6 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "AKŞAM"
-        },
-        {
-          "name": "Haşlanmış yumurta (2 adet)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "yumurta",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
         },
         {
           "name": "Tulum /kaşar peyniri (50 gram)",
@@ -13691,43 +13691,14 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
+            "breakfast": [],
             "lunch": [
               {
-                "name": "Ceviz (3 adet )",
+                "name": "Sahanda yumurta  (2 yumurta - 1 tatlı kaşığı tereyağı)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz,marul,sirke,limon+1 tatlı kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke ve limon ile)",
-                "quantity": 1
-              },
-              {
-                "name": "1/2 avokado",
-                "quantity": 1
-              },
-              {
-                "name": "Sahanda yumurta (2 adet + 1 tatlı kaşığı tereyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Kasap sucuk (50 gram)",
+                "name": "Badem unu ekmeği (1 dilim ya da yarım avokado ya da 20 çiğ badem)",
                 "quantity": 1
               },
               {
@@ -13735,15 +13706,7 @@
                 "quantity": 1
               },
               {
-                "name": "Badem unu ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
-                "quantity": 1
-              },
-              {
-                "name": "Fındık (10 adet)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
                 "quantity": 1
               },
               {
@@ -13771,595 +13734,15 @@
                 "quantity": 1
               },
               {
-                "name": "Sahanda yumurta  (2 yumurta - 1 tatlı kaşığı tereyağı)",
+                "name": "Sahanda yumurta (2 adet + 1 tatlı kaşığı tereyağı ile)",
                 "quantity": 1
               },
               {
-                "name": "gr pastırma ya da 2 dilim hindi füme",
-                "quantity": 30
-              },
-              {
-                "name": "Badem unu ekmeği (1 dilim ya da yarım avokado ya da 20 çiğ badem)",
+                "name": "Kasap sucuk (50 gram)",
                 "quantity": 1
               },
               {
                 "name": "Zeytin (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon )",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin ekmeği (1 dilim ya da 1 yemek kaşığı tahin içerisine 1 adet ceviz ekleyerek tüketebilirsiniz)",
-                "quantity": 1
-              },
-              {
-                "name": "1/2 avokado",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Fındık (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Çilek veya orman meyveleri (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Ketojenik omlet (2 yumurta, 2 mantar, 1 tatlı kaşığı tereyağı, tuz, baharatlar)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 tatlı kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (3 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
-                "quantity": 1
-              },
-              {
-                "name": "kase (100 gram) sote edilmiş ıspanak +1 tatlı kaşığı zeytinyağı ile",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "1/2 avokado",
-                "quantity": 1
-              },
-              {
-                "name": "Fındık (20 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Menemen (2  yumurta ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz vs, limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Menemen (2  yumurta ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz vs, limon ve sirke ile))",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz vs, limon ve sirke ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (2 adet) + (üzerine eritilmiş 1 tatlı kaşığı tereyağı ve istenilen baharatlar",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz,  limon ve sirke  ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Mantarlı omlet (2 adet yumurta, 5 adet mantar, 1 tatlı kaşığı tereyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz,turp vs + sirke, limon ve 1 tatlı kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Menemen (2  yumurta ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "1 yumurta, 1 çorba kaşığı badem unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)\nyumurta ve badem ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (1 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (20 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yumurtalı ıspanak kavurma (2 yumurta, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
-                "quantity": 1
-              },
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "1/2 avokado",
-                "quantity": 1
-              },
-              {
-                "name": "Menemen (3 yumurta ile)",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy)",
-                "quantity": 1
-              },
-              {
-                "name": "Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Mevsim yeşillikleri",
-                "quantity": 1
-              },
-              {
-                "name": "Şekersiz badem ezmesi (1 tatlı kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 yumurta, 50 gr. kıyma, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği (2 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Bitter çikolata (4 kare)",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği ile tost (1 dilim) + kasap sucuk (60 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Çilek veya orman meyveleri (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Fındık (15 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Ketojenik omlet (3 yumurta, 2 mantar, 1 tatlı kaşığı tereyağı, tuz, baharatlar)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Şekersiz badem ezmesi (1 tatlı kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Hindi füme (3 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (3 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, yeşil)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (15 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (marul, dereotu, roka vs.)",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Sahanda yumurta (3 yumurta – 1 yemek kaşığı tereyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "kase sote edilmiş ıspanak +1 tatlı kaşığı (15 gram) zeytinyağı ile",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (3 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Hindi füme (3 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (4 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Menemen (2  yumurta ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "1 yumurta, 1 çorba kaşığı badem unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)\nyumurta ve badem ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (1 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (20 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yumurtalı ıspanak kavurma (2 yumurta, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
-                "quantity": 1
-              },
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "1/2 avokado",
-                "quantity": 1
-              },
-              {
-                "name": "Menemen (3 yumurta ile)",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy)",
-                "quantity": 1
-              },
-              {
-                "name": "Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Mevsim yeşillikleri",
-                "quantity": 1
-              },
-              {
-                "name": "Şekersiz badem ezmesi (1 tatlı kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 yumurta, 50 gr. kıyma, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği (2 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Bitter çikolata (4 kare)",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği ile tost (1 dilim) + kasap sucuk (60 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Çilek veya orman meyveleri (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Fındık (15 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Ketojenik omlet (3 yumurta, 2 mantar, 1 tatlı kaşığı tereyağı, tuz, baharatlar)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Şekersiz badem ezmesi (1 tatlı kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Hindi füme (3 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (3 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, yeşil)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (15 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (marul, dereotu, roka vs.)",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Sahanda yumurta (3 yumurta – 1 yemek kaşığı tereyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "kase sote edilmiş ıspanak +1 tatlı kaşığı (15 gram) zeytinyağı ile",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış yumurta (3 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Hindi füme (3 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (4 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet, siyah)",
-                "quantity": 1
-              },
-              {
-                "name": "Menemen (2  yumurta ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 1
               },
               {
@@ -14367,7 +13750,43 @@
                 "quantity": 1
               },
               {
-                "name": "Zeytin (5 adet)",
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+                "quantity": 1
+              },
+              {
+                "name": "Fındık (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke ve limon ile)",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 avokado",
+                "quantity": 1
+              },
+              {
+                "name": "Sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Badem unu ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (5 adet)",
                 "quantity": 1
               },
               {
@@ -14399,43 +13818,15 @@
                 "quantity": 1
               },
               {
-                "name": "Sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
+                "name": "Menemen (2  yumurta ile)",
                 "quantity": 1
               },
               {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 1
               },
               {
                 "name": "Badem unu ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (5 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Zeytin (10 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke ve limon ile)",
-                "quantity": 1
-              },
-              {
-                "name": "1/2 avokado",
-                "quantity": 1
-              },
-              {
-                "name": "Sahanda yumurta (2 adet + 1 tatlı kaşığı tereyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Kasap sucuk (50 gram)",
                 "quantity": 1
               },
               {
@@ -14443,15 +13834,655 @@
                 "quantity": 1
               },
               {
-                "name": "Badem unu ekmeği (1 dilim)",
+                "name": "Haşlanmış yumurta (3 adet)",
                 "quantity": 1
               },
               {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+                "name": "Hindi füme (3 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (4 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Sahanda yumurta (3 yumurta – 1 yemek kaşığı tereyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "kase sote edilmiş ıspanak +1 tatlı kaşığı (15 gram) zeytinyağı ile",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Hindi füme (3 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (3 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, yeşil)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (15 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (marul, dereotu, roka vs.)",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik omlet (3 yumurta, 2 mantar, 1 tatlı kaşığı tereyağı, tuz, baharatlar)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Şekersiz badem ezmesi (1 tatlı kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği ile tost (1 dilim) + kasap sucuk (60 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Çilek veya orman meyveleri (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Fındık (15 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 yumurta, 50 gr. kıyma, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği (2 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter çikolata (4 kare)",
+                "quantity": 1
+              },
+              {
+                "name": "Menemen (3 yumurta ile)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy)",
+                "quantity": 1
+              },
+              {
+                "name": "Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Mevsim yeşillikleri",
+                "quantity": 1
+              },
+              {
+                "name": "Şekersiz badem ezmesi (1 tatlı kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Yumurtalı ıspanak kavurma (2 yumurta, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
+                "quantity": 1
+              },
+              {
+                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 avokado",
+                "quantity": 1
+              },
+              {
+                "name": "1 yumurta, 1 çorba kaşığı badem unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)\nyumurta ve badem ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (1 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (20 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Menemen (2  yumurta ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Mantarlı omlet (2 adet yumurta, 5 adet mantar, 1 tatlı kaşığı tereyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz,turp vs + sirke, limon ve 1 tatlı kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (3 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Hindi füme (3 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (4 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (3 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Hindi füme (3 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (4 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Sahanda yumurta (3 yumurta – 1 yemek kaşığı tereyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "kase sote edilmiş ıspanak +1 tatlı kaşığı (15 gram) zeytinyağı ile",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Hindi füme (3 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (3 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, yeşil)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (15 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (marul, dereotu, roka vs.)",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik omlet (3 yumurta, 2 mantar, 1 tatlı kaşığı tereyağı, tuz, baharatlar)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Şekersiz badem ezmesi (1 tatlı kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği ile tost (1 dilim) + kasap sucuk (60 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Çilek veya orman meyveleri (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Fındık (15 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 yumurta, 50 gr. kıyma, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği (2 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter çikolata (4 kare)",
+                "quantity": 1
+              },
+              {
+                "name": "Menemen (3 yumurta ile)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet, siyah)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy)",
+                "quantity": 1
+              },
+              {
+                "name": "Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Mevsim yeşillikleri",
+                "quantity": 1
+              },
+              {
+                "name": "Şekersiz badem ezmesi (1 tatlı kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Yumurtalı ıspanak kavurma (2 yumurta, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
+                "quantity": 1
+              },
+              {
+                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 avokado",
+                "quantity": 1
+              },
+              {
+                "name": "1 yumurta, 1 çorba kaşığı badem unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)\nyumurta ve badem ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (1 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (20 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Menemen (2  yumurta ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Mantarlı omlet (2 adet yumurta, 5 adet mantar, 1 tatlı kaşığı tereyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz,turp vs + sirke, limon ve 1 tatlı kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (2 adet) + (üzerine eritilmiş 1 tatlı kaşığı tereyağı ve istenilen baharatlar",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz,  limon ve sirke  ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz vs, limon ve sirke ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Menemen (2  yumurta ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz vs, limon ve sirke ile))",
+                "quantity": 1
+              },
+              {
+                "name": "Menemen (2  yumurta ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz vs, limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
+                "quantity": 1
+              },
+              {
+                "name": "kase (100 gram) sote edilmiş ıspanak +1 tatlı kaşığı zeytinyağı ile",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 avokado",
+                "quantity": 1
+              },
+              {
+                "name": "Fındık (20 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik omlet (2 yumurta, 2 mantar, 1 tatlı kaşığı tereyağı, tuz, baharatlar)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 tatlı kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (3 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Haşlanmış yumurta (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin ekmeği (1 dilim ya da 1 yemek kaşığı tahin içerisine 1 adet ceviz ekleyerek tüketebilirsiniz)",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 avokado",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)",
                 "quantity": 1
               },
               {
                 "name": "Fındık (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Çilek veya orman meyveleri (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 yumurta, 50 gr. kıyma, 100 gr. Ispanak, 1 yk zeytinyağı, soğan",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Fındık (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy), Cherry domates (2 adet), 4-5 dal roka, 4-5 dal tere, 2 adet küçük yeşil biber",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin ekmeği (1 dilim ya da 20 adet çiğ badem)",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter çikolata (2 kare)",
+                "quantity": 1
+              },
+              {
+                "name": "Sahanda yumurta  (2 yumurta - 1 tatlı kaşığı tereyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "gr pastırma ya da 2 dilim hindi füme",
+                "quantity": 30
+              },
+              {
+                "name": "Badem unu ekmeği (1 dilim ya da yarım avokado ya da 20 çiğ badem)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (5 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon )",
                 "quantity": 1
               },
               {
@@ -14479,11 +14510,11 @@
                 "quantity": 1
               },
               {
-                "name": "Sahanda yumurta  (2 yumurta - 1 tatlı kaşığı tereyağı)",
+                "name": "Sahanda yumurta (2 adet + 1 tatlı kaşığı tereyağı ile)",
                 "quantity": 1
               },
               {
-                "name": "Badem unu ekmeği (1 dilim ya da yarım avokado ya da 20 çiğ badem)",
+                "name": "Kasap sucuk (50 gram)",
                 "quantity": 1
               },
               {
@@ -14491,53 +14522,65 @@
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
+                "name": "Badem unu ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+                "quantity": 1
+              },
+              {
+                "name": "Fındık (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke ve limon ile)",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 avokado",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Tavuk döner (200 gr)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz,marul,sirke,limon ve 1 tatlı kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Frambuazlı Cheesecake",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
                 "name": "gram köfte",
-                "quantity": 250
+                "quantity": 200
+              },
+              {
+                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
               },
               {
                 "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Kollajen (1 ölçek 10 gram)",
+                "name": "Toz kollajen 1 ölçek",
                 "quantity": 1
               },
               {
-                "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
-                "quantity": 250
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
+                "name": "SALI",
                 "quantity": 1
               },
               {
-                "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
+                "name": "gram hindi ızgara tava",
+                "quantity": 150
+              },
+              {
+                "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Kollajen (1 ölçek 10 gram)",
+                "name": "Fındık (10 adet)",
                 "quantity": 1
               },
               {
@@ -14557,15 +14600,583 @@
                 "quantity": 1
               },
               {
-                "name": "gram hindi ızgara tava",
+                "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
                 "quantity": 200
               },
               {
-                "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Fındık (10 adet)",
+                "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Kıymalı karnabahar / kabak  yemeği (150gr kıyma ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Badem unu ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "gram kırmızı et ile güveç (domates, biber ve soğan ile)",
+                "quantity": 200
+              },
+              {
+                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 tatlı kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Fındık (20 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Patlıcan kebabı (2 adet orta boy patlıcan,200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. Fırında ya da airfry da pişirilir)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik kabak spagetti (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "gram köfte",
+                "quantity": 250
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "gram ızgara tavuk göğsü (istenilen baharatlarla ile marine edilmiş)",
+                "quantity": 250
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak çekirdeği (1 avuç)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0 g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "Kıymalı bamya yemeği (200 gram kıyma ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Semizotu salatası (1 tatlı kaşığı zeytinyağı ve yarım avokado ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (4 adet - 30 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "gr. ızgara çupra",
+                "quantity": 300
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
+                "quantity": 1
+              },
+              {
+                "name": "yemek kaşığı zeytin yağı (salata için)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak çekirdeği (1 avuç)",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin (1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter çikolata (2 kare)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "gr. ızgara çupra",
+                "quantity": 300
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
+                "quantity": 1
+              },
+              {
+                "name": "yemek kaşığı zeytin yağı (salata için)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak çekirdeği (1 avuç)",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin (1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter çikolata (2 kare)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "gram kuzu kavurma",
+                "quantity": 300
+              },
+              {
+                "name": "Yarım avokado",
+                "quantity": 1
+              },
+              {
+                "name": "Brokoli salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Toz kollajen 1 ölçek",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil fasulye yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "Ton balığı salatası (160 gram ton balığı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "salata üzerine bir yemek kaşığı kenevir tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "Brokoli çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Izgara biftek (250 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (15 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
+                "quantity": 1
+              },
+              {
+                "name": "MALZEMELER",
+                "quantity": 1
+              },
+              {
+                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "kasap sucuk (60 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Karnabahar pankek",
+                "quantity": 1
+              },
+              {
+                "name": "KARTLAR",
+                "quantity": 1
+              },
+              {
+                "name": "TAHİN EKMEĞİ",
+                "quantity": 1
+              },
+              {
+                "name": "BROKOLİ ÇORBASI",
+                "quantity": 1
+              },
+              {
+                "name": "KIYMALI BAMYA",
+                "quantity": 1
+              },
+              {
+                "name": "KABAK SPAGETTİ",
+                "quantity": 1
+              },
+              {
+                "name": "YUMURTA",
+                "quantity": 12
+              },
+              {
+                "name": "DİLİM HİNDİ FÜME",
+                "quantity": 5
+              },
+              {
+                "name": "BURAYI VERMEDİK.",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil fasulye yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Brokoli çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Izgara biftek (200 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık vs. + 1 tatlı kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak çekirdeği (1 avuç)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "gram tavuk pirzola fırında (1 yemek kaşığı zeytinyağı ve istenilen baharatlarla ile marine edilmiş)",
+                "quantity": 200
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (20 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "gram köfte",
+                "quantity": 250
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik kabak spagetti (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "gram köfte",
+                "quantity": 250
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "gram ızgara tavuk göğsü (istenilen baharatlarla ile marine edilmiş)",
+                "quantity": 250
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak çekirdeği (1 avuç)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0 g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "Kıymalı bamya yemeği (200 gram kıyma ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Semizotu salatası (1 tatlı kaşığı zeytinyağı ve yarım avokado ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Ceviz (4 adet - 30 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "gr. ızgara çupra",
+                "quantity": 300
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
+                "quantity": 1
+              },
+              {
+                "name": "yemek kaşığı zeytin yağı (salata için)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak çekirdeği (1 avuç)",
+                "quantity": 1
+              },
+              {
+                "name": "Tahin (1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter çikolata (2 kare)",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "gram kuzu kavurma",
+                "quantity": 300
+              },
+              {
+                "name": "Yarım avokado",
+                "quantity": 1
+              },
+              {
+                "name": "Brokoli salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Toz kollajen 1 ölçek",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil fasulye yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "Ton balığı salatası (160 gram ton balığı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
+                "quantity": 1
+              },
+              {
+                "name": "salata üzerine bir yemek kaşığı kenevir tohumu",
+                "quantity": 1
+              },
+              {
+                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
+                "quantity": 1
+              },
+              {
+                "name": "Brokoli çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Izgara biftek (250 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (15 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
+                "quantity": 1
+              },
+              {
+                "name": "MALZEMELER",
+                "quantity": 1
+              },
+              {
+                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "kasap sucuk (60 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Karnabahar pankek",
+                "quantity": 1
+              },
+              {
+                "name": "KARTLAR",
+                "quantity": 1
+              },
+              {
+                "name": "TAHİN EKMEĞİ",
+                "quantity": 1
+              },
+              {
+                "name": "BROKOLİ ÇORBASI",
+                "quantity": 1
+              },
+              {
+                "name": "KIYMALI BAMYA",
+                "quantity": 1
+              },
+              {
+                "name": "KABAK SPAGETTİ",
+                "quantity": 1
+              },
+              {
+                "name": "YUMURTA",
+                "quantity": 12
+              },
+              {
+                "name": "DİLİM HİNDİ FÜME",
+                "quantity": 5
+              },
+              {
+                "name": "BURAYI VERMEDİK.",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil fasulye yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Brokoli çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Izgara biftek (200 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık vs. + 1 tatlı kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak çekirdeği (1 avuç)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "gram tavuk pirzola fırında (1 yemek kaşığı zeytinyağı ve istenilen baharatlarla ile marine edilmiş)",
+                "quantity": 200
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem (20 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "gram köfte",
+                "quantity": 250
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kollajen (1 ölçek 10 gram)",
+                "quantity": 1
+              },
+              {
+                "name": "Semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Toz kollajen 1 ölçek",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 1
               },
               {
@@ -14573,11 +15184,7 @@
                 "quantity": 200
               },
               {
-                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
@@ -14589,15 +15196,31 @@
                 "quantity": 1
               },
               {
+                "name": "gram kırmızı et",
+                "quantity": 200
+              },
+              {
+                "name": "Çiğ badem (20 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
                 "name": "gram köfte",
                 "quantity": 150
               },
               {
-                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 tatlı  kaşığı zeytinyağı)",
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Ceviz (3 adet)",
+                "name": "Kabak çekirdeği (1 avuç)",
                 "quantity": 1
               },
               {
@@ -14605,19 +15228,35 @@
                 "quantity": 1
               },
               {
-                "name": "gram kuzu kavurma  ya da 180 gr köfte",
+                "name": "SALI",
+                "quantity": 1
+              },
+              {
+                "name": "gram kırmızı et",
                 "quantity": 200
               },
               {
-                "name": "Roka salatası (yarım bağ roka, 1 adet küçük salatalık, 3 adet cherry domates, yarım kırmızı soğan + limon, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlar ile)",
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Tahin ekmeği (1 dilim)",
+                "name": "Fındık (20 adet)",
                 "quantity": 1
               },
               {
                 "name": "Toz kollajen 1 ölçek",
+                "quantity": 1
+              },
+              {
+                "name": "gr. fırında ya da ızgara balık (çupra, levrek, alabalık vs.)",
+                "quantity": 200
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak çekirdeği (1 avuç)",
                 "quantity": 1
               },
               {
@@ -14645,27 +15284,15 @@
                 "quantity": 1
               },
               {
-                "name": "gr. fırında ya da ızgara balık (çupra, levrek, alabalık vs.)",
+                "name": "gram kuzu kavurma  ya da 180 gr köfte",
                 "quantity": 200
               },
               {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
+                "name": "Roka salatası (yarım bağ roka, 1 adet küçük salatalık, 3 adet cherry domates, yarım kırmızı soğan + limon, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlar ile)",
                 "quantity": 1
               },
               {
-                "name": "Kabak çekirdeği (1 avuç)",
-                "quantity": 1
-              },
-              {
-                "name": "gram kırmızı et",
-                "quantity": 200
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Fındık (20 adet)",
+                "name": "Tahin ekmeği (1 dilim)",
                 "quantity": 1
               },
               {
@@ -14673,19 +15300,19 @@
                 "quantity": 1
               },
               {
-                "name": "gram kırmızı et",
-                "quantity": 200
+                "name": "gram köfte",
+                "quantity": 150
               },
               {
-                "name": "Çiğ badem (20 adet)",
+                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 tatlı  kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
+                "name": "Ceviz (3 adet)",
                 "quantity": 1
               },
               {
-                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+                "name": "Toz kollajen 1 ölçek",
                 "quantity": 1
               },
               {
@@ -14693,7 +15320,11 @@
                 "quantity": 200
               },
               {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
@@ -14705,551 +15336,15 @@
                 "quantity": 1
               },
               {
-                "name": "Semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Toz kollajen 1 ölçek",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "gram köfte",
-                "quantity": 250
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "gram tavuk pirzola fırında (1 yemek kaşığı zeytinyağı ve istenilen baharatlarla ile marine edilmiş)",
+                "name": "gram hindi ızgara tava",
                 "quantity": 200
               },
               {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Çiğ badem (20 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Brokoli çorbası",
-                "quantity": 1
-              },
-              {
-                "name": "Izgara biftek (200 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık vs. + 1 tatlı kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak çekirdeği (1 avuç)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil fasulye yemeği",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Brokoli çorbası",
-                "quantity": 1
-              },
-              {
-                "name": "Izgara biftek (250 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (15 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
-                "quantity": 1
-              },
-              {
-                "name": "MALZEMELER",
-                "quantity": 1
-              },
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "kasap sucuk (60 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Karnabahar pankek",
-                "quantity": 1
-              },
-              {
-                "name": "KARTLAR",
-                "quantity": 1
-              },
-              {
-                "name": "TAHİN EKMEĞİ",
-                "quantity": 1
-              },
-              {
-                "name": "BROKOLİ ÇORBASI",
-                "quantity": 1
-              },
-              {
-                "name": "KIYMALI BAMYA",
-                "quantity": 1
-              },
-              {
-                "name": "KABAK SPAGETTİ",
-                "quantity": 1
-              },
-              {
-                "name": "YUMURTA",
-                "quantity": 12
-              },
-              {
-                "name": "DİLİM HİNDİ FÜME",
-                "quantity": 5
-              },
-              {
-                "name": "BURAYI VERMEDİK.",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil fasulye yemeği",
-                "quantity": 1
-              },
-              {
-                "name": "Ton balığı salatası (160 gram ton balığı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
-                "quantity": 1
-              },
-              {
-                "name": "salata üzerine bir yemek kaşığı kenevir tohumu",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "gram kuzu kavurma",
-                "quantity": 300
-              },
-              {
-                "name": "Yarım avokado",
-                "quantity": 1
-              },
-              {
-                "name": "Brokoli salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Toz kollajen 1 ölçek",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "gr. ızgara çupra",
-                "quantity": 300
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
-                "quantity": 1
-              },
-              {
-                "name": "yemek kaşığı zeytin yağı (salata için)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak çekirdeği (1 avuç)",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin (1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Bitter çikolata (2 kare)",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "Kıymalı bamya yemeği (200 gram kıyma ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Semizotu salatası (1 tatlı kaşığı zeytinyağı ve yarım avokado ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (4 adet - 30 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "gram ızgara tavuk göğsü (istenilen baharatlarla ile marine edilmiş)",
-                "quantity": 250
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak çekirdeği (1 avuç)",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0 g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "Ketojenik kabak spagetti (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "gram köfte",
-                "quantity": 250
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "gram köfte",
-                "quantity": 250
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "gram tavuk pirzola fırında (1 yemek kaşığı zeytinyağı ve istenilen baharatlarla ile marine edilmiş)",
-                "quantity": 200
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (20 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Brokoli çorbası",
-                "quantity": 1
-              },
-              {
-                "name": "Izgara biftek (200 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık vs. + 1 tatlı kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak çekirdeği (1 avuç)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil fasulye yemeği",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Brokoli çorbası",
-                "quantity": 1
-              },
-              {
-                "name": "Izgara biftek (250 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem (15 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
-                "quantity": 1
-              },
-              {
-                "name": "MALZEMELER",
-                "quantity": 1
-              },
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "tahin ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "kasap sucuk (60 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Karnabahar pankek",
-                "quantity": 1
-              },
-              {
-                "name": "KARTLAR",
-                "quantity": 1
-              },
-              {
-                "name": "TAHİN EKMEĞİ",
-                "quantity": 1
-              },
-              {
-                "name": "BROKOLİ ÇORBASI",
-                "quantity": 1
-              },
-              {
-                "name": "KIYMALI BAMYA",
-                "quantity": 1
-              },
-              {
-                "name": "KABAK SPAGETTİ",
-                "quantity": 1
-              },
-              {
-                "name": "YUMURTA",
-                "quantity": 12
-              },
-              {
-                "name": "DİLİM HİNDİ FÜME",
-                "quantity": 5
-              },
-              {
-                "name": "BURAYI VERMEDİK.",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil fasulye yemeği",
-                "quantity": 1
-              },
-              {
-                "name": "Ton balığı salatası (160 gram ton balığı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz) + 1yk. zeytinyağı",
-                "quantity": 1
-              },
-              {
-                "name": "salata üzerine bir yemek kaşığı kenevir tohumu",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "gram kuzu kavurma",
-                "quantity": 300
-              },
-              {
-                "name": "Yarım avokado",
-                "quantity": 1
-              },
-              {
-                "name": "Brokoli salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Toz kollajen 1 ölçek",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "gr. ızgara çupra",
-                "quantity": 300
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, domates, salatalık)",
-                "quantity": 1
-              },
-              {
-                "name": "yemek kaşığı zeytin yağı (salata için)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak çekirdeği (1 avuç)",
-                "quantity": 1
-              },
-              {
-                "name": "Tahin (1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Bitter çikolata (2 kare)",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "Kıymalı bamya yemeği (200 gram kıyma ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Semizotu salatası (1 tatlı kaşığı zeytinyağı ve yarım avokado ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Ceviz (4 adet - 30 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "gram ızgara tavuk göğsü (istenilen baharatlarla ile marine edilmiş)",
-                "quantity": 250
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak çekirdeği (1 avuç)",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0 g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "Ketojenik kabak spagetti (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "gram köfte",
-                "quantity": 250
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kurşun geçirmez kahve  (Sabah kalkınca)\n1 fincan kahve (2 kalori, 0g karbonhidrat, 0.3 g protein, 0 g yağ)\n1 tatlı kaşığı tereyağı (0g karbonhidrat, 0g protein, 16 g yağ)",
-                "quantity": 1
-              },
-              {
-                "name": "Patlıcan kebabı (2 adet orta boy patlıcan,200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. Fırında ya da airfry da pişirilir)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "gram kırmızı et ile güveç (domates, biber ve soğan ile)",
-                "quantity": 200
-              },
-              {
-                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 tatlı kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Fındık (20 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Kıymalı karnabahar / kabak  yemeği (150gr kıyma ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Badem unu ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
-                "quantity": 200
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen (1 ölçek 10 gram)",
+                "name": "Fındık (10 adet)",
                 "quantity": 1
               },
               {
@@ -15269,35 +15364,19 @@
                 "quantity": 1
               },
               {
-                "name": "gram hindi ızgara tava",
-                "quantity": 150
+                "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+                "quantity": 250
               },
               {
-                "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Fındık (10 adet)",
+                "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
                 "quantity": 1
               },
               {
-                "name": "gram köfte",
-                "quantity": 200
-              },
-              {
-                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Toz kollajen 1 ölçek",
-                "quantity": 1
-              },
-              {
-                "name": "SALI",
+                "name": "Kollajen (1 ölçek 10 gram)",
                 "quantity": 1
               }
             ]
@@ -15305,210 +15384,44 @@
         },
         "tuesday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber+1 tatlı kaşığı zeytinyağı",
-                "quantity": 1
-              },
-              {
-                "name": "50 gram Tulum / Kaşar / Lor Peyniri",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Kabak ya da kereviz  çökertme kebabı (1 porsiyonda  150 gr kıyma ile)",
-                "quantity": 1
-              },
-              {
-                "name": "* Yemeklerinize ve salatalara seviyorsanız sarımsak ekleyebilirsiniz.",
-                "quantity": 1
-              },
-              {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "wednesday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Kabaklı Omlet",
-                "quantity": 1
-              },
-              {
-                "name": "50 gram Tulum / Kaşar / Lor Peyniri",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Browni kurabiye (2 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Fırında karnabahar kızartma (150 gram karnabahar, 1 yemek kaşığı zeytinyağı ve istenilen baharatlarla fırınlanacak.)",
-                "quantity": 1
-              },
-              {
-                "name": "Frambuazlı Cheesecake",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "thursday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma (2 yumurta, 50 gr kıyma, 100 gr semizotu/pazı, 1 yemek kaşığı zeytinyağı, soğan)",
-                "quantity": 1
-              },
-              {
-                "name": "2 dilim Hindi Füme",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Tavuk Döner (100 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Urfa / adana kebap 150 gram",
-                "quantity": 1
-              },
-              {
-                "name": "Frambuazlı Cheesecake",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "friday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Yoğurtlu Çılbır",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "2 dilim Hindi Füme",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Kabak Çökertme Kebabı",
-                "quantity": 1
-              },
-              {
-                "name": "* Yoğurtlu enginar ya da kereviz  salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Frambuazlı Cheesecake",
-                "quantity": 0.5
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "saturday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "1 yumurta, 1 çorba kaşığı lupin unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)\nyumurta ve lupin ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
-                "quantity": 1
-              },
-              {
-                "name": "Tulum / kaşar peyniri (50 gram)",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Patlıcan Kebabı",
-                "quantity": 1
-              },
-              {
-                "name": "Hindistan Cevizli Ekmek (1 dilim)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "sunday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Yumurta salatası (2 adet haşlanmış yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 yemek kaşığı zeytinyağı",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon, sirke ve 1 yemek  kaşığı zeytinyağı ile)",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Lahana Mücver",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak  ya da kereviz çökertme kebabı",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         }
       }
