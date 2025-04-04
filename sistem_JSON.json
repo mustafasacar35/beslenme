@@ -2182,6 +2182,32 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "category": "ÖĞLEN"
+        },
+        {
+          "name": "1/2 avokado",
+          "calories": 100,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": [
+            "dinner"
+          ],
+          "category": "ÖĞLEN",
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "zeytin",
+            "roka",
+            "marul",
+            "zeytinyağı",
+            "keto"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
         }
       ]
     },
@@ -6290,6 +6316,16 @@
           "mealType": "dinner",
           "keto": true,
           "lowcarb": true
+        },
+        {
+          "name": "Toz kollajen 1 ölçek",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner",
+          "category": "Tanımsız"
         }
       ]
     },
@@ -6766,16 +6802,6 @@
       "name": "Tanımsız",
       "items": [
         {
-          "name": "Toz kollajen 1 ölçek",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": "dinner",
-          "category": "Tanımsız"
-        },
-        {
           "name": "SALI",
           "calories": 0,
           "protein": 0,
@@ -6784,32 +6810,6 @@
           "role": "",
           "mealType": "dinner",
           "category": "Tanımsız"
-        },
-        {
-          "name": "1/2 avokado",
-          "calories": 100,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": [
-            "dinner"
-          ],
-          "category": "Tanımsız",
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "zeytin",
-            "roka",
-            "marul",
-            "zeytinyağı",
-            "keto"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false
         },
         {
           "name": "gram hindi ızgara tava",
@@ -13299,31 +13299,18 @@
               {
                 "name": "1/2 avokado",
                 "quantity": 1
-              }
-            ],
-            "lunch": [],
-            "dinner": [
-              {
-                "name": "gram köfte",
-                "quantity": 1
               },
               {
-                "name": "Kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+                "name": "1/2 avokado",
                 "quantity": 1
               },
               {
                 "name": "Toz kollajen 1 ölçek",
                 "quantity": 1
-              },
-              {
-                "name": "SALI",
-                "quantity": 1
               }
-            ]
+            ],
+            "lunch": [],
+            "dinner": []
           }
         },
         "tuesday": {
