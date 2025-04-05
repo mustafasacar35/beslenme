@@ -4271,6 +4271,52 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "AKŞAM"
+        },
+        {
+          "name": "200 gram ızgara ya da tavada kırmızı et",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "Yeni Eklenenler"
+        },
+        {
+          "name": "Fırında Kereviz kızartma (150 gram kereviz , 1 yemek  kaşığı zeytinyağı ve istenilen baharatlarla fırınlanır.",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "zeytin",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "Yeni Eklenenler"
         }
       ]
     },
@@ -4403,6 +4449,29 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false
+        },
+        {
+          "name": "Ceviz (5 adet )",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "ceviz",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "Yeni Eklenenler"
         }
       ]
     },
@@ -8003,51 +8072,6 @@
           "category": "Yeni Eklenenler"
         },
         {
-          "name": "200 gram ızgara ya da tavada kırmızı et",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
-          "name": "Ceviz (5 adet )",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "ceviz",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
           "name": "200 gr. Tavuk pirzola",
           "calories": 0,
           "protein": 0,
@@ -10655,30 +10679,6 @@
           "category": "Yeni Eklenenler"
         },
         {
-          "name": "Fırında Kereviz kızartma (150 gram kereviz , 1 yemek  kaşığı zeytinyağı ve istenilen baharatlarla fırınlanır.",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "zeytin",
-            "zeytinyağı",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
           "name": "*Kabak tatlısı (200gr kabak + 1 yemek kaşığı tahin)",
           "calories": 0,
           "protein": 0,
@@ -12287,7 +12287,7 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "Yeni Eklenenler"
         },
         {
           "name": "Salatalık (orta boy), Cherry domates (2 adet), 4-5 dal roka,  4-5 dal tere, 2 adet küçük yeşil biber+ limon+1 yemek kaşığı zeytinyağı ile",
@@ -13424,29 +13424,29 @@
             ],
             "lunch": [
               {
-                "name": "1 adet Sebzeli Muffin",
+                "name": "Ceviz (5 adet )",
                 "quantity": 1
               },
               {
-                "name": "Sebzeli ya da ıspanaklı  muffin",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
                 "quantity": 1
               },
               {
-                "name": "Biberli Peynir",
-                "quantity": 0.5
+                "name": "2 dilim Hindi Füme",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 yemek kaşığı zeytinyağı)",
+                "name": "200 gram ızgara ya da tavada kırmızı et",
                 "quantity": 1
               },
               {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana,sirke, limon ve 1,5 yemek kaşığı zeytinyağı ile)",
+                "name": "Fırında Kereviz kızartma (150 gram kereviz , 1 yemek  kaşığı zeytinyağı ve istenilen baharatlarla fırınlanır.",
                 "quantity": 1
               },
               {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "name": "Frambuazlı Cheesecake",
                 "quantity": 1
               }
             ]
@@ -13462,25 +13462,25 @@
             ],
             "lunch": [
               {
-                "name": "Yumurtalı Ispanak Kavurma",
+                "name": "1 adet elma veya 1 adet kivi (100 gr)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz,marul + sirke ve limon+ 1 yemek kaşığı zeytinyağı İle)",
+                "name": "Tulum / kaşar / lor peyniri (30 gram)",
                 "quantity": 1
-              },
-              {
-                "name": "Tavada Kaşarlı Mantar",
-                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Çıtır Tavuk",
+                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 yemek  kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Kabak  ya da kereviz çökertme kebabı",
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, sirke, limon ve 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Frambuazlı Cheesecake",
                 "quantity": 1
               }
             ]
@@ -13500,25 +13500,17 @@
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon, sirke ile)",
+                "name": "gram hindi ızgara tava",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Köz biber salatası (1 adet kapya biber, 2 adet kornişon turşu, 2 adet ceviz, 1 tatlı kaşığı zeytinyağı, tuz ve limon)",
+                "name": "Fındık (10 adet)",
                 "quantity": 1
               },
               {
-                "name": "Kırmızı Pancar Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "name": "Közlenmiş Kapya Biber",
                 "quantity": 1
               }
             ]
@@ -13534,21 +13526,25 @@
             ],
             "lunch": [
               {
-                "name": "Haşlanmış yumurta ya da sahanda (2 yumurta - 1 tatlı kaşığı tereyağı)",
+                "name": "Salatalık (orta boy) ,Cherry domates (2 adet), 4-5 dal roka,  4-5 dal tere, 2 adet küçük yeşil biber+1 yemek kaşığı zeytinyağı",
                 "quantity": 1
               },
               {
-                "name": "*Fırında Kabaklı Börek 1 dilim",
+                "name": "3 cherry domates",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Yoğurt (kebabın üzerine servis etmek için 2 yemek kaşığı ev yoğurdu)",
+                "name": "*Tavuklu Mantar Sote (150 gr tavuk ile)",
                 "quantity": 1
               },
               {
-                "name": "Sebze Sote",
+                "name": "Ev yapımı turşu",
+                "quantity": 1
+              },
+              {
+                "name": "Frambuazlı Cheesecake",
                 "quantity": 1
               }
             ]
@@ -13564,21 +13560,25 @@
             ],
             "lunch": [
               {
-                "name": "Sebzeli Omlet (1 yumurta, 1 dilim hindi füme, 5 mantar, 5 ıspanak)",
+                "name": "Mantarlı omlet (2 adet yumurta, 5 adet mantar, 1 tatlı kaşığı tereyağı)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul, turp vs + limon, sirke ve 1 tatlı kaşığı zeytinyağı ile)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz,marul,sirke,limon  ile)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Ciğer Kavurma (200 gram)",
+                "name": "Mevsim salata (marul, dereotu, roka, maydanoz, 1 adet küçük salatalık, 1 adet küçük domates + 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "*Sebze çorbası",
+                "name": "Mevsim salata (marul, dereotu, roka, sirke, limon ve 1 tatlı kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Frambuazlı Cheesecake",
                 "quantity": 1
               }
             ]
@@ -13594,29 +13594,29 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik tost (2 ince dilim lor ekmeği arasına 30 gram kaşar, yeşillikler, domates)",
+                "name": "1 adet Ispanaklı Muffin",
                 "quantity": 1
               },
               {
-                "name": "Tereyağlı Kabak",
+                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon ve 1 tatlı kaşığı zeytinyağı ile)",
                 "quantity": 1
               },
               {
-                "name": "2 dilim Hindi Füme",
-                "quantity": 1
+                "name": "Tavada Kaşarlı Mantar",
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "5 adet mantar 1 yemek kaşığı zeytinyağında soteleyin.",
+                "name": "Browni kurabiye (2 adet)",
                 "quantity": 1
               },
               {
-                "name": "150 gram hindi ızgara tava",
+                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana,1  yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Frambuazlı Cheesecake",
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               }
             ]
@@ -13632,26 +13632,30 @@
             ],
             "lunch": [
               {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber+1 tatlı kaşığı zeytinyağı",
+                "name": "Avokadolu Omlet",
                 "quantity": 1
               },
               {
-                "name": "Lor ekmeği (1 dilim)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul,  vs+ limon ,sirke  ile)",
                 "quantity": 1
+              },
+              {
+                "name": "Tavada Kaşarlı Mantar",
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "100 gram köz patlıcan(1 yemek kaşığı zeytinyağı ve tuz ile soteleyin. Soğuyunca 2 kaşık yoğurt ekleyip karıştırın.Üzerine köfteleri koyun.",
+                "name": "Patlıcan musakka (150 gr kıyma ile)",
                 "quantity": 1
               },
               {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana,1  yemek kaşığı zeytinyağı)",
+                "name": "Fırında Kereviz kızartma (150 gram kereviz , 1 yemek  kaşığı zeytinyağı ve istenilen baharatlarla fırınlanır.",
                 "quantity": 1
               },
               {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
+                "name": "Frambuazlı Cheesecake",
+                "quantity": 0.5
               }
             ]
           }
