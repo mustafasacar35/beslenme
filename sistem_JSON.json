@@ -2254,32 +2254,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "1/2 avokado",
-          "calories": 100,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": [
-            "dinner"
-          ],
-          "category": "ÖĞLEN",
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "zeytin",
-            "roka",
-            "marul",
-            "zeytinyağı",
-            "keto"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
           "name": "Tulum /kaşar peyniri (50 gram)",
           "calories": 130,
           "protein": 10,
@@ -7046,103 +7020,7 @@
     },
     {
       "name": "Tanımsız",
-      "items": [
-        {
-          "name": "gram hindi ızgara tava",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": "dinner",
-          "category": "Tanımsız"
-        },
-        {
-          "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": "dinner",
-          "category": "Tanımsız"
-        },
-        {
-          "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": [
-            "lunch"
-          ],
-          "category": "Tanımsız",
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "badem",
-            "keto"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
-          "name": "1/2 avokado",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": "lunch"
-        },
-        {
-          "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": [
-            "dinner"
-          ],
-          "category": "Tanımsız",
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "ketentohumu",
-            "keto"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
-          "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": "dinner",
-          "category": "Tanımsız"
-        },
-        {
-          "name": "gr. fırında ya da ızgara balık (çupra, levrek, alabalık vs.)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "role": "",
-          "mealType": "dinner",
-          "category": "Tanımsız"
-        }
-      ]
+      "items": []
     },
     {
       "name": "Yeni Eklenenler",
@@ -13336,7 +13214,7 @@
           "fat": 0,
           "role": "",
           "mealType": "lunch",
-          "category": "Tanımsız"
+          "category": "Yeni Eklenenler"
         },
         {
           "name": "gram kuzu kavurma  ya da 180 gr köfte",
@@ -13346,7 +13224,129 @@
           "fat": 0,
           "role": "",
           "mealType": "dinner",
+          "category": "Yeni Eklenenler"
+        },
+        {
+          "name": "gram hindi ızgara tava",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner",
           "category": "Tanımsız"
+        },
+        {
+          "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner",
+          "category": "Tanımsız"
+        },
+        {
+          "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": [
+            "lunch"
+          ],
+          "category": "Tanımsız",
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "badem",
+            "keto"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "1/2 avokado",
+          "calories": 100,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": [
+            "dinner"
+          ],
+          "category": "ÖĞLEN",
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "zeytin",
+            "roka",
+            "marul",
+            "zeytinyağı",
+            "keto"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "1/2 avokado",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "lunch",
+          "category": "Tanımsız"
+        },
+        {
+          "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": [
+            "dinner"
+          ],
+          "category": "Tanımsız",
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "ketentohumu",
+            "keto"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner",
+          "category": "Tanımsız"
+        },
+        {
+          "name": "gr. fırında ya da ızgara balık (çupra, levrek, alabalık vs.)",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "role": "",
+          "mealType": "dinner",
+          "category": "Yeni Eklenenler"
         }
       ]
     },
@@ -13696,6 +13696,34 @@
               },
               {
                 "name": "gram kuzu kavurma  ya da 180 gr köfte",
+                "quantity": 1
+              },
+              {
+                "name": "gram hindi ızgara tava",
+                "quantity": 1
+              },
+              {
+                "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, yarım turp, yarım kırmızı pancar +1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 avokado",
+                "quantity": 1
+              },
+              {
+                "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+                "quantity": 1
+              },
+              {
+                "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
+                "quantity": 1
+              },
+              {
+                "name": "gr. fırında ya da ızgara balık (çupra, levrek, alabalık vs.)",
                 "quantity": 1
               }
             ],
