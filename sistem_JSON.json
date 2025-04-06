@@ -2386,7 +2386,7 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "Yeni Eklenenler"
+          "category": "ÖĞLEN"
         },
         {
           "name": "Tulum / kaşar peyniri (30 gram)",
@@ -5866,7 +5866,7 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "Yeni Eklenenler"
+          "category": "SALATALAR"
         },
         {
           "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
@@ -6440,7 +6440,7 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "ÖĞLEN"
+          "category": "SALATALAR"
         },
         {
           "name": "Köz biber salatası (1 adet kapya biber, 2 adet kornişon turşu, 2 adet ceviz, 1 tatlı kaşığı zeytinyağı, tuz ve limon)",
@@ -6709,28 +6709,6 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
-          "name": "Cherry domates (3 adet)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "mainDish",
           "mealType": [
             "lunch"
           ],
@@ -7535,6 +7513,28 @@
           "mealType": [
             "lunch",
             "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "SALATALAR"
+        },
+        {
+          "name": "Cherry domates (3 adet)",
+          "calories": 8,
+          "protein": 0,
+          "carbs": 2,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
           ],
           "keto": true,
           "lowcarb": true,
@@ -9320,6 +9320,28 @@
           "step": 0.5,
           "fillerLunch": false,
           "fillerDinner": false,
+          "category": "diğer"
+        },
+        {
+          "name": "4 yemek kaşığı ev yoğurdu",
+          "calories": 42,
+          "protein": 1,
+          "carbs": 4,
+          "fat": 2,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
           "category": "diğer"
         }
       ]
@@ -11493,7 +11515,7 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "Yeni Eklenenler"
         },
         {
           "name": "Sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı tereyağı)",
@@ -11916,28 +11938,6 @@
           "category": "Yeni Eklenenler"
         },
         {
-          "name": "4 yemek kaşığı ev yoğurdu",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
           "name": "Mantarlı omlet (2 adet yumurta, 5 adet mantar,1 tatlı kaşığı tereyağı)",
           "calories": 0,
           "protein": 0,
@@ -12259,7 +12259,7 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "Yeni Eklenenler"
         },
         {
           "name": "Tavuk döner (200 gr)",
@@ -12491,7 +12491,7 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "Yeni Eklenenler"
         },
         {
           "name": "sebzeli omlet (1 yumurta,yarım kapya biber, 5 yaprak ıspanak ya da pazı, 1 yemek kaşığı zeytinyağı)",
@@ -13235,29 +13235,21 @@
             ],
             "lunch": [
               {
-                "name": "Sebzeli Omlet (2 yumurta, 5 mantar, 5 ıspanak yaprağı )",
+                "name": "Cherry domates (3 adet)",
                 "quantity": 1
               },
               {
-                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "2 dilim Hindi Füme",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke ve limon ile)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Browni kurabiye (2 adet)",
+                "name": "Fındık (20 adet)",
                 "quantity": 1
               },
               {
-                "name": "Roka, turp ve pancar dilimleri + limon ve 1 yemek kaşığı zeytinyağı ile",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
+                "name": "4 yemek kaşığı ev yoğurdu",
                 "quantity": 1
               }
             ]
@@ -13273,25 +13265,25 @@
             ],
             "lunch": [
               {
-                "name": "Cherry domates (3 adet)",
+                "name": "*Yoğurtlu çılbır (2 yumurta ile)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul,  sirke ve limon+1 tatlı kaşığı zeytinyağı ile)",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz,  limon ve sirke ile)",
+                "quantity": 1
+              },
+              {
+                "name": "2 dilim Hindi Füme",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Kıymalı Ispanak Yemeği",
+                "name": "100 gram köz patlıcan (1 tatlı kaşığı zeytinyağı ve tuz ile soteleyin. Soğuyunca 2 kaşık yoğurt ekleyip karıştırın. Üzerine köfteleri koyun).",
                 "quantity": 1
               },
               {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana,sirke ,limon ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "name": "Kabak Sote",
                 "quantity": 1
               }
             ]
@@ -13307,26 +13299,26 @@
             ],
             "lunch": [
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 1 adet küçük salatalık,  limon ve sirke ile",
+                "name": "Sebzeli Omlet",
                 "quantity": 1
               },
               {
-                "name": "30 gram Beyaz Peynir  ",
+                "name": "Lupin Unlu Poğaça",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Kuzu Güveç",
+                "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
                 "quantity": 1
               },
               {
-                "name": "Közlenmiş Kapya Biber",
+                "name": "Fırında karnabahar kızartma (150 gram karnabahar, 1 yemek kaşığı zeytinyağı ve istenilen baharatlarla fırınlanacak.)",
                 "quantity": 1
               },
               {
                 "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 0.5
+                "quantity": 1
               }
             ]
           }
@@ -13341,30 +13333,30 @@
             ],
             "lunch": [
               {
-                "name": "Sebzeli Omlet",
+                "name": "*Yoğurtlu çılbır",
                 "quantity": 1
               },
               {
-                "name": "Mevsim yeşillikleri (dereotu, roka, maydanoz, marul, sirke, limon ile)",
+                "name": "Tulum / kaşar / lor peyniri (50 gram)",
                 "quantity": 1
               },
               {
-                "name": "50 gram beyaz peynir",
-                "quantity": 0.5
+                "name": "2 dilim Hindi Füme",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "5 adet mantar 1 yemek kaşığı zeytinyağında soteleyin. En alta salatayı, üzerine mantarları,en son balığı ekleyip tabağınızı hazırlayın.",
+                "name": "Pırasa Yemeği",
                 "quantity": 1
               },
               {
-                "name": "Kabak  ya da kereviz çökertme kebabı",
+                "name": "*Haşhaş ezmesi ekmeği (1 dilim)",
                 "quantity": 1
               },
               {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
+                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 0.5
               }
             ]
           }
@@ -13379,21 +13371,29 @@
             ],
             "lunch": [
               {
-                "name": "Haşlanmış yumurta (2 adet) + (üzerine eritilmiş 1 tatlı kaşığı tereyağı ve istenilen baharatlar",
+                "name": "Patlıcan Tost",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke,  limon ve 1 yemek kaşığı zeytinyağı ile)",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke ile)",
+                "quantity": 1
+              },
+              {
+                "name": "2 dilim Hindi Füme",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "*5 adet mantar 1 yemek kaşığı zeytinyağında soteleyin. En alta salatayı, üzerine mantarları, en üst kısma da balığı ekleyebilirsiniz",
+                "name": "*Tavuklu kabak makarna",
                 "quantity": 1
               },
               {
-                "name": "Yoğurtlu Kereviz Salatası",
+                "name": "Un Helvası",
+                "quantity": 1
+              },
+              {
+                "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, turp + 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               }
             ]
@@ -13409,25 +13409,25 @@
             ],
             "lunch": [
               {
-                "name": "Ispanaklı ve Lor Peynirli Omlet",
+                "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Hindi Füme)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz,marul,sirke,limon+1 tatlı kaşığı zeytinyağı ile)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul, turp, pancar, sirke, limon ile)",
                 "quantity": 1
-              },
-              {
-                "name": "Tavada Kaşarlı Mantar",
-                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "250 gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+                "name": "100 gram köz patlıcan (1 yemek kaşığı zeytinyağı ve tuz ile soteleyin. Soğuyunca 2 kaşık yoğurt ekleyip karıştırın.",
                 "quantity": 1
               },
               {
-                "name": "Mevsim salata (marul, dereotu, roka, sirke, limon ve 1 tatlı kaşığı zeytinyağı ile)",
+                "name": "200 gr tarhana çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 1
               }
             ]
@@ -13443,21 +13443,25 @@
             ],
             "lunch": [
               {
-                "name": "Yumurtalı ıspanak / pazı kavurma (1 yumurta, 100 gr. Ispanak, 1 yemek kaşığı zeytinyağı, tercihen soğan",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 3 adet fındık  turp,  limon ve sirke+1 tatlı kaşığı zeytinyağı  ile)",
                 "quantity": 1
               },
               {
-                "name": "Dilimlenmiş yarım turp + yarım pancar (1 dilim limon ile)",
+                "name": "Tulum / kaşar / lor peyniri (50 gram)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "150 gram köfte",
+                "name": "200 gram köfte / ya da 200 gram kuzu kavurma",
                 "quantity": 1
               },
               {
-                "name": "Labneli Pancar Salatası",
+                "name": "Fırında karnabahar kızartma (150 gram karnabahar, 1 yemek kaşığı zeytinyağı ve istenilen baharatlarla fırınlanacak.)",
+                "quantity": 1
+              },
+              {
+                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 1
               }
             ]
