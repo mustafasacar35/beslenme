@@ -5261,6 +5261,31 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false
+        },
+        {
+          "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
+          "calories": 127,
+          "protein": 4,
+          "carbs": 3,
+          "fat": 11,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "ceviz",
+            "tahin",
+            "keto"
+          ],
+          "role": "dessert",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "step": 0.5,
+          "category": "TATLILAR"
         }
       ]
     },
@@ -11774,30 +11799,6 @@
           "category": "Yeni Eklenenler"
         },
         {
-          "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi, 1 çay kaşığı stevia ve  hafif tarçın serpin)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "ceviz",
-            "tahin",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
           "name": "150 gram köfte",
           "calories": 0,
           "protein": 0,
@@ -12663,31 +12664,6 @@
           "category": "Yeni Eklenenler"
         },
         {
-          "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "ceviz",
-            "tahin",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
           "name": "Kıymalı karnabahar / kabak yemeği (150gr kıyma ile)",
           "calories": 0,
           "protein": 0,
@@ -13189,6 +13165,10 @@
               },
               {
                 "name": "*Lor ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
                 "quantity": 1
               }
             ],
