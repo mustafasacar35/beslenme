@@ -2513,6 +2513,29 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "ÖĞLEN"
+        },
+        {
+          "name": "30 gram pastırma",
+          "calories": 72,
+          "protein": 9,
+          "carbs": 0,
+          "fat": 4,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "et"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "ÖĞLEN"
         }
       ]
     },
@@ -4969,6 +4992,31 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "AKŞAM"
+        },
+        {
+          "name": "Közlenmiş patlıcan salatası",
+          "calories": 178,
+          "protein": 4,
+          "carbs": 9,
+          "fat": 14,
+          "maxQuantity": 2,
+          "minQuantity": 0.5,
+          "tags": [
+            "patlıcan",
+            "keto",
+            "salata"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "AKŞAM"
         }
       ]
     },
@@ -7000,6 +7048,31 @@
           "fillerDinner": false,
           "step": 0.5,
           "category": "EKMEKLER"
+        },
+        {
+          "name": "*Haşhaş ezmesi ekmeği (1 dilim)",
+          "calories": 43,
+          "protein": 3,
+          "carbs": 1,
+          "fat": 3,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "ekmek",
+            "haşhaş"
+          ],
+          "role": "bread",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "step": 1,
+          "category": "EKMEKLER"
         }
       ]
     },
@@ -8526,73 +8599,6 @@
           "category": "Yeni Eklenenler"
         },
         {
-          "name": "* Yemeklerinize ve salatalara seviyorsanız sarımsak ekleyebilirsiniz.",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
-          "name": "30 gr pastırma, sucuk ya da 2 dilim hindi füme",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
-          "name": "Közlenmiş patlıcan salatası",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "patlıcan",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
           "name": "Haşhaş ezmesi ekmeği (1 dilim)",
           "calories": 0,
           "protein": 0,
@@ -8631,28 +8637,6 @@
           "role": "mainDish",
           "mealType": [
             "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
-          "name": "*Haşhaş ezmesi ekmeği (1 dilim)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
           ],
           "keto": true,
           "lowcarb": true,
@@ -11625,14 +11609,6 @@
               },
               {
                 "name": "Bitter çikolata (2 kare)",
-                "quantity": 1
-              },
-              {
-                "name": "* Yemeklerinize ve salatalara seviyorsanız sarımsak ekleyebilirsiniz.",
-                "quantity": 1
-              },
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
                 "quantity": 1
               },
               {
