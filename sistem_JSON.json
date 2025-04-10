@@ -47,8 +47,7 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": 
-            "lunch",
+          "mealType": "lunch",
           "keto": true,
           "lowcarb": true,
           "category": "ÖĞLEN",
@@ -96,24 +95,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "Ispanaklı Börek",
-          "calories": 313,
-          "protein": 18,
-          "carbs": 4,
-          "fat": 25,
-          "maxQuantity": 1,
-          "tags": [
-            "ıspanak",
-            "börek",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": "lunch",
-          "keto": true,
-          "lowcarb": true,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "Kabaklı Omlet",
           "calories": 380,
           "protein": 23,
@@ -131,8 +112,8 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
+          "minQuantity": 1,
+          "step": 1,
           "fillerLunch": false,
           "fillerDinner": false,
           "category": "ÖĞLEN"
@@ -179,7 +160,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "minQuantity": 0.5,
+          "minQuantity": 1,
           "step": 0.5,
           "fillerLunch": false,
           "fillerDinner": false,
@@ -228,7 +209,7 @@
           "keto": true,
           "lowcarb": true,
           "minQuantity": 1,
-          "step": 0.5,
+          "step": 1,
           "fillerLunch": false,
           "fillerDinner": false,
           "category": "ÖĞLEN"
@@ -3762,6 +3743,30 @@
           "role": "mainDish",
           "mealType": [
             "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Ispanaklı Börek",
+          "calories": 313,
+          "protein": 18,
+          "carbs": 4,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "börek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
           ],
           "keto": true,
           "lowcarb": true,
@@ -14737,18 +14742,6 @@
           "meals": {
             "breakfast": [
               {
-                "name": "Yumurtalı Ispanak Kavurma",
-                "quantity": 1
-              },
-              {
-                "name": "Keto Tost",
-                "quantity": 1
-              },
-              {
-                "name": "80 gram Ton Balığı",
-                "quantity": 1
-              },
-              {
                 "name": "1 Kase Sote Edilmiş Ispanak + Zeytinyağı",
                 "quantity": 1
               },
@@ -14786,130 +14779,6 @@
               },
               {
                 "name": "2 dilim Hindi Füme",
-                "quantity": 1
-              },
-              {
-                "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma",
-                "quantity": 1
-              },
-              {
-                "name": "1 adet Ispanaklı Muffin",
-                "quantity": 1
-              },
-              {
-                "name": "Kıymalı - Yumurtalı Ispanak Kavurma (2 yumurta, 50 gr kıyma, 100 gr ıspanak, 1 yemek kaşığı zeytinyağı, soğan)",
-                "quantity": 1
-              },
-              {
-                "name": "1 Kase Sote Edilmiş Ispanak + 1 Tatlı Kaşığı Zeytinyağı",
-                "quantity": 1
-              },
-              {
-                "name": "Sebzeli Krep (2 yumurta, 1 yemek kaşığı lupin unu, 5 mantar, 5 ıspanak, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Ketojenik Ispanaklı Börek (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Hindi Füme (2 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma (2 yumurta, 50 gr kıyma, 100 gr semizotu/pazı, 1 yemek kaşığı zeytinyağı, soğan)",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış Yumurta",
-                "quantity": 1
-              },
-              {
-                "name": "Omlet",
-                "quantity": 1
-              },
-              {
-                "name": "50 gram beyaz peynir",
-                "quantity": 1
-              },
-              {
-                "name": "1 yemek kaşığı zeytinyağı",
-                "quantity": 1
-              },
-              {
-                "name": "30 gram Beyaz Peynir  ",
-                "quantity": 1
-              },
-              {
-                "name": "1 tatlı kaşığı Tereyağı",
-                "quantity": 1
-              },
-              {
-                "name": "Kaymak",
-                "quantity": 1
-              },
-              {
-                "name": "Pastırma",
-                "quantity": 1
-              },
-              {
-                "name": "Yumurta Sarısı",
-                "quantity": 1
-              },
-              {
-                "name": "Közlenmiş Kapya Biber",
-                "quantity": 1
-              },
-              {
-                "name": "1 dilim Ispanaklı Kabak Böreği",
-                "quantity": 1
-              },
-              {
-                "name": "1 yemek kaşığı tahin",
-                "quantity": 1
-              },
-              {
-                "name": "50 gram Kasap Sucuk",
-                "quantity": 1
-              },
-              {
-                "name": "Tofu",
-                "quantity": 1
-              },
-              {
-                "name": "Lupin Unlu Poğaça",
-                "quantity": 1
-              },
-              {
-                "name": "Tatlı Patates Omleti",
-                "quantity": 1
-              },
-              {
-                "name": "Yumurtalı Ispanak",
-                "quantity": 1
-              },
-              {
-                "name": "100 gram Haşlama Et",
-                "quantity": 1
-              },
-              {
-                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
-                "quantity": 1
-              },
-              {
-                "name": "1 dilim Fırında Kabaklı Börek",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış Yumurta (1 adet) + Tereyağı ve Baharatlar",
-                "quantity": 1
-              },
-              {
-                "name": "Haşlanmış Yumurta (2 adet) + Tereyağı ve Baharatlar",
-                "quantity": 1
-              },
-              {
-                "name": "Ispanaklı ve Lor Peynirli Omlet",
                 "quantity": 1
               }
             ],
