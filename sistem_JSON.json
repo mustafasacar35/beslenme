@@ -35,263 +35,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "Hindi Füme (2 dilim)",
-          "calories": 54,
-          "carbs": 3,
-          "protein": 6,
-          "fat": 2,
-          "multiplier": 1,
-          "tags": [
-            "hindi",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "portionFixed": true,
-          "role": "mainDish",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "maxQuantity": null,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Kıymalı - Yumurtalı Semizotu/Pazı Kavurma (2 yumurta, 50 gr kıyma, 100 gr semizotu/pazı, 1 yemek kaşığı zeytinyağı, soğan)",
-          "calories": 337.2,
-          "carbs": 2.8,
-          "protein": 23,
-          "fat": 26,
-          "multiplier": 1,
-          "tags": [
-            "kıyma",
-            "yumurta",
-            "semizotu",
-            "pazı",
-            "zeytinyağı",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "portionFixed": false,
-          "role": "mainDish",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "maxQuantity": null,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Haşlanmış Yumurta",
-          "calories": 68,
-          "protein": 6,
-          "carbs": 0.5,
-          "fat": 5,
-          "maxQuantity": 2,
-          "role": "mainDish",
-          "tags": [
-            "yumurta"
-          ],
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Omlet",
-          "calories": 240,
-          "protein": 20,
-          "carbs": 2,
-          "fat": 16,
-          "maxQuantity": 1,
-          "tags": [
-            "yumurta"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "50 gram beyaz peynir",
-          "calories": 300,
-          "protein": 10,
-          "carbs": 2,
-          "fat": 20,
-          "maxQuantity": 1,
-          "tags": [
-            "süt"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "breakfast",
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "1 yemek kaşığı zeytinyağı",
-          "calories": 126,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 14,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto",
-            "yağ"
-          ],
-          "role": "supplement",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "30 gram Beyaz Peynir  ",
-          "calories": 86,
-          "protein": 6,
-          "carbs": 1,
-          "fat": 6,
-          "maxQuantity": 2,
-          "tags": [
-            "peynir",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "1 tatlı kaşığı Tereyağı",
-          "calories": 72,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 10,
-          "maxQuantity": 1,
-          "tags": [
-            "tereyağı",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false
-        },
-        {
-          "name": "Kaymak",
-          "calories": 54,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 6,
-          "maxQuantity": 1,
-          "tags": [
-            "kaymak",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Pastırma",
-          "calories": 72,
-          "protein": 9,
-          "carbs": 0,
-          "fat": 4,
-          "maxQuantity": 1,
-          "tags": [
-            "pastırma",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false
-        },
-        {
-          "name": "Yumurta Sarısı",
-          "calories": 57,
-          "protein": 3,
-          "carbs": 0,
-          "fat": 5,
-          "maxQuantity": 1,
-          "tags": [
-            "yumurta",
-            "keto"
-          ],
-          "role": "supplement",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false
-        },
-        {
           "name": "Közlenmiş Kapya Biber",
           "calories": 16,
           "protein": 1,
@@ -2342,6 +2085,168 @@
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Haşlanmış Yumurta",
+          "calories": 71,
+          "protein": 6,
+          "carbs": 0.5,
+          "fat": 5,
+          "maxQuantity": 1,
+          "role": "mainDish",
+          "tags": [
+            "yumurta"
+          ],
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "50 gram beyaz peynir",
+          "calories": 138,
+          "protein": 10,
+          "carbs": 2,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "süt"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast",
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 yemek kaşığı zeytinyağı",
+          "calories": 126,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "yağ",
+            "zeytinyağı"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "30 gram Beyaz Peynir",
+          "calories": 82,
+          "protein": 6,
+          "carbs": 1,
+          "fat": 6,
+          "maxQuantity": 2,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 tatlı kaşığı Tereyağı",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "tereyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 tatlı kaşığı kaymak (10 gram)",
+          "calories": 54,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 6,
+          "maxQuantity": 1,
+          "tags": [
+            "kaymak",
+            "keto"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "30 gram pastırma",
+          "calories": 72,
+          "protein": 9,
+          "carbs": 0,
+          "fat": 4,
+          "maxQuantity": 2,
+          "tags": [
+            "pastırma",
+            "keto"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": true,
+          "fillerDinner": false,
           "category": "ÖĞLEN"
         }
       ]
