@@ -35,101 +35,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "1 yemek kaşığı tahin",
-          "calories": 92,
-          "protein": 3,
-          "carbs": 2,
-          "fat": 8,
-          "maxQuantity": 1,
-          "tags": [
-            "tahin",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "50 gram Kasap Sucuk",
-          "calories": 166,
-          "protein": 8,
-          "carbs": 3,
-          "fat": 20,
-          "maxQuantity": 1,
-          "tags": [
-            "sucuk",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Tofu",
-          "calories": 77,
-          "protein": 6,
-          "carbs": 2,
-          "fat": 5,
-          "maxQuantity": 1,
-          "tags": [
-            "tofu",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Lupin Unlu Poğaça",
-          "calories": 208,
-          "protein": 13,
-          "carbs": 3,
-          "fat": 16,
-          "maxQuantity": 1,
-          "tags": [
-            "lupin",
-            "poğaça",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 1,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "Tatlı Patates Omleti",
           "calories": 366,
           "protein": 20,
@@ -1445,31 +1350,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "*2 adet lupin unlu poğaça (veya 3 adet Lorlu poğaça)",
-          "calories": 208,
-          "protein": 13,
-          "carbs": 3,
-          "fat": 16,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto",
-            "poğaça",
-            "lupin",
-            "lor"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "Kasap sucuk (50 gram)",
           "calories": 166,
           "protein": 7,
@@ -2247,6 +2127,102 @@
           "step": 1,
           "fillerLunch": false,
           "fillerDinner": true,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 yemek kaşığı tahin",
+          "calories": 92,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "tahin",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "50 gram Kasap Sucuk",
+          "calories": 224,
+          "protein": 8,
+          "carbs": 3,
+          "fat": 20,
+          "maxQuantity": 1,
+          "tags": [
+            "sucuk",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "*2 adet lupin unlu poğaça (veya 4 adet Lorlu poğaça)",
+          "calories": 208,
+          "protein": 13,
+          "carbs": 3,
+          "fat": 16,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "poğaça",
+            "lupin",
+            "lor"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "2 adet lupin unlu poğaça (veya 3 adet Lorlu poğaça)",
+          "calories": 208,
+          "protein": 13,
+          "carbs": 3,
+          "fat": 16,
+          "maxQuantity": 2,
+          "tags": [
+            "lupin",
+            "poğaça",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
           "category": "ÖĞLEN"
         }
       ]
@@ -10513,7 +10489,16 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [],
+            "breakfast": [
+              {
+                "name": "2 adet lupin unlu poğaça (veya 3 adet Lorlu poğaça)",
+                "quantity": 1
+              },
+              {
+                "name": "*2 adet lupin unlu poğaça (veya 3 adet Lorlu poğaça)",
+                "quantity": 1
+              }
+            ],
             "lunch": [],
             "dinner": []
           }
