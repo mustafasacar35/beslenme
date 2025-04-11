@@ -1585,65 +1585,6 @@
       "name": "AKŞAM",
       "items": [
         {
-          "name": "Yeşil Mercimekli Kabak Sandal",
-          "calories": 432,
-          "protein": 37,
-          "carbs": 17,
-          "fat": 24,
-          "maxQuantity": 1,
-          "tags": [
-            "mercimek",
-            "kabak",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Kabak Lazanya",
-          "calories": 306,
-          "protein": 15,
-          "carbs": 3,
-          "fat": 26,
-          "maxQuantity": 1,
-          "tags": [
-            "kabak",
-            "lazanya",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM",
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
-          "name": "Enginar Mantısı",
-          "calories": 369,
-          "protein": 22,
-          "carbs": 5,
-          "fat": 29,
-          "maxQuantity": 1,
-          "tags": [
-            "enginar",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
           "name": "Fırında Tavuk Kanat",
           "calories": 398,
           "protein": 40,
@@ -3929,6 +3870,77 @@
             "dinner"
           ],
           "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Kabak Lazanya (1 porsiyon)",
+          "calories": 314,
+          "protein": 16,
+          "carbs": 4,
+          "fat": 26,
+          "maxQuantity": 1,
+          "tags": [
+            "kabak",
+            "lazanya",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Enginar Mantısı (1 porsiyon)",
+          "calories": 364,
+          "protein": 22,
+          "carbs": 6,
+          "fat": 28,
+          "maxQuantity": 1,
+          "tags": [
+            "enginar",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "Yeşil Mercimekli Kabak Sandal (1 porsiyon)",
+          "calories": 424,
+          "protein": 36,
+          "carbs": 16,
+          "fat": 24,
+          "maxQuantity": 1,
+          "tags": [
+            "mercimek",
+            "kabak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": false,
           "lowcarb": true,
           "category": "AKŞAM",
           "minQuantity": 0.5,
