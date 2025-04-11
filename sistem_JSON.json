@@ -1585,158 +1585,6 @@
       "name": "AKŞAM",
       "items": [
         {
-          "name": "Köfte",
-          "calories": 250,
-          "protein": 20,
-          "carbs": 0,
-          "fat": 18,
-          "maxQuantity": 2,
-          "minQuantity": 1,
-          "tags": [
-            "keto",
-            "et"
-          ],
-          "role": "mainDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Tavuk Çorbası",
-          "calories": 114,
-          "protein": 10,
-          "carbs": 5,
-          "fat": 6,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto",
-            "çorba"
-          ],
-          "role": "soup",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Balık Izgara",
-          "calories": 200,
-          "protein": 25,
-          "carbs": 0,
-          "fat": 10,
-          "maxQuantity": 1.5,
-          "tags": [
-            "balık"
-          ],
-          "role": "mainDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Sebze Sote",
-          "calories": 100,
-          "protein": 3,
-          "carbs": 5,
-          "fat": 7,
-          "maxQuantity": 2,
-          "tags": [
-            "sebze"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "250 gr Izgara veya Fırında Balık",
-          "calories": 270,
-          "protein": 45,
-          "carbs": 0,
-          "fat": 10,
-          "maxQuantity": 1,
-          "tags": [
-            "balık",
-            "protein",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Fırında Karnabahar",
-          "calories": 312,
-          "protein": 12,
-          "carbs": 12,
-          "fat": 24,
-          "maxQuantity": 1,
-          "tags": [
-            "karnabahar",
-            "kaşar",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Kıymalı Bamya Yemeği",
-          "calories": 300,
-          "protein": 25,
-          "carbs": 2,
-          "fat": 20,
-          "maxQuantity": 1,
-          "tags": [
-            "kıyma",
-            "bamya",
-            "lahana",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Fırında Cevizli Peynirli Mantar Dolması",
-          "calories": 271,
-          "protein": 14,
-          "carbs": 2,
-          "fat": 23,
-          "maxQuantity": 1,
-          "tags": [
-            "ceviz",
-            "peynir",
-            "mantar",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
           "name": "200 gr Hindi Izgara Tava",
           "calories": 227,
           "protein": 50,
@@ -2302,27 +2150,6 @@
           "mealType": "dinner",
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Fırında Karnabahar (150 gr + 1 yemek kaşığı zeytinyağı + 50 gr kaşar)",
-          "calories": 312,
-          "carbs": 12,
-          "protein": 12,
-          "fat": 24,
-          "multiplier": 1,
-          "tags": [
-            "karnabahar",
-            "kaşar",
-            "keto"
-          ],
-          "mealType": "dinner",
-          "portionFixed": false,
-          "role": "mainDish",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
           "category": "AKŞAM"
         },
         {
@@ -4066,6 +3893,71 @@
           "step": 0.5,
           "fillerLunch": false,
           "fillerDinner": false
+        },
+        {
+          "name": "Köfte",
+          "calories": 242,
+          "protein": 20,
+          "carbs": 0,
+          "fat": 18,
+          "maxQuantity": 2,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "et"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "AKŞAM",
+          "step": 0.5
+        },
+        {
+          "name": "Tavuk Çorbası",
+          "calories": 114,
+          "protein": 10,
+          "carbs": 5,
+          "fat": 6,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "çorba"
+          ],
+          "role": "soup",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "category": "AKŞAM",
+          "step": 1
+        },
+        {
+          "name": "Fırında Cevizli Peynirli Mantar Dolması",
+          "calories": 271,
+          "protein": 14,
+          "carbs": 2,
+          "fat": 23,
+          "maxQuantity": 1,
+          "tags": [
+            "ceviz",
+            "peynir",
+            "mantar",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": "dinner",
+          "keto": true,
+          "lowcarb": true,
+          "category": "AKŞAM"
         }
       ]
     },
