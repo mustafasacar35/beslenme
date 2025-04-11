@@ -35,56 +35,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "Sebzeli Krep (2 adet yumurta, 1 yemek kaşığı lupin unu, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
-          "calories": 340,
-          "protein": 25,
-          "carbs": 6,
-          "fat": 24,
-          "maxQuantity": 1,
-          "tags": [
-            "sebze",
-            "krep",
-            "mantar",
-            "ıspanak",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "category": "ÖĞLEN",
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
-          "name": "Patlıcan Tost",
-          "calories": 140,
-          "protein": 6,
-          "carbs": 2,
-          "fat": 12,
-          "maxQuantity": 1,
-          "tags": [
-            "patlıcan",
-            "tost",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "category": "ÖĞLEN",
-          "minQuantity": 1,
-          "step": 1,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
           "name": "Kabaklı Omlet",
           "calories": 380,
           "protein": 23,
@@ -95,30 +45,6 @@
             "yumurta",
             "kabak",
             "omlet",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 1,
-          "step": 1,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "1 dilim Pırasalı Tava Böreği",
-          "calories": 136,
-          "protein": 6,
-          "carbs": 10,
-          "fat": 8,
-          "maxQuantity": 1,
-          "tags": [
-            "pırasa",
-            "börek",
             "keto"
           ],
           "role": "mainDish",
@@ -1603,6 +1529,54 @@
           "maxQuantity": 1,
           "minQuantity": 1,
           "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Patlıcan Tost",
+          "calories": 140,
+          "protein": 6,
+          "carbs": 2,
+          "fat": 12,
+          "maxQuantity": 1,
+          "tags": [
+            "patlıcan",
+            "tost",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false
+        },
+        {
+          "name": "1 dilim Pırasalı Tava Böreği",
+          "calories": 136,
+          "protein": 6,
+          "carbs": 10,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "pırasa",
+            "börek",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
           "category": "ÖĞLEN"
         }
       ]
