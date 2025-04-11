@@ -35,347 +35,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "Zeytin (5 adet)",
-          "calories": 40,
-          "protein": 1,
-          "carbs": 0,
-          "fat": 4,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "zeytin",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
-          "calories": 75,
-          "protein": 1,
-          "carbs": 2,
-          "fat": 7,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "zeytin",
-            "roka",
-            "marul",
-            "zeytinyağı",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "*Yoğurtlu çılbır",
-          "calories": 284,
-          "protein": 16,
-          "carbs": 2,
-          "fat": 24,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto",
-            "yumurta",
-            "yoğur",
-            "süt",
-            "çılbır"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Haşlanmış yumurta (1 adet)",
-          "calories": 73,
-          "protein": 6,
-          "carbs": 1,
-          "fat": 5,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "yumurta",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Kasap sucuk (50 gram)",
-          "calories": 166,
-          "protein": 7,
-          "carbs": 3,
-          "fat": 14,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "30 gram pastırma",
-          "calories": 72,
-          "protein": 9,
-          "carbs": 0,
-          "fat": 4,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto",
-            "et"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Tulum / kaşar / lor peyniri (30 gram)",
-          "calories": 82,
-          "protein": 6,
-          "carbs": 1,
-          "fat": 6,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "peynir",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
-          "calories": 216,
-          "protein": 16,
-          "carbs": 2,
-          "fat": 16,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "yumurta",
-            "sebze",
-            "tereyağı",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Yumurtalı ıspanak  (pazı veya semizotu ile)",
-          "calories": 370,
-          "protein": 18,
-          "carbs": 11,
-          "fat": 28,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "yumurta",
-            "zeytin",
-            "zeytinyağı",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "1 dilim Fırında Kabaklı Börek",
-          "calories": 193.2,
-          "carbs": 3.9,
-          "protein": 10.2,
-          "fat": 15.2,
-          "multiplier": 1,
-          "tags": [
-            "kabak",
-            "börek",
-            "keto"
-          ],
-          "mealType": [
-            "breakfast"
-          ],
-          "portionFixed": true,
-          "role": "mainDish",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "maxQuantity": 2,
-          "minQuantity": 1,
-          "step": 1,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Sebzeli Omlet (2 yumurta, 2 dilim hindi füme, 5 mantar, 5 ıspanak, 1 yemek kaşığı zeytinyağı)",
-          "calories": 345,
-          "carbs": 5,
-          "protein": 25,
-          "fat": 25,
-          "multiplier": 1,
-          "tags": [
-            "sebze",
-            "omlet",
-            "hindi",
-            "mantar",
-            "ıspanak",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "portionFixed": false,
-          "role": "mainDish",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "10 adet Zeytin",
-          "calories": 80,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 8,
-          "maxQuantity": 2,
-          "tags": [
-            "zeytin"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 adet yumurta, 50 gram kıyma, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, soğan",
-          "calories": 338,
-          "protein": 23,
-          "carbs": 3,
-          "fat": 26,
-          "maxQuantity": 1.5,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto",
-            "yumurta"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "1 Kase Sote Edilmiş Ispanak + Zeytinyağı",
-          "calories": 95,
-          "protein": 5,
-          "carbs": 3,
-          "fat": 7,
-          "maxQuantity": 1,
-          "tags": [
-            "ıspanak",
-            "zeytinyağı",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "category": "ÖĞLEN",
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
           "name": "Sebzeli Krep (2 adet yumurta, 1 yemek kaşığı lupin unu, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
           "calories": 340,
           "protein": 25,
@@ -570,33 +229,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "Kıymalı - Yumurtalı ıspanak / semizotu/ pazı kavurma (2 yumurta, 50 gram kıyma, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, soğan",
-          "calories": 337.2,
-          "protein": 23,
-          "carbs": 2.8,
-          "fat": 26,
-          "maxQuantity": 1,
-          "tags": [
-            "kıyma",
-            "yumurta",
-            "semizotu",
-            "pazı",
-            "zeytinyağı",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "1 adet Ispanaklı Muffin",
           "calories": 308,
           "protein": 18,
@@ -618,32 +250,6 @@
           "step": 0.5,
           "fillerLunch": true,
           "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "1 Kase Sote Edilmiş Ispanak + 1 tatlı kaşığı zeytinyağı",
-          "calories": 95,
-          "carbs": 3,
-          "protein": 5,
-          "fat": 7,
-          "multiplier": 1,
-          "tags": [
-            "ıspanak",
-            "zeytinyağı",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "portionFixed": false,
-          "role": "sideDish",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
           "category": "ÖĞLEN"
         },
         {
@@ -746,31 +352,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "1 yemek kaşığı zeytinyağı",
-          "calories": 126,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 14,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "tags": [
-            "keto",
-            "yağ",
-            "zeytinyağı"
-          ],
-          "role": "supplement",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "step": 1,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "30 gram Beyaz Peynir",
           "calories": 82,
           "protein": 6,
@@ -845,12 +426,12 @@
           "protein": 9,
           "carbs": 0,
           "fat": 4,
-          "maxQuantity": 2,
+          "maxQuantity": 1,
           "tags": [
-            "pastırma",
-            "keto"
+            "keto",
+            "et"
           ],
-          "role": "supplement",
+          "role": "sideDish",
           "mealType": [
             "lunch"
           ],
@@ -1177,33 +758,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "sebzeli omlet (2 adet yumurta, 2 dilim hindi füme, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
-          "calories": 345,
-          "protein": 25,
-          "carbs": 5,
-          "fat": 25,
-          "maxQuantity": 1,
-          "tags": [
-            "sebze",
-            "omlet",
-            "hindi",
-            "mantar",
-            "ıspanak",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "Menemen (2 adet yumurta, 1 adet domates, 1 adet biber, 1/4 soğan)",
           "calories": 229,
           "protein": 14,
@@ -1270,30 +824,6 @@
           "keto": true,
           "lowcarb": true,
           "minQuantity": 1,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 yumurta, 50 gr. kıyma, 100 gr. Ispanak, 1 yk zeytinyağı, soğan C18 Yumurtalı ıspanak kavurma (2 adet yumurta, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, tercihen soğan",
-          "calories": 370.5,
-          "protein": 17.5,
-          "carbs": 11,
-          "fat": 28.5,
-          "maxQuantity": 1,
-          "tags": [
-            "ıspanak",
-            "yumurta",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
           "step": 0.5,
           "fillerLunch": false,
           "fillerDinner": false,
@@ -1600,63 +1130,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "Sebzeli Omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
-          "calories": 345,
-          "carbs": 5,
-          "protein": 25,
-          "fat": 25,
-          "multiplier": 1,
-          "tags": [
-            "sebze",
-            "omlet",
-            "mantar",
-            "ıspanak",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "portionFixed": false,
-          "role": "mainDish",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 1,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "Sebzeli Omlet (1 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
-          "calories": 279,
-          "carbs": 2,
-          "protein": 16,
-          "fat": 23,
-          "multiplier": 1,
-          "tags": [
-            "sebze",
-            "omlet",
-            "hindi",
-            "mantar",
-            "ıspanak",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "portionFixed": false,
-          "role": "mainDish",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 1,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "Biberli peynir, 1 porsiyon - (3 adet yeşil biber, 50 gram lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
           "calories": 173,
           "protein": 10,
@@ -1753,6 +1226,383 @@
           "fillerLunch": true,
           "fillerDinner": false,
           "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Zeytin (5 adet)",
+          "calories": 40,
+          "protein": 1,
+          "carbs": 0,
+          "fat": 4,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "zeytin",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Zeytin (10 adet)",
+          "calories": 80,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 8,
+          "maxQuantity": 1,
+          "tags": [
+            "zeytin"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
+          "calories": 75,
+          "protein": 1,
+          "carbs": 2,
+          "fat": 7,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "salata",
+            "zeytin",
+            "roka",
+            "marul",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Yoğurtlu çılbır",
+          "calories": 288,
+          "protein": 16,
+          "carbs": 2,
+          "fat": 24,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "yumurta",
+            "yoğur",
+            "süt",
+            "çılbır"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kasap sucuk (50 gram, tavada veya ızgarada)",
+          "calories": 166,
+          "protein": 7,
+          "carbs": 3,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "et",
+            "sucuk"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "30 gram pastırma",
+          "calories": 72,
+          "protein": 9,
+          "carbs": 0,
+          "fat": 4,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "keto",
+            "et"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Tulum / kaşar / lor peyniri (30 gram)",
+          "calories": 82,
+          "protein": 6,
+          "carbs": 1,
+          "fat": 6,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
+          "calories": 216,
+          "protein": 16,
+          "carbs": 2,
+          "fat": 16,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "yumurta",
+            "sebze",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "sebzeli omlet (2 adet yumurta, 2 dilim hindi füme, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+          "calories": 345,
+          "protein": 25,
+          "carbs": 5,
+          "fat": 25,
+          "maxQuantity": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "hindi",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli Omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+          "calories": 345,
+          "carbs": 5,
+          "protein": 25,
+          "fat": 25,
+          "multiplier": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Sebzeli Omlet (1 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+          "calories": 279,
+          "carbs": 2,
+          "protein": 16,
+          "fat": 23,
+          "multiplier": 1,
+          "tags": [
+            "sebze",
+            "omlet",
+            "hindi",
+            "mantar",
+            "ıspanak",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 adet yumurta, 50 gram kıyma, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, soğan",
+          "calories": 338,
+          "protein": 23,
+          "carbs": 3,
+          "fat": 26,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "yumurta",
+            "ıspanak"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 dilim Fırında Kabaklı Börek",
+          "calories": 193.2,
+          "carbs": 3.9,
+          "protein": 10.2,
+          "fat": 15.2,
+          "multiplier": 1,
+          "tags": [
+            "kabak",
+            "börek",
+            "keto"
+          ],
+          "mealType": [
+            "breakfast"
+          ],
+          "portionFixed": true,
+          "role": "mainDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "maxQuantity": 2,
+          "minQuantity": 1,
+          "step": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 Kase Sote Edilmiş Ispanak + 1 yemek kaşığı zeytinyağı",
+          "calories": 158,
+          "protein": 5,
+          "carbs": 3,
+          "fat": 14,
+          "maxQuantity": 1,
+          "tags": [
+            "ıspanak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "ÖĞLEN",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": true,
+          "fillerDinner": true
+        },
+        {
+          "name": "1 Kase Sote Edilmiş Ispanak + 1 tatlı kaşığı zeytinyağı",
+          "calories": 95,
+          "carbs": 3,
+          "protein": 5,
+          "fat": 7,
+          "multiplier": 1,
+          "tags": [
+            "ıspanak",
+            "zeytinyağı",
+            "keto"
+          ],
+          "mealType": [
+            "lunch"
+          ],
+          "portionFixed": false,
+          "role": "sideDish",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
           "category": "ÖĞLEN"
         }
       ]
