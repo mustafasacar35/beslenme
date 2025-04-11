@@ -35,31 +35,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "Mantarlı Omlet",
-          "calories": 226,
-          "protein": 14,
-          "carbs": 2,
-          "fat": 18,
-          "maxQuantity": 1,
-          "tags": [
-            "mantar",
-            "omlet",
-            "tereyağı",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "Sebzeli Omlet",
           "calories": 345,
           "protein": 25,
@@ -2197,6 +2172,31 @@
           "lowcarb": true,
           "minQuantity": 1,
           "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Mantarlı Omlet",
+          "calories": 226,
+          "protein": 14,
+          "carbs": 2,
+          "fat": 18,
+          "maxQuantity": 1,
+          "tags": [
+            "mantar",
+            "omlet",
+            "tereyağı",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
           "fillerLunch": false,
           "fillerDinner": false,
           "category": "ÖĞLEN"
