@@ -2,7 +2,35 @@
   "categories": [
     {
       "name": "KAHVALTI",
-      "items": []
+      "items": [
+        {
+          "name": "Kurşun Geçirmez Kahve",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "tags": [
+            "kahve",
+            "keto",
+            "kurşun geçirmez"
+          ],
+          "role": "drink",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "step": 0.5,
+          "category": "KAHVALTI",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
+        }
+      ]
     },
     {
       "name": "ÖĞLEN",
@@ -1551,33 +1579,6 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "category": "ÖĞLEN"
-        },
-        {
-          "name": "Kurşun Geçirmez Kahve",
-          "calories": 90,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 10,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "kahve",
-            "keto",
-            "kurşun geçirmez"
-          ],
-          "role": "drink",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "ÖĞLEN",
-          "season": "4 mevsim",
-          "portionFixed": false,
-          "multiplier": 1
         }
       ]
     },
