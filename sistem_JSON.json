@@ -1810,13 +1810,24 @@
           "maxQuantity": 1,
           "tags": [
             "köfte",
-            "pırasa"
+            "pırasa",
+            "et",
+            "keto"
           ],
           "role": "mainDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Ketojenik Köfte",
@@ -1824,7 +1835,7 @@
           "protein": 23,
           "carbs": 4,
           "fat": 28,
-          "maxQuantity": 1,
+          "maxQuantity": 2,
           "tags": [
             "köfte",
             "keto",
@@ -1836,11 +1847,14 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
+          "minQuantity": 1,
+          "step": 1,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Lahana Lazanya",
@@ -1855,10 +1869,19 @@
             "keto"
           ],
           "role": "mainDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Fırında Kremalı Karnabahar",
@@ -1873,14 +1896,23 @@
             "keto"
           ],
           "role": "mainDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Kıymalı Bamya (veya Kıymalı Lahana) Yemeği (100 gr kıyma ile)",
-          "calories": 300,
+          "calories": 288,
           "carbs": 2,
           "protein": 25,
           "fat": 20,
@@ -1891,14 +1923,20 @@
             "lahana",
             "keto"
           ],
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "portionFixed": false,
           "role": "mainDish",
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "season": "4 mevsim"
         },
         {
           "name": "Kerevizli Çökertme Kebabı (200 gr kıyma ve 1 küçük boy kereviz ile)",
