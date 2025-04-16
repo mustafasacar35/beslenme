@@ -1658,7 +1658,8 @@
           "tags": [
             "tavuk",
             "güveç",
-            "keto"
+            "keto",
+            "et"
           ],
           "role": "mainDish",
           "mealType": [
@@ -1676,7 +1677,7 @@
           "multiplier": 1
         },
         {
-          "name": "Çıtır Tavuk",
+          "name": "Çıtır Tavuk (1 porsiyon)",
           "calories": 648,
           "protein": 48,
           "carbs": 6,
@@ -1685,7 +1686,8 @@
           "tags": [
             "çıtır",
             "tavuk",
-            "keto"
+            "keto",
+            "et"
           ],
           "role": "mainDish",
           "mealType": [
@@ -1765,7 +1767,8 @@
           "tags": [
             "kıyma",
             "ıspanak",
-            "keto"
+            "keto",
+            "et"
           ],
           "role": "mainDish",
           "mealType": [
@@ -1791,7 +1794,8 @@
           "maxQuantity": 1,
           "tags": [
             "kıyma",
-            "brüksel lahana"
+            "brüksel lahana",
+            "et"
           ],
           "role": "mainDish",
           "mealType": [
@@ -1928,7 +1932,8 @@
             "kıyma",
             "bamya",
             "lahana",
-            "keto"
+            "keto",
+            "et"
           ],
           "mealType": [
             "dinner"
@@ -1956,12 +1961,11 @@
             "kereviz",
             "kıyma",
             "kebap",
-            "keto"
+            "keto",
+            "et"
           ],
           "mealType": [
-            "kereviz",
-            "et",
-            "kıyma"
+            "dinner"
           ],
           "portionFixed": false,
           "role": "mainDish",
@@ -1986,12 +1990,11 @@
             "patlıcan",
             "kıyma",
             "kebap",
-            "keto"
+            "keto",
+            "et"
           ],
           "mealType": [
-            "patlıcan",
-            "kebap",
-            "et"
+            "dinner"
           ],
           "portionFixed": false,
           "role": "mainDish",
@@ -2015,12 +2018,11 @@
           "tags": [
             "somon",
             "balık",
-            "keto"
+            "keto",
+            "et"
           ],
           "mealType": [
-            "balık",
-            "et",
-            "somon"
+            "dinner"
           ],
           "portionFixed": true,
           "role": "mainDish",
@@ -2028,9 +2030,9 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "maxQuantity": 1,
+          "maxQuantity": 1.5,
           "category": "AKŞAM",
-          "minQuantity": 0.5,
+          "minQuantity": 1,
           "step": 0.5,
           "season": "4 mevsim"
         },
@@ -2044,12 +2046,11 @@
           "tags": [
             "karnabahar",
             "kıyma",
-            "keto"
+            "keto",
+            "et"
           ],
           "mealType": [
-            "karnabahar",
-            "mantı",
-            "et"
+            "dinner"
           ],
           "portionFixed": false,
           "role": "mainDish",
@@ -2059,7 +2060,7 @@
           "fillerDinner": false,
           "category": "AKŞAM",
           "maxQuantity": 1.5,
-          "minQuantity": 0.5,
+          "minQuantity": 1,
           "step": 0.5,
           "season": "4 mevsim"
         },
@@ -2073,7 +2074,9 @@
           "tags": [
             "nohut"
           ],
-          "mealType": [],
+          "mealType": [
+            "dinner"
+          ],
           "portionFixed": false,
           "role": "mainDish",
           "keto": false,
@@ -2096,7 +2099,8 @@
           "tags": [
             "pırasa",
             "kıyma",
-            "keto"
+            "keto",
+            "et"
           ],
           "mealType": [
             "dinner"
@@ -2122,7 +2126,8 @@
           "multiplier": 1,
           "tags": [
             "ciğer",
-            "keto"
+            "keto",
+            "et"
           ],
           "mealType": [
             "dinner"
@@ -2147,12 +2152,12 @@
           "fat": 8,
           "maxQuantity": 2,
           "tags": [
-            "tavuk"
+            "tavuk",
+            "et"
           ],
           "role": "mainDish",
           "mealType": [
-            "et",
-            "tavuk"
+            "dinner"
           ],
           "keto": true,
           "lowcarb": true,
