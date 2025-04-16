@@ -3670,31 +3670,6 @@
           "fillerDinner": false
         },
         {
-          "name": "200 gram hindi ızgara tava",
-          "calories": 266,
-          "protein": 44,
-          "carbs": 0,
-          "fat": 10,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "tags": [
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 1,
-          "category": "AKŞAM",
-          "season": "4 mevsim",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
           "name": "200 gram tavuk pirzola",
           "calories": 402,
           "protein": 40,
@@ -9704,32 +9679,6 @@
           "category": "Tanımsız"
         },
         {
-          "name": "200 gram hindi ızgara tava",
-          "calories": 228,
-          "protein": 50,
-          "carbs": 2,
-          "fat": 4,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "keto",
-            "et",
-            "hindi",
-            "ızgara"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "step": 0.5,
-          "category": "Yeni Eklenenler"
-        },
-        {
           "name": "gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
           "calories": 0,
           "protein": 0,
@@ -10197,10 +10146,6 @@
                 "quantity": 1
               },
               {
-                "name": "200 gram hindi ızgara tava",
-                "quantity": 0.5
-              },
-              {
                 "name": "Yaban Mersinli Smoothie (1 porsiyon)",
                 "quantity": 1
               },
@@ -10247,10 +10192,6 @@
               {
                 "name": "1 adet Ispanaklı Muffin",
                 "quantity": 1
-              },
-              {
-                "name": "200 gram hindi ızgara tava",
-                "quantity": 0.5
               },
               {
                 "name": "Yaban Mersinli Smoothie (1 porsiyon)",
@@ -10315,19 +10256,11 @@
             ],
             "dinner": [
               {
-                "name": "Çıtır Tavuk (1 porsiyon)",
-                "quantity": 0.5
-              },
-              {
-                "name": "Kelle Paça Çorbası",
+                "name": "Tarhana Çorbası",
                 "quantity": 1
               },
               {
-                "name": "Yoğurtlu Kereviz Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Ev yapımı turşu",
+                "name": "Fırında Kremalı Karnabahar",
                 "quantity": 1
               }
             ]
@@ -10367,13 +10300,69 @@
             ],
             "dinner": [
               {
-                "name": "Kremalı Ispanak Çorbası",
+                "name": "Çıtır Tavuk (1 porsiyon)",
+                "quantity": 0.5
+              },
+              {
+                "name": "Kelle Paça Çorbası",
+                "quantity": 1
+              },
+              {
+                "name": "Yoğurtlu Kereviz Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Ev yapımı turşu",
                 "quantity": 1
               }
             ]
           }
         },
         "friday": {
+          "meals": {
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1,
+                "unit": "fincan",
+                "role": "drink",
+                "calories": 90,
+                "protein": 0,
+                "fat": 10,
+                "carbs": 0
+              }
+            ],
+            "lunch": [
+              {
+                "name": "100 gram Hellim Peynirli Ispanak",
+                "quantity": 1
+              },
+              {
+                "name": "Çiğ badem  (20 adet)",
+                "quantity": 0.5
+              },
+              {
+                "name": "50 gram Kasap Sucuk",
+                "quantity": 0.5
+              },
+              {
+                "name": "1/2 Avokado",
+                "quantity": 0.5
+              }
+            ],
+            "dinner": [
+              {
+                "name": "1 dilim  Badem Unlu Sandviç Ekmeği",
+                "quantity": 1
+              },
+              {
+                "name": "Fırında Kremalı Karnabahar",
+                "quantity": 1
+              }
+            ]
+          }
+        },
+        "saturday": {
           "meals": {
             "breakfast": [
               {
@@ -10425,42 +10414,6 @@
             ]
           }
         },
-        "saturday": {
-          "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              }
-            ],
-            "lunch": [
-              {
-                "name": "1 dilim  Badem Unlu Sandviç Ekmeği",
-                "quantity": 1
-              },
-              {
-                "name": "Biberli peynir (3 adet yeşil biber, 50 gr lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
-                "quantity": 0.5
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-                "quantity": 1
-              },
-              {
-                "name": "Fırında Kremalı Karnabahar",
-                "quantity": 1
-              }
-            ]
-          }
-        },
         "sunday": {
           "meals": {
             "breakfast": [
@@ -10477,37 +10430,29 @@
             ],
             "lunch": [
               {
-                "name": "100 gram Hellim Peynirli Ispanak",
+                "name": "Ketojenik Tost (Tahin Ekmeği + Kaşar)",
                 "quantity": 1
               },
               {
-                "name": "Çiğ badem  (20 adet)",
+                "name": "Biberli peynir, 1 porsiyon - (3 adet yeşil biber, 50 gram lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
                 "quantity": 0.5
               },
               {
-                "name": "50 gram Kasap Sucuk",
-                "quantity": 0.5
+                "name": "30 gram pastırma",
+                "quantity": 1
               },
               {
-                "name": "1/2 Avokado",
-                "quantity": 0.5
+                "name": "Avokado (yarım)",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Kerevizli Çökertme Kebabı (200 gram kıyma ve 1 küçük boy kereviz ile)",
+                "name": "Tavuk Çorbası",
                 "quantity": 1
               },
               {
-                "name": "Kelle Paça Çorbası",
-                "quantity": 1
-              },
-              {
-                "name": "Ketojenik Kremalı Kek",
-                "quantity": 1
-              },
-              {
-                "name": "Közlenmiş Kapya Biber",
+                "name": "Peynirli Kabak Mezesi",
                 "quantity": 1
               }
             ]
@@ -10847,6 +10792,24 @@
       "role": "",
       "catCheck": true,
       "category": "TOSTLAR",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 48,
+      "frequency": 3,
+      "frequencyType": "max",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
       "mealTypeCheck": false,
       "mealType": ""
     }
