@@ -3327,7 +3327,10 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Patlıcan kebabı (2 adet orta boy patlıcan, 200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. fırında ya da airfry'da pişirilir)",
@@ -3385,7 +3388,7 @@
           "carbs": 22,
           "fat": 18,
           "maxQuantity": 1,
-          "minQuantity": 0.5,
+          "minQuantity": 1,
           "tags": [
             "tavuk",
             "lowcarb"
@@ -3398,21 +3401,24 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "step": 0.5,
-          "category": "AKŞAM"
+          "step": 1,
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
-          "name": "Kıymalı ıspanak",
-          "calories": 404,
+          "name": "Kıymalı ıspanak yemeği (200 gram kıyma ile)",
+          "calories": 403,
           "protein": 38,
           "carbs": 11,
           "fat": 23,
           "maxQuantity": 1,
-          "minQuantity": 0.5,
+          "minQuantity": 1,
           "tags": [
             "kabak",
             "keto",
-            "et"
+            "eti kıyma"
           ],
           "role": "mainDish",
           "mealType": [
@@ -3422,8 +3428,11 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "step": 0.5,
-          "category": "AKŞAM"
+          "step": 1,
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Fırında Kereviz Kızartma (150 gram kereviz, 1 yemek kaşığı zeytinyağı ve istenilen baharalarla fırınlanır)",
@@ -3445,35 +3454,13 @@
           "keto": true,
           "lowcarb": true,
           "category": "AKŞAM",
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
-          "name": "Tavuk döner (200 gr)",
-          "calories": 292,
-          "protein": 44,
-          "carbs": 2,
-          "fat": 12,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "tags": [
-            "tavuk",
-            "keto",
-            "et",
-            "döner"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
+          "minQuantity": 1,
+          "step": 1,
           "fillerLunch": false,
           "fillerDinner": false,
-          "step": 0.5,
-          "category": "AKŞAM"
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Fırında karnabahar kızartma (150 gram karnabahar, 1 yemek kaşığı zeytinyağı ve istenilen baharatlarla fırınlanacak.)",
@@ -3494,10 +3481,13 @@
           "keto": true,
           "lowcarb": true,
           "category": "AKŞAM",
-          "minQuantity": 0.5,
-          "step": 0.5,
+          "minQuantity": 1,
+          "step": 1,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": true,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Urfa / Adana Kebap (150 gram, 1 porsiyon)",
@@ -3521,17 +3511,18 @@
           "fillerDinner": false,
           "category": "AKŞAM",
           "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5
+          "minQuantity": 1,
+          "step": 1,
+          "season": "4 mevsim"
         },
         {
           "name": "Kırmızı et ya da tavuklu bamya yemeği (100 gram et ile)",
-          "calories": 300,
+          "calories": 288,
           "protein": 25,
           "carbs": 2,
           "fat": 20,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
+          "maxQuantity": 1.5,
+          "minQuantity": 1,
           "tags": [
             "tavuk",
             "keto",
@@ -3546,10 +3537,13 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
-          "name": "Yeşil mercimek yemeği",
+          "name": "Yeşil mercimek yemeği (1 porsiyon)",
           "calories": 280,
           "protein": 14,
           "carbs": 20,
@@ -3557,7 +3551,8 @@
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "tags": [
-            "mercimek"
+            "mercimek",
+            "çorba"
           ],
           "role": "mainDish",
           "mealType": [
@@ -3566,18 +3561,21 @@
           "keto": false,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
-          "name": "250 gram ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+          "name": "200 gram ızgara ya da fırında balık (çupra, levrek, alabalık)",
           "calories": 278,
           "protein": 45,
           "carbs": 2,
           "fat": 10,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
+          "maxQuantity": 1.5,
+          "minQuantity": 1,
           "tags": [
             "balık",
             "keto",
@@ -3592,7 +3590,10 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "80 gram Ton Balığı",
@@ -3612,33 +3613,13 @@
           "keto": true,
           "lowcarb": true,
           "category": "AKŞAM",
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
-          "name": "Köfte",
-          "calories": 242,
-          "protein": 20,
-          "carbs": 0,
-          "fat": 18,
-          "maxQuantity": 2,
           "minQuantity": 1,
-          "tags": [
-            "keto",
-            "et"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
+          "step": 1,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "AKŞAM",
-          "step": 0.5
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Tavuk Çorbası",
@@ -4086,7 +4067,10 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Kabak Lazanya (1 porsiyon)",
@@ -4110,7 +4094,10 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Enginar Mantısı (1 porsiyon)",
@@ -4121,7 +4108,8 @@
           "maxQuantity": 1,
           "tags": [
             "enginar",
-            "keto"
+            "keto",
+            "mantı"
           ],
           "role": "mainDish",
           "mealType": [
@@ -4133,7 +4121,10 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Yeşil Mercimekli Kabak Sandal (1 porsiyon)",
@@ -4157,7 +4148,10 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         }
       ]
     },
