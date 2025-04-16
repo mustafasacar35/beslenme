@@ -1623,7 +1623,7 @@
       "name": "AKŞAM",
       "items": [
         {
-          "name": "Fırında Tavuk Kanat",
+          "name": "Fırında Tavuk Kanat (1 porsiyon)",
           "calories": 398,
           "protein": 40,
           "carbs": 1,
@@ -1640,8 +1640,8 @@
           "keto": true,
           "lowcarb": true,
           "category": "AKŞAM",
-          "minQuantity": 0.5,
-          "step": 0.5,
+          "minQuantity": 1,
+          "step": 1,
           "fillerLunch": false,
           "fillerDinner": false,
           "season": "4 mevsim",
@@ -2628,32 +2628,6 @@
           "multiplier": 1
         },
         {
-          "name": "Toz Kollajen 1 ölçek (10 gram)",
-          "calories": 40,
-          "protein": 10,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "tags": [
-            "keto",
-            "ek"
-          ],
-          "role": "supplement",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM",
-          "step": 1,
-          "season": "4 mevsim",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
           "name": "Karnabahar Püresi",
           "calories": 228,
           "protein": 8,
@@ -2719,10 +2693,19 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Zeytinyağlı Deniz Börülcesi",
@@ -2737,10 +2720,19 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Zeytinyağlı Yer Elması",
@@ -2760,10 +2752,13 @@
           "keto": true,
           "lowcarb": true,
           "category": "AKŞAM",
-          "minQuantity": 0.5,
-          "step": 0.5,
+          "minQuantity": 1,
+          "step": 1,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Peynirli Kabak Mezesi",
@@ -2778,10 +2773,20 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Tavada Kaşarlı Mantar",
@@ -2805,7 +2810,7 @@
           "minQuantity": 1,
           "step": 1,
           "fillerLunch": true,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "AKŞAM",
           "season": "4 mevsim",
           "portionFixed": false,
@@ -3199,20 +3204,24 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
-          "name": "*Tavuklu Mantar Sote (150 gr tavuk ile)",
-          "calories": 321,
-          "protein": 35,
-          "carbs": 7,
-          "fat": 17,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
+          "name": "*Tavuklu Mantar Sote (100 gram tavuk ile)",
+          "calories": 220,
+          "protein": 24,
+          "carbs": 4,
+          "fat": 12,
+          "maxQuantity": 2,
+          "minQuantity": 1,
           "tags": [
             "tavuk",
             "keto",
-            "mantar"
+            "mantar",
+            "et"
           ],
           "role": "mainDish",
           "mealType": [
@@ -3223,7 +3232,10 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Susamlı karnabahar kızartma (150 gram karnabahar, 1 yemek kaşığı zeytinyağı, 1 yemek kaşığı susam ve istenilen baharatlarla fırınlanacak.)",
@@ -7234,6 +7246,32 @@
           "role": "",
           "mealType": "dinner",
           "category": "KOLLAJEN"
+        },
+        {
+          "name": "Toz Kollajen 1 ölçek (10 gram)",
+          "calories": 40,
+          "protein": 10,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "tags": [
+            "keto",
+            "ek"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "KOLLAJEN",
+          "step": 1,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         }
       ]
     },
