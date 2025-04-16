@@ -2749,7 +2749,7 @@
           "mealType": [
             "dinner"
           ],
-          "keto": true,
+          "keto": false,
           "lowcarb": true,
           "category": "AKŞAM",
           "minQuantity": 1,
@@ -3120,7 +3120,10 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "step": 0.5,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "*Zeytinyağlı Deniz Börülcesi ya da brokoli salata (1 tatlı kaşığı zeytinyağı ekleyelim)",
@@ -3986,12 +3989,12 @@
           "fillerDinner": false
         },
         {
-          "name": "Karnabahar mantı (150 gram karnabahar, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlarla",
-          "calories": 354,
-          "protein": 30,
-          "carbs": 0,
-          "fat": 26,
-          "maxQuantity": 1,
+          "name": "Karnabahar mantı (100 gram karnabahar, 100 gram kıyma, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlarla",
+          "calories": 232,
+          "protein": 20,
+          "carbs": 2,
+          "fat": 16,
+          "maxQuantity": 1.5,
           "tags": [
             "et",
             "karnabahar",
@@ -4005,10 +4008,13 @@
           "keto": true,
           "lowcarb": true,
           "category": "AKŞAM",
-          "minQuantity": 0.5,
+          "minQuantity": 1,
           "step": 0.5,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Nohut yemeği (1 su bardağı nohut ile)",
@@ -10167,6 +10173,10 @@
               {
                 "name": "Patlıcan musakka (100 gram kıyma ile)",
                 "quantity": 1
+              },
+              {
+                "name": "Karnabahar mantı (100 gram karnabahar, 100 gram kıyma, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlarla",
+                "quantity": 1.5
               }
             ],
             "lunch": [],
