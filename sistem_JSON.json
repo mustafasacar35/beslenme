@@ -2992,61 +2992,6 @@
           "multiplier": 1
         },
         {
-          "name": "Enginar Çanağı",
-          "calories": 36,
-          "protein": 3,
-          "carbs": 6,
-          "fat": 0,
-          "maxQuantity": 1,
-          "tags": [
-            "enginar",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": "lunch,dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Keten Tohumu (1 yemek kaşığı)",
-          "calories": 55,
-          "carbs": 3,
-          "protein": 2,
-          "fat": 4,
-          "multiplier": 1,
-          "tags": [
-            "keten tohumu",
-            "keto"
-          ],
-          "mealType": "snack",
-          "portionFixed": true,
-          "role": "snack",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
-          "name": "Chia Tohumu (1 yemek kaşığı)",
-          "calories": 58,
-          "carbs": 5,
-          "protein": 2,
-          "fat": 3,
-          "multiplier": 1,
-          "tags": [
-            "chia",
-            "keto"
-          ],
-          "mealType": "snack",
-          "portionFixed": true,
-          "role": "snack",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false
-        },
-        {
           "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
           "calories": 300,
           "protein": 5,
@@ -7965,6 +7910,87 @@
           "season": "4 mevsim",
           "portionFixed": false,
           "multiplier": 1
+        },
+        {
+          "name": "Enginar Çanağı",
+          "calories": 36,
+          "protein": 3,
+          "carbs": 6,
+          "fat": 0,
+          "maxQuantity": 1,
+          "tags": [
+            "enginar",
+            "keto"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "diğer",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Keten Tohumu (1 yemek kaşığı)",
+          "calories": 56,
+          "carbs": 3,
+          "protein": 2,
+          "fat": 4,
+          "multiplier": 1,
+          "tags": [
+            "keten tohumu",
+            "keto"
+          ],
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "portionFixed": true,
+          "role": "supplement",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "category": "diğer",
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "season": "4 mevsim"
+        },
+        {
+          "name": "Chia Tohumu (1 yemek kaşığı)",
+          "calories": 55,
+          "carbs": 5,
+          "protein": 2,
+          "fat": 3,
+          "multiplier": 1,
+          "tags": [
+            "chia",
+            "keto",
+            "tohum"
+          ],
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "portionFixed": true,
+          "role": "supplement",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "category": "diğer",
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "season": "4 mevsim"
         }
       ]
     },
