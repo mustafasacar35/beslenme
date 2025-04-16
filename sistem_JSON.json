@@ -2828,10 +2828,20 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Köz Patlıcan Yoğurtlu",
@@ -2860,13 +2870,23 @@
           "maxQuantity": 1,
           "tags": [
             "sebze",
-            "keto"
+            "keto",
+            "domates"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "category": "AKŞAM"
+          "category": "AKŞAM",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Sebzeli Karnabahar Pilavı",
@@ -2885,14 +2905,17 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "AKŞAM"
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "category": "AKŞAM",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
-          "name": "Mantarlı Tatlı Patates",
+          "name": "Mantarlı Tatlı Patates (1 porsiyon)",
           "calories": 520,
           "protein": 30,
           "carbs": 28,
@@ -2913,7 +2936,10 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Tatlı Patates Püresi",
