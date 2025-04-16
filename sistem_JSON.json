@@ -2961,10 +2961,13 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "fillerLunch": false,
-          "fillerDinner": false
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
-          "name": "Yer Elması Kızartması",
+          "name": "Yer Elması Kızartması (1 posrsiyon)",
           "calories": 194,
           "protein": 2,
           "carbs": 15,
@@ -2974,65 +2977,14 @@
             "yer elması"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "1 tatlı kaşığı mayonez",
-          "calories": 164,
-          "protein": 4,
-          "carbs": 1,
-          "fat": 10,
-          "maxQuantity": 1,
-          "tags": [
-            "mayonez",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": "lunch,dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "2 kare Bitter Çikolata",
-          "calories": 52,
-          "protein": 1,
-          "carbs": 3,
-          "fat": 4,
-          "maxQuantity": 1,
-          "tags": [
-            "çikolata",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": "lunch,dinner",
-          "keto": true,
-          "lowcarb": true,
-          "category": "AKŞAM"
-        },
-        {
-          "name": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
-          "calories": 21,
-          "protein": 1,
-          "carbs": 2,
-          "fat": 1,
-          "maxQuantity": 2,
-          "tags": [
-            "yoğurt",
-            "keto"
-          ],
-          "role": "sideDish",
           "mealType": [
             "dinner"
           ],
           "keto": true,
           "lowcarb": true,
           "category": "AKŞAM",
-          "minQuantity": 1,
-          "step": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
           "fillerLunch": false,
           "fillerDinner": false,
           "season": "4 mevsim",
@@ -7932,6 +7884,87 @@
           "step": 0.5,
           "fillerLunch": false,
           "fillerDinner": true
+        },
+        {
+          "name": "1 tatlı kaşığı mayonez",
+          "calories": 110,
+          "protein": 4,
+          "carbs": 1,
+          "fat": 10,
+          "maxQuantity": 1,
+          "tags": [
+            "mayonez",
+            "keto"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "diğer",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
+        },
+        {
+          "name": "2 kare Bitter Çikolata",
+          "calories": 52,
+          "protein": 1,
+          "carbs": 3,
+          "fat": 4,
+          "maxQuantity": 2,
+          "tags": [
+            "çikolata",
+            "keto",
+            "atıştırmalık"
+          ],
+          "role": "snack",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "diğer",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
+        },
+        {
+          "name": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
+          "calories": 21,
+          "protein": 1,
+          "carbs": 2,
+          "fat": 1,
+          "maxQuantity": 2,
+          "tags": [
+            "yoğurt",
+            "keto"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "category": "diğer",
+          "minQuantity": 1,
+          "step": 1,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         }
       ]
     },
