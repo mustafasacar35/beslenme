@@ -10133,13 +10133,50 @@
   ],
   "rules": [
     {
-      "name": [],
       "type": "frequency",
-      "frequency": 2,
-      "frequencyType": "max",
+      "id": 1,
+      "frequency": 1,
+      "frequencyType": "exact",
       "scope": "meal",
-      "weekRange": "1-3",
+      "weekRange": "all",
       "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "mainDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
+    },
+    {
+      "type": "frequency",
+      "id": 2,
+      "frequency": 1,
+      "frequencyType": "exact",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "mainDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "frequency",
+      "id": 3,
+      "frequency": 1,
+      "frequencyType": "min",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
       "tagsCheck": false,
       "tags": [],
       "roleCheck": true,
@@ -10147,24 +10184,286 @@
       "catCheck": false,
       "category": "",
       "mealTypeCheck": true,
-      "mealType": "breakfast",
-      "id": 2
+      "mealType": "lunch"
     },
     {
-      "name": "keten -> salata",
-      "type": "dependOn",
-      "food": "Keten Tohumu",
-      "requiredFood": "salata",
+      "type": "frequency",
+      "id": 4,
+      "frequency": 1,
+      "frequencyType": "min",
       "scope": "meal",
-      "id": 3
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "sideDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
     },
     {
-      "name": "chia -> salata",
-      "type": "dependOn",
-      "food": "Chia Tohumu",
-      "requiredFood": "salata",
+      "type": "frequency",
+      "id": 8,
+      "frequency": 1,
+      "frequencyType": "max",
       "scope": "meal",
-      "id": 4
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "mainDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
+    },
+    {
+      "type": "compatibility",
+      "id": 13,
+      "keyword1": "tost",
+      "keyword2": [
+        "yumurta",
+        "peynir",
+        "zeytin",
+        "krep",
+        "füme",
+        "avokado",
+        "biberli",
+        "tutlum",
+        "peyniri"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 15,
+      "keyword1": "ıspanaklı",
+      "keyword2": [
+        "ıspanaklı",
+        "ıspanak"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 20,
+      "keyword1": "yumurta",
+      "keyword2": [
+        "yumurta",
+        "yumurtalı",
+        "krep",
+        "omlet"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 23,
+      "keyword1": "Keto Tost",
+      "keyword2": [
+        "füme",
+        "omlet",
+        "yumurta",
+        "yumurtalı"
+      ],
+      "degree": -5,
+      "conjunction": "or"
+    },
+    {
+      "type": "dependOn",
+      "id": 24,
+      "food": "Tofu",
+      "requiredFood": "Yoğurtlu Kırmızı Pancar Salatası",
+      "scope": "meal"
+    },
+    {
+      "type": "compatibility",
+      "id": 25,
+      "keyword1": "Menemen",
+      "keyword2": [
+        "yumurta",
+        "omlet",
+        "yumurtalı",
+        "çılbır"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "dependOn",
+      "id": 26,
+      "food": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+      "requiredFood": "salata",
+      "scope": "meal"
+    },
+    {
+      "type": "dependOn",
+      "id": 27,
+      "food": "yarım tatlı kaşığı keten tohumu (salata üzerine)",
+      "requiredFood": "salata",
+      "scope": "meal"
+    },
+    {
+      "type": "dependOn",
+      "id": 28,
+      "food": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+      "requiredFood": "salata",
+      "scope": "meal"
+    },
+    {
+      "type": "frequency",
+      "id": 32,
+      "frequency": 1,
+      "frequencyType": "max",
+      "scope": "day",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "tost"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "compatibility",
+      "id": 33,
+      "keyword1": "ekmek",
+      "keyword2": [
+        "tost",
+        "ekmeği"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 34,
+      "keyword1": "tost",
+      "keyword2": [
+        "lupin"
+      ],
+      "degree": -5,
+      "conjunction": "or"
+    },
+    {
+      "type": "frequency",
+      "id": 35,
+      "frequency": 4,
+      "frequencyType": "min",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "ekmeği"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 36,
+      "frequency": 6,
+      "frequencyType": "max",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "ekmeği"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 37,
+      "frequency": 2,
+      "frequencyType": "min",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "çorbası"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 38,
+      "frequency": 4,
+      "frequencyType": "max",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "çorbası"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 39,
+      "frequency": 1,
+      "frequencyType": "max",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "Tost"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
     }
   ],
   "mealTemplates": [],
