@@ -825,7 +825,9 @@
           "maxQuantity": 1,
           "tags": [
             "pankek",
-            "keto"
+            "keto",
+            "ekmek",
+            "tost"
           ],
           "role": "mainDish",
           "mealType": [
@@ -837,7 +839,10 @@
           "step": 0.5,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "ÖĞLEN"
+          "category": "ÖĞLEN",
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Karnabahar Pankek",
@@ -6658,13 +6663,24 @@
           "tags": [
             "haşhaş",
             "kaşar",
-            "keto"
+            "ketoi",
+            "ekmek",
+            "yumurta",
+            "omleti muffin",
+            "pankek"
           ],
           "role": "mainDish",
-          "mealType": "lunch",
+          "mealType": [],
           "keto": true,
           "lowcarb": true,
-          "category": "TOSTLAR"
+          "category": "TOSTLAR",
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "season": "4 mevsim",
+          "portionFixed": false,
+          "multiplier": 1
         },
         {
           "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Hindi Füme)",
