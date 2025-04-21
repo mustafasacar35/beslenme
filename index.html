@@ -7,7 +7,8 @@
 <title>Beslenme Planlayıcı</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
-<style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><style>
         :root{--primary-color:#007BFF;--primary-hover:#0056b3;--success-color:#28A745;--success-hover:#218838;--danger-color:#DC3545;--danger-hover:#C82333;--secondary-color:#6C757D;--secondary-hover:#5A6268;--background-color:#F8F9FA;--white:#FFFFFF;--gray-light:#E9ECEF;--gray-border:#DEE2E6;--text-dark:#212529;--text-light:#FFFFFF;--shadow:0 2px 4px rgba(0,0,0,0.1);--shadow-lg:0 4px 8px rgba(0,0,0,0.2);}
 body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-color);margin:0;padding:0;overflow:hidden;}
 .navbar{background-color:var(--primary-color)!important;padding:0.5rem 1rem;}
@@ -289,33 +290,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
     z-index: 1000;
 }
 }
-        
-.search-action-buttons {
-    margin-left: auto;
-    display: flex;
-    gap: 5px;
-}
-.search-action-buttons button {
-    font-size: 0.75rem;
-    padding: 0.2rem 0.4rem;
-}
-
-.search-result-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.search-result-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-.search-result-buttons .btn {
-    font-size: 0.65rem;
-    padding: 2px 4px;
-    line-height: 1;
-}
-</style>
+        </style>
 <style>
 .btn-remove-meal {
   background-color: #28a745 !important;
@@ -950,6 +925,44 @@ function editFoodFromElement(el) {
 <button class="btn btn-primary" onclick="addPatient()" title="Hasta Ekle"><i class="bi bi-person-plus"></i></button>
 <button class="btn btn-warning" onclick="editPatient()" title="Hasta Düzenle"><i class="bi bi-pencil"></i></button>
 <button class="btn btn-danger" onclick="deletePatient()" title="Hasta Sil"><i class="bi bi-trash"></i></button>
+
+<div class="modal fade" id="editPatientModal" tabindex="-1" aria-labelledby="editPatientModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editPatientModalLabel">Hastayı Düzenle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="editPatientName" class="form-label">Hasta Adı</label>
+                    <input type="text" class="form-control" id="editPatientName">
+                </div>
+                <div class="mb-3">
+                    <label for="editPatientWeight" class="form-label">Kilo (kg)</label>
+                    <input type="number" class="form-control" id="editPatientWeight">
+                </div>
+                <div class="mb-3">
+                    <label for="editPatientActivity" class="form-label">Aktivite Seviyesi (1-5)</label>
+                    <input type="number" class="form-control" id="editPatientActivity" min="1" max="5">
+                </div>
+                <div class="mb-3">
+                    <label for="editLikedFoods" class="form-label">Sevdiği Yemekler (virgülle ayırın)</label>
+                    <input type="text" class="form-control" id="editLikedFoods">
+                </div>
+                <div class="mb-3">
+                    <label for="editDislikedFoods" class="form-label">Sevmediği Yemekler (virgülle ayırın)</label>
+                    <input type="text" class="form-control" id="editDislikedFoods">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary" onclick="saveEditedPatient()">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 <!-- GitHub Token Giriş Alanı ve Buton -->
 <div class="mb-3">
@@ -1186,8 +1199,8 @@ function editFoodFromElement(el) {
 <input id="editTemplateIndex" type="hidden"/>
 <div class="mb-2">
 <label class="form-label" for="editTemplateName">Şablon Adı</label>
-<input class="form-control" id="editTemplateName" type="text"/>
-</div>
+<input class="form-control" id="editTemplateName" type="text">
+</input></div>
 <div class="mb-2">
 <label class="form-label" for="editTemplateMealType">Öğün Türü</label>
 <select class="form-select" id="editTemplateMealType">
@@ -4081,33 +4094,67 @@ function handlePatientChange() {
     showNotification("Yeni hasta eklendi!");
 }
 
-        function editPatient() {
-            if (!currentPatient) {
-                showNotification("Önce bir hasta seçin!", 'warning');
-                return;
-            }
-            const patientData = JSON.parse(localStorage.getItem(`patient_${currentPatient}`) || '{}');
-            const name = prompt("Yeni hasta adı:", currentPatient);
-            if (!name) return;
-            const weight = prompt("Kilo (kg):", patientData.weight || 70);
-            const activity = prompt("Aktivite Seviyesi (1-5):", patientData.activity || 3);
-            if (name !== currentPatient) {
-                localStorage.removeItem(`patient_${currentPatient}`);
-            }
-            localStorage.setItem(`patient_${name}`, JSON.stringify({
-                name,
-                likedFoods: patientData.likedFoods || [],
-                dislikedFoods: patientData.dislikedFoods || [],
-                weight: parseFloat(weight) || 70,
-                activity: parseInt(activity) || 3
-            }));
-            currentPatient = name;
-            loadPatientSelect();
-            document.getElementById('patientSelect').value = name;
-            handlePatientChange();
-            showNotification("Hasta bilgileri güncellendi!");
-        }
+function editPatient() {
+    if (!currentPatient) {
+        showNotification("Önce bir hasta seçin!", 'warning');
+        return;
+    }
+    const patientData = JSON.parse(localStorage.getItem(`patient_${currentPatient}`) || '{}');
+    if (!patientData.name) {
+        showNotification("Hasta verisi bulunamadı!", 'warning');
+        return;
+    }
 
+    // Modal input alanlarını doldur
+    document.getElementById("editPatientName").value = patientData.name || '';
+    document.getElementById("editPatientWeight").value = patientData.weight || 70;
+    document.getElementById("editPatientActivity").value = patientData.activity || 3;
+    document.getElementById("editLikedFoods").value = patientData.likedFoods ? patientData.likedFoods.join(', ') : '';
+    document.getElementById("editDislikedFoods").value = patientData.dislikedFoods ? patientData.dislikedFoods.join(', ') : '';
+
+    // Modal penceresini aç (Bootstrap kullanıldığını varsayıyorum)
+    const modal = new bootstrap.Modal(document.getElementById("editPatientModal"));
+    modal.show();
+}
+function saveEditedPatient() {
+    const name = document.getElementById("editPatientName").value.trim();
+    const weight = document.getElementById("editPatientWeight").value;
+    const activity = document.getElementById("editPatientActivity").value;
+    const likedFoodsInput = document.getElementById("editLikedFoods").value;
+    const dislikedFoodsInput = document.getElementById("editDislikedFoods").value;
+
+    // Virgülle ayrılmış string’leri diziye çevir
+    const likedFoods = likedFoodsInput.split(',').map(f => f.trim()).filter(f => f);
+    const dislikedFoods = dislikedFoodsInput.split(',').map(f => f.trim()).filter(f => f);
+
+    // Hasta verisini oluştur
+    const patientData = {
+        name,
+        weight: parseFloat(weight) || 70,
+        activity: parseInt(activity) || 3,
+        likedFoods,
+        dislikedFoods
+    };
+
+    // localStorage’a kaydet
+    localStorage.setItem(`patient_${name}`, JSON.stringify(patientData));
+
+    // Eğer isim değiştiyse eski kaydı sil
+    if (name !== currentPatient) {
+        localStorage.removeItem(`patient_${currentPatient}`);
+    }
+    currentPatient = name;
+
+    // Hasta listesini ve UI’yi güncelle
+    loadPatientSelect();
+    document.getElementById('patientSelect').value = name;
+    handlePatientChange();
+
+    // Modal’ı kapat
+    bootstrap.Modal.getInstance(document.getElementById("editPatientModal")).hide();
+
+    showNotification("Hasta bilgileri güncellendi!", "success");
+}
         function deletePatient() {
             if (!currentPatient) {
                 showNotification("Önce bir hasta seçin!", 'warning');
@@ -6083,13 +6130,8 @@ function checkKeywordConflict(foodName, currentMeal) {
         return false;
     }
 
-    // Dolgu yemekleri ve supplement'ler muaf (geçici olarak kaldırıldı, gerekirse geri eklenebilir)
-    // if (food.fillerLunch || food.fillerDinner || food.role === 'supplement') {
-    //     console.log(`checkKeywordConflict: ${foodName} dolgu yemeği veya supplement, çakışma kontrolü atlandı.`);
-    //     return false;
-    // }
-
-    const excludedTags = ["keto", "lowcarb", "zeytinyağı", "tuz", "baharatlar", "domates", "meyve", "kaşar", "kabak", "tavuk"];
+    // Sadece "keto" ve "lowcarb" etiketlerini hariç tut
+    const excludedTags = ["keto", "lowcarb"];
     const foodTags = food.tags
         .map(tag => tag.toLowerCase())
         .filter(tag => !excludedTags.includes(tag));
@@ -6106,12 +6148,6 @@ function checkKeywordConflict(foodName, currentMeal) {
             continue;
         }
 
-        // Dolgu yemekleri ve supplement'ler muaf (geçici olarak kaldırıldı)
-        // if (existingFood.fillerLunch || existingFood.fillerDinner || existingFood.role === 'supplement') {
-        //     console.log(`checkKeywordConflict: ${mealItem.name} dolgu yemeği veya supplement, çakışma kontrolü atlandı.`);
-        //     continue;
-        // }
-
         const existingTags = existingFood.tags
             .map(tag => tag.toLowerCase())
             .filter(tag => !excludedTags.includes(tag));
@@ -6125,6 +6161,7 @@ function checkKeywordConflict(foodName, currentMeal) {
     console.log(`checkKeywordConflict: ${foodName} için çakışma bulunmadı (tags: ${foodTags.join(", ")}).`);
     return false;
 }
+
 
 if (!forms.frequency) {
     console.warn("frequencyRuleForm bulunamadı!");
@@ -6226,7 +6263,6 @@ function generatePlan(settings) {
         fat: settings.targetFat
     });
 
-    // Kalorisi 0 olanları ve sevmediği yemekleri hariç tut
     const availableFoods = categories.flatMap(cat => cat.items)
         .filter(f => f.calories > 0 && 
                      (dietMode === 'keto' ? f.keto : f.lowcarb) &&
@@ -6239,7 +6275,6 @@ function generatePlan(settings) {
 
     console.log("availableFoods filtrelendi, sevmediği yemekler hariç tutuldu:", availableFoods.map(f => f.name));
 
-    // Kritik kuralları uygula
     const validRules = rules.filter(rule => rule && typeof rule === 'object' && (
         rule.type === 'frequency' || rule.type === 'dependOn' || rule.type === 'maxRoleCount'
     ));
@@ -6259,7 +6294,6 @@ function generatePlan(settings) {
 
     const ruleAppliedFoods = new Set();
 
-    // Kuralları uygula
     prioritizedRules.forEach(rule => {
         if (rule.type === 'frequency') {
             let matchingFoods = [];
@@ -6402,7 +6436,6 @@ function generatePlan(settings) {
         }
     });
 
-    // Öğün planlama ve makro dengeleme
     weeks.forEach((week, weekIndex) => {
         Object.entries(week.days).forEach(([day, dayData]) => {
             ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
@@ -6424,7 +6457,6 @@ function generatePlan(settings) {
                 const fillers = availableFoods.filter(f => (mealType === 'lunch' ? f.fillerLunch : f.fillerDinner) &&
                     isMealTypeCompatible(f, mealType) && !currentMeal.some(item => item.name === f.name));
 
-                // Kahvaltı için sabit yemek
                 if (mealType === 'breakfast') {
                     currentMeal = [];
                     const bulletproofCoffee = availableFoods.find(f => f.name === "Kurşun Geçirmez Kahve");
@@ -6476,7 +6508,6 @@ function generatePlan(settings) {
                             break;
                         }
 
-                        // Öğle ve akşam için sadece bir mainDish kontrolü
                         if ((mealType === 'lunch' || mealType === 'dinner') && bestFood.role === 'mainDish') {
                             const mainDishCount = currentMeal.filter(item => {
                                 const food = availableFoods.find(f => f.name === item.name);
@@ -6489,7 +6520,6 @@ function generatePlan(settings) {
                             }
                         }
 
-                        // Etiket çakışması kontrolü
                         if ((mealType === 'lunch' || mealType === 'dinner') && checkKeywordConflict(bestFood.name, currentMeal)) {
                             console.log(`Engellendi (${mealType}): ${bestFood.name} (etiket çakışması)`);
                             mealFoods.splice(mealFoods.indexOf(bestFood), 1);
@@ -6535,7 +6565,6 @@ function generatePlan(settings) {
                             break;
                         }
 
-                        // Dolgu yemekler için mainDish kontrolü
                         if ((mealType === 'lunch' || mealType === 'dinner') && bestFiller.role === 'mainDish') {
                             const mainDishCount = currentMeal.filter(item => {
                                 const food = availableFoods.find(f => f.name === item.name);
@@ -6548,7 +6577,6 @@ function generatePlan(settings) {
                             }
                         }
 
-                        // Dolgu yemekler için etiket çakışması kontrolü
                         if ((mealType === 'lunch' || mealType === 'dinner') && checkKeywordConflict(bestFiller.name, currentMeal)) {
                             console.log(`Engellendi (${mealType}): ${bestFiller.name} (etiket çakışması)`);
                             fillers.splice(fillers.indexOf(bestFiller), 1);
@@ -6588,7 +6616,6 @@ function generatePlan(settings) {
         });
     });
 
-    // Son kontrol: Bağımlı yemeklerin gereksinimlerini temizle
     weeks.forEach((week, weekIndex) => {
         Object.values(week.days).forEach(day => {
             ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
@@ -6608,12 +6635,10 @@ function generatePlan(settings) {
     renderMeals();
     calculateMacros();
 
-    // Bildirim
     if (typeof showNotification === 'function') {
         showNotification("Planlama tamamlandı!", "success", 3000);
     }
 }
-
 
 function saveSettingsTemplate(isDefault = false) {
             const templateName = isDefault ? 'default' : (document.getElementById('settingsTemplate').value || currentPatient);
@@ -7857,153 +7882,5 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.cursor = "default";
     });
 });
-</script>
-<div aria-hidden="true" aria-labelledby="editPatientModalLabel" class="modal fade" id="editPatientModal" tabindex="-1">
-<div class="modal-dialog modal-lg modal-dialog-centered">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="editPatientModalLabel">Hasta Bilgilerini Düzenle</h5>
-<button aria-label="Kapat" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-</div>
-<div class="modal-body">
-<form id="editPatientForm">
-<div class="mb-3">
-<label class="form-label" for="editPatientName">İsim</label>
-<input class="form-control" id="editPatientName" required="" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="editPatientWeight">Kilo (kg)</label>
-<input class="form-control" id="editPatientWeight" required="" type="number"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="editPatientActivity">Aktivite Düzeyi</label>
-<select class="form-select" id="editPatientActivity">
-<option value="low">Düşük</option>
-<option value="moderate">Orta</option>
-<option value="high">Yüksek</option>
-</select>
-</div>
-<div class="mb-3">
-<label class="form-label" for="editLikedFoods">Sevdiği Yemekler</label>
-<input class="form-control" id="editLikedFoods" placeholder="Virgül ile ayırın" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="editDislikedFoods">Sevmediği Yemekler</label>
-<input class="form-control" id="editDislikedFoods" placeholder="Virgül ile ayırın" type="text"/>
-</div>
-</form>
-</div>
-<div class="modal-footer">
-<button class="btn btn-secondary" data-bs-dismiss="modal" type="button">İptal</button>
-<button class="btn btn-primary" onclick="saveEditedPatient()" type="button">Kaydet</button>
-</div>
-</div>
-</div>
-</div>
-<script>
-function editPatient() {
-  const selected = document.getElementById("patientSelect");
-  const name = selected.options[selected.selectedIndex].text;
-  const weight = selected.options[selected.selectedIndex].getAttribute("data-weight") || "";
-  const activity = selected.options[selected.selectedIndex].getAttribute("data-activity") || "moderate";
-  const liked = document.getElementById("likedFoodsDisplay").value;
-  const disliked = document.getElementById("dislikedFoodsDisplay").value;
-
-  document.getElementById("editPatientName").value = name;
-  document.getElementById("editPatientWeight").value = weight;
-  document.getElementById("editPatientActivity").value = activity;
-  document.getElementById("editLikedFoods").value = liked;
-  document.getElementById("editDislikedFoods").value = disliked;
-
-  const modal = new bootstrap.Modal(document.getElementById("editPatientModal"));
-  modal.show();
-}
-
-function saveEditedPatient() {
-  const name = document.getElementById("editPatientName").value;
-  const weight = document.getElementById("editPatientWeight").value;
-  const activity = document.getElementById("editPatientActivity").value;
-  const liked = document.getElementById("editLikedFoods").value;
-  const disliked = document.getElementById("editDislikedFoods").value;
-
-  const selected = document.getElementById("patientSelect");
-  selected.options[selected.selectedIndex].text = name;
-  selected.options[selected.selectedIndex].setAttribute("data-weight", weight);
-  selected.options[selected.selectedIndex].setAttribute("data-activity", activity);
-
-  document.getElementById("likedFoodsDisplay").value = liked;
-  document.getElementById("dislikedFoodsDisplay").value = disliked;
-
-  bootstrap.Modal.getInstance(document.getElementById("editPatientModal")).hide();
-
-  // İsteğe bağlı: Sunucuya veri gönderimi veya local storage güncelleme
-  showNotification("Hasta bilgileri güncellendi.", "success");
-}
-</script><script>
-function searchFood(query) {
-    const resultsContainer = document.getElementById("sidebar-content");
-    const results = [];
-
-    const lowerQuery = query.toLowerCase();
-    categories.forEach(category => {
-        category.items.forEach(item => {
-            if (item.name.toLowerCase().includes(lowerQuery)) {
-                results.push(item);
-            }
-        });
-    });
-
-    // Clear current results
-    resultsContainer.innerHTML = "";
-
-    if (results.length === 0) {
-        const noResult = document.createElement("div");
-        noResult.className = "search-result-empty";
-        noResult.textContent = "Sonuç bulunamadı";
-        resultsContainer.appendChild(noResult);
-    } else {
-        results.forEach(item => {
-            const div = document.createElement("div");
-            div.className = "search-result-item";
-            div.innerHTML = `
-                <span>${item.name}</span>
-                <div class="search-result-buttons">
-                    <button class="btn btn-warning btn-sm" onclick="editFoodFromSearch('${item.name}')">Düzenle</button>
-                    <button class="btn btn-danger btn-sm" onclick="confirmDeleteFood('${item.name}')">Sil</button>
-                </div>
-            `;
-            resultsContainer.appendChild(div);
-        });
-    }
-}
-
-function editFoodFromSearch(name) {
-    editFood(name); // Use existing editFood() functionality
-}
-
-function confirmDeleteFood(name) {
-    if (confirm(name + " adlı yemeği silmek istediğinize emin misiniz?")) {
-        deleteFood(name);
-    }
-}
-
-function deleteFood(name) {
-    let updated = false;
-    categories.forEach(cat => {
-        const index = cat.items.findIndex(item => item.name === name);
-        if (index !== -1) {
-            cat.items.splice(index, 1);
-            updated = true;
-        }
-    });
-
-    if (updated) {
-        updateSidebarCategories();
-        searchFood(document.getElementById("searchFoodInput").value);
-        showNotification(name + " başarıyla silindi.", "success");
-    } else {
-        showNotification("Yemek bulunamadı.", "warning");
-    }
-}
 </script></body>
 </html>
