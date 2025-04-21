@@ -2136,54 +2136,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-        function searchFood(query) {
-            const filterType = document.getElementById('searchFilterType').value;
-            const sidebarContent = document.getElementById('categories');
-            const patientData = currentPatient ? JSON.parse(localStorage.getItem(`patient_${currentPatient}`) || '{}') : {};
-            const likedFoods = patientData.likedFoods || [];
-            const dislikedFoods = patientData.dislikedFoods || [];
+    function searchFood(query) {
+    const filterType = document.getElementById('searchFilterType').value;
+    const sidebarContent = document.getElementById('categories');
+    const patientData = currentPatient ? JSON.parse(localStorage.getItem(`patient_${currentPatient}`) || '{}') : {};
+    const likedFoods = patientData.likedFoods || [];
+    const dislikedFoods = patientData.dislikedFoods || [];
 
-            sidebarContent.innerHTML = categories.map((category, index) => {
-                let filteredItems = category.items.filter(item => {
-                    const matchesDiet = dietMode === 'keto' ? item.keto : item.lowcarb;
-                    const notDisliked = !dislikedFoods.some(df => item.name.toLowerCase().includes(df.toLowerCase()) || item.tags.some(t => t.toLowerCase().includes(df.toLowerCase())));
-                    if (filterType === 'name') return matchesDiet && notDisliked && item.name.toLowerCase().includes(query.toLowerCase());
-                    if (filterType === 'tags') return matchesDiet && notDisliked && item.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()));
-                    if (filterType === 'role') return matchesDiet && notDisliked && item.role.toLowerCase().includes(query.toLowerCase());
-                    return matchesDiet && notDisliked;
-                });
+    sidebarContent.innerHTML = categories.map((category, index) => {
+        let filteredItems = category.items.filter(item => {
+            const matchesDiet = dietMode === 'keto' ? item.keto : item.lowcarb;
+            const notDisliked = !dislikedFoods.some(df => item.name.toLowerCase().includes(df.toLowerCase()) || item.tags.some(t => t.toLowerCase().includes(df.toLowerCase())));
+            if (filterType === 'name') return matchesDiet && notDisliked && item.name.toLowerCase().includes(query.toLowerCase());
+            if (filterType === 'tags') return matchesDiet && notDisliked && item.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()));
+            if (filterType === 'role') return matchesDiet && notDisliked && item.role.toLowerCase().includes(query.toLowerCase());
+            return matchesDiet && notDisliked;
+        });
 
-                filteredItems.sort((a, b) => {
-                    const aLiked = likedFoods.some(lf => a.name.toLowerCase().includes(lf.toLowerCase()) || a.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())));
-                    const bLiked = likedFoods.some(lf => b.name.toLowerCase().includes(lf.toLowerCase()) || b.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())));
-                    return bLiked - aLiked;
-                });
+        filteredItems.sort((a, b) => {
+            const aLiked = likedFoods.some(lf => a.name.toLowerCase().includes(lf.toLowerCase()) || a.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())));
+            const bLiked = likedFoods.some(lf => b.name.toLowerCase().includes(lf.toLowerCase()) || b.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())));
+            return bLiked - aLiked;
+        });
 
-                return `
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading${index}">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
-    ${category.name} (${filteredItems.length})
-</button>
-                        </h2>
-                        <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}">
-                            <div class="accordion-body">
-                                ${filteredItems.map(item => `
-                                    <div class="category-item">
-                                        <span>${item.name} (${item.calories} kcal)</span>
-                                        <div class="food-checkboxes">
-                                            <input type="checkbox" class="meal-checkbox" data-name="${item.name}" data-meal="breakfast" title="Sabah"> S
-                                            <input type="checkbox" class="meal-checkbox" data-name="${item.name}" data-meal="lunch" title="Öğle"> Ö
-                                            <input type="checkbox" class="meal-checkbox" data-name="${item.name}" data-meal="dinner" title="Akşam"> A
-                                        </div>
-                                    </div>
-                                `).join('')}
+        return `
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading${index}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
+                        ${category.name} (${filteredItems.length})
+                    </button>
+                </h2>
+                <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}">
+                    <div class="accordion-body">
+                        ${filteredItems.map(item => `
+                            <div class="category-item">
+                                <span>${item.name} (${item.calories} kcal)</span>
+                                <div class="food-checkboxes">
+                                    <input type="checkbox" class="meal-checkbox" data-name="${item.name}" data-meal="breakfast" title="Sabah"> S
+                                    <input type="checkbox" class="meal-checkbox" data-name="${item.name}" data-meal="lunch" title="Öğle"> Ö
+                                    <input type="checkbox" class="meal-checkbox" data-name="${item.name}" data-meal="dinner" title="Akşam"> A
+                                </div>
                             </div>
-                        </div>
+                        `).join('')}
                     </div>
-                `;
-            }).join('');
-        }
+                </div>
+            </div>
+        `;
+    }).join('');
+}
 
         function addNewCategory() {
     const categoryName = prompt("Yeni kategori adını girin:");
@@ -4055,6 +4055,8 @@ function handlePatientChange() {
     calculateMacros();
     generateAutoPlan();
     renderMeals();
+    // Hasta değiştiğinde sidebar'ı sevmediği yemeklere göre filtrele
+    searchFood('');
 }
 
         function loadPatientData() {
@@ -7065,7 +7067,7 @@ function moveFoodCategory() {
 }
 
 
-ddocument.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', async () => {
     saveState(); // İlk durumu kaydet
     initializeWeeks();
     
@@ -7215,17 +7217,38 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-    function updateSidebar() {
+    // Güncellenmiş updateSidebar fonksiyonu (hasta tercihlerini dikkate alır)
+function updateSidebar() {
     const sidebarContent = document.getElementById('categories');
     if (!sidebarContent) {
         console.error("categories elementi bulunamadı!");
         return;
     }
+
+    const patientData = currentPatient ? JSON.parse(localStorage.getItem(`patient_${currentPatient}`) || '{}') : {};
+    const dislikedFoods = patientData.dislikedFoods || [];
+    const likedFoods = patientData.likedFoods || [];
+
     sidebarContent.innerHTML = '';
+
     categories.forEach((category, index) => {
-        // Kalori değeri 0 olmayan yemekleri filtrele
-        const validItems = category.items.filter(hasValidCalories);
+        let validItems = category.items.filter(food => {
+            return hasValidCalories(food) &&
+                   !dislikedFoods.some(df => food.name.toLowerCase().includes(df.toLowerCase()) ||
+                                              (food.tags || []).some(t => t.toLowerCase().includes(df.toLowerCase())));
+        });
+
+        // Sevilen yemekleri üste al
+        validItems.sort((a, b) => {
+            const aLiked = likedFoods.some(lf => a.name.toLowerCase().includes(lf.toLowerCase()) ||
+                                                (a.tags || []).some(t => t.toLowerCase().includes(lf.toLowerCase())));
+            const bLiked = likedFoods.some(lf => b.name.toLowerCase().includes(lf.toLowerCase()) ||
+                                                (b.tags || []).some(t => t.toLowerCase().includes(lf.toLowerCase())));
+            return bLiked - aLiked;
+        });
+
         const itemCount = validItems.length;
+
         const accordionItem = `
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading${index}">
@@ -7249,9 +7272,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             </div>
         `;
+
         sidebarContent.innerHTML += accordionItem;
     });
-    console.log("Sidebar güncellendi, kalori 0 olanlar hariç!");
+
+    console.log("Sidebar güncellendi, sevmediği yemekler gizlendi, sevilenler üste taşındı.");
 }
 
     document.addEventListener('DOMContentLoaded', applyConversions);
