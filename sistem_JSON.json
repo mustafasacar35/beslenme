@@ -4,30 +4,6 @@
       "name": "KAHVALTI",
       "items": [
         {
-          "name": "köftek",
-          "calories": 374,
-          "protein": 22,
-          "carbs": 22,
-          "fat": 22,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": false,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[3,6]",
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "KAHVALTI"
-        },
-        {
           "name": "1111",
           "calories": 187,
           "protein": 11,
@@ -311,6 +287,30 @@
           "fillerLunch": true,
           "fillerDinner": true,
           "seasonRange": "[8,11]",
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "KAHVALTI"
+        },
+        {
+          "name": "köftek",
+          "calories": 374,
+          "protein": 22,
+          "carbs": 22,
+          "fat": 22,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "role": "mainDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": false,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "seasonRange": "[1,6]",
           "portionFixed": false,
           "multiplier": 1,
           "category": "KAHVALTI"
