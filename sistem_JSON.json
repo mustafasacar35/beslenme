@@ -88,21 +88,23 @@
           "step": 0.5
         },
         {
-          "name": "hhhhhhhhhhhhh",
-          "calories": 187,
-          "protein": 11,
-          "carbs": 11,
-          "fat": 11,
+          "name": "kkkkkkkkkkkk",
+          "calories": 748,
+          "protein": 44,
+          "carbs": 44,
+          "fat": 44,
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
-          "tags": [],
+          "tags": [
+            "ffffffffffffffffffffffffffffffffffffffffffffff"
+          ],
           "role": "mainDish",
-          "mealType": "lunch,dinner",
+          "mealType": "breakfast,dinner",
           "keto": true,
-          "lowcarb": false,
+          "lowcarb": true,
           "fillerLunch": true,
-          "fillerDinner": false
+          "fillerDinner": true
         }
       ]
     },
@@ -9295,7 +9297,12 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [],
+            "breakfast": [
+              {
+                "name": "Fırında Tavuk Kanat",
+                "quantity": 1
+              }
+            ],
             "lunch": [],
             "dinner": []
           }
