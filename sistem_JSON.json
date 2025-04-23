@@ -3082,35 +3082,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Tavada Kaşarlı Mantar",
-          "calories": 196,
-          "protein": 7,
-          "carbs": 6,
-          "fat": 16,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "mantar",
-            "kaşar",
-            "keto",
-            "peynir"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "AKŞAM",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Köz Patlıcan",
           "calories": 15.4,
           "protein": 0.9,
@@ -4786,6 +4757,35 @@
           "fillerDinner": false,
           "seasonRange": "[1,5]",
           "isReversedSeason": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavada Kaşarlı Mantar",
+          "calories": 196,
+          "protein": 7,
+          "carbs": 6,
+          "fat": 16,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "mantar",
+            "kaşar",
+            "keto",
+            "peynir"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "seasonRange": "[3,5]",
+          "isReversedSeason": true,
           "portionFixed": false,
           "multiplier": 1,
           "category": "AKŞAM"
@@ -12430,38 +12430,30 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Kaşar + Hindi Füme)",
+                "name": "Ketojenik Tost (Tahin Ekmeği + Kaşar)",
                 "quantity": 1
               },
               {
-                "name": "Tulum / kaşar / lor peyniri (30 gram)",
+                "name": "Tavada Kaşarlı Mantar",
                 "quantity": 1
               },
               {
-                "name": "Çiğ badem  (20 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "1/2 Avokado",
-                "quantity": 1
+                "name": "2 dilim Hindi Füme",
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "*Mantarlı tavuk sote",
+                "name": "200 gram Tavuk Eti ile Güveç (domates, biber ve soğan ile)",
                 "quantity": 1
               },
               {
-                "name": "Ev yapımı turşu",
+                "name": "Lor Salatası",
                 "quantity": 1
               },
               {
-                "name": "Ketojenik Tiramisu",
-                "quantity": 1
-              },
-              {
-                "name": "1 yemek kaşığı tahin",
-                "quantity": 1
+                "name": "Karnabahar Püresi",
+                "quantity": 0.5
               }
             ]
           }
@@ -12482,37 +12474,29 @@
             ],
             "lunch": [
               {
-                "name": "1 dilim Pırasalı Tava Böreği",
+                "name": "Ketojenik tost (2 ince dilim lor ekmeği arasına 30 gram kaşar, yeşillikler, domates)",
                 "quantity": 1
               },
               {
-                "name": "2 dilim Hindi Füme",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke ve limon ile)",
                 "quantity": 1
               },
               {
                 "name": "Yaban Mersinli Smoothie (1 porsiyon)",
                 "quantity": 1
-              },
-              {
-                "name": "Közlenmiş Kapya Biber",
-                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "200 gram kuzu kavurma",
+                "name": "200  gram köfte (ekmeksiz, baharatlarla)",
                 "quantity": 1
               },
               {
-                "name": "2 yemek kaşığı ev yoğurdu",
-                "quantity": 2
-              },
-              {
-                "name": "Ketojenik Tiramisu",
+                "name": "Yoğurtlu Kereviz Salatası",
                 "quantity": 1
               },
               {
-                "name": "Közlenmiş Kapya Biber",
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               }
             ]
@@ -12534,34 +12518,34 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik Ispanaklı Börek (1 dilim)",
+                "name": "Haşlanmış Yumurta (1 adet) + Tereyağı ve Baharatlar",
                 "quantity": 1
               },
               {
-                "name": "Salatalık (orta boy 1 adet) + Cherry domates (2 adet)",
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
                 "quantity": 1
               },
               {
                 "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
                 "quantity": 1
-              },
-              {
-                "name": "2 adet lupin unlu poğaça (veya 3 adet Lorlu poğaça)",
-                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Kıymalı Lahana / Kabak / Yeşil Fasulye Yemeği",
+                "name": "Fındık (10 adet)",
                 "quantity": 1
               },
               {
-                "name": "* Yoğurtlu enginar",
+                "name": "2 yemek kaşığı ev yoğurdu",
+                "quantity": 2
+              },
+              {
+                "name": "Kelle Paça Çorbası",
                 "quantity": 1
               },
               {
-                "name": "Karnabahar Püresi",
-                "quantity": 0.5
+                "name": "Ketojenik Tiramisu",
+                "quantity": 1
               }
             ]
           }
@@ -12582,34 +12566,34 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik tost (2 ince dilim lor ekmeği arasına 30 gram kaşar, yeşillikler, domates)",
+                "name": "Pankek",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz,  limon ve sirke ile)",
+                "name": "3 cherry domates",
                 "quantity": 1
               },
               {
-                "name": "Tavada Kaşarlı Mantar",
-                "quantity": 1
-              },
-              {
-                "name": "Çiğ badem  (20 adet)",
+                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "200 gram Tavuk Eti ile Güveç (domates, biber ve soğan ile)",
+                "name": "1 dilim Ispanaklı Kabak Böreği",
                 "quantity": 1
               },
               {
-                "name": "* Yoğurtlu enginar",
+                "name": "Labneli Pancar Salatası",
                 "quantity": 1
               },
               {
-                "name": "Karnabahar Püresi",
-                "quantity": 0.5
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
               }
             ]
           }
@@ -12630,34 +12614,38 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Kaşar + Hindi Füme)",
+                "name": "1 dilim Pırasalı Tava Böreği",
                 "quantity": 1
               },
               {
-                "name": "3 cherry domates",
+                "name": "Mevsim yeşillikleri (dereotu, roka, maydanoz, marul, sirke, limon ile)",
                 "quantity": 1
               },
               {
                 "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
                 "quantity": 1
+              },
+              {
+                "name": "1 yemek kaşığı tahin",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Kabak Çökertme Kebabı (1 porsiyon)",
+                "name": "Enginar Mantısı (1 porsiyon)",
                 "quantity": 1
               },
               {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
+                "name": "2 yemek kaşığı ev yoğurdu",
+                "quantity": 2
               },
               {
                 "name": "Kelle Paça Çorbası",
                 "quantity": 1
+              },
+              {
+                "name": "Karnabahar Püresi",
+                "quantity": 0.5
               }
             ]
           }
@@ -12678,33 +12666,33 @@
             ],
             "lunch": [
               {
-                "name": "*Avokadolu omlet",
+                "name": "Haşlanmış Yumurta (1 adet) + Tereyağı ve Baharatlar",
                 "quantity": 1
               },
               {
-                "name": "Dilimlenmiş yarım turp + yarım pancar (1 dilim limon ile)",
-                "quantity": 1
+                "name": "2 adet lupin unlu poğaça (veya 3 adet Lorlu poğaça)",
+                "quantity": 2
               },
               {
-                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
+                "name": "Tavada Kaşarlı Mantar",
                 "quantity": 0.5
-              },
-              {
-                "name": "1 yemek kaşığı tahin",
-                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Patlıcan kebabı (2 adet orta boy patlıcan, 150 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. Fırında ya da airfry da pişirilir)",
+                "name": "100 gram Haşlama Et",
+                "quantity": 1.5
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               },
               {
-                "name": "1 yemek kaşığı tahin",
+                "name": "Yoğurtlu Kereviz Salatası",
                 "quantity": 1
               },
               {
-                "name": "Lor Salatası",
+                "name": "Karnabahar Püresi",
                 "quantity": 0.5
               }
             ]
@@ -12726,25 +12714,25 @@
             ],
             "lunch": [
               {
-                "name": "Menemen (2  yumurta ile)",
+                "name": "Ketojenik Tost (Badem Unu Ekmeği + Kaşar)",
+                "quantity": 1
+              },
+              {
+                "name": "Dilimlenmiş yarım turp + yarım pancar (1 dilim limon ile)",
                 "quantity": 1
               },
               {
                 "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
-                "quantity": 1
-              },
-              {
-                "name": "Közlenmiş Kapya Biber",
-                "quantity": 1
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Fırında Kremalı Karnabahar",
+                "name": "Patlıcan kebabı (2 adet orta boy patlıcan, 200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. fırında ya da airfry'da pişirilir)",
                 "quantity": 1
               },
               {
-                "name": "Karnabahar Püresi",
+                "name": "Hindistan Cevizli Ekmek (1 dilim)",
                 "quantity": 1
               },
               {
