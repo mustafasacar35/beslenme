@@ -36,33 +36,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "1 adet Ispanaklı Muffin",
-          "calories": 308,
-          "protein": 18,
-          "carbs": 5,
-          "fat": 24,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "ıspanak",
-            "muffin",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN",
-          "season": "4 mevsim",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
           "name": "Sebzeli Krep (2 adet yumurta, 1 yemek kaşığı lupin unu, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
           "calories": 340,
           "protein": 25,
@@ -1747,6 +1720,33 @@
             "et"
           ],
           "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "seasonRange": "[1,12]",
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 adet Ispanaklı Muffin",
+          "calories": 308,
+          "protein": 18,
+          "carbs": 5,
+          "fat": 24,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "ıspanak",
+            "muffin",
+            "keto"
+          ],
+          "role": "mainDish",
           "mealType": [
             "lunch"
           ],
