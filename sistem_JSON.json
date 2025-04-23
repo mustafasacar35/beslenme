@@ -36,31 +36,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "Haşlanmış Yumurta",
-          "calories": 71,
-          "protein": 6,
-          "carbs": 0.5,
-          "fat": 5,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "yumurta"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN",
-          "season": "4 mevsim",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
           "name": "50 gram beyaz peynir",
           "calories": 138,
           "protein": 10,
@@ -1756,6 +1731,31 @@
           "fillerDinner": false,
           "seasonRange": "[1,12]",
           "portionFixed": true,
+          "multiplier": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "Haşlanmış Yumurta",
+          "calories": 71,
+          "protein": 6,
+          "carbs": 0.5,
+          "fat": 5,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "yumurta"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "seasonRange": "[1,12]",
+          "portionFixed": false,
           "multiplier": 1,
           "category": "ÖĞLEN"
         }
