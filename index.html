@@ -7,6 +7,8 @@
 <title>Beslenme Planlayıcı</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
 <style>
         :root{--primary-color:#007BFF;--primary-hover:#0056b3;--success-color:#28A745;--success-hover:#218838;--danger-color:#DC3545;--danger-hover:#C82333;--secondary-color:#6C757D;--secondary-hover:#5A6268;--background-color:#F8F9FA;--white:#FFFFFF;--gray-light:#E9ECEF;--gray-border:#DEE2E6;--text-dark:#212529;--text-light:#FFFFFF;--shadow:0 2px 4px rgba(0,0,0,0.1);--shadow-lg:0 4px 8px rgba(0,0,0,0.2);}
 body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-color);margin:0;padding:0;overflow:hidden;}
@@ -147,36 +149,36 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 1000px; /* Daha geniş form */
-    min-width: 1000px; /* Minimum genişlik */
+    width: 1000px;
+    min-width: 1000px;
     background-color: var(--white);
     border: 1px solid var(--gray-border);
     padding: 20px;
     z-index: 1000;
     box-shadow: var(--shadow-lg);
-    display: none;
-    max-height: 65vh; /* Yükseklik uygun */
+    max-height: 65vh;
     overflow-y: auto;
-    overflow-x: hidden; /* Yatay scrollbar'ı engeller */
+    overflow-x: hidden;
     border-radius: 10px;
-    box-sizing: border-box; /* Padding ve border genişliğe dahil edilir */
+    box-sizing: border-box;
 }
 .edit-food-panel h5 {
     margin: 0 0 15px 0;
     font-size: 1.2rem;
     font-weight: 500;
 }
-.edit-food-panel .form-control-sm, .edit-food-panel .form-select-sm {
+.edit-food-panel .form-control-sm,
+.edit-food-panel .form-select-sm {
     padding: 0.35rem 0.7rem;
     font-size: 0.9rem;
     border-radius: 5px;
     width: 100%;
-    max-width: 100%; /* Sütun sınırını aşmaz */
+    max-width: 100%;
 }
 .edit-food-panel .wide-input {
     width: 100%;
-    min-width: 350px; /* Daha geniş input'lar */
-    max-width: 100%; /* Sütun sınırını aşmaz */
+    min-width: 350px;
+    max-width: 100%;
 }
 .edit-food-panel .form-label {
     font-size: 0.9rem;
@@ -184,7 +186,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
     color: var(--text-dark);
 }
 .edit-food-panel .form-check {
-    margin-right: 1.5rem; /* Checkbox'lar arasında daha fazla boşluk */
+    margin-right: 1.5rem;
 }
 .edit-food-panel .form-check-input {
     margin-right: 0.5rem;
@@ -195,27 +197,27 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
     border-radius: 5px;
 }
 .edit-food-panel .row {
-    margin-bottom: 0.8rem; /* Satırlar arasında uygun boşluk */
+    margin-bottom: 0.8rem;
 }
 .edit-food-panel .d-flex.gap-3 {
     display: flex;
-    gap: 1.5rem; /* Checkbox'lar arasında boşluk */
+    gap: 1.5rem;
     align-items: center;
 }
-@media (max-width: 1366px) { /* Daha düşük bir eşik */
+@media (max-width: 1366px) {
     .edit-food-panel {
-        width: 90%; /* Küçük ekranlarda esnek genişlik */
+        width: 90%;
         max-height: 75vh;
         padding: 15px;
     }
     .edit-food-panel .col-3 {
-        width: 35%; /* Label'lar daha dar */
+        width: 35%;
     }
     .edit-food-panel .col-9 {
-        width: 65%; /* Input'lar daha geniş */
+        width: 65%;
     }
     .edit-food-panel .wide-input {
-        min-width: 250px; /* Küçük ekranlarda daha dar input'lar */
+        min-width: 250px;
     }
 }
 .close-btn {
@@ -282,6 +284,15 @@ body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--background-c
 }
 .modal-close:hover {
     color: #000;
+}
+.noUi-connect {
+    background: var(--primary-color); /* Mavi bağlantı çubuğu */
+}
+.noUi-tooltip {
+    font-size: 0.8rem;
+    background: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 3px;
 }
 .meal-table th:nth-child(1), .meal-table td:nth-child(1) { width: 15%; } /* Uygulanan Kural */
 .meal-table th:nth-child(2), .meal-table td:nth-child(2) { width: 15%; } /* Çakışan Kurallar */
@@ -388,8 +399,7 @@ document.querySelectorAll('.dynamic-input').forEach(input => {
 function editFoodFromElement(el) {
   const name = el.getAttribute("data-name");
   if (name) editFood(name.trim());
-}
-</script></head>
+}</script></head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container-fluid">
@@ -443,97 +453,7 @@ function editFoodFromElement(el) {
 <div class="text-danger" id="dislikedFoods"></div>
 </div>
 <div class="accordion mb-2" id="categories"></div>
-<button class="btn btn-primary w-100 mt-2" onclick="toggleAddFoodForm()" title="Yeni Yemek Ekle"><i class="bi bi-plus-circle"></i> Yeni Yemek Ekle</button>
-<div class="mb-2" id="addFoodForm" style="display: none;">
-<form id="addFoodFormInner" onsubmit="addNewFood(event)">
-<div class="mb-1">
-<label class="form-label" for="foodCategory">Kategori</label>
-<select class="form-select" id="foodCategory" required="">
-<option value="">Kategori Seçin</option>
-</select>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodName">Yemek Adı</label>
-<input autocomplete="off" class="form-control" id="foodName" placeholder="Yemek Adı" required="" type="text"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodCalories">Kalori</label>
-<input autocomplete="off" class="form-control" id="foodCalories" min="0" placeholder="Kalori" required="" step="0.1" type="number"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodProtein">Protein (g)</label>
-<input autocomplete="off" class="form-control" id="foodProtein" min="0" placeholder="Protein (g)" required="" step="0.1" type="number"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodCarbs">Karb. (g)</label>
-<input autocomplete="off" class="form-control" id="foodCarbs" min="0" placeholder="Karbonhidrat (g)" required="" step="0.1" type="number"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodFat">Yağ (g)</label>
-<input autocomplete="off" class="form-control" id="foodFat" min="0" placeholder="Yağ (g)" required="" step="0.1" type="number"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodMaxQuantity">Maks. Katsayı</label>
-<input autocomplete="off" class="form-control" id="foodMaxQuantity" max="2" min="1" placeholder="Maks. Katsayı" step="0.5" type="number" value="1"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodMinQuantity">Min. Katsayı</label>
-<input autocomplete="off" class="form-control" id="foodMinQuantity" max="2" min="0" placeholder="Min. Katsayı" step="0.5" type="number" value="0.5"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodStep">Adım Değeri</label>
-<input autocomplete="off" class="form-control" id="foodStep" max="1" min="0.1" placeholder="Adım (örn: 0.5)" step="0.1" type="number" value="0.5"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodTags">Etiketler</label>
-<input autocomplete="off" class="form-control" id="foodTags" placeholder="Etiketler (virgülle ayırın)" type="text"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="editFoodSeason">Mevsim</label>
-<select class="form-select" id="editFoodSeason">
-<option value="4 mevsim">4 Mevsim</option>
-<option value="kış">Kış</option>
-<option value="yaz">Yaz</option>
-<option value="ilkbahar">İlkbahar</option>
-<option value="sonbahar">Sonbahar</option>
-</select>
-</div>
-<div class="mb-1">
-<label class="form-label" for="editFoodPortionFixed">Porsiyon Sabit mi?</label>
-<input id="editFoodPortionFixed" name="editFoodPortionFixed" type="checkbox"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="editFoodMultiplier">Çarpan</label>
-<input autocomplete="off" class="form-control" id="editFoodMultiplier" min="0.1" placeholder="Çarpan (örn: 1)" step="0.1" type="number" value="1"/>
-</div>
-<div class="mb-1">
-<label class="form-label" for="foodSeason">Mevsim</label>
-<select class="form-select" id="foodSeason">
-<option value="4 mevsim">4 Mevsim</option>
-<option value="kış">Kış</option>
-<option value="yaz">Yaz</option>
-<option value="ilkbahar">İlkbahar</option>
-<option value="sonbahar">Sonbahar</option>
-</select>
-</div>
-<div class="mb-1">
-<label class="form-label">Diyet Türü</label>
-<div>
-<input id="foodKeto" name="foodKeto" type="checkbox"/> <label for="foodKeto">Keto</label>
-<input id="foodLowCarb" name="foodLowCarb" type="checkbox"/> <label for="foodLowCarb">Low-Carb</label>
-</div>
-<div class="mb-1">
-<label class="form-label">Dolgu Türü</label>
-<div>
-<input id="foodFillerLunch" name="foodFillerLunch" type="checkbox"/> <label for="foodFillerLunch">Dolgu Öğlen</label>
-<input id="foodFillerDinner" name="foodFillerDinner" type="checkbox"/> <label for="foodFillerDinner">Dolgu Akşam</label>
-</div>
-</div>
-</div>
-<button class="btn btn-success w-100" title="Yemeği Ekle" type="submit">Ekle</button>
-<button class="btn btn-secondary w-100 mt-1" onclick="toggleAddFoodForm()" title="İptal Et" type="button">İptal</button>
-</form>
-</div>
+<button class="btn btn-primary w-100 mt-2" onclick="openAddFoodModal()" title="Yeni Yemek Ekle"><i class="bi bi-plus-circle"></i> Yeni Yemek Ekle</button>
 <div class="accordion mb-2 mt-2" id="sidebarAccordion">
 <!-- Kurallar Accordion -->
 <div class="accordion-item">
@@ -954,40 +874,40 @@ function editFoodFromElement(el) {
 <div class="main-content" id="mainContent">
 <div class="alert alert-success" id="notification" style="display: none;"></div>
 <div class="modal" id="patientFormModal" style="display: none;">
-    <div class="modal-content" style="background-color: var(--white); padding: 20px; border-radius: 10px; max-width: 500px; width: 90%; margin: auto; position: relative; top: 20%;">
-        <span class="modal-close" onclick="closePatientFormModal()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #333;">×</span>
-        <h3 id="patientFormTitle">Hasta Ekle</h3>
-        <form id="patientForm" onsubmit="handlePatientFormSubmit(event)">
-            <div class="mb-2">
-                <label class="form-label" for="userName">İsim</label>
-                <input class="form-control" id="userName" placeholder="Hasta Adı" required type="text"/>
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="userWeight">Kilo (kg)</label>
-                <input class="form-control" id="userWeight" min="1" placeholder="Kilo" required type="number"/>
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="userActivity">Aktivite Seviyesi</label>
-                <select class="form-select" id="userActivity" required>
-                    <option value="1">Hareketsiz</option>
-                    <option value="2">Hafif Aktif</option>
-                    <option value="3">Orta Aktif</option>
-                    <option value="4">Çok Aktif</option>
-                    <option value="5">Aşırı Aktif</option>
-                </select>
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="likedFoodsInput">Sevdiği Yemekler</label>
-                <input class="form-control" id="likedFoodsInput" placeholder="Virgülle ayırın (örn: balık, salata)" type="text"/>
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="dislikedFoodsInput">Sevmediği Yemekler</label>
-                <input class="form-control" id="dislikedFoodsInput" placeholder="Virgülle ayırın (örn: brokoli, karnabahar)" type="text"/>
-            </div>
-            <button class="btn btn-success w-100" type="submit">Kaydet</button>
-            <button class="btn btn-secondary w-100 mt-1" type="button" onclick="closePatientFormModal()">İptal</button>
-        </form>
-    </div>
+<div class="modal-content" style="background-color: var(--white); padding: 20px; border-radius: 10px; max-width: 500px; width: 90%; margin: auto; position: relative; top: 20%;">
+<span class="modal-close" onclick="closePatientFormModal()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #333;">×</span>
+<h3 id="patientFormTitle">Hasta Ekle</h3>
+<form id="patientForm" onsubmit="handlePatientFormSubmit(event)">
+<div class="mb-2">
+<label class="form-label" for="userName">İsim</label>
+<input class="form-control" id="userName" placeholder="Hasta Adı" required="" type="text"/>
+</div>
+<div class="mb-2">
+<label class="form-label" for="userWeight">Kilo (kg)</label>
+<input class="form-control" id="userWeight" min="1" placeholder="Kilo" required="" type="number"/>
+</div>
+<div class="mb-2">
+<label class="form-label" for="userActivity">Aktivite Seviyesi</label>
+<select class="form-select" id="userActivity" required="">
+<option value="1">Hareketsiz</option>
+<option value="2">Hafif Aktif</option>
+<option value="3">Orta Aktif</option>
+<option value="4">Çok Aktif</option>
+<option value="5">Aşırı Aktif</option>
+</select>
+</div>
+<div class="mb-2">
+<label class="form-label" for="likedFoodsInput">Sevdiği Yemekler</label>
+<input class="form-control" id="likedFoodsInput" placeholder="Virgülle ayırın (örn: balık, salata)" type="text"/>
+</div>
+<div class="mb-2">
+<label class="form-label" for="dislikedFoodsInput">Sevmediği Yemekler</label>
+<input class="form-control" id="dislikedFoodsInput" placeholder="Virgülle ayırın (örn: brokoli, karnabahar)" type="text"/>
+</div>
+<button class="btn btn-success w-100" type="submit">Kaydet</button>
+<button class="btn btn-secondary w-100 mt-1" onclick="closePatientFormModal()" type="button">İptal</button>
+</form>
+</div>
 </div>
 <!-- Tek bir adminPanel div'i -->
 <div class="p-3" id="adminPanel" style="display: block;">
@@ -1111,22 +1031,22 @@ function editFoodFromElement(el) {
 <!-- Kural açıklamasını göstermek için -->
 <div id="ruleTextElement"></div>
 <div class="row mb-2">
-    <div class="col-12">
-        <label class="form-label">Hariç Tutulacak Etiketler</label>
-        <div class="mb-1">
-            <label for="excludedTagsBreakfast">Kahvaltı:</label>
-            <input class="form-control" id="excludedTagsBreakfast" type="text" value="keto,lowcarb" placeholder="örn: keto,lowcarb" />
-        </div>
-        <div class="mb-1">
-            <label for="excludedTagsLunch">Öğle:</label>
-            <input class="form-control" id="excludedTagsLunch" type="text" value="keto,lowcarb" placeholder="örn: keto,lowcarb" />
-        </div>
-        <div class="mb-1">
-            <label for="excludedTagsDinner">Akşam:</label>
-            <input class="form-control" id="excludedTagsDinner" type="text" value="keto,lowcarb" placeholder="örn: keto,lowcarb" />
-        </div>
-        <small class="form-text text-muted">Aynı öğünde çakışma kontrolünden hariç tutulacak etiketleri virgülle ayırarak yazın.</small>
-    </div>
+<div class="col-12">
+<label class="form-label">Hariç Tutulacak Etiketler</label>
+<div class="mb-1">
+<label for="excludedTagsBreakfast">Kahvaltı:</label>
+<input class="form-control" id="excludedTagsBreakfast" placeholder="örn: keto,lowcarb" type="text" value="keto,lowcarb"/>
+</div>
+<div class="mb-1">
+<label for="excludedTagsLunch">Öğle:</label>
+<input class="form-control" id="excludedTagsLunch" placeholder="örn: keto,lowcarb" type="text" value="keto,lowcarb"/>
+</div>
+<div class="mb-1">
+<label for="excludedTagsDinner">Akşam:</label>
+<input class="form-control" id="excludedTagsDinner" placeholder="örn: keto,lowcarb" type="text" value="keto,lowcarb"/>
+</div>
+<small class="form-text text-muted">Aynı öğünde çakışma kontrolünden hariç tutulacak etiketleri virgülle ayırarak yazın.</small>
+</div>
 </div>
 <!-- Kural ekleme/düzenleme butonu -->
 <button id="addRuleButton" onclick="handleRuleSave()">Kural Ekle</button>
@@ -1259,8 +1179,8 @@ function editFoodFromElement(el) {
 <input id="editTemplateIndex" type="hidden"/>
 <div class="mb-2">
 <label class="form-label" for="editTemplateName">Şablon Adı</label>
-<input class="form-control" id="editTemplateName" type="text">
-</input></div>
+<input class="form-control" id="editTemplateName" type="text"/>
+</div>
 <div class="mb-2">
 <label class="form-label" for="editTemplateMealType">Öğün Türü</label>
 <select class="form-select" id="editTemplateMealType">
@@ -1348,6 +1268,215 @@ let currentMacros = {
     protein: 56,   // Varsayılan
     fat: 83       // Varsayılan
 };
+
+
+const months = [
+    "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+    "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"
+];
+
+
+function initializeSeasonSlider(sliderId, rangeInputId, displayId) {
+    console.log("Yeni slider başlatılıyor:", { sliderId, rangeInputId, displayId });
+    
+    // DOM elemanlarını al
+    const slider = document.getElementById(sliderId);
+    const rangeInput = document.getElementById(rangeInputId);
+    const display = document.getElementById(displayId);
+
+    if (!slider || !rangeInput || !display) {
+        console.error("Slider elemanları bulunamadı:", { sliderId, rangeInputId, displayId });
+        return;
+    }
+    
+    // Önceki bileşenleri temizle
+    while (slider.firstChild) {
+        slider.removeChild(slider.firstChild);
+    }
+    
+    // Mevcut reverse checkbox'ı varsa kaldır
+    const existingToggle = document.getElementById(`${sliderId}_reverse`);
+    if (existingToggle) {
+        const toggleContainer = existingToggle.closest('.reverse-container');
+        if (toggleContainer) {
+            toggleContainer.parentNode.removeChild(toggleContainer);
+        } else {
+            existingToggle.parentNode.removeChild(existingToggle);
+        }
+    }
+    
+    // Reverse checkbox container'ı oluştur
+    const reverseContainer = document.createElement('div');
+    reverseContainer.className = 'reverse-container mt-2';
+    reverseContainer.innerHTML = `
+        <label class="form-check form-check-inline">
+            <input type="checkbox" id="${sliderId}_reverse" class="form-check-input reverse-toggle">
+            <span class="form-check-label">Sezonu ters çevir (seçilen aralığın dışında ve sınırlar dahil)</span>
+        </label>
+    `;
+    slider.parentNode.insertBefore(reverseContainer, slider);
+    
+    // Reverse checkbox
+    const reverseToggle = document.getElementById(`${sliderId}_reverse`);
+    
+    // noUiSlider'ı kaldır ve yeniden oluştur
+    if (slider.noUiSlider) {
+        slider.noUiSlider.destroy();
+    }
+    
+    // Slider'ı başlat
+    noUiSlider.create(slider, {
+        start: [4, 9], // Varsayılan: Nisan - Eylül
+        connect: true,
+        range: {
+            'min': 1,
+            'max': 12
+        },
+        step: 1,
+        tooltips: [true, true],
+        format: {
+            to: value => months[Math.round(value) - 1],
+            from: value => months.indexOf(value) + 1
+        }
+    });
+    
+    // Ters aralık değişkeni
+    let isReversed = reverseToggle.checked;
+    
+    // JSON değerini ve display'i güncelle
+    function updateRangeInput() {
+        const values = slider.noUiSlider.get();
+        const startMonth = months.indexOf(values[0]) + 1;
+        const endMonth = months.indexOf(values[1]) + 1;
+        
+        rangeInput.value = `[${startMonth},${endMonth}]`;
+        
+        let displayText;
+        if (isReversed) {
+            // Ters çevrilmiş: Seçilen aralığın dışındaki aylar + başlangıç ve bitiş ayları
+            if (startMonth <= endMonth) {
+                const outsideMonths = [...Array(12).keys()]
+                    .map(i => i + 1)
+                    .filter(m => m <= startMonth || m >= endMonth)
+                    .map(m => months[m - 1]);
+                displayText = `Kullanılabilir: ${outsideMonths.join(", ")}`;
+            } else {
+                const outsideMonths = [...Array(12).keys()]
+                    .map(i => i + 1)
+                    .filter(m => m >= endMonth && m <= startMonth)
+                    .map(m => months[m - 1]);
+                displayText = `Kullanılabilir: ${outsideMonths.join(", ")}`;
+            }
+        } else {
+            // Normal: Seçilen aralıktaki aylar
+            if (startMonth <= endMonth) {
+                const inMonths = [...Array(endMonth - startMonth + 1).keys()]
+                    .map(i => months[startMonth - 1 + i]);
+                displayText = `Mevsim: ${inMonths.join(", ")}`;
+            } else {
+                const inMonths = [
+                    ...[...Array(12 - startMonth + 1).keys()].map(i => months[startMonth - 1 + i]),
+                    ...[...Array(endMonth).keys()].map(i => months[i])
+                ];
+                displayText = `Mevsim: ${inMonths.join(", ")}`;
+            }
+        }
+        display.innerHTML = displayText;
+    }
+    
+    // Slider değiştiğinde
+    slider.noUiSlider.on('update', updateRangeInput);
+    
+    // Reverse checkbox değiştiğinde
+    reverseToggle.addEventListener('change', function() {
+        isReversed = this.checked;
+        updateRangeInput();
+    });
+    
+    // Özel API
+    return {
+        setValues: function(startMonthNum, endMonthNum, reversed) {
+            console.log("setValues çağrıldı:", startMonthNum, endMonthNum, reversed);
+            
+            // Checkbox'ı ayarla
+            reverseToggle.checked = reversed;
+            isReversed = reversed;
+            
+            // Ay sayılarını ay isimlerine çevir
+            const startMonthName = months[startMonthNum - 1];
+            const endMonthName = months[endMonthNum - 1];
+            
+            // Slider değerlerini ayarla
+            try {
+                slider.noUiSlider.set([startMonthName, endMonthName]);
+                updateRangeInput();
+                console.log("Slider değerleri ayarlandı:", startMonthName, endMonthName);
+            } catch (e) {
+                console.error("Slider değerleri ayarlanırken hata:", e);
+            }
+        },
+        
+        getValues: function() {
+            const values = slider.noUiSlider.get();
+            const startMonth = months.indexOf(values[0]) + 1;
+            const endMonth = months.indexOf(values[1]) + 1;
+            
+            return {
+                startMonth,
+                endMonth,
+                isReversed
+            };
+        }
+    };
+}
+function convertOldSeasonToRange(season) {
+    const seasonMap = {
+        "yaz": [6, 8], // Haziran - Ağustos
+        "kış": [12, 2], // Aralık - Şubat
+        "ilkbahar": [3, 5], // Mart - Mayıs
+        "sonbahar": [9, 11], // Eylül - Kasım
+        "4 mevsim": [1, 12] // Tüm yıl
+    };
+    return seasonMap[season] || [1, 12];
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (!Array.isArray(categories)) {
+        categories = [];
+    }
+    categories.forEach(category => {
+        category.items.forEach(item => {
+            if (item.season && !item.seasonRange) {
+                item.seasonRange = JSON.stringify(convertOldSeasonToRange(item.season));
+                delete item.season;
+            }
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (!Array.isArray(categories)) {
+        categories = [];
+    }
+    categories.forEach(category => {
+        category.items.forEach(item => {
+            if (item.season && !item.seasonRange) {
+                const seasonMap = {
+                    "yaz": [6, 8],
+                    "kış": [12, 2],
+                    "ilkbahar": [3, 5],
+                    "sonbahar": [9, 11],
+                    "4 mevsim": [1, 12]
+                };
+                item.seasonRange = JSON.stringify(seasonMap[item.season] || [1, 12]);
+                delete item.season;
+            }
+        });
+    });
+});
+
+
 function handleExcelUpload(event) {
     const file = event.target.files[0];
     const reader = new FileReader();
@@ -1614,166 +1743,172 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 </div>
 <div class="edit-food-panel" id="editFoodPanel">
-<h5>Yemek Düzenle</h5>
-<span class="close-btn" onclick="closeEditFoodPanel()">×</span>
-<form onsubmit="saveEditedFood(event)">
-<input id="editFoodIndex" type="hidden"/>
-<input id="editFoodOriginalName" type="hidden"/>
-<div class="container-fluid">
-<div class="row g-2">
-<!-- Sol Sütun -->
-<div class="col-6">
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodName">Yemek Adı:</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm wide-input" id="editFoodName" placeholder="Yemek adını girin (örn: Kurşun Geçirmez Kahve)" required="" type="text"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodCalories">Kalori:</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm" id="editFoodCalories" min="0" placeholder="0" required="" step="0.1" type="number"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodCarbs">Karb. (g):</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm" id="editFoodCarbs" min="0" placeholder="0" required="" step="0.1" type="number"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodProtein">Protein (g):</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm" id="editFoodProtein" min="0" placeholder="0" required="" step="0.1" type="number"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodFat">Yağ (g):</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm" id="editFoodFat" min="0" placeholder="0" required="" step="0.1" type="number"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodMaxQuantity">Maks. Katsayı:</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm" id="editFoodMaxQuantity" max="2" min="1" step="0.5" type="number" value="1"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodMinQuantity">Min. Katsayı:</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm" id="editFoodMinQuantity" max="2" min="0" step="0.1" type="number" value="0.5"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodStep">Adım Değeri:</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm" id="editFoodStep" max="2" min="0" step="0.1" type="number" value="0.5"/>
-</div>
-</div>
-</div>
-<!-- Sağ Sütun -->
-<div class="col-6">
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodRole">Rol:</label>
-<div class="col-9">
-<select class="form-select form-select-sm" id="editFoodRole">
-<option value="mainDish">Ana Yemek</option>
-<option value="sideDish">Yan Yemek</option>
-<option value="drink">İçecek</option>
-<option value="soup">Çorba</option>
-<option value="dessert">Tatlı</option>
-<option value="fruit">Meyve</option>
-<option value="bread">Ekmek</option>
-<option value="snack">Atıştırmalık</option>
-<option value="supplement">Ek</option>
-</select>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodTags">Etiketler:</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm wide-input" id="editFoodTags" placeholder="Virgülle ayırın (örn: keto, kahve, kurşun geçirmez)" type="text"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodSeason">Mevsim:</label>
-<div class="col-9">
-<select class="form-select form-select-sm" id="editFoodSeason">
-<option value="4 mevsim">4 Mevsim</option>
-<option value="kış">Kış</option>
-<option value="yaz">Yaz</option>
-<option value="ilkbahar">İlkbahar</option>
-<option value="sonbahar">Sonbahar</option>
-</select>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodPortionFixed">Porsiyon Sabit:</label>
-<div class="col-9">
-<input class="form-check-input" id="editFoodPortionFixed" name="editFoodPortionFixed" type="checkbox"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodMultiplier">Çarpan:</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm" id="editFoodMultiplier" min="0.1" placeholder="örn: 1" step="0.1" type="number" value="1"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0" for="editFoodMealType">Öğün Türü:</label>
-<div class="col-9">
-<input autocomplete="off" class="form-control form-control-sm wide-input" id="editFoodMealType" placeholder="Virgülle ayırın (örn: breakfast, lunch)" type="text"/>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0">Dolgu Türü:</label>
-<div class="col-9 d-flex gap-3">
-<div class="form-check">
-<input class="form-check-input" id="editFoodFillerLunch" name="editFoodFillerLunch" type="checkbox"/>
-<label class="form-check-label" for="editFoodFillerLunch">Öğlen</label>
-</div>
-<div class="form-check">
-<input class="form-check-input" id="editFoodFillerDinner" name="editFoodFillerDinner" type="checkbox"/>
-<label class="form-check-label" for="editFoodFillerDinner">Akşam</label>
-</div>
-</div>
-</div>
-<div class="row mb-2 align-items-center">
-<label class="col-3 form-label mb-0">Diyet Türü:</label>
-<div class="col-9 d-flex gap-3">
-<div class="form-check">
-<input class="form-check-input" id="editFoodKeto" name="editFoodKeto" type="checkbox"/>
-<label class="form-check-label" for="editFoodKeto">Keto</label>
-</div>
-<div class="form-check">
-<input class="form-check-input" id="editFoodLowCarb" name="editFoodLowCarb" type="checkbox"/>
-<label class="form-check-label" for="editFoodLowCarb">Low-Carb</label>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Kategoriye Taşı ve Butonlar -->
-<div class="row mb-2 align-items-center mt-2">
-<label class="col-2 form-label mb-0" for="editFoodMoveToCategory">Kategoriye Taşı:</label>
-<div class="col-10">
-<select class="form-select form-select-sm wide-input" id="editFoodMoveToCategory">
-<option value="">Kategori Seç</option>
-</select>
-</div>
-</div>
-<div class="row mt-2">
-<div class="col-6">
-<button class="btn btn-success w-100" type="submit">Kaydet</button>
-</div>
-<div class="col-6">
-<button class="btn btn-secondary w-100" onclick="closeEditFoodPanel()" type="button">İptal</button>
-</div>
-</div>
-</div>
-</form>
-</div>
+    <h5>Yemek Düzenle</h5>
+    <span class="close-btn" onclick="closeEditFoodPanel()">×</span>
+    <form id="editFoodForm" onsubmit="saveEditedFood(event)">
+        <input id="editFoodIndex" type="hidden" />
+        <input id="editFoodOriginalName" type="hidden" />
+        <div class="container-fluid">
+            <div class="row g-2">
+                <!-- Sol Sütun -->
+                <div class="col-6">
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodName">Yemek Adı:</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm wide-input" id="editFoodName" placeholder="Yemek adını girin (örn: Kurşun Geçirmez Kahve)" required type="text" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodCalories">Kalori:</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm" id="editFoodCalories" min="0" placeholder="0" required step="0.1" type="number" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodCarbs">Karb. (g):</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm" id="editFoodCarbs" min="0" placeholder="0" required step="0.1" type="number" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodProtein">Protein (g):</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm" id="editFoodProtein" min="0" placeholder="0" required step="0.1" type="number" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodFat">Yağ (g):</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm" id="editFoodFat" min="0" placeholder="0" required step="0.1" type="number" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodMaxQuantity">Maks. Katsayı:</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm" id="editFoodMaxQuantity" max="2" min="1" step="0.5" type="number" value="1" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodMinQuantity">Min. Katsayı:</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm" id="editFoodMinQuantity" max="2" min="0" step="0.1" type="number" value="0.5" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodStep">Adım Değeri:</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm" id="editFoodStep" max="2" min="0" step="0.1" type="number" value="0.5" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Sağ Sütun -->
+                <div class="col-6">
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodRole">Rol:</label>
+                        <div class="col-9">
+                            <select class="form-select form-select-sm" id="editFoodRole">
+                                <option value="mainDish">Ana Yemek</option>
+                                <option value="sideDish">Yan Yemek</option>
+                                <option value="drink">İçecek</option>
+                                <option value="soup">Çorba</option>
+                                <option value="dessert">Tatlı</option>
+                                <option value="fruit">Meyve</option>
+                                <option value="bread">Ekmek</option>
+                                <option value="snack">Atıştırmalık</option>
+                                <option value="supplement">Ek</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodTags">Etiketler:</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm wide-input" id="editFoodTags" placeholder="Virgülle ayırın (örn: keto, kahve, kurşun geçirmez)" type="text" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0">Mevsim Aralığı:</label>
+                        <div class="col-9">
+                            <div id="editSeasonSlider"></div>
+                            <input type="hidden" id="editFoodSeasonRange" name="editFoodSeasonRange" value="[4,9]" />
+                            <div id="editSeasonRangeDisplay" style="margin-top: 10px; font-size: 0.9rem;"></div>
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodPortionFixed">Porsiyon Sabit:</label>
+                        <div class="col-9">
+                            <input class="form-check-input" id="editFoodPortionFixed" name="editFoodPortionFixed" type="checkbox" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0" for="editFoodMultiplier">Çarpan:</label>
+                        <div class="col-9">
+                            <input autocomplete="off" class="form-control form-control-sm" id="editFoodMultiplier" min="0.1" placeholder="örn: 1" step="0.1" type="number" value="1" />
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0">Öğün Türü:</label>
+                        <div class="col-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" id="editMealType_breakfast" name="editMealType" type="checkbox" value="breakfast" />
+                                <label class="form-check-label" for="editMealType_breakfast">Kahvaltı</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" id="editMealType_lunch" name="editMealType" type="checkbox" value="lunch" />
+                                <label class="form-check-label" for="editMealType_lunch">Öğle</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" id="editMealType_dinner" name="editMealType" type="checkbox" value="dinner" />
+                                <label class="form-check-label" for="editMealType_dinner">Akşam</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0">Dolgu Türü:</label>
+                        <div class="col-9 d-flex gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" id="editFoodFillerLunch" name="editFoodFillerLunch" type="checkbox" />
+                                <label class="form-check-label" for="editFoodFillerLunch">Öğlen</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" id="editFoodFillerDinner" name="editFoodFillerDinner" type="checkbox" />
+                                <label class="form-check-label" for="editFoodFillerDinner">Akşam</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <label class="col-3 form-label mb-0">Diyet Türü:</label>
+                        <div class="col-9 d-flex gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" id="editFoodKeto" name="editFoodKeto" type="checkbox" />
+                                <label class="form-check-label" for="editFoodKeto">Keto</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" id="editFoodLowCarb" name="editFoodLowCarb" type="checkbox" />
+                                <label class="form-check-label" for="editFoodLowCarb">Low-Carb</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kategoriye Taşı ve Butonlar -->
+            <div class="row mb-2 align-items-center mt-2">
+                <label class="col-2 form-label mb-0" for="editFoodMoveToCategory">Kategoriye Taşı:</label>
+                <div class="col-10">
+                    <select class="form-select form-select-sm wide-input" id="editFoodMoveToCategory">
+                        <option value="">Kategori Seç</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6">
+                    <button class="btn btn-success w-100" type="submit">Kaydet</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-secondary w-100" onclick="closeEditFoodPanel()" type="button">İptal</button>
+                </div>
+            </div>
+        </div>
+    </form>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -2311,80 +2446,133 @@ function deleteSelectedCategory() {
             form.style.display = form.style.display === 'none' ? 'block' : 'none';
         }
 
+
+
         function addNewFood(event) {
     event.preventDefault();
-    const categoryName = document.getElementById('foodCategory').value;
-    const name = document.getElementById('foodName').value;
-    const calories = parseFloat(document.getElementById('foodCalories').value);
-    const protein = parseFloat(document.getElementById('foodProtein').value);
-    const carbs = parseFloat(document.getElementById('foodCarbs').value);
-    const fat = parseFloat(document.getElementById('foodFat').value);
-    const maxQuantity = parseFloat(document.getElementById('foodMaxQuantity').value);
-    const minQuantity = parseFloat(document.getElementById('foodMinQuantity').value);
-    const tags = document.getElementById('foodTags').value.split(',').map(t => t.trim()).filter(t => t);
-    const keto = document.getElementById('foodKeto').checked;
-    const lowcarb = document.getElementById('foodLowCarb').checked;
-    const fillerLunch = document.getElementById('foodFillerLunch').checked;
-    const fillerDinner = document.getElementById('foodFillerDinner').checked;
-    const step = parseFloat(document.getElementById('foodStep').value) || 0.5;
+    console.log("Yeni yemek ekleniyor...");
 
-    const category = categories.find(cat => cat.name === categoryName);
+    const form = document.getElementById("addFoodFormInner");
+    console.log("Form durumu:", form);
+
+    if (!form) {
+        console.error("addFoodFormInner bulunamadı!");
+        showNotification("Form bulunamadı, lütfen sayfayı yenileyin!", "warning");
+        return;
+    }
+
+    // Elemanları güvenli bir şekilde al
+    const getElementValue = (id, defaultValue = "") => {
+        const element = document.getElementById(id);
+        if (!element) {
+            console.error(`${id} bulunamadı!`);
+            return defaultValue;
+        }
+        return element.value;
+    };
+
+    const getElementChecked = (id, defaultValue = false) => {
+        const element = document.getElementById(id);
+        if (!element) {
+            console.error(`${id} bulunamadı!`);
+            return defaultValue;
+        }
+        return element.checked;
+    };
+
+    const categoryName = getElementValue("foodCategory");
+    const name = getElementValue("foodName").trim();
+    const calories = parseFloat(getElementValue("foodCalories")) || 0;
+    const protein = parseFloat(getElementValue("foodProtein")) || 0;
+    const carbs = parseFloat(getElementValue("foodCarbs")) || 0;
+    const fat = parseFloat(getElementValue("foodFat")) || 0;
+    const maxQuantity = parseFloat(getElementValue("foodMaxQuantity")) || 1;
+    const minQuantity = parseFloat(getElementValue("foodMinQuantity")) || 0.5;
+    const step = parseFloat(getElementValue("foodStep")) || 0.5;
+    const tags = getElementValue("foodTags").split(",").map(t => t.trim()).filter(t => t) || [];
+    const keto = getElementChecked("foodKeto");
+    const lowcarb = getElementChecked("foodLowCarb");
+    const fillerLunch = getElementChecked("foodFillerLunch");
+    const fillerDinner = getElementChecked("foodFillerDinner");
+    const seasonRangeValue = getElementValue("foodSeasonRange", "[1,12]"); // Varsayılan: Tüm yıl
+    const portionFixed = getElementChecked("foodPortionFixed");
+    const multiplier = parseFloat(getElementValue("foodMultiplier")) || 1;
+    const role = getElementValue("foodRole", "mainDish");
+    const isReversedSeason = getElementChecked("seasonSlider_reverse"); // seasonSlider_reverse kullanılıyor
+
+    // MealType checkbox'larından değerleri topla
+    const mealTypes = [];
+    ["breakfast", "lunch", "dinner"].forEach(type => {
+        const checkbox = document.getElementById(`mealType_${type}`);
+        if (checkbox && checkbox.checked) {
+            mealTypes.push(type);
+        }
+    });
+    const mealType = mealTypes.length > 0 ? mealTypes : [];
+
+    // Mevcut yemek kontrolü
+    const existing = categories.some(cat => cat.items.some(item => item.name.toLowerCase() === name.toLowerCase()));
+    if (existing) {
+        showNotification("Bu isimde bir yemek zaten var!", "warning");
+        console.log(`Hata: ${name} zaten mevcut!`);
+        return;
+    }
+
+    // Yeni yemek objesi
+    const newFood = {
+        name,
+        calories,
+        protein,
+        carbs,
+        fat,
+        maxQuantity,
+        minQuantity,
+        step,
+        tags,
+        role,
+        mealType,
+        keto,
+        lowcarb,
+        fillerLunch,
+        fillerDinner,
+        seasonRange: seasonRangeValue,
+        isReversedSeason, // Ters sezon bilgisini ekle
+        portionFixed,
+        multiplier,
+        category: categoryName
+    };
+
+    // Kategoriye ekle
+    let category = categories.find(cat => cat.name === categoryName);
     if (category) {
-        category.items.push({
-            name,
-            calories,
-            protein,
-            carbs,
-            fat,
-            maxQuantity,
-            minQuantity,
-            tags,
-            role: "mainDish",
-            mealType: "breakfast,lunch,dinner", // String olarak bırakılmış, orijinal kodunuzda böyle
-            keto,
-            lowcarb,
-            fillerLunch,
-            fillerDinner,
-            step
-        });
+        category.items.push(newFood);
     } else {
-        // Eğer kategori yoksa, yeni bir kategori oluştur
         categories.push({
             name: categoryName,
-            items: [{
-                name,
-                calories,
-                protein,
-                carbs,
-                fat,
-                maxQuantity,
-                minQuantity,
-                tags,
-                role: "mainDish",
-                mealType: "breakfast,lunch,dinner",
-                keto,
-                lowcarb,
-                fillerLunch,
-                fillerDinner,
-                step
-            }]
+            items: [newFood]
         });
     }
 
-    const form = document.getElementById('addFoodFormInner');
-    if (form) {
-        form.reset(); // Formu sıfırla
-        document.getElementById('foodMaxQuantity').value = 1; // Varsayılan değeri geri yükle
-    } else {
-        console.error("addFoodFormInner bulunamadı!");
-    }
+    // Formu sıfırla
+    form.reset();
+    document.getElementById("foodMaxQuantity").value = 1;
+    document.getElementById("foodMinQuantity").value = 0.5;
+    document.getElementById("foodStep").value = 0.5;
+    document.getElementById("foodSeasonRange").value = "[4,9]";
 
-    toggleAddFoodForm(); // Formu gizle
-    loadCategories();    // Soldaki paneli güncelle
-    searchEditFood('');  // Sağdaki paneli güncelle
-    showNotification(`${name} yemeği eklendi!`);
-    updateGitHubData();  // GitHub'a verileri gönder
+    // Kategorileri ve diğer panelleri güncelle
+    loadCategories();
+    searchEditFood("");
+    showNotification(`${name} yemeği eklendi!`, "success");
+    console.log(`Yemek eklendi: ${name}, Sezon aralığı: ${seasonRangeValue}, Ters sezon: ${isReversedSeason}`);
+
+    // GitHub'a verileri gönder
+    updateGitHubData();
+
+    // Modal'ı kapat
+    closeAddFoodModal();
 }
+
 
         function renderWeekTabs() {
             const weekTabs = document.getElementById('weekTabs');
@@ -3510,75 +3698,157 @@ function editMealItem(mealType, index) {
 // Yemek düzenleme ve kaydetme fonksiyonu
 function saveEditedFood(event) {
     event.preventDefault();
-    saveState();
+    console.log("Yemek düzenleniyor...");
 
-    const originalName = document.getElementById('editFoodOriginalName').value;
-    const updatedFood = {
-        name: document.getElementById('editFoodName').value.trim() || originalName,
-        calories: parseFloat(document.getElementById('editFoodCalories').value) || 0,
-        protein: parseFloat(document.getElementById('editFoodProtein').value) || 0,
-        carbs: parseFloat(document.getElementById('editFoodCarbs').value) || 0,
-        fat: parseFloat(document.getElementById('editFoodFat').value) || 0,
-        maxQuantity: parseFloat(document.getElementById('editFoodMaxQuantity').value) || 1,
-        minQuantity: parseFloat(document.getElementById('editFoodMinQuantity').value) || 0.5,
-        step: parseFloat(document.getElementById('editFoodStep').value) || 0.5,
-        role: document.getElementById('editFoodRole').value || 'mainDish',
-        tags: document.getElementById('editFoodTags').value.split(',').map(t => t.trim()).filter(t => t) || [],
-        mealType: document.getElementById('editFoodMealType').value.split(',').map(t => t.trim()).filter(t => t) || [],
-        keto: document.getElementById('editFoodKeto').checked,
-        lowcarb: document.getElementById('editFoodLowCarb').checked,
-        fillerLunch: document.getElementById('editFoodFillerLunch').checked,
-        fillerDinner: document.getElementById('editFoodFillerDinner').checked,
-        season: document.getElementById('editFoodSeason').value || '4 mevsim',
-        portionFixed: document.getElementById('editFoodPortionFixed').checked,
-        multiplier: parseFloat(document.getElementById('editFoodMultiplier').value) || 1
-    };
-
-    const food = findFood(originalName);
-    if (!food || !food.category) {
-        showNotification("Yemek bulunamadı!", "warning");
+    const form = document.getElementById("editFoodForm");
+    if (!form) {
+        console.error("editFoodForm bulunamadı!");
+        showNotification("Form bulunamadı!", "warning");
         return;
     }
 
-    // Mevcut yemeği güncelle
-    Object.assign(food, updatedFood);
-
-    // Kategoriye taşıma işlemi
-    const newCategory = document.getElementById('editFoodMoveToCategory').value;
-    if (newCategory && newCategory !== food.category) {
-        const oldCategory = categories.find(cat => cat.name === food.category);
-        if (oldCategory) {
-            oldCategory.items = oldCategory.items.filter(item => item.name !== originalName);
-            const targetCategory = categories.find(cat => cat.name === newCategory);
-            if (targetCategory) {
-                targetCategory.items.push(food);
-                food.category = newCategory;
-            }
+    // Elemanları güvenli bir şekilde al
+    const getElementValue = (id, defaultValue = "") => {
+        const element = document.getElementById(id);
+        if (!element) {
+            console.error(`${id} bulunamadı!`);
+            return defaultValue;
         }
+        return element.value;
+    };
+
+    const getElementChecked = (id, defaultValue = false) => {
+        const element = document.getElementById(id);
+        if (!element) {
+            console.error(`${id} bulunamadı!`);
+            return defaultValue;
+        }
+        return element.checked;
+    };
+
+    const originalName = getElementValue("editFoodOriginalName");
+    const name = getElementValue("editFoodName").trim();
+    const role = getElementValue("editFoodRole", "mainDish");
+    const calories = parseFloat(getElementValue("editFoodCalories")) || 0;
+    const protein = parseFloat(getElementValue("editFoodProtein")) || 0;
+    const carbs = parseFloat(getElementValue("editFoodCarbs")) || 0;
+    const fat = parseFloat(getElementValue("editFoodFat")) || 0;
+    const maxQuantity = parseFloat(getElementValue("editFoodMaxQuantity")) || 1;
+    const minQuantity = parseFloat(getElementValue("editFoodMinQuantity")) || 0.5;
+    const step = parseFloat(getElementValue("editFoodStep")) || 0.5;
+    const tags = getElementValue("editFoodTags").split(",").map(t => t.trim()).filter(t => t) || [];
+    const keto = getElementChecked("editFoodKeto");
+    const lowcarb = getElementChecked("editFoodLowCarb");
+    const fillerLunch = getElementChecked("editFoodFillerLunch");
+    const fillerDinner = getElementChecked("editFoodFillerDinner");
+    const portionFixed = getElementChecked("editFoodPortionFixed");
+    const multiplier = parseFloat(getElementValue("editFoodMultiplier")) || 1;
+    const categoryName = getElementValue("editFoodMoveToCategory") || categories[parseInt(getElementValue("editFoodIndex"))]?.name || "KAHVALTI";
+
+    // Reverse checkbox değerini kontrol et
+    const reverseToggle = document.getElementById("editSeasonSlider_reverse");
+    const isReversed = reverseToggle ? reverseToggle.checked : false;
+    
+    // SeasonRange değerini al ve gerekirse düzenle
+    let seasonRangeValue = getElementValue("editFoodSeasonRange", "[1,12]");
+    
+    // SeasonRange değerini analiz et
+    let seasonRange;
+    try {
+        seasonRange = JSON.parse(seasonRangeValue);
+    } catch (e) {
+        console.warn("Geçersiz seasonRange formatı, varsayılan değer kullanılıyor");
+        seasonRange = [1, 12];
+        seasonRangeValue = "[1,12]";
+    }
+    
+    // MealType checkbox'larından değerleri topla
+    const mealTypes = [];
+    ["breakfast", "lunch", "dinner"].forEach(type => {
+        const checkbox = document.getElementById(`editMealType_${type}`);
+        if (checkbox && checkbox.checked) {
+            mealTypes.push(type);
+        }
+    });
+    const mealType = mealTypes.length > 0 ? mealTypes : [];
+
+    // Mevcut yemek kontrolü (kendi ismi hariç)
+    const existing = categories.some(cat => cat.items.some(item => item.name.toLowerCase() === name.toLowerCase() && item.name !== originalName));
+    if (existing) {
+        showNotification("Bu isimde bir yemek zaten var!", "warning");
+        console.log(`Hata: ${name} zaten mevcut!`);
+        return;
     }
 
-    // Öğün verisindeki katsayıları kontrol et ve yeni maxQuantity’ye uydur
-    weeks.forEach((week, wIndex) => {
-        Object.values(week.days).forEach(day => {
-            ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
-                if (day.meals[mealType]) {
-                    day.meals[mealType].forEach(item => {
-                        if (item.name === updatedFood.name && item.quantity > updatedFood.maxQuantity) {
-                            item.quantity = updatedFood.maxQuantity;
-                        }
-                    });
-                }
-            });
-        });
+    // Yemeği güncelle
+    let food = null;
+    let targetCategory = null;
+    categories.forEach(cat => {
+        const found = cat.items.find(item => item.name === originalName);
+        if (found) {
+            food = found;
+            targetCategory = cat;
+        }
     });
 
+    if (!food) {
+        showNotification("Yemek bulunamadı!", "warning");
+        console.error("Yemek bulunamadı:", originalName);
+        return;
+    }
+
+    // Eski kategoriden kaldır
+    targetCategory.items = targetCategory.items.filter(item => item.name !== originalName);
+
+    // Yeni yemek objesi
+    const updatedFood = {
+        name,
+        calories,
+        protein,
+        carbs,
+        fat,
+        maxQuantity,
+        minQuantity,
+        step,
+        tags,
+        role,
+        mealType,
+        keto,
+        lowcarb,
+        fillerLunch,
+        fillerDinner,
+        seasonRange: seasonRangeValue, // JSON string formatında direkt kaydet
+        isReversedSeason: isReversed, // Ters sezon bilgisini de kaydet
+        portionFixed,
+        multiplier,
+        category: categoryName
+    };
+
+    // Yeni kategoriye ekle
+    let newCategory = categories.find(cat => cat.name === categoryName);
+    if (newCategory) {
+        newCategory.items.push(updatedFood);
+    } else {
+        categories.push({
+            name: categoryName,
+            items: [updatedFood]
+        });
+    }
+
+    // Formu sıfırla ve paneli kapat
+    form.reset();
     closeEditFoodPanel();
+
+    // Kategorileri ve diğer panelleri güncelle
     loadCategories();
-    renderMeals();
-    calculateMacros();
-    showNotification(`"${updatedFood.name}" yemeği güncellendi!`, "success");
+    searchEditFood("");
+    showNotification(`${name} yemeği güncellendi!`, "success");
+    console.log(`Yemek güncellendi: ${name}, Sezon aralığı: ${seasonRangeValue}, Ters sezon: ${isReversed}`);
+
+    // GitHub'a verileri gönder
+    updateGitHubData();
 }
-        function calculateWeeklyAverages() {
+function calculateWeeklyAverages() {
     const week = weeks[selectedWeek - 1];
     const weeklyTotals = {
         calories: 0,
@@ -4168,6 +4438,7 @@ function editPatient() {
 // Hasta formu kaydetme fonksiyonu (düzeltilmiş)
 async function handlePatientFormSubmit(event) {
     event.preventDefault();
+  closeAddFoodModal();
 
     // Form elemanlarını al
     const userNameInput = document.getElementById('userName');
@@ -5078,6 +5349,7 @@ function toggleInput(checkboxId, inputId) {
 // saveEditedRule fonksiyonu
 function saveEditedRule(event) {
     event.preventDefault();
+  closeAddFoodModal();
 
     const indexField = document.getElementById('editRuleIndex');
     const isEditMode = indexField.value !== '';
@@ -5337,15 +5609,24 @@ function deleteRule(index) {
 }
 
 function populateCategoryDropdown() {
-    const catSelect = document.getElementById('freqCat');
-    if (!catSelect) return console.error("freqCat bulunamadı!");
-    catSelect.innerHTML = '<option value="">Seç</option>';
+    console.log("Kategori dropdown'u dolduruluyor...");
+    const catSelect = document.getElementById("foodCategory");
+    if (!catSelect) {
+        console.error("foodCategory bulunamadı!");
+        return;
+    }
+    if (!Array.isArray(categories)) {
+        console.error("categories bir dizi değil:", categories);
+        categories = [];
+    }
+    catSelect.innerHTML = '<option value="">Kategori Seçin</option>';
     categories.forEach(category => {
-        const option = document.createElement('option');
+        const option = document.createElement("option");
         option.value = category.name;
         option.textContent = category.name;
         catSelect.appendChild(option);
     });
+    console.log("Kategoriler yüklendi:", categories.map(c => c.name));
 }
 
 function openFrequencyRuleForm() {
@@ -5431,155 +5712,272 @@ updateRuleForm();
 toggleMealSelect('freqScope', 'freqMeal'); // Sıklık Kuralı için ilk durumu ayarla
 toggleMealSelect('pairScope', 'pairMeal'); // Birliktelik Kuralı için ilk durumu ayarla
 
-function updateRuleForm(isEdit = false) {
-    const ruleTypeSelect = isEdit ? document.getElementById('editRuleType') : document.getElementById('ruleType');
-    const ruleForm = isEdit ? document.getElementById('editRuleForm') : document.getElementById('ruleForm');
 
+function updateRuleForm(isEdit = false) {
+    console.log("updateRuleForm çağrıldı, isEdit:", isEdit);
+
+    // Elemanları al
+    const ruleTypeSelect = document.getElementById(isEdit ? "editRuleType" : "ruleType");
+    const ruleForm = document.getElementById(isEdit ? "editRuleForm" : "defaultRuleForm");
+
+    // Elemanların varlığını kontrol et
     if (!ruleTypeSelect || !ruleForm) {
-        console.warn("Kural formu veya kural tipi seçimi bulunamadı!");
-        showNotification("Kural formu elemanları eksik, lütfen sayfayı yenileyin!", 'error', 3000);
+        console.error("Kural formu veya kural tipi seçimi bulunamadı!", {
+            ruleTypeSelect: !!ruleTypeSelect,
+            ruleForm: !!ruleForm
+        });
+        showNotification("Kural formu elemanları eksik, lütfen sayfayı yenileyin!", "error", 3000);
         return;
     }
 
     const ruleType = ruleTypeSelect.value;
-    console.log(`updateRuleForm: Kural tipi "${ruleType}" seçildi, isEdit: ${isEdit}`);
+    console.log(`Kural tipi seçildi: "${ruleType}", isEdit: ${isEdit}`);
 
     // Form içeriğini temizle
-    ruleForm.innerHTML = '';
+    ruleForm.innerHTML = "";
+
+    // Yardımcı fonksiyon: Form elemanı oluştur
+    const createFormElement = (type, label, id, options = {}, isSelect = false) => {
+        const wrapper = document.createElement("div");
+        wrapper.className = "mb-2";
+
+        const labelEl = document.createElement("label");
+        labelEl.className = "form-label";
+        labelEl.setAttribute("for", id);
+        labelEl.textContent = label;
+
+        let inputEl;
+        if (isSelect) {
+            inputEl = document.createElement("select");
+            inputEl.className = "form-select";
+            Object.entries(options).forEach(([value, text]) => {
+                const option = document.createElement("option");
+                option.value = value;
+                option.textContent = text;
+                inputEl.appendChild(option);
+            });
+        } else {
+            inputEl = document.createElement("input");
+            inputEl.className = "form-control";
+            inputEl.type = type;
+            inputEl.id = id;
+            Object.entries(options).forEach(([key, value]) => {
+                inputEl.setAttribute(key, value);
+            });
+        }
+
+        wrapper.appendChild(labelEl);
+        wrapper.appendChild(inputEl);
+        return wrapper;
+    };
 
     // Kural tipine göre form HTML'sini oluştur
-    if (ruleType === 'frequency') {
-        ruleForm.innerHTML = `
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editFrequency' : 'frequency'}">Frekans</label>
-                <input class="form-control" id="${isEdit ? 'editFrequency' : 'frequency'}" type="number" min="1" placeholder="Frekans" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editFrequencyType' : 'frequencyType'}">Frekans Tipi</label>
-                <select class="form-select" id="${isEdit ? 'editFrequencyType' : 'frequencyType'}" required>
-                    <option value="min">En Az</option>
-                    <option value="max">En Fazla</option>
-                    <option value="exact">Tam</option>
-                </select>
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editScope' : 'scope'}">Kapsam</label>
-                <select class="form-select" id="${isEdit ? 'editScope' : 'scope'}" required>
-                    <option value="meal">Öğün</option>
-                    <option value="day">Gün</option>
-                    <option value="week">Hafta</option>
-                </select>
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editNames' : 'names'}">Yemek İsimleri (Virgülle ayırın)</label>
-                <input class="form-control" id="${isEdit ? 'editNames' : 'names'}" placeholder="örn: balık, tavuk" type="text" />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editMealType' : 'mealType'}">Öğün Türü</label>
-                <select class="form-select" id="${isEdit ? 'editMealType' : 'mealType'}">
-                    <option value="">Tümü</option>
-                    <option value="breakfast">Kahvaltı</option>
-                    <option value="lunch">Öğle</option>
-                    <option value="dinner">Akşam</option>
-                </select>
-            </div>
-        `;
-    } else if (ruleType === 'dependOn') {
-        ruleForm.innerHTML = `
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editFood' : 'food'}">Yemek</label>
-                <input class="form-control" id="${isEdit ? 'editFood' : 'food'}" placeholder="örn: mayonez" type="text" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editRequiredFood' : 'requiredFood'}">Bağımlı Olduğu Yemek</label>
-                <input class="form-control" id="${isEdit ? 'editRequiredFood' : 'requiredFood'}" placeholder="örn: köfte" type="text" required />
-            </div>
-        `;
-    } else if (ruleType === 'categoryLock') {
-        ruleForm.innerHTML = `
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editCategory' : 'category'}">Kategori</label>
-                <input class="form-control" id="${isEdit ? 'editCategory' : 'category'}" placeholder="örn: KAHVALTI" type="text" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editMealType' : 'mealType'}">Öğün Türü</label>
-                <select class="form-select" id="${isEdit ? 'editMealType' : 'mealType'}" required>
-                    <option value="breakfast">Kahvaltı</option>
-                    <option value="lunch">Öğle</option>
-                    <option value="dinner">Akşam</option>
-                </select>
-            </div>
-        `;
-    } else if (ruleType === 'pairWith' || ruleType === 'avoidPair') {
-        ruleForm.innerHTML = `
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editPairFood1' : 'pairFood1'}">Birinci Yemek</label>
-                <input class="form-control" id="${isEdit ? 'editPairFood1' : 'pairFood1'}" placeholder="örn: balık" type="text" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editPairFood2' : 'pairFood2'}">İkinci Yemek</label>
-                <input class="form-control" id="${isEdit ? 'editPairFood2' : 'pairFood2'}" placeholder="örn: salata" type="text" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editMealType' : 'mealType'}">Öğün Türü</label>
-                <select class="form-select" id="${isEdit ? 'editMealType' : 'mealType'}">
-                    <option value="">Tümü</option>
-                    <option value="breakfast">Kahvaltı</option>
-                    <option value="lunch">Öğle</option>
-                    <option value="dinner">Akşam</option>
-                </select>
-            </div>
-        `;
-    } else if (ruleType === 'compatibility') {
-        ruleForm.innerHTML = `
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editFood' : 'food'}">Yemek</label>
-                <input class="form-control" id="${isEdit ? 'editFood' : 'food'}" placeholder="örn: balık" type="text" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editCompatibleFood' : 'compatibleFood'}">Uyumlu Yemek</label>
-                <input class="form-control" id="${isEdit ? 'editCompatibleFood' : 'compatibleFood'}" placeholder="örn: salata" type="text" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editCompatibilityType' : 'compatibilityType'}">Uyumluluk Tipi</label>
-                <select class="form-select" id="${isEdit ? 'editCompatibilityType' : 'compatibilityType'}" required>
-                    <option value="and">Ve</option>
-                    <option value="or">Veya</option>
-                </select>
-            </div>
-        `;
-    } else if (ruleType === 'maxRoleCount') {
-        ruleForm.innerHTML = `
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editRole' : 'role'}">Rol</label>
-                <input class="form-control" id="${isEdit ? 'editRole' : 'role'}" placeholder="örn: mainDish" type="text" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editCount' : 'count'}">Maksimum Sayı</label>
-                <input class="form-control" id="${isEdit ? 'editCount' : 'count'}" type="number" min="0" placeholder="Maksimum sayı" required />
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editMealType' : 'mealType'}">Öğün Türleri (Birden fazla seçilebilir)</label>
-                <select class="form-select" id="${isEdit ? 'editMealType' : 'mealType'}" multiple required>
-                    <option value="breakfast">Kahvaltı</option>
-                    <option value="lunch">Öğle</option>
-                    <option value="dinner">Akşam</option>
-                </select>
-            </div>
-            <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editScope' : 'scope'}">Kapsam</label>
-                <select class="form-select" id="${isEdit ? 'editScope' : 'scope'}" required>
-                    <option value="meal">Öğün</option>
-                    <option value="day">Gün</option>
-                    <option value="week">Hafta</option>
-                </select>
-            </div>
-        `;
+    if (ruleType === "frequency") {
+        ruleForm.appendChild(
+            createFormElement("number", "Frekans", isEdit ? "editFrequency" : "frequency", {
+                min: "1",
+                placeholder: "Frekans",
+                required: ""
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement(
+                "select",
+                "Frekans Tipi",
+                isEdit ? "editFrequencyType" : "frequencyType",
+                {
+                    min: "En Az",
+                    max: "En Fazla",
+                    exact: "Tam"
+                },
+                true
+            )
+        );
+        ruleForm.appendChild(
+            createFormElement(
+                "select",
+                "Kapsam",
+                isEdit ? "editScope" : "scope",
+                {
+                    meal: "Öğün",
+                    day: "Gün",
+                    week: "Hafta"
+                },
+                true
+            )
+        );
+        ruleForm.appendChild(
+            createFormElement("text", "Yemek İsimleri (Virgülle ayırın)", isEdit ? "editNames" : "names", {
+                placeholder: "örn: balık, tavuk"
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement(
+                "select",
+                "Öğün Türü",
+                isEdit ? "editMealType" : "mealType",
+                {
+                    "": "Tümü",
+                    breakfast: "Kahvaltı",
+                    lunch: "Öğle",
+                    dinner: "Akşam"
+                },
+                true
+            )
+        );
+    } else if (ruleType === "dependOn") {
+        ruleForm.appendChild(
+            createFormElement("text", "Yemek", isEdit ? "editFood" : "food", {
+                placeholder: "örn: mayonez",
+                required: ""
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement("text", "Bağımlı Olduğu Yemek", isEdit ? "editRequiredFood" : "requiredFood", {
+                placeholder: "örn: köfte",
+                required: ""
+            })
+        );
+    } else if (ruleType === "categoryLock") {
+        ruleForm.appendChild(
+            createFormElement("text", "Kategori", isEdit ? "editCategory" : "category", {
+                placeholder: "örn: KAHVALTI",
+                required: ""
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement(
+                "select",
+                "Öğün Türü",
+                isEdit ? "editMealType" : "mealType",
+                {
+                    breakfast: "Kahvaltı",
+                    lunch: "Öğle",
+                    dinner: "Akşam"
+                },
+                true
+            )
+        );
+    } else if (ruleType === "pairWith" || ruleType === "avoidPair") {
+        ruleForm.appendChild(
+            createFormElement("text", "Birinci Yemek", isEdit ? "editPairFood1" : "pairFood1", {
+                placeholder: "örn: balık",
+                required: ""
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement("text", "İkinci Yemek", isEdit ? "editPairFood2" : "pairFood2", {
+                placeholder: "örn: salata",
+                required: ""
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement(
+                "select",
+                "Öğün Türü",
+                isEdit ? "editMealType" : "mealType",
+                {
+                    "": "Tümü",
+                    breakfast: "Kahvaltı",
+                    lunch: "Öğle",
+                    dinner: "Akşam"
+                },
+                true
+            )
+        );
+    } else if (ruleType === "compatibility") {
+        ruleForm.appendChild(
+            createFormElement("text", "Yemek", isEdit ? "editFood" : "food", {
+                placeholder: "örn: balık",
+                required: ""
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement("text", "Uyumlu Yemek", isEdit ? "editCompatibleFood" : "compatibleFood", {
+                placeholder: "örn: salata",
+                required: ""
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement(
+                "select",
+                "Uyumluluk Tipi",
+                isEdit ? "editCompatibilityType" : "compatibilityType",
+                {
+                    and: "Ve",
+                    or: "Veya"
+                },
+                true
+            )
+        );
+    } else if (ruleType === "maxRoleCount") {
+        ruleForm.appendChild(
+            createFormElement("text", "Rol", isEdit ? "editRole" : "role", {
+                placeholder: "örn: mainDish",
+                required: ""
+            })
+        );
+        ruleForm.appendChild(
+            createFormElement("number", "Maksimum Sayı", isEdit ? "editCount" : "count", {
+                min: "0",
+                placeholder: "Maksimum sayı",
+                required: ""
+            })
+        );
+        // Çoklu öğün seçimi için checkbox'lar
+        const mealTypeWrapper = document.createElement("div");
+        mealTypeWrapper.className = "mb-2";
+        const mealTypeLabel = document.createElement("label");
+        mealTypeLabel.className = "form-label";
+        mealTypeLabel.textContent = "Öğün Türleri";
+        mealTypeWrapper.appendChild(mealTypeLabel);
+        const mealTypes = [
+            { value: "breakfast", label: "Kahvaltı" },
+            { value: "lunch", label: "Öğle" },
+            { value: "dinner", label: "Akşam" }
+        ];
+        const mealTypeContainer = document.createElement("div");
+        mealTypeContainer.className = "d-flex gap-3";
+        mealTypes.forEach(type => {
+            const checkWrapper = document.createElement("div");
+            checkWrapper.className = "form-check";
+            const checkbox = document.createElement("input");
+            checkbox.className = "form-check-input";
+            checkbox.type = "checkbox";
+            checkbox.id = `${isEdit ? "editMealType" : "mealType"}_${type.value}`;
+            checkbox.name = isEdit ? "editMealType" : "mealType";
+            checkbox.value = type.value;
+            const label = document.createElement("label");
+            label.className = "form-check-label";
+            label.setAttribute("for", checkbox.id);
+            label.textContent = type.label;
+            checkWrapper.appendChild(checkbox);
+            checkWrapper.appendChild(label);
+            mealTypeContainer.appendChild(checkWrapper);
+        });
+        mealTypeWrapper.appendChild(mealTypeContainer);
+        ruleForm.appendChild(mealTypeWrapper);
+        ruleForm.appendChild(
+            createFormElement(
+                "select",
+                "Kapsam",
+                isEdit ? "editScope" : "scope",
+                {
+                    meal: "Öğün",
+                    day: "Gün",
+                    week: "Hafta"
+                },
+                true
+            )
+        );
     } else {
         ruleForm.innerHTML = '<p>Lütfen bir kural tipi seçin.</p>';
     }
+
+    console.log("Form güncellendi:", ruleForm.innerHTML);
 }
-    // Tüm formları varsayılan olarak gizle
+
+// Tüm formları varsayılan olarak gizle
     defaultForm.style.display = 'none';
     frequencyForm.style.display = 'none';
     pairForm.style.display = 'none';
@@ -6023,6 +6421,7 @@ function addMealItem(mealType, keyword, role, quantity) {
 
         function saveEditedTemplate(event) {
             event.preventDefault();
+  closeAddFoodModal();
             const index = parseInt(document.getElementById('editTemplateIndex').value);
             const mealType = document.getElementById('editTemplateMealType').value;
             const frequency = parseInt(document.getElementById('editTemplateFrequency').value);
@@ -6500,6 +6899,100 @@ function isMealTypeCompatible(food, mealType) {
     return mealTypes.includes(mealType);
 }
 
+
+// Mevcut ayı kontrol eden yardımcı fonksiyon
+function isCurrentlyInSeason(food) {
+    // Mevcut ayı al (1-12 arası)
+    const currentMonth = new Date().getMonth() + 1; // JavaScript'te aylar 0'dan başlar
+    
+    // Yemeğin sezon bilgisini kontrol et
+    if (food.seasonRange) {
+        try {
+            let range;
+            if (typeof food.seasonRange === 'string') {
+                range = JSON.parse(food.seasonRange);
+            } else if (Array.isArray(food.seasonRange)) {
+                range = food.seasonRange;
+            } else {
+                return true; // Sezon bilgisi yoksa her zaman uygun kabul et
+            }
+            
+            // Geçerli bir aralık mı kontrol et
+            if (Array.isArray(range) && range.length >= 2) {
+                const startMonth = parseInt(range[0]);
+                const endMonth = parseInt(range[1]);
+                
+                // Geçersiz değerler için tüm yıl varsay
+                if (isNaN(startMonth) || startMonth < 1 || startMonth > 12 || 
+                    isNaN(endMonth) || endMonth < 1 || endMonth > 12) {
+                    return true;
+                }
+                
+                let isInRange;
+                // Normal aralık: başlangıç < bitiş (örn: 4-9 Nisan-Eylül)
+                if (startMonth <= endMonth) {
+                    isInRange = currentMonth >= startMonth && currentMonth <= endMonth;
+                } 
+                // Yılı geçen aralık: başlangıç > bitiş (örn: 11-3 Kasım-Mart)
+                else {
+                    isInRange = currentMonth >= startMonth || currentMonth <= endMonth;
+                }
+
+                // isReversedSeason kontrolü
+                if (food.isReversedSeason) {
+                    // Ters çevrilmiş: Dışındaki aylar + başlangıç ve bitiş ayları
+                    if (startMonth <= endMonth) {
+                        return currentMonth <= startMonth || currentMonth >= endMonth;
+                    } else {
+                        return currentMonth >= endMonth && currentMonth <= startMonth;
+                    }
+                }
+                return isInRange;
+            }
+        } catch (e) {
+            console.warn(`Sezon aralığı kontrolünde hata for ${food.name}:`, e);
+        }
+    } else if (food.season) {
+        // Eski season formatı desteği
+        const seasonMap = {
+            "yaz": [6, 8], // Haziran - Ağustos
+            "kış": [12, 2], // Aralık - Şubat
+            "ilkbahar": [3, 5], // Mart - Mayıs
+            "sonbahar": [9, 11], // Eylül - Kasım
+            "4 mevsim": [1, 12] // Tüm yıl
+        };
+        
+        const range = seasonMap[food.season] || [1, 12];
+        const startMonth = range[0];
+        const endMonth = range[1];
+        
+        let isInRange;
+        // Normal aralık: başlangıç < bitiş
+        if (startMonth <= endMonth) {
+            isInRange = currentMonth >= startMonth && currentMonth <= endMonth;
+        } 
+        // Yılı geçen aralık: başlangıç > bitiş
+        else {
+            isInRange = currentMonth >= startMonth || currentMonth <= endMonth;
+        }
+
+        // isReversedSeason kontrolü
+        if (food.isReversedSeason) {
+            if (startMonth <= endMonth) {
+                return currentMonth <= startMonth || currentMonth >= endMonth;
+            } else {
+                return currentMonth >= endMonth && currentMonth <= startMonth;
+            }
+        }
+        return isInRange;
+    }
+    
+    // Sezon bilgisi yoksa her zaman uygun kabul et
+    return true;
+}
+
+
+
 // Ana generatePlan fonksiyonu
 document.getElementById('fixedBreakfastMeal').value = 'Kurşun Geçirmez Kahve';
 
@@ -6516,17 +7009,22 @@ function generatePlan(settings) {
         fat: settings.targetFat
     });
 
+    // *** availableFoods filtrelemesi - bu kısmı güncelliyoruz ***
     const availableFoods = categories.flatMap(cat => cat.items)
-        .filter(f => f.calories > 0 && 
-                     (dietMode === 'keto' ? f.keto : f.lowcarb) &&
-                     !settings.dislikedFoods.some(df => f.name.toLowerCase().includes(df.toLowerCase()) || f.tags.some(t => t.toLowerCase().includes(df.toLowerCase()))))
-        .sort((a, b) => {
-            const aLiked = settings.likedFoods.some(lf => a.name.toLowerCase().includes(lf.toLowerCase()) || a.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())));
-            const bLiked = settings.likedFoods.some(lf => b.name.toLowerCase().includes(lf.toLowerCase()) || a.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())));
-            return bLiked - aLiked;
-        });
+    .filter(f => f.calories > 0 && 
+                (dietMode === 'keto' ? f.keto : f.lowcarb) &&
+                !settings.dislikedFoods.some(df => f.name.toLowerCase().includes(df.toLowerCase()) || 
+                                                 f.tags.some(t => t.toLowerCase().includes(df.toLowerCase()))) &&
+                isCurrentlyInSeason(f)) // Sezonsal kontrol eklendi
+    .sort((a, b) => {
+        const aLiked = settings.likedFoods.some(lf => a.name.toLowerCase().includes(lf.toLowerCase()) || 
+                                                     a.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())));
+        const bLiked = settings.likedFoods.some(lf => b.name.toLowerCase().includes(lf.toLowerCase()) || 
+                                                     a.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())));
+        return bLiked - aLiked;
+    });
 
-    console.log("availableFoods filtrelendi, sevmediği yemekler hariç tutuldu:", availableFoods.map(f => f.name));
+    console.log("availableFoods filtrelendi, sevmediği ve sezon dışı yemekler hariç tutuldu:", availableFoods.map(f => f.name));
 
     const validRules = rules.filter(rule => rule && typeof rule === 'object' && (
         rule.type === 'frequency' || rule.type === 'dependOn' || rule.type === 'maxRoleCount'
@@ -7292,73 +7790,141 @@ function deleteSelectedCategory() {
         showNotification("Kategori silindi!");
     }
 }
+
+// Şimdi editFood fonksiyonunu güncelleyelim:
 function editFood(foodName) {
-    // Yemek adını kalori bilgisinden ayır (örneğin, "Kurşun Geçirmez Kahve (90 kcal)" -> "Kurşun Geçirmez Kahve")
-    const normalizedName = foodName.replace(/\s*\(\d+\s*kcal\)/i, '').trim();
-    console.log(`editFood çağrıldı, orijinal isim: ${foodName}, normalleştirilmiş isim: ${normalizedName}`);
-
-    const food = findFood(normalizedName);
-    if (!food) {
-        console.error(`Yemek bulunamadı: ${normalizedName}`);
-        console.log(`categories dizisi:`, JSON.stringify(categories, null, 2)); // categories dizisini logla
-        showNotification(`Yemek bulunamadı: ${normalizedName}`, "warning");
-        return;
-    }
-
-    const panel = document.getElementById('editFoodPanel');
+    console.log("Yemek düzenleniyor:", foodName);
+    const panel = document.getElementById("editFoodPanel");
     if (!panel) {
-        console.error("editFoodPanel elemanı bulunamadı!");
+        console.error("editFoodPanel bulunamadı!");
         showNotification("Düzenleme paneli bulunamadı!", "warning");
         return;
     }
 
-    // Form alanlarını doldur
-    document.getElementById('editFoodIndex').value = '';
-    document.getElementById('editFoodOriginalName').value = normalizedName; // Normalleştirilmiş adı kullan
-    document.getElementById('editFoodName').value = food.name || '';
-    document.getElementById('editFoodCalories').value = food.calories || 0;
-    document.getElementById('editFoodProtein').value = food.protein || 0;
-    document.getElementById('editFoodCarbs').value = food.carbs || 0;
-    document.getElementById('editFoodFat').value = food.fat || 0;
-    document.getElementById('editFoodMaxQuantity').value = food.maxQuantity || 1;
-    document.getElementById('editFoodMinQuantity').value = food.minQuantity || 0.5;
-    document.getElementById('editFoodStep').value = food.step || 0.5;
-    document.getElementById('editFoodRole').value = food.role || '';
-    document.getElementById('editFoodTags').value = food.tags && Array.isArray(food.tags) ? food.tags.join(', ') : '';
-    document.getElementById('editFoodMealType').value = food.mealType && Array.isArray(food.mealType) ? food.mealType.join(',') : '';
-    document.getElementById('editFoodKeto').checked = !!food.keto;
-    document.getElementById('editFoodLowCarb').checked = !!food.lowcarb;
-    document.getElementById('editFoodFillerLunch').checked = !!food.fillerLunch;
-    document.getElementById('editFoodFillerDinner').checked = !!food.fillerDinner;
-    document.getElementById('editFoodSeason').value = food.season || '4 mevsim';
-    document.getElementById('editFoodPortionFixed').checked = !!food.portionFixed;
-    document.getElementById('editFoodMultiplier').value = food.multiplier || 1;
+    // Yemeği bul
+    let food = null;
+    let category = null;
+    categories.forEach(cat => {
+        const found = cat.items.find(item => item.name === foodName);
+        if (found) {
+            food = found;
+            category = cat;
+        }
+    });
 
-    const categorySelect = document.getElementById('editFoodMoveToCategory');
-    if (!categorySelect) {
-        console.error("editFoodMoveToCategory elemanı bulunamadı!");
-        showNotification("Kategori seçimi elemanı bulunamadı!", "warning");
+    if (!food) {
+        showNotification("Yemek bulunamadı!", "warning");
+        console.error("Yemek bulunamadı:", foodName);
         return;
     }
-    
-    // Kategori açılır menüsünü doldur
-    categorySelect.innerHTML = '<option value="">Kategori Seç</option>' + 
-        categories.map(cat => `<option value="${cat.name}">${cat.name}</option>`).join('');
-    
-    // Mevcut kategoriyi varsayılan olarak seç
-    if (food.category) {
-        categorySelect.value = food.category;
-        console.log(`Yemek: ${normalizedName}, Mevcut Kategori: ${food.category}, Seçilen Değer: ${categorySelect.value}`);
-        if (categorySelect.value !== food.category) {
-            console.warn(`Kategori eşleşmedi! Mevcut: ${food.category}, Seçilen: ${categorySelect.value}`);
+
+    // Paneli göster
+    panel.style.display = "block";
+
+    // Form alanlarını doldur
+    document.getElementById("editFoodIndex").value = categories.indexOf(category);
+    document.getElementById("editFoodOriginalName").value = food.name;
+    document.getElementById("editFoodName").value = food.name;
+    document.getElementById("editFoodRole").value = food.role || "mainDish";
+    document.getElementById("editFoodCalories").value = food.calories || 0;
+    document.getElementById("editFoodProtein").value = food.protein || 0;
+    document.getElementById("editFoodCarbs").value = food.carbs || 0;
+    document.getElementById("editFoodFat").value = food.fat || 0;
+    document.getElementById("editFoodMaxQuantity").value = food.maxQuantity || 1;
+    document.getElementById("editFoodMinQuantity").value = food.minQuantity || 0.5;
+    document.getElementById("editFoodStep").value = food.step || 0.5;
+    document.getElementById("editFoodTags").value = food.tags ? food.tags.join(", ") : "";
+    document.getElementById("editFoodKeto").checked = food.keto || false;
+    document.getElementById("editFoodLowCarb").checked = food.lowcarb || false;
+    document.getElementById("editFoodFillerLunch").checked = food.fillerLunch || false;
+    document.getElementById("editFoodFillerDinner").checked = food.fillerDinner || false;
+    document.getElementById("editFoodPortionFixed").checked = food.portionFixed || false;
+    document.getElementById("editFoodMultiplier").value = food.multiplier || 1;
+
+    // Mevsim aralığını ayarla
+    const seasonRangeInput = document.getElementById("editFoodSeasonRange");
+    if (seasonRangeInput) {
+        // Varsayılan değerler
+        let startMonth = 4, endMonth = 9; // Varsayılan: Nisan - Eylül
+        let isReversed = food.isReversedSeason || false;
+        
+        // Kayıtlı mevsim aralığını kontrol et
+        if (food.seasonRange) {
+            try {
+                let range;
+                
+                // String ise parse et, array ise doğrudan kullan
+                if (typeof food.seasonRange === 'string') {
+                    range = JSON.parse(food.seasonRange);
+                } else if (Array.isArray(food.seasonRange)) {
+                    range = food.seasonRange;
+                }
+                
+                if (Array.isArray(range) && range.length >= 2) {
+                    startMonth = parseInt(range[0]);
+                    endMonth = parseInt(range[1]);
+                    
+                    // Geçerli değer kontrolü
+                    if (isNaN(startMonth) || startMonth < 1 || startMonth > 12) startMonth = 1;
+                    if (isNaN(endMonth) || endMonth < 1 || endMonth > 12) endMonth = 12;
+                    
+                    // Otomatik olarak ters aralık kontrolü
+                    if (!isReversed && startMonth > endMonth) {
+                        isReversed = true;
+                    }
+                    
+                    console.log("Mevsim aralığı yüklendi:", startMonth, endMonth, "Ters aralık:", isReversed);
+                }
+            } catch (e) {
+                console.warn("Geçersiz seasonRange formatı:", food.seasonRange, e);
+            }
+        } else if (food.season) {
+            // Eski season değerini seasonRange'e dönüştür
+            const seasonMap = {
+                "yaz": [6, 8], // Haziran - Ağustos
+                "kış": [12, 2], // Aralık - Şubat (ters aralık)
+                "ilkbahar": [3, 5], // Mart - Mayıs
+                "sonbahar": [9, 11], // Eylül - Kasım
+                "4 mevsim": [1, 12] // Tüm yıl
+            };
+            
+            const range = seasonMap[food.season] || [1, 12];
+            startMonth = range[0];
+            endMonth = range[1];
+            
+            // "kış" özel durumu: otomatik ters aralık
+            if (food.season === "kış") {
+                isReversed = true;
+            }
         }
+        
+        // Slider'ı başlat ve değerleri ayarla - burayı değiştirdik
+        setTimeout(() => {
+            try {
+                const sliderApi = initializeSeasonSlider("editSeasonSlider", "editFoodSeasonRange", "editSeasonRangeDisplay");
+                
+                // Değerleri ayarla API ile
+                if (sliderApi && typeof sliderApi.setValues === 'function') {
+                    sliderApi.setValues(startMonth, endMonth, isReversed);
+                    console.log("Slider değerleri API ile ayarlandı:", startMonth, endMonth, isReversed);
+                } else {
+                    console.error("Slider API bulunamadı!");
+                }
+            } catch (e) {
+                console.error("Slider başlatılırken hata:", e);
+            }
+        }, 100);
     } else {
-        categorySelect.value = '';
-        console.warn(`Yemek için kategori tanımlı değil: ${normalizedName}`);
+        console.error("Mevsim slider input elemanı bulunamadı!");
     }
 
-    panel.style.display = 'block';
+    // Öğün türlerini ayarla
+    syncMealTypeCheckboxesFromString(food.mealType, "editMealType");
+
+    // Kategori dropdown'unu yükle
+    loadCategoryOptions();
 }
+
 document.addEventListener('DOMContentLoaded', () => {
   const resizer = document.getElementById('resizer');
   const sidebar = document.getElementById('sidebar');
@@ -7420,25 +7986,25 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-
-        function loadCategoryOptions() {
-    let categorySelect = document.getElementById("editMoveToCategory");
+function loadCategoryOptions() {
+    console.log("Kategoriler yükleniyor...");
+    const categorySelect = document.getElementById("editFoodMoveToCategory");
     if (!categorySelect) {
-        console.log("editMoveToCategory bulunamadı!");
+        console.error("editFoodMoveToCategory bulunamadı!");
         return;
     }
-    console.log("Kategoriler:", categories); // categories dizisini kontrol et
+    if (!Array.isArray(categories)) {
+        console.error("categories bir dizi değil:", categories);
+        categories = [];
+    }
     categorySelect.innerHTML = '<option value="">Kategori Seç</option>';
     categories.forEach(category => {
-        let option = document.createElement("option");
+        const option = document.createElement("option");
         option.value = category.name;
         option.textContent = category.name;
         categorySelect.appendChild(option);
     });
-    categorySelect.onchange = function() {
-        console.log("Seçilen kategori: " + categorySelect.value);
-    };
+    console.log("Kategoriler yüklendi:", categories.map(c => c.name));
 }
 
 // Yemek düzenleme paneli açıldığında kategori listesini güncelle
@@ -7716,6 +8282,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     showNotification("Kullanıcı profili kaydedildi!", "success");
 }
+
 async function updateGitHubData() {
     console.log("updateGitHubData başladı!");
     const token = document.getElementById('githubToken').value;
@@ -7736,6 +8303,12 @@ async function updateGitHubData() {
     const filePath = "sistem_JSON.json";
     const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
 
+    // categories'in dizi olduğundan emin ol
+    if (!Array.isArray(categories)) {
+        console.error("categories bir dizi değil, varsayılan dizi atanıyor:", categories);
+        categories = [];
+    }
+
     const data = {
         categories: categories || [],
         weeks: weeks || [],
@@ -7750,7 +8323,7 @@ async function updateGitHubData() {
             }, {})
     };
 
-    console.log("GitHub'a gönderilen categories (detaylı):", JSON.stringify(categories, null, 2)); // DETAYLI LOG
+    console.log("GitHub'a gönderilen categories (detaylı):", JSON.stringify(categories, null, 2));
 
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
 
@@ -7804,7 +8377,6 @@ async function updateGitHubData() {
         console.error("Hata:", error);
     }
 }
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8276,11 +8848,13 @@ function updateCaloriesLive() {
 document.addEventListener("DOMContentLoaded", () => {
     const panel = document.getElementById("editFoodPanel");
     if (panel) {
-        panel.addEventListener("click", () => {
-            setTimeout(() => {
-                initializeEditFoodPanel();
-            }, 50);
+        panel.addEventListener("click", function(event) {
+            if (event.target.tagName !== "SELECT") {
+                loadCategoryOptions();
+            }
         });
+    } else {
+        console.error("editFoodPanel bulunamadı!");
     }
 });
 </script>
@@ -8312,5 +8886,500 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.cursor = "default";
     });
 });
+</script>
+
+
+<div class="modal" id="addFoodModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: flex-start;">
+    <div class="edit-food-panel" style="display: block; background-color: var(--white); padding: 20px; border-radius: 10px; width: 1000px; min-width: 1000px; max-height: 85vh; overflow-y: auto; box-shadow: var(--shadow-lg); margin-top: 40px; cursor: move; position: relative;">
+        <div id="modalHeader" style="padding: 10px; font-weight: bold; background: #f2f2f2; border-bottom: 1px solid #ccc;">Yeni Yemek Ekle (Sürüklemek için burayı tut)</div>
+        <h5>Yeni Yemek Ekle</h5>
+        <span class="modal-close" onclick="closeAddFoodModal()">×</span>
+        <div class="mb-2" id="addFoodForm">
+            <form id="addFoodFormInner" onsubmit="addNewFood(event)">
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodRole">Rol</label></div>
+                    <div class="col-9">
+                        <select class="form-select" id="foodRole" required>
+                            <option value="mainDish">Ana Yemek</option>
+                            <option value="sideDish">Yan Yemek</option>
+                            <option value="soup">Çorba</option>
+                            <option value="dessert">Tatlı</option>
+                            <option value="drink">İçecek</option>
+                            <option value="fruit">Meyve</option>
+                            <option value="bread">Ekmek</option>
+                            <option value="snack">Atıştırmalık</option>
+                            <option value="supplement">Ek</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodCategory">Kategori</label></div>
+                    <div class="col-9">
+                        <select class="form-select" id="foodCategory" required>
+                            <option value="">Kategori Seçin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodName">Yemek Adı</label></div>
+                    <div class="col-9">
+                        <div style="position: relative;">
+                            <input autocomplete="off" class="form-control" id="foodName" placeholder="Yemek Adı" required type="text" />
+                            <div id="nameWarning" style="color: red; font-size: 0.9em; display: none; margin-top: 4px;">Bu isimde bir yemek zaten var.</div>
+                            <div id="nameSuggestions" style="position: absolute; background: white; border: 1px solid #ccc; max-height: 150px; overflow-y: auto; width: 100%; z-index: 9999; display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label">Öğün Türü</label></div>
+                    <div class="col-9">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="mealType_breakfast" name="mealType" type="checkbox" value="breakfast" />
+                            <label class="form-check-label" for="mealType_breakfast">Kahvaltı</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="mealType_lunch" name="mealType" type="checkbox" value="lunch" />
+                            <label class="form-check-label" for="mealType_lunch">Öğle</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="mealType_dinner" name="mealType" type="checkbox" value="dinner" />
+                            <label class="form-check-label" for="mealType_dinner">Akşam</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodCalories">Kalori</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodCalories" min="0" placeholder="Kalori" readonly="true" required step="0.1" style="background-color: #f3f3f3;" type="number" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodProtein">Protein (g)</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodProtein" min="0" placeholder="Protein (g)" required step="0.1" type="number" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodCarbs">Karb. (g)</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodCarbs" min="0" placeholder="Karbonhidrat (g)" required step="0.1" type="number" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodFat">Yağ (g)</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodFat" min="0" placeholder="Yağ (g)" required step="0.1" type="number" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodMaxQuantity">Maks. Katsayı</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodMaxQuantity" max="2" min="1" placeholder="Maks. Katsayı" step="0.5" type="number" value="1" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodMinQuantity">Min. Katsayı</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodMinQuantity" max="2" min="0" placeholder="Min. Katsayı" step="0.5" type="number" value="0.5" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodStep">Adım Değeri</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodStep" max="1" min="0.1" placeholder="Adım (örn: 0.5)" step="0.1" type="number" value="0.5" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodTags">Etiketler</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodTags" placeholder="Etiketler (virgülle ayırın)" type="text" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label">Mevsim Aralığı</label></div>
+                    <div class="col-9">
+                        <div id="seasonSlider"></div>
+                        <input type="hidden" id="foodSeasonRange" name="foodSeasonRange" value="[4,9]" />
+                        <div id="seasonRangeDisplay" style="margin-top: 10px; font-size: 0.9rem;"></div>
+                    </div>
+                </div>
+                <div class="reverse-container mt-2">
+                    <label class="form-check form-check-inline">
+                        <input type="checkbox" id="seasonSlider_reverse" class="form-check-input reverse-toggle">
+                        <span class="form-check-label">Yıllar arası aralık (örn. Kasım-Mart)</span>
+                    </label>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodPortionFixed">Porsiyon Sabit mi?</label></div>
+                    <div class="col-9">
+                        <input id="foodPortionFixed" name="foodPortionFixed" type="checkbox" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label" for="foodMultiplier">Çarpan</label></div>
+                    <div class="col-9">
+                        <input autocomplete="off" class="form-control" id="foodMultiplier" min="0.1" placeholder="Çarpan (örn: 1)" step="0.1" type="number" value="1" />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label">Diyet Türü</label></div>
+                    <div class="col-9">
+                        <div class="form-check form-check-inline">
+                            <input id="foodKeto" name="foodKeto" type="checkbox" />
+                            <label for="foodKeto">Keto</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input id="foodLowCarb" name="foodLowCarb" type="checkbox" />
+                            <label for="foodLowCarb">Low-Carb</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-3"><label class="form-label">Dolgu Türü</label></div>
+                    <div class="col-9">
+                        <div class="form-check form-check-inline">
+                            <input id="foodFillerLunch" name="foodFillerLunch" type="checkbox" />
+                            <label for="foodFillerLunch">Dolgu Öğlen</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input id="foodFillerDinner" name="foodFillerDinner" type="checkbox" />
+                            <label for="foodFillerDinner">Dolgu Akşam</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <button class="btn btn-success w-100" title="Yemeği Ekle" type="submit">Kaydet</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-secondary w-100 mt-1" onclick="closeAddFoodModal()" title="İptal Et" type="button">İptal</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+function openAddFoodModal() {
+    console.log("Modal açılıyor...");
+    const modal = document.getElementById("addFoodModal");
+    const form = document.getElementById("addFoodFormInner");
+    const foodNameInput = document.getElementById("foodName");
+    const warningBox = document.getElementById("nameWarning");
+    const suggestionBox = document.getElementById("nameSuggestions");
+    const seasonRangeInput = document.getElementById("foodSeasonRange");
+
+    // Modal'ı görünür yap
+    if (modal) {
+        modal.style.display = "flex";
+    } else {
+        console.error("addFoodModal bulunamadı!");
+        return;
+    }
+
+    // Formu sıfırla
+    if (form) {
+        form.reset(); // Tüm inputları sıfırla
+        foodNameInput.value = ""; // Yemek adı inputunu temizle
+        document.getElementById("foodMaxQuantity").value = 1; // Varsayılan değeri geri yükle
+        document.getElementById("foodMinQuantity").value = 0.5; // Varsayılan değeri geri yükle
+        document.getElementById("foodStep").value = 0.5; // Varsayılan değeri geri yükle
+        
+        if (seasonRangeInput) {
+            seasonRangeInput.value = "[4,9]"; // Varsayılan mevsim aralığı: Nisan - Eylül
+        } else {
+            console.error("foodSeasonRange bulunamadı!");
+        }
+    } else {
+        console.error("addFoodFormInner bulunamadı!");
+    }
+
+    // Uyarı ve önerileri temizle
+    if (warningBox) warningBox.style.display = "none";
+    if (suggestionBox) {
+        suggestionBox.style.display = "none";
+        suggestionBox.innerHTML = "";
+    }
+
+    // Kategori dropdown'unu yeniden yükle
+    populateCategoryDropdown();
+
+    // Kalori hesaplamasını başlat
+    calculateCalories();
+
+    // Form elemanlarını başlat
+    initializeEditFoodPanel();
+
+    // Mevsim slider'ını başlat (yeni fonksiyonu kullan)
+    initializeSeasonSlider("seasonSlider", "foodSeasonRange", "seasonRangeDisplay");
+}
+
+function closeAddFoodModal() {
+    console.log("Modal kapatılıyor...");
+    const modal = document.getElementById("addFoodModal");
+    const form = document.getElementById("addFoodFormInner");
+    const warningBox = document.getElementById("nameWarning");
+    const suggestionBox = document.getElementById("nameSuggestions");
+
+    console.log("Form durumu:", form);
+
+    // Modal'ı gizle
+    if (modal) {
+        modal.style.display = "none";
+    } else {
+        console.error("addFoodModal bulunamadı!");
+    }
+
+    // Formu sıfırla
+    if (form) {
+        form.reset();
+        document.getElementById("foodMaxQuantity").value = 1; // Varsayılan değeri geri yükle
+        document.getElementById("foodMinQuantity").value = 0.5; // Varsayılan değeri geri yükle
+        document.getElementById("foodStep").value = 0.5; // Varsayılan değeri geri yükle
+    } else {
+        console.error("addFoodFormInner bulunamadı!");
+    }
+
+    // Uyarı ve önerileri temizle
+    if (warningBox) warningBox.style.display = "none";
+    if (suggestionBox) {
+        suggestionBox.style.display = "none";
+        suggestionBox.innerHTML = "";
+    }
+}
+
+</script><script>
+function calculateCalories() {
+    const carbs = parseFloat(document.getElementById("foodCarbs")?.value) || 0;
+    const protein = parseFloat(document.getElementById("foodProtein")?.value) || 0;
+    const fat = parseFloat(document.getElementById("foodFat")?.value) || 0;
+    const calories = (carbs * 4) + (protein * 4) + (fat * 9);
+    document.getElementById("foodCalories").value = Math.round(calories);
+}
+
+// Event listener'ları bağla
+["foodCarbs", "foodProtein", "foodFat"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+        el.addEventListener("input", calculateCalories);
+    }
+});
+</script><script>
+const foodNameInput = document.getElementById("foodName");
+const suggestionsBox = document.getElementById("nameSuggestions");
+
+function getExistingFoodNames() {
+    try {
+        const foodList = JSON.parse(localStorage.getItem("food_list") || "{}");
+        let names = [];
+        for (const cat in foodList) {
+            foodList[cat].forEach(item => {
+                if (item.name) names.push(item.name);
+            });
+        }
+        return [...new Set(names)];
+    } catch (e) {
+        return [];
+    }
+}
+
+function filterSuggestions(query) {
+    const keywords = query.toLowerCase().split(" ").filter(k => k.length > 0);
+    return getExistingFoodNames().filter(name => {
+        const lowerName = name.toLowerCase();
+        return keywords.every(k => lowerName.includes(k));
+    });
+}
+
+foodNameInput.addEventListener("input", function() {
+    const query = this.value;
+    if (!query || query.length < 2) {
+        suggestionsBox.style.display = "none";
+        return;
+    }
+
+    const matches = filterSuggestions(query);
+    suggestionsBox.innerHTML = "";
+    if (matches.length === 0) {
+        suggestionsBox.style.display = "none";
+        return;
+    }
+
+    matches.slice(0, 10).forEach(match => {
+        const item = document.createElement("div");
+        item.textContent = match;
+        item.style.padding = "6px 10px";
+        item.style.cursor = "pointer";
+        item.style.borderBottom = "1px solid #eee";
+        item.addEventListener("click", () => {
+            foodNameInput.value = match;
+            suggestionsBox.style.display = "none";
+        });
+        suggestionsBox.appendChild(item);
+    });
+
+    suggestionsBox.style.display = "block";
+});
+
+document.addEventListener("click", function(e) {
+    if (!suggestionsBox.contains(e.target) && e.target !== foodNameInput) {
+        suggestionsBox.style.display = "none";
+    }
+});
+</script><script>
+window.addEventListener("DOMContentLoaded", function () {
+  const foodNameInput = document.getElementById("foodName");
+  const suggestionBox = document.getElementById("nameSuggestions");
+  if (!foodNameInput || !suggestionBox) return;
+
+  function getAllFoodNamesFromCategories() {
+    if (typeof categories === 'undefined') return [];
+    let names = [];
+    categories.forEach(cat => {
+      if (cat.items && Array.isArray(cat.items)) {
+        cat.items.forEach(item => {
+          if (item.name) names.push(item.name);
+        });
+      }
+    });
+    return [...new Set(names)];
+  }
+
+  function filterSuggestions(query) {
+    const keywords = query.toLowerCase().split(" ").filter(k => k.length > 0);
+    return getAllFoodNamesFromCategories().filter(name => {
+      const lowerName = name.toLowerCase();
+      return keywords.every(k => lowerName.includes(k));
+    });
+  }
+
+  foodNameInput.addEventListener("input", function () {
+    const query = this.value;
+    if (!query || query.length < 2) {
+      suggestionBox.style.display = "none";
+      return;
+    }
+
+    const matches = filterSuggestions(query);
+    suggestionBox.innerHTML = "";
+    if (matches.length === 0) {
+      suggestionBox.style.display = "none";
+      return;
+    }
+
+    matches.slice(0, 10).forEach(match => {
+      const item = document.createElement("div");
+      item.textContent = match;
+      item.style.padding = "6px 10px";
+      item.style.cursor = "pointer";
+      item.style.borderBottom = "1px solid #eee";
+      item.addEventListener("click", () => {
+        foodNameInput.value = match;
+        suggestionBox.style.display = "none";
+      });
+      suggestionBox.appendChild(item);
+    });
+
+    suggestionBox.style.display = "block";
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!suggestionBox.contains(e.target) && e.target !== foodNameInput) {
+      suggestionBox.style.display = "none";
+    }
+  });
+});
+</script><script>
+window.addEventListener("DOMContentLoaded", function () {
+  const foodNameInput = document.getElementById("foodName");
+  const warningBox = document.getElementById("nameWarning");
+  const submitBtn = document.querySelector("button[type='submit']");
+
+  function getAllFoodNames() {
+    if (typeof categories === 'undefined') return [];
+    let names = [];
+    categories.forEach(cat => {
+      if (cat.items && Array.isArray(cat.items)) {
+        cat.items.forEach(item => {
+          if (item.name) names.push(item.name.toLowerCase());
+        });
+      }
+    });
+    return [...new Set(names)];
+  }
+
+  foodNameInput.addEventListener("blur", function () {
+    const name = this.value.trim().toLowerCase();
+    const existing = getAllFoodNames();
+    if (existing.includes(name)) {
+      warningBox.style.display = "block";
+      if (submitBtn) submitBtn.disabled = true;
+    } else {
+      warningBox.style.display = "none";
+      if (submitBtn) submitBtn.disabled = false;
+    }
+  });
+
+  foodNameInput.addEventListener("input", function () {
+    warningBox.style.display = "none";
+    if (submitBtn) submitBtn.disabled = false;
+  });
+});
+</script><script>
+window.addEventListener("DOMContentLoaded", function () {
+  const modal = document.querySelector("#addFoodModal .edit-food-panel");
+  const header = document.getElementById("modalHeader");
+
+  let offsetX = 0, offsetY = 0, isDragging = false;
+
+  if (header) {
+    header.onmousedown = function (e) {
+      isDragging = true;
+      offsetX = e.clientX - modal.getBoundingClientRect().left;
+      offsetY = e.clientY - modal.getBoundingClientRect().top;
+      document.onmousemove = function (e) {
+        if (!isDragging) return;
+        modal.style.position = "absolute";
+        modal.style.margin = "0";
+        modal.style.top = (e.clientY - offsetY) + "px";
+        modal.style.left = (e.clientX - offsetX) + "px";
+      };
+      document.onmouseup = function () {
+        isDragging = false;
+        document.onmousemove = null;
+        document.onmouseup = null;
+      };
+    };
+  }
+});
+</script><script>
+function syncMealTypeCheckboxesFromString(mealTypeString, prefix = 'editMealType') {
+    // Önce tüm checkbox'ları sıfırla
+    ['breakfast', 'lunch', 'dinner'].forEach(type => {
+        const checkbox = document.getElementById(`${prefix}_${type}`);
+        if (checkbox) checkbox.checked = false;
+    });
+
+    // mealTypeString varsa, ilgili checkbox'ları işaretle
+    if (mealTypeString) {
+        let mealTypes = [];
+        if (Array.isArray(mealTypeString)) {
+            mealTypes = mealTypeString.map(m => m.trim().toLowerCase());
+        } else {
+            mealTypes = mealTypeString.split(',').map(m => m.trim().toLowerCase());
+        }
+        mealTypes.forEach(type => {
+            const checkbox = document.getElementById(`${prefix}_${type}`);
+            if (checkbox) checkbox.checked = true;
+        });
+    }
+}
+
+// Örnek: düzenleme modali açıldığında çalışmalı
+// Bu fonksiyon senin mevcut editFood fonksiyonunun sonunda çağrılabilir
+// Örneğin:
+// syncMealTypeCheckboxesFromString(editedFood.mealType);
 </script></body>
 </html>
