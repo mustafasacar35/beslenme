@@ -36,34 +36,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "1 dilim Ketojenik Ispanaklı Börek",
-          "calories": 45.5,
-          "protein": 2.5,
-          "carbs": 1,
-          "fat": 3.5,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "ıspanak",
-            "börek",
-            "keto",
-            "ekmek"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "ÖĞLEN",
-          "season": "4 mevsim",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
           "name": "100 gram Hellim Peynirli Ispanak",
           "calories": 386,
           "protein": 24,
@@ -1745,6 +1717,34 @@
             "kabak",
             "omlet",
             "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "seasonRange": "[1,2]",
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 dilim Ketojenik Ispanaklı Börek",
+          "calories": 45.5,
+          "protein": 2.5,
+          "carbs": 1,
+          "fat": 3.5,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "ıspanak",
+            "börek",
+            "keto",
+            "ekmek"
           ],
           "role": "mainDish",
           "mealType": [
@@ -11932,6 +11932,10 @@
               {
                 "name": "Karnabahar Püresi",
                 "quantity": 0.5
+              },
+              {
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
               }
             ]
           }
@@ -11962,6 +11966,10 @@
               {
                 "name": "50 gram Kasap Sucuk",
                 "quantity": 1
+              },
+              {
+                "name": "Tavada Kaşarlı Mantar",
+                "quantity": 1
               }
             ],
             "dinner": [
@@ -11976,6 +11984,10 @@
               {
                 "name": "Zeytinyağlı Yer Elması",
                 "quantity": 0.5
+              },
+              {
+                "name": "Kelle Paça Çorbası",
+                "quantity": 1
               }
             ]
           }
@@ -12006,6 +12018,10 @@
               {
                 "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
                 "quantity": 0.5
+              },
+              {
+                "name": "Tavada Kaşarlı Mantar",
+                "quantity": 0.5
               }
             ],
             "dinner": [
@@ -12024,6 +12040,14 @@
               {
                 "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 0.5
+              },
+              {
+                "name": "Tavuk döner (200 gr)",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
               }
             ]
           }
@@ -12054,6 +12078,10 @@
               {
                 "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
                 "quantity": 0.5
+              },
+              {
+                "name": "Tavada Kaşarlı Mantar",
+                "quantity": 1
               }
             ],
             "dinner": [
@@ -12067,6 +12095,10 @@
               },
               {
                 "name": "Fırında Domates Soslu Sebze Kızartması",
+                "quantity": 0.5
+              },
+              {
+                "name": "Lor Salatası",
                 "quantity": 0.5
               }
             ]
@@ -12116,6 +12148,10 @@
               {
                 "name": "Karnabahar Püresi",
                 "quantity": 0.5
+              },
+              {
+                "name": "Chia Tohumlu Puding",
+                "quantity": 0.5
               }
             ]
           }
@@ -12164,6 +12200,10 @@
               {
                 "name": "Lor Salatası",
                 "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
               }
             ]
           }
@@ -12194,6 +12234,10 @@
               {
                 "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
                 "quantity": 1
+              },
+              {
+                "name": "50 gram Kasap Sucuk",
+                "quantity": 0.5
               }
             ],
             "dinner": [
@@ -12207,6 +12251,10 @@
               },
               {
                 "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               }
             ]
