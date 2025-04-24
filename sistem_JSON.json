@@ -29,97 +29,6 @@
           "multiplier": 1,
           "category": "KAHVALTI",
           "season": "kış"
-        },
-        {
-          "name": "fff",
-          "calories": 51,
-          "protein": 3,
-          "carbs": 3,
-          "fat": 3,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": false,
-          "lowcarb": false,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "seasonRange": "[4,9]",
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "KAHVALTI"
-        },
-        {
-          "name": "ddd",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": false,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "seasonRange": "[1,9]",
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "KAHVALTI"
-        },
-        {
-          "name": "deme 443a",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "seasonRange": "[4,12]",
-          "isReversedSeason": true,
-          "portionFixed": true,
-          "multiplier": 1,
-          "category": "KAHVALTI"
-        },
-        {
-          "name": "da22",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "sideDish",
-          "mealType": [],
-          "keto": true,
-          "lowcarb": false,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "seasonRange": "[4,9]",
-          "isReversedSeason": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "KAHVALTI"
         }
       ]
     },
@@ -1915,58 +1824,6 @@
           "portionFixed": false,
           "multiplier": 1,
           "category": "ÖĞLEN"
-        },
-        {
-          "name": "111",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [],
-          "keto": false,
-          "lowcarb": false,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "seasonRange": "[7,7]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "KAHVALTI",
-          "season": [
-            4,
-            9
-          ]
-        },
-        {
-          "name": "abc",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "seasonRange": "[2,10]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "ÖĞLEN",
-          "season": [
-            4,
-            9
-          ]
         }
       ]
     },
@@ -12518,294 +12375,51 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Haşlanmış Yumurta (1 adet) + Tereyağı ve Baharatlar",
-                "quantity": 1
-              },
-              {
-                "name": "Yeşillikler (dereotu, roka, maydanoz,marul,sirke,limon  ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
-                "quantity": 0.5
-              },
-              {
-                "name": "1 yemek kaşığı tahin",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Patlıcan Kebabı (2 orta boy patlıcan, 200 gr kıyma ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
-                "quantity": 2
-              },
-              {
-                "name": "Közlenmiş Kapya Biber",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "tuesday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Yumurtalı ıspanak /pazı /semizotu   kavurma (2 adet yumurta, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, tercihen soğan",
-                "quantity": 1
-              },
-              {
-                "name": "Biberli peynir, 1 porsiyon - (3 adet yeşil biber, 50 gram lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Patlıcan Kebabı (2 orta boy patlıcan, 200 gr kıyma ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "wednesday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Haşlanmış Yumurta (1 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
-                "quantity": 0.5
-              },
-              {
-                "name": "3 Cherry Domates + Zeytinyağı, Kekik ve Pul Biber",
-                "quantity": 1
-              },
-              {
-                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
-                "quantity": 0.5
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Lahana Mücver",
-                "quantity": 1
-              },
-              {
-                "name": "Fırında Kereviz Kızartma (150 gram kereviz, 1 yemek kaşığı zeytinyağı ve istenilen baharalarla fırınlanır)",
-                "quantity": 1
-              },
-              {
-                "name": "San Sebastian Cheesecake",
-                "quantity": 0.5
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "thursday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Tulum / kaşar / lor peyniri (30 gram)",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Sulu Köfte",
-                "quantity": 1
-              },
-              {
-                "name": "Kırmızı Pancar Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Karnabahar Püresi",
-                "quantity": 0.5
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "friday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Pankek",
-                "quantity": 1
-              },
-              {
-                "name": "Roka, turp ve pancar dilimleri + limon ve 1 yemek kaşığı zeytinyağı ile",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "*Tavuklu kabak makarna",
-                "quantity": 1
-              },
-              {
-                "name": "Mor Lahana Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "saturday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Fırında Kereviz Kızartma (150 gram kereviz, 1 yemek kaşığı zeytinyağı ve istenilen baharalarla fırınlanır)",
-                "quantity": 1
-              }
-            ],
-            "dinner": [
-              {
-                "name": "Enginar Mantısı (1 porsiyon)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak Sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         },
         "sunday": {
           "meals": {
-            "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              }
-            ],
-            "lunch": [
-              {
-                "name": "Yoğurtlu çılbır",
-                "quantity": 1
-              },
-              {
-                "name": "Tulum / kaşar / lor peyniri (30 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Közlenmiş patlıcan salatası",
-                "quantity": 0.5
-              }
-            ],
-            "dinner": [
-              {
-                "name": "100 gram Haşlama Et",
-                "quantity": 1.5
-              },
-              {
-                "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
-              }
-            ]
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
           }
         }
       }
