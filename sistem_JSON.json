@@ -107,33 +107,6 @@
       "name": "ÖĞLEN",
       "items": [
         {
-          "name": "1 tatlı kaşığı Tereyağı",
-          "calories": 90,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 10,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "tereyağı",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "1 tatlı kaşığı kaymak (10 gram)",
           "calories": 54,
           "protein": 0,
@@ -1891,6 +1864,33 @@
             6,
             10
           ],
+          "isReversedSeason": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "1 tatlı kaşığı Tereyağı",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "tereyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -12454,6 +12454,10 @@
               },
               {
                 "name": "abc",
+                "quantity": 1
+              },
+              {
+                "name": "1 tatlı kaşığı Tereyağı",
                 "quantity": 1
               }
             ],
