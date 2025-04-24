@@ -5088,31 +5088,6 @@
       "name": "TATLILAR",
       "items": [
         {
-          "name": "Bitter Çikolata?",
-          "calories": 150,
-          "protein": 2,
-          "carbs": 8,
-          "fat": 12,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto",
-            "tatlı"
-          ],
-          "role": "dessert",
-          "mealType": "lunch,dinner",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "TATLILAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Keto Cheesecake",
           "calories": 200,
           "protein": 5,
@@ -5648,6 +5623,34 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "isReversedSeason": false
+        },
+        {
+          "name": "Bitter Çikolata?",
+          "calories": 148,
+          "protein": 2,
+          "carbs": 8,
+          "fat": 12,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keto",
+            "tatlı"
+          ],
+          "role": "dessert",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "TATLILAR"
         }
       ]
     },
@@ -12470,6 +12473,10 @@
             "breakfast": [
               {
                 "name": "111",
+                "quantity": 1
+              },
+              {
+                "name": "Bitter Çikolata?",
                 "quantity": 1
               }
             ],
