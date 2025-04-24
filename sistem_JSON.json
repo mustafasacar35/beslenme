@@ -13,10 +13,8 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "tags": [],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
+          "role": "sideDish",
+          "mealType": [],
           "keto": true,
           "lowcarb": false,
           "fillerLunch": false,
@@ -25,7 +23,11 @@
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
-          "category": "KAHVALTI"
+          "category": "KAHVALTI",
+          "season": [
+            4,
+            9
+          ]
         },
         {
           "name": "Kurşun Geçirmez Kahve",
@@ -12472,7 +12474,7 @@
           "meals": {
             "breakfast": [
               {
-                "name": "deme 443a",
+                "name": "da22",
                 "quantity": 1
               }
             ],
@@ -12870,6 +12872,17 @@
       "likedFoods": [],
       "dislikedFoods": []
     },
+    "patient_deneme34": {
+      "name": "deneme34",
+      "weight": 42,
+      "activity": 3,
+      "likedFoods": [
+        "muz"
+      ],
+      "dislikedFoods": [
+        "ekmek"
+      ]
+    },
     "patient_mustafa": {
       "name": "mustafa",
       "weight": 100,
@@ -12887,17 +12900,6 @@
       "activity": 3,
       "likedFoods": [],
       "dislikedFoods": []
-    },
-    "patient_deneme34": {
-      "name": "deneme34",
-      "weight": 42,
-      "activity": 3,
-      "likedFoods": [
-        "muz"
-      ],
-      "dislikedFoods": [
-        "ekmek"
-      ]
     },
     "patient_80-1": {
       "name": "80-1",
@@ -12982,19 +12984,19 @@
         "fat": 1.2
       }
     },
-    "patient_70-3": {
-      "name": "70-3",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 70,
-      "activity": 3
-    },
     "patient_1000//3": {
       "name": "1000//3",
       "weight": 100,
       "activity": 3,
       "likedFoods": [],
       "dislikedFoods": []
+    },
+    "patient_70-3": {
+      "name": "70-3",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 70,
+      "activity": 3
     },
     "patient_nnn": {
       "name": "nnn",
