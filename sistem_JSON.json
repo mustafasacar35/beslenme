@@ -32,28 +32,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "abc",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "seasonRange": "[3,11]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "KAHVALTI"
-        },
-        {
           "name": "deme 4",
           "calories": 17,
           "protein": 1,
@@ -97,6 +75,28 @@
           "fillerDinner": false,
           "seasonRange": "[7,7]",
           "isReversedSeason": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "KAHVALTI"
+        },
+        {
+          "name": "abc",
+          "calories": 17,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 1,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "role": "mainDish",
+          "mealType": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "seasonRange": "[3,11]",
+          "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
           "category": "KAHVALTI"
@@ -12445,15 +12445,15 @@
           "meals": {
             "breakfast": [
               {
-                "name": "111",
-                "quantity": 1
-              },
-              {
                 "name": "abc",
                 "quantity": 1
               },
               {
                 "name": "deme 4",
+                "quantity": 1
+              },
+              {
+                "name": "111",
                 "quantity": 1
               }
             ],
