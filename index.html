@@ -1286,7 +1286,7 @@ function initializeSeasonSlider(sliderId, rangeInputId, displayId) {
 
     if (!slider || !rangeInput || !display) {
         console.error("Slider elemanları bulunamadı:", { sliderId, rangeInputId, displayId });
-        return;
+        return null;
     }
     
     // Önceki bileşenleri temizle
@@ -1318,16 +1318,24 @@ function initializeSeasonSlider(sliderId, rangeInputId, displayId) {
     
     // Reverse checkbox
     const reverseToggle = document.getElementById(`${sliderId}_reverse`);
+    if (!reverseToggle) {
+        console.error("Reverse toggle bulunamadı!");
+        return null;
+    }
     
-    // noUiSlider'ı kaldır ve yeniden oluştur
+    // Ters aralık değişkeni
+    let isReversed = false;
+    
+    // Slider zaten başlatılmışsa yok et
     if (slider.noUiSlider) {
+        console.log("Slider zaten başlatılmış, yok ediliyor...");
         slider.noUiSlider.destroy();
     }
     
     // Slider'ı başlat
     noUiSlider.create(slider, {
-        start: [4, 9], // Varsayılan: Nisan - Eylül
-        connect: true,
+        start: [months[3], months[8]], // Varsayılan: Nisan-Eylül (4-9)
+        connect: isReversed ? [true, false, true] : true,
         range: {
             'min': 1,
             'max': 12
@@ -1340,9 +1348,6 @@ function initializeSeasonSlider(sliderId, rangeInputId, displayId) {
         }
     });
     
-    // Ters aralık değişkeni
-    let isReversed = reverseToggle.checked;
-    
     // JSON değerini ve display'i güncelle
     function updateRangeInput() {
         const values = slider.noUiSlider.get();
@@ -1353,22 +1358,21 @@ function initializeSeasonSlider(sliderId, rangeInputId, displayId) {
         
         let displayText;
         if (isReversed) {
-            // Ters çevrilmiş: Seçilen aralığın dışındaki aylar + başlangıç ve bitiş ayları
-            if (startMonth <= endMonth) {
-                const outsideMonths = [...Array(12).keys()]
-                    .map(i => i + 1)
-                    .filter(m => m <= startMonth || m >= endMonth)
-                    .map(m => months[m - 1]);
-                displayText = `Kullanılabilir: ${outsideMonths.join(", ")}`;
-            } else {
-                const outsideMonths = [...Array(12).keys()]
-                    .map(i => i + 1)
-                    .filter(m => m >= endMonth && m <= startMonth)
-                    .map(m => months[m - 1]);
-                displayText = `Kullanılabilir: ${outsideMonths.join(", ")}`;
+            let outsideMonths = [];
+            for (let i = 0; i < 12; i++) {
+                const month = ((endMonth + i - 1) % 12) + 1;
+                if (startMonth <= endMonth) {
+                    if (month <= startMonth || month >= endMonth) {
+                        outsideMonths.push(months[month - 1]);
+                    }
+                } else {
+                    if (month >= endMonth && month <= startMonth) {
+                        outsideMonths.push(months[month - 1]);
+                    }
+                }
             }
+            displayText = `Kullanılabilir: ${outsideMonths.join(", ")}`;
         } else {
-            // Normal: Seçilen aralıktaki aylar
             if (startMonth <= endMonth) {
                 const inMonths = [...Array(endMonth - startMonth + 1).keys()]
                     .map(i => months[startMonth - 1 + i]);
@@ -1386,34 +1390,69 @@ function initializeSeasonSlider(sliderId, rangeInputId, displayId) {
     
     // Slider değiştiğinde
     slider.noUiSlider.on('update', updateRangeInput);
+    updateRangeInput();
     
     // Reverse checkbox değiştiğinde
     reverseToggle.addEventListener('change', function() {
         isReversed = this.checked;
+        const values = slider.noUiSlider.get();
+        slider.noUiSlider.destroy();
+        noUiSlider.create(slider, {
+            start: values,
+            connect: isReversed ? [true, false, true] : true,
+            range: {
+                'min': 1,
+                'max': 12
+            },
+            step: 1,
+            tooltips: [true, true],
+            format: {
+                to: value => months[Math.round(value) - 1],
+                from: value => months.indexOf(value) + 1
+            }
+        });
+        slider.noUiSlider.on('update', updateRangeInput);
         updateRangeInput();
     });
     
     // Özel API
     return {
         setValues: function(startMonthNum, endMonthNum, reversed) {
-            console.log("setValues çağrıldı:", startMonthNum, endMonthNum, reversed);
+            console.log("setValues çağrıldı:", { startMonthNum, endMonthNum, reversed });
             
-            // Checkbox'ı ayarla
-            reverseToggle.checked = reversed;
-            isReversed = reversed;
+            // Geçersiz değerler için varsayılanlar
+            startMonthNum = Number(startMonthNum) || 1;
+            endMonthNum = Number(endMonthNum) || 12;
+            if (startMonthNum < 1 || startMonthNum > 12) startMonthNum = 1;
+            if (endMonthNum < 1 || endMonthNum > 12) endMonthNum = 12;
             
-            // Ay sayılarını ay isimlerine çevir
-            const startMonthName = months[startMonthNum - 1];
-            const endMonthName = months[endMonthNum - 1];
+            // Checkbox ve ters çevrilmiş durumu ayarla
+            reverseToggle.checked = !!reversed;
+            isReversed = !!reversed;
             
-            // Slider değerlerini ayarla
-            try {
-                slider.noUiSlider.set([startMonthName, endMonthName]);
-                updateRangeInput();
-                console.log("Slider değerleri ayarlandı:", startMonthName, endMonthName);
-            } catch (e) {
-                console.error("Slider değerleri ayarlanırken hata:", e);
+            // Slider'ı yeniden oluştur
+            if (slider
+
+.noUiSlider) {
+                console.log("Slider zaten başlatılmış, yok ediliyor...");
+                slider.noUiSlider.destroy();
             }
+            noUiSlider.create(slider, {
+                start: [months[startMonthNum - 1], months[endMonthNum - 1]],
+                connect: isReversed ? [true, false, true] : true,
+                range: {
+                    'min': 1,
+                    'max': 12
+                },
+                step: 1,
+                tooltips: [true, true],
+                format: {
+                    to: value => months[Math.round(value) - 1],
+                    from: value => months.indexOf(value) + 1
+                }
+            });
+            slider.noUiSlider.on('update', updateRangeInput);
+            updateRangeInput();
         },
         
         getValues: function() {
@@ -1424,11 +1463,12 @@ function initializeSeasonSlider(sliderId, rangeInputId, displayId) {
             return {
                 startMonth,
                 endMonth,
-                isReversed
+                isReversed: isReversed
             };
         }
     };
 }
+
 function convertOldSeasonToRange(season) {
     const seasonMap = {
         "yaz": [6, 8], // Haziran - Ağustos
@@ -7844,7 +7884,6 @@ function editFood(foodName) {
     // Mevsim aralığını ayarla
     const seasonRangeInput = document.getElementById("editFoodSeasonRange");
     if (seasonRangeInput) {
-        // Varsayılan değerler
         let startMonth = 4, endMonth = 9; // Varsayılan: Nisan - Eylül
         let isReversed = food.isReversedSeason || false;
         
@@ -7852,8 +7891,6 @@ function editFood(foodName) {
         if (food.seasonRange) {
             try {
                 let range;
-                
-                // String ise parse et, array ise doğrudan kullan
                 if (typeof food.seasonRange === 'string') {
                     range = JSON.parse(food.seasonRange);
                 } else if (Array.isArray(food.seasonRange)) {
@@ -7864,56 +7901,48 @@ function editFood(foodName) {
                     startMonth = parseInt(range[0]);
                     endMonth = parseInt(range[1]);
                     
-                    // Geçerli değer kontrolü
                     if (isNaN(startMonth) || startMonth < 1 || startMonth > 12) startMonth = 1;
                     if (isNaN(endMonth) || endMonth < 1 || endMonth > 12) endMonth = 12;
                     
-                    // Otomatik olarak ters aralık kontrolü
                     if (!isReversed && startMonth > endMonth) {
                         isReversed = true;
                     }
                     
-                    console.log("Mevsim aralığı yüklendi:", startMonth, endMonth, "Ters aralık:", isReversed);
+                    console.log("Mevsim aralığı yüklendi:", { startMonth, endMonth, isReversed });
                 }
             } catch (e) {
                 console.warn("Geçersiz seasonRange formatı:", food.seasonRange, e);
             }
         } else if (food.season) {
-            // Eski season değerini seasonRange'e dönüştür
             const seasonMap = {
-                "yaz": [6, 8], // Haziran - Ağustos
-                "kış": [12, 2], // Aralık - Şubat (ters aralık)
-                "ilkbahar": [3, 5], // Mart - Mayıs
-                "sonbahar": [9, 11], // Eylül - Kasım
-                "4 mevsim": [1, 12] // Tüm yıl
+                "yaz": [6, 8],
+                "kış": [12, 2],
+                "ilkbahar": [3, 5],
+                "sonbahar": [9, 11],
+                "4 mevsim": [1, 12]
             };
             
             const range = seasonMap[food.season] || [1, 12];
             startMonth = range[0];
             endMonth = range[1];
             
-            // "kış" özel durumu: otomatik ters aralık
             if (food.season === "kış") {
                 isReversed = true;
             }
         }
         
-        // Slider'ı başlat ve değerleri ayarla - burayı değiştirdik
-        setTimeout(() => {
-            try {
-                const sliderApi = initializeSeasonSlider("editSeasonSlider", "editFoodSeasonRange", "editSeasonRangeDisplay");
-                
-                // Değerleri ayarla API ile
-                if (sliderApi && typeof sliderApi.setValues === 'function') {
-                    sliderApi.setValues(startMonth, endMonth, isReversed);
-                    console.log("Slider değerleri API ile ayarlandı:", startMonth, endMonth, isReversed);
-                } else {
-                    console.error("Slider API bulunamadı!");
-                }
-            } catch (e) {
-                console.error("Slider başlatılırken hata:", e);
+        // Slider'ı başlat ve değerleri ayarla
+        try {
+            const sliderApi = initializeSeasonSlider("editSeasonSlider", "editFoodSeasonRange", "editSeasonRangeDisplay");
+            if (sliderApi && typeof sliderApi.setValues === 'function') {
+                sliderApi.setValues(startMonth, endMonth, isReversed);
+                console.log("Slider değerleri ayarlandı:", { startMonth, endMonth, isReversed });
+            } else {
+                console.error("Slider API bulunamadı veya setValues fonksiyonu mevcut değil!");
             }
-        }, 100);
+        } catch (e) {
+            console.error("Slider başlatılırken hata:", e);
+        }
     } else {
         console.error("Mevsim slider input elemanı bulunamadı!");
     }
@@ -7923,6 +7952,112 @@ function editFood(foodName) {
 
     // Kategori dropdown'unu yükle
     loadCategoryOptions();
+}
+
+
+function updateFood(originalName) {
+    // Formdan değerleri al
+    const getElementValue = (id, defaultValue = "") => {
+        const element = document.getElementById(id);
+        return element ? element.value : defaultValue;
+    };
+
+    const getElementChecked = (id, defaultValue = false) => {
+        const element = document.getElementById(id);
+        return element ? element.checked : defaultValue;
+    };
+
+    const name = getElementValue("editFoodName").trim();
+    const categoryName = getElementValue("editFoodCategory");
+    const calories = parseFloat(getElementValue("editFoodCalories")) || 0;
+    const protein = parseFloat(getElementValue("editFoodProtein")) || 0;
+    const carbs = parseFloat(getElementValue("editFoodCarbs")) || 0;
+    const fat = parseFloat(getElementValue("editFoodFat")) || 0;
+    const maxQuantity = parseFloat(getElementValue("editFoodMaxQuantity")) || 1;
+    const minQuantity = parseFloat(getElementValue("editFoodMinQuantity")) || 0.5;
+    const step = parseFloat(getElementValue("editFoodStep")) || 0.5;
+    const tags = getElementValue("editFoodTags").split(",").map(t => t.trim()).filter(t => t) || [];
+    const keto = getElementChecked("editFoodKeto");
+    const lowcarb = getElementChecked("editFoodLowCarb");
+    const fillerLunch = getElementChecked("editFoodFillerLunch");
+    const fillerDinner = getElementChecked("editFoodFillerDinner");
+    const seasonRangeValue = getElementValue("editFoodSeasonRange", "[1,12]");
+    const portionFixed = getElementChecked("editFoodPortionFixed");
+    const multiplier = parseFloat(getElementValue("editFoodMultiplier")) || 1;
+    const role = getElementValue("editFoodRole", "mainDish");
+    const isReversedSeason = getElementChecked("editSeasonSlider_reverse");
+
+    const mealTypes = [];
+    ["breakfast", "lunch", "dinner"].forEach(type => {
+        const checkbox = document.getElementById(`editMealType_${type}`);
+        if (checkbox && checkbox.checked) {
+            mealTypes.push(type);
+        }
+    });
+    const mealType = mealTypes.length > 0 ? mealTypes : [];
+
+    // Yemeği güncelle
+    let food = null;
+    let oldCategory = null;
+    for (const category of categories) {
+        const index = category.items.findIndex(item => item.name === originalName);
+        if (index !== -1) {
+            food = category.items[index];
+            oldCategory = category;
+            break;
+        }
+    }
+
+    if (!food) {
+        console.error(`Güncellenecek yemek bulunamadı: ${originalName}`);
+        showNotification(`Güncellenecek yemek bulunamadı: ${originalName}`, "warning");
+        return;
+    }
+
+    // Güncellenmiş yemek objesi
+    const updatedFood = {
+        name,
+        calories,
+        protein,
+        carbs,
+        fat,
+        maxQuantity,
+        minQuantity,
+        step,
+        tags,
+        role,
+        mealType,
+        keto,
+        lowcarb,
+        fillerLunch,
+        fillerDinner,
+        seasonRange: seasonRangeValue,
+        isReversedSeason,
+        portionFixed,
+        multiplier,
+        category: categoryName
+    };
+
+    // Eski kategoriden kaldır
+    oldCategory.items = oldCategory.items.filter(item => item.name !== originalName);
+
+    // Yeni kategoriye ekle
+    let newCategory = categories.find(cat => cat.name === categoryName);
+    if (!newCategory) {
+        newCategory = { name: categoryName, items: [] };
+        categories.push(newCategory);
+    }
+    newCategory.items.push(updatedFood);
+
+    // Kategorileri güncelle ve paneli kapat
+    loadCategories();
+    searchEditFood("");
+    showNotification(`${name} yemeği güncellendi!`, "success");
+    console.log(`Yemek güncellendi: ${name}, Sezon aralığı: ${seasonRangeValue}, Ters sezon: ${isReversedSeason}`);
+    document.getElementById("editFoodPanel").style.display = "none";
+
+    // GitHub'a verileri gönder
+    updateGitHubData();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
