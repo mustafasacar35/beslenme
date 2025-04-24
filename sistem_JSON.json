@@ -57,6 +57,33 @@
           "portionFixed": false,
           "multiplier": 1,
           "category": "KAHVALTI"
+        },
+        {
+          "name": "1 tatlı kaşığı kaymak (10 gram)",
+          "calories": 54,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 6,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "kaymak",
+            "keto"
+          ],
+          "role": "supplement",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "KAHVALTI"
         }
       ]
     },
@@ -12156,35 +12183,7 @@
     },
     {
       "name": "",
-      "items": [
-        {
-          "name": "1 tatlı kaşığı kaymak (10 gram)",
-          "calories": 54,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 6,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "kaymak",
-            "keto"
-          ],
-          "role": "supplement",
-          "mealType": [
-            "breakfast"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": ""
-        }
-      ]
+      "items": []
     }
   ],
   "weeks": [
