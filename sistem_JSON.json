@@ -30,32 +30,6 @@
           "portionFixed": false,
           "multiplier": 1,
           "category": "KAHVALTI"
-        },
-        {
-          "name": "abc",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "sideDish",
-          "mealType": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "seasonRange": "[3,11]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "ÖĞLEN",
-          "season": [
-            4,
-            9
-          ]
         }
       ]
     },
@@ -1924,6 +1898,32 @@
           "fillerDinner": false,
           "seasonRange": "[4,9]",
           "isReversedSeason": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "KAHVALTI",
+          "season": [
+            4,
+            9
+          ]
+        },
+        {
+          "name": "abc",
+          "calories": 17,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 1,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "role": "sideDish",
+          "mealType": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "seasonRange": "[3,11]",
+          "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
           "category": "KAHVALTI",
@@ -12483,16 +12483,6 @@
         "monday": {
           "meals": {
             "breakfast": [
-              {
-                "name": "Kurşun Geçirmez Kahve",
-                "quantity": 1,
-                "unit": "fincan",
-                "role": "drink",
-                "calories": 90,
-                "protein": 0,
-                "fat": 10,
-                "carbs": 0
-              },
               {
                 "name": "111",
                 "quantity": 1
