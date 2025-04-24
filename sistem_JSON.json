@@ -32,28 +32,6 @@
           "category": "KAHVALTI"
         },
         {
-          "name": "abc",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "seasonRange": "[3,11]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "KAHVALTI"
-        },
-        {
           "name": "deme 443a",
           "calories": 17,
           "protein": 1,
@@ -1917,6 +1895,32 @@
           "portionFixed": false,
           "multiplier": 1,
           "category": "ÖĞLEN",
+          "season": [
+            4,
+            9
+          ]
+        },
+        {
+          "name": "abc",
+          "calories": 17,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 1,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "role": "sideDish",
+          "mealType": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "seasonRange": "[3,11]",
+          "isReversedSeason": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "KAHVALTI",
           "season": [
             4,
             9
@@ -12472,7 +12476,12 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [],
+            "breakfast": [
+              {
+                "name": "abc",
+                "quantity": 1
+              }
+            ],
             "lunch": [],
             "dinner": []
           }
