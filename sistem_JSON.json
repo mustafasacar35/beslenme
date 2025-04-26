@@ -903,7 +903,6 @@
           "mealType": [
             "lunch"
           ],
-          "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": false,
@@ -2575,8 +2574,9 @@
             "keto"
           ],
           "role": "mainDish",
-          "mealType": "lunch",
-          "keto": true,
+          "mealType": [
+            "dinner"
+          ],
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
@@ -7839,7 +7839,7 @@
           "category": "MEYVELER",
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[5,9]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false
         },
         {
@@ -12226,34 +12226,34 @@
             ],
             "lunch": [
               {
-                "name": "1 dilim Pırasalı Tava Böreği",
+                "name": "İmam Bayıldı",
                 "quantity": 1
               },
               {
-                "name": "Cherry Domates (2 adet)",
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
                 "quantity": 1
               },
               {
-                "name": "Biberli peynir (3 adet yeşil biber, 50 gr lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
+                "name": "Kasap sucuk (50 gram, tavada veya ızgarada)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Patlıcan musakka (150 gr kıyma ile)",
+                "name": "1 dilim Ispanaklı Kabak Böreği",
                 "quantity": 1
               },
               {
-                "name": "Közlenmiş Kapya Biber",
+                "name": "Lor Salatası",
                 "quantity": 1
               },
               {
-                "name": "Zeytinyağlı Yer Elması",
-                "quantity": 0.5
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
               },
               {
-                "name": "Ceviz (3 adet )",
-                "quantity": 0.5
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
               }
             ]
           }
@@ -12269,34 +12269,34 @@
             ],
             "lunch": [
               {
-                "name": "Kıymalı - Yumurtalı ıspanak kavurma (2 adet yumurta, 50 gram kıyma, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, soğan",
+                "name": "2 adet lupin unlu poğaça (veya 4 adet Lorlu poğaça)",
                 "quantity": 1
               },
               {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+                "name": "3 cherry domates",
                 "quantity": 1
               },
               {
-                "name": "Tereyağlı Kabak",
-                "quantity": 0.5
+                "name": "Biberli peynir (3 adet yeşil biber, 50 gr lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Hünkar Beğendi",
+                "name": "200 gram kuzu kavurma",
                 "quantity": 1
               },
               {
-                "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, turp + 1 yemek kaşığı zeytinyağı)",
-                "quantity": 1
+                "name": "Yeşil Salata",
+                "quantity": 2
               },
               {
                 "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               },
               {
-                "name": "Karnabahar Püresi",
-                "quantity": 0.5
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
               }
             ]
           }
@@ -12312,25 +12312,29 @@
             ],
             "lunch": [
               {
-                "name": "1 dilim Pırasalı Tava Böreği",
+                "name": "Ketojenik tost (2 ince dilim lor ekmeği arasına 30 gram kaşar, 2 dilim hindi füme, yeşillikler, domates)",
                 "quantity": 1
               },
               {
-                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke,limon ve 1 yemek kaşığı zeytinyağı ile)",
-                "quantity": 1
-              },
-              {
-                "name": "Kasap sucuk (50 gram, tavada veya ızgarada)",
+                "name": "Tulum / kaşar / lor peyniri (30 gram)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Patlıcan Kebabı (2 orta boy patlıcan, 200 gr kıyma ile)",
+                "name": "Patlıcan kebabı (2 adet orta boy patlıcan,200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. Fırında ya da airfry da pişirilir)",
                 "quantity": 1
               },
               {
-                "name": "Susamlı karnabahar kızartma (150 gram karnabahar, 1 yemek kaşığı zeytinyağı, 1 yemek kaşığı susam ve istenilen baharatlarla fırınlanacak.)",
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+                "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
                 "quantity": 1
               }
             ]
@@ -12347,25 +12351,29 @@
             ],
             "lunch": [
               {
-                "name": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
+                "name": "Yoğurtlu çılbır",
                 "quantity": 1
               },
               {
-                "name": "Zeytin (5 adet)",
+                "name": "*Lor ekmeği (1 dilim)",
                 "quantity": 1
               },
               {
-                "name": "Biberli peynir, 1 porsiyon - (3 adet yeşil biber, 50 gram lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
-                "quantity": 1
+                "name": "Közlenmiş patlıcan salatası",
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Lahana Lazanya",
+                "name": "200 gram Tavuk eti ile güveç (domates, biber ve soğan ile)",
                 "quantity": 1
               },
               {
-                "name": "4 yemek kaşığı ev yoğurdu",
+                "name": "*Zeytinyağlı Deniz Börülcesi ya da brokoli salata (1 tatlı kaşığı zeytinyağı ekleyelim)",
+                "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               }
             ]
@@ -12382,33 +12390,25 @@
             ],
             "lunch": [
               {
-                "name": "*Avokadolu omlet",
+                "name": "Zeytin (10 adet)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon, sirke ile)",
+                "name": "Sebzeli Krep (2 adet yumurta, 1 yemek kaşığı lupin unu, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
-              },
-              {
-                "name": "Biberli peynir, 1 porsiyon - (3 adet yeşil biber, 50 gram lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
-                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "1 dilim Ispanaklı Kabak Böreği",
+                "name": "Mantarlı Tavuk Sote (1 porsiyon)",
                 "quantity": 1
               },
               {
-                "name": "4 yemek kaşığı ev yoğurdu",
+                "name": "Közlenmiş Kapya Biber",
                 "quantity": 1
               },
               {
-                "name": "Yoğurtlu Kereviz Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "Kollajen",
+                "name": "Zeytinyağlı Yer Elması",
                 "quantity": 0.5
               }
             ]
@@ -12425,25 +12425,21 @@
             ],
             "lunch": [
               {
-                "name": "Sebzeli Omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+                "name": "Zeytin (10 adet)",
                 "quantity": 1
               },
               {
-                "name": "Cherry domates (3 adet)",
+                "name": "Sebzeli Krep (2 adet yumurta, 1 yemek kaşığı lupin unu, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
-              },
-              {
-                "name": "Biberli peynir, 1 porsiyon - (3 adet yeşil biber, 50 gram lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
-                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Ciğer Kavurma (200 gram)",
+                "name": "Enginar Mantısı (1 porsiyon)",
                 "quantity": 1
               },
               {
-                "name": "4 yemek kaşığı ev yoğurdu",
+                "name": "Roka, turp ve pancar dilimleri + limon ve 1 yemek kaşığı zeytinyağı ile",
                 "quantity": 1
               }
             ]
@@ -12460,30 +12456,26 @@
             ],
             "lunch": [
               {
-                "name": "sebzeli omlet (2 adet yumurta, 2 dilim hindi füme, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+                "name": "Ketojenik Tost (Badem Unu Ekmeği + Kaşar)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon, sirke ve 1 yemek  kaşığı zeytinyağı ile)",
+                "name": "Tereyağlı Kabak",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Kıymalı Bamya (veya Kıymalı Lahana) Yemeği (100 gr kıyma ile)",
+                "name": "Fırında Kremalı Karnabahar",
                 "quantity": 1
               },
               {
-                "name": "Kabak Sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Susamlı Karnabahar Kızartma",
+                "name": "Kollajen",
                 "quantity": 0.5
-              },
-              {
-                "name": "Közlenmiş Kapya Biber",
-                "quantity": 1
               }
             ]
           }
