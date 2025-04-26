@@ -12,73 +12,127 @@
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
-          "role": "drink",
           "tags": [
             "kahve",
             "keto",
             "kurşun geçirmez"
           ],
+          "role": "drink",
           "mealType": [
             "breakfast"
           ],
+          "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,12]",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
-          "name": "ddd",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "role": "mainDish",
-          "tags": [],
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "lowcarb": false,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "seasonRange": "[6,9]",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
-          "name": "deneme cift",
           "category": "KAHVALTI",
-          "role": "mainDish",
-          "carbs": 1,
-          "protein": 1,
-          "fat": 1,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
+        {
+          "name": "deme 4",
           "calories": 17,
-          "tags": [],
+          "protein": 1,
+          "carbs": 1,
+          "fat": 1,
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
+          "tags": [],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false,
+          "portionFixed": true,
           "multiplier": 1,
+          "category": "KAHVALTI"
+        },
+        {
+          "name": "111",
+          "calories": 17,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 1,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
           "keto": false,
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false,
           "portionFixed": false,
-          "mealType": [
-            "breakfast",
-            "lunch"
-          ],
-          "seasonRange": "[4,9]"
+          "multiplier": 1,
+          "category": "KAHVALTI"
+        },
+        {
+          "name": "abc",
+          "calories": 17,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 1,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "role": "mainDish",
+          "mealType": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "KAHVALTI"
         }
       ]
     },
     {
       "name": "ÖĞLEN",
       "items": [
+        {
+          "name": "1 tatlı kaşığı Tereyağı",
+          "calories": 90,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 10,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "tereyağı",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "breakfast"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "category": "ÖĞLEN",
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
         {
           "name": "1 tatlı kaşığı kaymak (10 gram)",
           "calories": 54,
@@ -105,31 +159,6 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "isReversedSeason": false
-        },
-        {
-          "name": "30 gram pastırma",
-          "calories": 72,
-          "protein": 9,
-          "carbs": 0,
-          "fat": 4,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "role": "sideDish",
-          "tags": [
-            "keto",
-            "et",
-            "tost"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[9,12]",
-          "portionFixed": false,
-          "multiplier": 1
         },
         {
           "name": "Közlenmiş Kapya Biber",
@@ -937,20 +966,23 @@
           "maxQuantity": 1,
           "minQuantity": 1,
           "step": 1,
-          "role": "supplement",
           "tags": [
             "avokado",
             "keto"
           ],
+          "role": "supplement",
           "mealType": [
             "lunch"
           ],
+          "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": false,
-          "seasonRange": "[1,12]",
+          "category": "ÖĞLEN",
           "portionFixed": true,
-          "multiplier": 1
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
         },
         {
           "name": "Salatalık (1 adet)",
@@ -1093,82 +1125,6 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "isReversedSeason": false
-        },
-        {
-          "name": "Kasap sucuk (50 gram, tavada veya ızgarada)",
-          "calories": 166,
-          "protein": 7,
-          "carbs": 3,
-          "fat": 14,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "role": "sideDish",
-          "tags": [
-            "keto",
-            "et",
-            "sucuk"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[8,12]",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
-          "name": "30 gram pastırma",
-          "calories": 72,
-          "protein": 9,
-          "carbs": 0,
-          "fat": 4,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto",
-            "et"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
-          "name": "Tulum / kaşar / lor peyniri (30 gram)",
-          "calories": 82,
-          "protein": 6,
-          "carbs": 1,
-          "fat": 6,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "role": "sideDish",
-          "tags": [
-            "peynir",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[8,12]",
-          "portionFixed": false,
-          "multiplier": 1
         },
         {
           "name": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
@@ -1484,7 +1440,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,2]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -1513,7 +1469,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,2]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -1541,7 +1497,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,3]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -1687,7 +1643,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,10]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": true,
           "multiplier": 1,
@@ -1714,34 +1670,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[7,12]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "ÖĞLEN"
-        },
-        {
-          "name": "30 gram Beyaz Peynir",
-          "calories": 82,
-          "protein": 6,
-          "carbs": 1,
-          "fat": 6,
-          "maxQuantity": 2,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "peynir",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[7,12]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -1768,7 +1697,7 @@
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": false,
-          "seasonRange": "[7,12]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -1795,7 +1724,7 @@
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": false,
-          "seasonRange": "[7,12]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -1821,31 +1750,29 @@
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": false,
-          "seasonRange": [
-            6,
-            10
-          ],
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
           "category": "ÖĞLEN"
         },
         {
-          "name": "1 tatlı kaşığı Tereyağı",
-          "calories": 90,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 10,
+          "name": "Kasap sucuk (50 gram, tavada veya ızgarada)",
+          "calories": 166,
+          "protein": 7,
+          "carbs": 3,
+          "fat": 14,
           "maxQuantity": 1,
           "minQuantity": 1,
           "step": 1,
           "tags": [
-            "tereyağı",
-            "keto"
+            "keto",
+            "et",
+            "sucuk"
           ],
           "role": "sideDish",
           "mealType": [
-            "breakfast"
+            "lunch"
           ],
           "keto": true,
           "lowcarb": true,
@@ -1858,106 +1785,86 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "111",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
+          "name": "30 gram pastırma",
+          "calories": 72,
+          "protein": 9,
+          "carbs": 0,
+          "fat": 4,
           "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "keto",
+            "et",
+            "tost"
+          ],
+          "role": "sideDish",
           "mealType": [
             "lunch"
           ],
-          "keto": false,
-          "lowcarb": false,
-          "fillerLunch": false,
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
           "fillerDinner": false,
-          "seasonRange": "[7,7]",
-          "isReversedSeason": true,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
           "category": "ÖĞLEN"
         },
         {
-          "name": "abc",
-          "calories": 17,
-          "protein": 1,
+          "name": "Tulum / kaşar / lor peyniri (30 gram)",
+          "calories": 82,
+          "protein": 6,
           "carbs": 1,
-          "fat": 1,
+          "fat": 6,
           "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
           "role": "sideDish",
-          "mealType": [],
+          "mealType": [
+            "lunch"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
-          "fillerDinner": true,
-          "seasonRange": "[3,11]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "ÖĞLEN",
-          "season": [
-            4,
-            9
-          ]
-        },
-        {
-          "name": "deme 443a",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "seasonRange": "[4,9]",
-          "isReversedSeason": false,
-          "portionFixed": true,
-          "multiplier": 1,
-          "category": "ÖĞLEN",
-          "season": [
-            4,
-            9
-          ]
-        },
-        {
-          "name": "da22",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "sideDish",
-          "mealType": [],
-          "keto": true,
-          "lowcarb": false,
-          "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[4,9]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
-          "category": "KAHVALTI",
-          "season": [
-            4,
-            9
-          ]
+          "category": "ÖĞLEN"
+        },
+        {
+          "name": "30 gram Beyaz Peynir",
+          "calories": 82,
+          "protein": 6,
+          "carbs": 1,
+          "fat": 6,
+          "maxQuantity": 2,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "ÖĞLEN"
         }
       ]
     },
@@ -2400,7 +2307,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "AKŞAM",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -3172,32 +3079,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Tavada Kaşarlı Mantar",
-          "calories": 196,
-          "protein": 7,
-          "carbs": 6,
-          "fat": 16,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "role": "sideDish",
-          "tags": [
-            "mantar",
-            "kaşar",
-            "keto",
-            "peynir"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[7,12]",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
           "name": "Köz Patlıcan",
           "calories": 15.4,
           "protein": 0.9,
@@ -3499,7 +3380,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "AKŞAM",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -3524,7 +3405,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "AKŞAM",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -4816,7 +4697,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,2]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -4843,7 +4724,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,2]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -4871,7 +4752,36 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,5]",
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "category": "AKŞAM"
+        },
+        {
+          "name": "Tavada Kaşarlı Mantar",
+          "calories": 196,
+          "protein": 7,
+          "carbs": 6,
+          "fat": 16,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "mantar",
+            "kaşar",
+            "keto",
+            "peynir"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -4980,7 +4890,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "KURUYEMİŞLER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -4995,18 +4905,21 @@
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
-          "role": "snack",
           "tags": [
             "badem",
             "keto"
           ],
-          "mealType": [],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
           "lowcarb": true,
-          "fillerLunch": true,
+          "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,12]",
+          "category": "GENEL",
           "portionFixed": true,
-          "multiplier": 1
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
         },
         {
           "name": "10 adet Çiğ Fındık",
@@ -5027,7 +4940,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "KURUYEMİŞLER",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5052,7 +4965,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "KURUYEMİŞLER",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5096,27 +5009,55 @@
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
-          "role": "snack",
           "tags": [
             "badem",
             "keto"
           ],
+          "role": "snack",
           "mealType": [
             "lunch",
             "dinner"
           ],
+          "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": true,
           "seasonRange": "[1,12]",
+          "isReversedSeason": false,
           "portionFixed": false,
-          "multiplier": 1
+          "multiplier": 1,
+          "category": "KURUYEMİŞLER"
         }
       ]
     },
     {
       "name": "TATLILAR",
       "items": [
+        {
+          "name": "Bitter Çikolata?",
+          "calories": 150,
+          "protein": 2,
+          "carbs": 8,
+          "fat": 12,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keto",
+            "tatlı"
+          ],
+          "role": "dessert",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "TATLILAR",
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
         {
           "name": "Keto Cheesecake",
           "calories": 200,
@@ -5161,7 +5102,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "TATLILAR",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5491,7 +5432,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "TATLILAR",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5517,7 +5458,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "TATLILAR",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5542,7 +5483,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "TATLILAR",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5568,7 +5509,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "TATLILAR",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5594,7 +5535,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "TATLILAR",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5619,7 +5560,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "TATLILAR",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -5653,34 +5594,6 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "isReversedSeason": false
-        },
-        {
-          "name": "Bitter Çikolata?",
-          "calories": 148,
-          "protein": 2,
-          "carbs": 8,
-          "fat": 12,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto",
-            "tatlı"
-          ],
-          "role": "dessert",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "TATLILAR"
         }
       ]
     },
@@ -6991,7 +6904,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[4,10]",
+          "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
           "multiplier": 1,
@@ -7020,7 +6933,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "ÇORBALAR",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -7123,7 +7036,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "ÇORBALAR",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -7456,7 +7369,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "ÇORBALAR",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -7838,26 +7751,27 @@
       "items": [
         {
           "name": "Avokado",
-          "calories": 179,
+          "calories": 160,
           "protein": 2,
           "carbs": 9,
           "fat": 15,
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
-          "role": "fruit",
           "tags": [
             "meyve"
           ],
-          "mealType": [
-            "lunch"
-          ],
+          "role": "fruit",
+          "mealType": "breakfast,dinner",
+          "keto": true,
           "lowcarb": true,
-          "fillerLunch": true,
+          "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,12]",
+          "category": "GENEL",
           "portionFixed": false,
-          "multiplier": 1
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
         },
         {
           "name": "5 Adet Çilek",
@@ -7931,7 +7845,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVELER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -7946,21 +7860,24 @@
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
-          "role": "fruit",
           "tags": [
             "avokado",
             "meyve",
             "keto"
           ],
+          "role": "fruit",
           "mealType": [
             "lunch"
           ],
+          "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": false,
-          "seasonRange": "[1,12]",
+          "category": "MEYVELER",
           "portionFixed": false,
-          "multiplier": 1
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
         },
         {
           "name": "1 Adet Elma",
@@ -7981,7 +7898,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVELER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8006,7 +7923,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVELER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8031,7 +7948,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVELER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8056,7 +7973,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVELER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8081,7 +7998,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVELER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8106,7 +8023,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVELER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8131,7 +8048,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVELER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8189,56 +8106,6 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "isReversedSeason": false
-        },
-        {
-          "name": "1/2 Avokado",
-          "calories": 155,
-          "protein": 3,
-          "carbs": 2,
-          "fat": 15,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "role": "fruit",
-          "tags": [
-            "avokado",
-            "meyve",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[1,12]",
-          "portionFixed": false,
-          "multiplier": 1
-        },
-        {
-          "name": "1/2 Avokado",
-          "calories": 155,
-          "protein": 3,
-          "carbs": 2,
-          "fat": 15,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "role": "fruit",
-          "tags": [
-            "avokado",
-            "meyve",
-            "keto"
-          ],
-          "mealType": [
-            "lunch"
-          ],
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[1,12]",
-          "portionFixed": false,
-          "multiplier": 1
         }
       ]
     },
@@ -8596,7 +8463,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "SABAH YEŞİLLİKLERİ",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8622,7 +8489,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "SABAH YEŞİLLİKLERİ",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8675,7 +8542,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "SABAH YEŞİLLİKLERİ",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8702,7 +8569,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "SABAH YEŞİLLİKLERİ",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8729,7 +8596,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "SABAH YEŞİLLİKLERİ",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8756,7 +8623,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "SABAH YEŞİLLİKLERİ",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8809,7 +8676,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "SABAH YEŞİLLİKLERİ",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8867,7 +8734,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "KOLLAJEN",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8951,7 +8818,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVE",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8975,7 +8842,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVE",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -8999,7 +8866,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVE",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9024,7 +8891,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVE",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9048,7 +8915,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVE",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9072,7 +8939,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVE",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9096,7 +8963,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVE",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9120,7 +8987,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "MEYVE",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9179,7 +9046,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "İÇECEKLER",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9204,7 +9071,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "İÇECEKLER",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9229,7 +9096,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "İÇECEKLER",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9255,7 +9122,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "İÇECEKLER",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9280,7 +9147,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "İÇECEKLER",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9305,7 +9172,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "İÇECEKLER",
+          "category": "GENEL",
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9330,7 +9197,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "İÇECEKLER",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9342,6 +9209,31 @@
       "name": "diğer",
       "items": [
         {
+          "name": "Badem?",
+          "calories": 160,
+          "protein": 6,
+          "carbs": 6,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keto",
+            "kuruyemiş"
+          ],
+          "role": "snack",
+          "mealType": "lunch,dinner",
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "diğer",
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
+        {
           "name": "Çiğ Badem",
           "calories": 150,
           "protein": 5,
@@ -9350,19 +9242,22 @@
           "maxQuantity": 1,
           "minQuantity": 0.5,
           "step": 0.5,
-          "role": "snack",
           "tags": [
             "badem",
             "kuruyemiş",
             "keto"
           ],
-          "mealType": [],
+          "role": "snack",
+          "mealType": "snack",
+          "keto": true,
           "lowcarb": true,
-          "fillerLunch": true,
+          "fillerLunch": false,
           "fillerDinner": false,
-          "seasonRange": "[1,12]",
+          "category": "GENEL",
           "portionFixed": false,
-          "multiplier": 1
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
         },
         {
           "name": "Fındık",
@@ -9384,7 +9279,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "diğer",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9410,7 +9305,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "diğer",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9436,7 +9331,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "diğer",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9462,7 +9357,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "diğer",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -9830,6 +9725,33 @@
           "isReversedSeason": false
         },
         {
+          "name": "Fındık (20 adet)",
+          "calories": 128,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 12,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "fındık",
+            "keto"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "category": "Yeni Eklenenler",
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
+        {
           "name": "Menemen (2  yumurta ile)",
           "calories": 220,
           "protein": 14,
@@ -10014,7 +9936,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "Yeni Eklenenler",
+          "category": "AKŞAM",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -11606,7 +11528,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "Yeni Eklenenler",
+          "category": "Tanımsız",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -11693,7 +11615,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "Yeni Eklenenler",
+          "category": "ÖĞLEN",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -11742,7 +11664,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "Yeni Eklenenler",
+          "category": "Tanımsız",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -11768,7 +11690,7 @@
           "lowcarb": false,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "Yeni Eklenenler",
+          "category": "Tanımsız",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -12323,33 +12245,6 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "isReversedSeason": false
-        },
-        {
-          "name": "Fındık (20 adet)",
-          "calories": 127.6,
-          "protein": 3,
-          "carbs": 1.9,
-          "fat": 12,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "fındık",
-            "keto"
-          ],
-          "role": "supplement",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "Yeni Eklenenler"
         }
       ]
     },
@@ -12372,7 +12267,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "Tanımsız",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -12394,7 +12289,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "Tanımsız",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -12438,7 +12333,7 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
-          "category": "Tanımsız",
+          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -12522,11 +12417,50 @@
               {
                 "name": "Kurşun Geçirmez Kahve",
                 "quantity": 1,
-                "role": "drink"
+                "unit": "fincan",
+                "role": "drink",
+                "calories": 90,
+                "protein": 0,
+                "fat": 10,
+                "carbs": 0
               }
             ],
-            "lunch": [],
-            "dinner": []
+            "lunch": [
+              {
+                "name": "Haşlanmış Yumurta (2 adet) + Tereyağı ve Baharatlar",
+                "quantity": 1
+              },
+              {
+                "name": "2 dilim Hindi Füme",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 Avokado",
+                "quantity": 1
+              },
+              {
+                "name": "30 gram Beyaz Peynir",
+                "quantity": 2
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Mantarlı Tavuk Sote (1 porsiyon)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil Salata",
+                "quantity": 2
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
+              }
+            ]
           }
         },
         "tuesday": {
@@ -12535,11 +12469,46 @@
               {
                 "name": "Kurşun Geçirmez Kahve",
                 "quantity": 1,
-                "role": "drink"
+                "unit": "fincan",
+                "role": "drink",
+                "calories": 90,
+                "protein": 0,
+                "fat": 10,
+                "carbs": 0
               }
             ],
-            "lunch": [],
-            "dinner": []
+            "lunch": [
+              {
+                "name": "Haşlanmış Yumurta (2 adet) + Tereyağı ve Baharatlar",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber",
+                "quantity": 1
+              },
+              {
+                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tavuk Güveç",
+                "quantity": 1
+              },
+              {
+                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+                "quantity": 1
+              },
+              {
+                "name": "Yoğurtlu Kereviz Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Karnabahar Püresi",
+                "quantity": 0.5
+              }
+            ]
           }
         },
         "wednesday": {
@@ -12548,11 +12517,46 @@
               {
                 "name": "Kurşun Geçirmez Kahve",
                 "quantity": 1,
-                "role": "drink"
+                "unit": "fincan",
+                "role": "drink",
+                "calories": 90,
+                "protein": 0,
+                "fat": 10,
+                "carbs": 0
               }
             ],
-            "lunch": [],
-            "dinner": []
+            "lunch": [
+              {
+                "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Kaşar + Hindi Füme)",
+                "quantity": 1
+              },
+              {
+                "name": "30 gram Beyaz Peynir",
+                "quantity": 2
+              },
+              {
+                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
+                "quantity": 0.5
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Etli Kereviz Yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "1 yemek kaşığı tahin",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik Tiramisu",
+                "quantity": 0.5
+              },
+              {
+                "name": "Karnabahar Püresi",
+                "quantity": 0.5
+              }
+            ]
           }
         },
         "thursday": {
@@ -12561,11 +12565,46 @@
               {
                 "name": "Kurşun Geçirmez Kahve",
                 "quantity": 1,
-                "role": "drink"
+                "unit": "fincan",
+                "role": "drink",
+                "calories": 90,
+                "protein": 0,
+                "fat": 10,
+                "carbs": 0
               }
             ],
-            "lunch": [],
-            "dinner": []
+            "lunch": [
+              {
+                "name": "Patlıcan Tost",
+                "quantity": 1
+              },
+              {
+                "name": "Dilimlenmiş yarım turp + yarım pancar (1 dilim limon ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Kıymalı Lahana / Kabak / Yeşil Fasulye Yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "Un Helvası",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik Tiramisu",
+                "quantity": 0.5
+              },
+              {
+                "name": "Susamlı Karnabahar Kızartma",
+                "quantity": 0.5
+              }
+            ]
           }
         },
         "friday": {
@@ -12574,11 +12613,50 @@
               {
                 "name": "Kurşun Geçirmez Kahve",
                 "quantity": 1,
-                "role": "drink"
+                "unit": "fincan",
+                "role": "drink",
+                "calories": 90,
+                "protein": 0,
+                "fat": 10,
+                "carbs": 0
               }
             ],
-            "lunch": [],
-            "dinner": []
+            "lunch": [
+              {
+                "name": "2 adet lupin unlu poğaça (veya 4 adet Lorlu poğaça)",
+                "quantity": 1
+              },
+              {
+                "name": "*Lor ekmeği (1 dilim)",
+                "quantity": 1
+              },
+              {
+                "name": "1/2 Avokado",
+                "quantity": 1
+              },
+              {
+                "name": "30 gram Beyaz Peynir",
+                "quantity": 2
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Tavuk Döner (100 gram)",
+                "quantity": 2
+              },
+              {
+                "name": "* Yoğurtlu enginar",
+                "quantity": 1
+              },
+              {
+                "name": "1 yemek kaşığı tahin",
+                "quantity": 1
+              },
+              {
+                "name": "Közlenmiş Kapya Biber",
+                "quantity": 1
+              }
+            ]
           }
         },
         "saturday": {
@@ -12587,11 +12665,42 @@
               {
                 "name": "Kurşun Geçirmez Kahve",
                 "quantity": 1,
-                "role": "drink"
+                "unit": "fincan",
+                "role": "drink",
+                "calories": 90,
+                "protein": 0,
+                "fat": 10,
+                "carbs": 0
               }
             ],
-            "lunch": [],
-            "dinner": []
+            "lunch": [
+              {
+                "name": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Dilimlenmiş yarım turp + yarım pancar (1 dilim limon ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Köfteli Pırasa Yemeği",
+                "quantity": 1
+              },
+              {
+                "name": "Un Helvası",
+                "quantity": 1
+              },
+              {
+                "name": "Yoğurtlu Kereviz Salatası",
+                "quantity": 1
+              }
+            ]
           }
         },
         "sunday": {
@@ -12600,11 +12709,50 @@
               {
                 "name": "Kurşun Geçirmez Kahve",
                 "quantity": 1,
-                "role": "drink"
+                "unit": "fincan",
+                "role": "drink",
+                "calories": 90,
+                "protein": 0,
+                "fat": 10,
+                "carbs": 0
               }
             ],
-            "lunch": [],
-            "dinner": []
+            "lunch": [
+              {
+                "name": "Avokadolu Omlet (1 porsiyon)",
+                "quantity": 1
+              },
+              {
+                "name": "Cherry domates (3 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
+                "quantity": 0.5
+              },
+              {
+                "name": "1 yemek kaşığı tahin",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "200  gram köfte (ekmeksiz, baharatlarla)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşil Salata",
+                "quantity": 2
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
+              }
+            ]
           }
         }
       }
@@ -12612,28 +12760,337 @@
   ],
   "rules": [
     {
-      "type": "maxRoleCount",
-      "mealType": "lunch",
+      "type": "frequency",
+      "id": 1,
+      "frequency": 1,
+      "frequencyType": "exact",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
       "role": "mainDish",
-      "count": 1
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
     },
     {
-      "type": "maxRoleCount",
-      "mealType": "dinner",
+      "type": "frequency",
+      "id": 2,
+      "frequency": 1,
+      "frequencyType": "exact",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
       "role": "mainDish",
-      "count": 1
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
     },
     {
-      "type": "maxRoleCount",
-      "mealType": "lunch",
-      "role": "soup",
-      "count": 1
+      "type": "frequency",
+      "id": 3,
+      "frequency": 1,
+      "frequencyType": "min",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "sideDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
     },
     {
-      "type": "maxRoleCount",
-      "mealType": "dinner",
-      "role": "soup",
-      "count": 1
+      "type": "frequency",
+      "id": 4,
+      "frequency": 1,
+      "frequencyType": "min",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "sideDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
+    },
+    {
+      "type": "frequency",
+      "id": 8,
+      "frequency": 1,
+      "frequencyType": "max",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": true,
+      "role": "mainDish",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "lunch"
+    },
+    {
+      "type": "compatibility",
+      "id": 13,
+      "keyword1": "tost",
+      "keyword2": [
+        "yumurta",
+        "peynir",
+        "zeytin",
+        "krep",
+        "füme",
+        "avokado",
+        "biberli",
+        "tutlum",
+        "peyniri"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 15,
+      "keyword1": "ıspanaklı",
+      "keyword2": [
+        "ıspanaklı",
+        "ıspanak"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 20,
+      "keyword1": "yumurta",
+      "keyword2": [
+        "yumurta",
+        "yumurtalı",
+        "krep",
+        "omlet"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 23,
+      "keyword1": "Keto Tost",
+      "keyword2": [
+        "füme",
+        "omlet",
+        "yumurta",
+        "yumurtalı"
+      ],
+      "degree": -5,
+      "conjunction": "or"
+    },
+    {
+      "type": "dependOn",
+      "id": 24,
+      "food": "Tofu",
+      "requiredFood": "Yoğurtlu Kırmızı Pancar Salatası",
+      "scope": "meal"
+    },
+    {
+      "type": "compatibility",
+      "id": 25,
+      "keyword1": "Menemen",
+      "keyword2": [
+        "yumurta",
+        "omlet",
+        "yumurtalı",
+        "çılbır"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "dependOn",
+      "id": 26,
+      "food": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+      "requiredFood": "salata",
+      "scope": "meal"
+    },
+    {
+      "type": "dependOn",
+      "id": 27,
+      "food": "yarım tatlı kaşığı keten tohumu (salata üzerine)",
+      "requiredFood": "salata",
+      "scope": "meal"
+    },
+    {
+      "type": "dependOn",
+      "id": 28,
+      "food": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+      "requiredFood": "salata",
+      "scope": "meal"
+    },
+    {
+      "type": "frequency",
+      "id": 32,
+      "frequency": 1,
+      "frequencyType": "max",
+      "scope": "day",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "tost"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "compatibility",
+      "id": 33,
+      "keyword1": "ekmek",
+      "keyword2": [
+        "tost",
+        "ekmeği"
+      ],
+      "degree": -5,
+      "conjunction": "and"
+    },
+    {
+      "type": "compatibility",
+      "id": 34,
+      "keyword1": "tost",
+      "keyword2": [
+        "lupin"
+      ],
+      "degree": -5,
+      "conjunction": "or"
+    },
+    {
+      "type": "frequency",
+      "id": 35,
+      "frequency": 4,
+      "frequencyType": "min",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "ekmeği"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 36,
+      "frequency": 6,
+      "frequencyType": "max",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "ekmeği"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 37,
+      "frequency": 2,
+      "frequencyType": "min",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "çorbası"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 38,
+      "frequency": 4,
+      "frequencyType": "max",
+      "scope": "week",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "çorbası"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": ""
+    },
+    {
+      "type": "frequency",
+      "id": 39,
+      "frequency": 1,
+      "frequencyType": "max",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": true,
+      "nameOperator": "OR",
+      "names": [
+        "Tost"
+      ],
+      "tagsCheck": false,
+      "tags": [],
+      "roleCheck": false,
+      "role": "",
+      "catCheck": false,
+      "category": "",
+      "mealTypeCheck": true,
+      "mealType": "dinner"
     }
   ],
   "mealTemplates": [],
