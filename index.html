@@ -2334,74 +2334,122 @@ function deleteSelectedCategory() {
         }
 
         function addNewFood(event) {
-    event.preventDefault();
-    const name = document.getElementById("foodName").value.trim();
-    const category = document.getElementById("foodCategory").value;
-    const role = document.getElementById("foodRole").value;
-    const carbs = parseFloat(document.getElementById("foodCarbs").value) || 0;
-    const protein = parseFloat(document.getElementById("foodProtein").value) || 0;
-    const fat = parseFloat(document.getElementById("foodFat").value) || 0;
-    const calories = parseFloat(document.getElementById("foodCalories").value) || 0;
-    const tags = document.getElementById("foodTags").value.split(",").map(t => t.trim()).filter(t => t);
-    const maxQuantity = parseFloat(document.getElementById("foodMaxQuantity").value) || 1;
-    const minQuantity = parseFloat(document.getElementById("foodMinQuantity").value) || 0.5;
-    const step = parseFloat(document.getElementById("foodStep").value) || 0.5;
-    const multiplier = parseFloat(document.getElementById("foodMultiplier").value) || 1;
-    const keto = document.getElementById("foodKeto").checked;
-    const lowcarb = document.getElementById("foodLowCarb").checked;
-    const fillerLunch = document.getElementById("foodFillerLunch").checked;
-    const fillerDinner = document.getElementById("foodFillerDinner").checked;
-    const portionFixed = document.getElementById("foodPortionFixed").checked;
-    const seasonRange = document.getElementById("foodSeasonRange").value || "[4,9]";
+  event.preventDefault();
+  console.log("Yeni yemek ekleniyor...");
 
-    const mealTypes = [];
-    ['breakfast', 'lunch', 'dinner'].forEach(type => {
-        if (document.getElementById(`mealType_${type}`).checked) {
-            mealTypes.push(type);
-        }
-    });
+  const form = document.getElementById("addFoodFormInner");
+  console.log("Form durumu:", form);
 
-    const newFood = {
-        name,
-        category,
-        role,
-        carbs,
-        protein,
-        fat,
-        calories,
-        tags,
-        maxQuantity,
-        minQuantity,
-        step,
-        multiplier,
-        keto,
-        lowcarb,
-        fillerLunch,
-        fillerDinner,
-        portionFixed,
-        mealType: mealTypes,
-        seasonRange
-    };
+  // Formun varlığını kontrol et
+  if (!form) {
+    console.error("addFoodFormInner bulunamadı!");
+    showNotification("Form bulunamadı, lütfen sayfayı yenileyin!", "warning");
+    return;
+  }
 
-    // Yemeği kategoriye ekle
-    let storedFoodList = JSON.parse(localStorage.getItem("food_list")) || {};
-    if (!storedFoodList[category]) {
-        storedFoodList[category] = [];
+  const categoryName = document.getElementById("foodCategory").value;
+  const name = document.getElementById("foodName").value.trim();
+  const calories = parseFloat(document.getElementById("foodCalories").value) || 0;
+  const protein = parseFloat(document.getElementById("foodProtein").value) || 0;
+  const carbs = parseFloat(document.getElementById("foodCarbs").value) || 0;
+  const fat = parseFloat(document.getElementById("foodFat").value) || 0;
+  const maxQuantity = parseFloat(document.getElementById("foodMaxQuantity").value) || 1;
+  const minQuantity = parseFloat(document.getElementById("foodMinQuantity").value) || 0.5;
+  const step = parseFloat(document.getElementById("foodStep").value) || 0.5;
+  const tags = document.getElementById("foodTags").value.split(",").map(t => t.trim()).filter(t => t) || [];
+  const keto = document.getElementById("foodKeto").checked;
+  const lowcarb = document.getElementById("foodLowCarb").checked;
+  const fillerLunch = document.getElementById("foodFillerLunch").checked;
+  const fillerDinner = document.getElementById("foodFillerDinner").checked;
+  const portionFixed = document.getElementById("editFoodPortionFixed").checked;
+  const multiplier = parseFloat(document.getElementById("editFoodMultiplier").value) || 1;
+  
+  // Güvenli erişim için null kontrolü ekleyelim
+  let seasonFrom = 1; // Varsayılan değer
+  let seasonTo = 12;  // Varsayılan değer
+  
+  const seasonFromElement = document.getElementById("foodSeasonFrom");
+  const seasonToElement = document.getElementById("foodSeasonTo");
+  
+  if (seasonFromElement && seasonFromElement.value) {
+    seasonFrom = parseInt(seasonFromElement.value);
+  }
+  
+  if (seasonToElement && seasonToElement.value) {
+    seasonTo = parseInt(seasonToElement.value);
+  }
+
+  // MealType checkbox'larından değerleri topla
+  const mealTypes = [];
+  ["breakfast", "lunch", "dinner"].forEach(type => {
+    const checkbox = document.getElementById(`mealType_${type}`);
+    if (checkbox && checkbox.checked) {
+      mealTypes.push(type);
     }
-    storedFoodList[category].push(newFood);
-    localStorage.setItem("food_list", JSON.stringify(storedFoodList));
+  });
+  const mealType = mealTypes.length > 0 ? mealTypes : [];
 
-    // Kategorileri güncelle
-    categories = Object.keys(storedFoodList).map(cat => ({
-        name: cat,
-        items: storedFoodList[cat]
-    }));
+  // Mevcut yemek kontrolü
+  const existing = categories.some(cat => cat.items.some(item => item.name.toLowerCase() === name.toLowerCase()));
+  if (existing) {
+    showNotification("Bu isimde bir yemek zaten var!", "warning");
+    console.log(`Hata: ${name} zaten mevcut!`);
+    return;
+  }
 
-    closeAddFoodModal();
-    showNotification(`"${name}" yemeği eklendi!`, "success");
-    loadCategories();
+  // Yeni yemek objesi
+  const newFood = {
+    name,
+    calories,
+    protein,
+    carbs,
+    fat,
+    maxQuantity,
+    minQuantity,
+    step,
+    tags,
+    role: document.getElementById("foodRole").value || "mainDish",
+    mealType,
+    keto,
+    lowcarb,
+    fillerLunch,
+    fillerDinner,
+    portionFixed,
+    multiplier,
+    
+    // seasonRange formatını kullan
+    seasonRange: `[${seasonFrom},${seasonTo}]`
+  };
+
+  // Kategoriye ekle
+  let category = categories.find(cat => cat.name === categoryName);
+  if (category) {
+    category.items.push(newFood);
+  } else {
+    categories.push({
+      name: categoryName,
+      items: [newFood]
+    });
+  }
+
+  // Formu sıfırla
+  form.reset();
+  document.getElementById("foodMaxQuantity").value = 1;
+  document.getElementById("foodMinQuantity").value = 0.5;
+  document.getElementById("foodStep").value = 0.5;
+
+  // Kategorileri ve diğer panelleri güncelle
+  loadCategories();
+  searchEditFood("");
+  showNotification(`${name} yemeği eklendi!`, "success");
+  console.log(`Yemek eklendi: ${name}`);
+
+  // GitHub'a verileri gönder
+  updateGitHubData();
+
+  // Modal'ı kapat
+  closeAddFoodModal();
 }
-
 
         function renderWeekTabs() {
             const weekTabs = document.getElementById('weekTabs');
@@ -3552,97 +3600,102 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Yemek düzenleme ve kaydetme fonksiyonu
 function saveEditedFood(event) {
-    event.preventDefault();
-    saveState();
+  event.preventDefault();
+  saveState();
 
-    const originalName = document.getElementById('editFoodOriginalName').value;
-    const mealTypes = [];
-    ['breakfast', 'lunch', 'dinner'].forEach(type => {
-        const checkbox = document.getElementById(`editMealType_${type}`);
-        if (checkbox && checkbox.checked) {
-            mealTypes.push(type);
-        }
-    });
-
-    const updatedFood = {
-        name: document.getElementById('editFoodName').value.trim() || originalName,
-        calories: parseFloat(document.getElementById('editFoodCalories').value) || 0,
-        protein: parseFloat(document.getElementById('editFoodProtein').value) || 0,
-        carbs: parseFloat(document.getElementById('editFoodCarbs').value) || 0,
-        fat: parseFloat(document.getElementById('editFoodFat').value) || 0,
-        maxQuantity: parseFloat(document.getElementById('editFoodMaxQuantity').value) || 1,
-        minQuantity: parseFloat(document.getElementById('editFoodMinQuantity').value) || 0.5,
-        step: parseFloat(document.getElementById('editFoodStep').value) || 0.5,
-        role: document.getElementById('editFoodRole').value || 'mainDish',
-        tags: document.getElementById('editFoodTags').value.split(',').map(t => t.trim()).filter(t => t) || [],
-        mealType: mealTypes.length > 0 ? mealTypes : [],
-        keto: document.getElementById('editFoodKeto').heard,
-        lowcarb: document.getElementById('editFoodLowCarb').checked,
-        fillerLunch: document.getElementById('editFoodFillerLunch').checked,
-        fillerDinner: document.getElementById('editFoodFillerDinner').checked,
-        seasonRange: document.getElementById('editFoodSeasonRange').value || '[4,9]',
-        portionFixed: document.getElementById('editFoodPortionFixed').checked,
-        multiplier: parseFloat(document.getElementById('editFoodMultiplier').value) || 1
-    };
-
-    const food = findFood(originalName);
-    if (!food || !food.category) {
-        showNotification("Yemek bulunamadı!", "warning");
-        return;
+  const mealTypes = [];
+  ['breakfast', 'lunch', 'dinner'].forEach(type => {
+    const checkbox = document.getElementById(`editMealType_${type}`);
+    if (checkbox && checkbox.checked) {
+      mealTypes.push(type);
     }
+  });
 
-    // Mevcut yemeği güncelle
-    Object.assign(food, updatedFood);
+  // Güvenli erişim için null kontrolü ekleyelim
+  let seasonFrom = 1; // Varsayılan değer
+  let seasonTo = 12;  // Varsayılan değer
+  
+  const seasonFromElement = document.getElementById('editFoodSeasonFrom');
+  const seasonToElement = document.getElementById('editFoodSeasonTo');
+  
+  if (seasonFromElement && seasonFromElement.value) {
+    seasonFrom = parseInt(seasonFromElement.value);
+  }
+  
+  if (seasonToElement && seasonToElement.value) {
+    seasonTo = parseInt(seasonToElement.value);
+  }
 
-    // Kategoriye taşıma işlemi
-    const newCategory = document.getElementById('editFoodMoveToCategory').value;
-    if (newCategory && newCategory !== food.category) {
-        const oldCategory = categories.find(cat => cat.name === food.category);
-        if (oldCategory) {
-            oldCategory.items = oldCategory.items.filter(item => item.name !== originalName);
-            const targetCategory = categories.find(cat => cat.name === newCategory);
-            if (targetCategory) {
-                targetCategory.items.push(food);
-                food.category = newCategory;
+  const updatedFood = {
+    name: document.getElementById('editFoodName').value.trim() || document.getElementById('editFoodOriginalName').value,
+    calories: parseFloat(document.getElementById('editFoodCalories').value) || 0,
+    protein: parseFloat(document.getElementById('editFoodProtein').value) || 0,
+    carbs: parseFloat(document.getElementById('editFoodCarbs').value) || 0,
+    fat: parseFloat(document.getElementById('editFoodFat').value) || 0,
+    maxQuantity: parseFloat(document.getElementById('editFoodMaxQuantity').value) || 1,
+    minQuantity: parseFloat(document.getElementById('editFoodMinQuantity').value) || 0.5,
+    step: parseFloat(document.getElementById('editFoodStep').value) || 0.5,
+    role: document.getElementById('editFoodRole').value || 'mainDish',
+    tags: document.getElementById('editFoodTags').value.split(',').map(t => t.trim()).filter(t => t) || [],
+    mealType: mealTypes.length > 0 ? mealTypes : [],
+    keto: document.getElementById('editFoodKeto').checked,
+    lowcarb: document.getElementById('editFoodLowCarb').checked,
+    fillerLunch: document.getElementById('editFoodFillerLunch').checked,
+    fillerDinner: document.getElementById('editFoodFillerDinner').checked,
+    portionFixed: document.getElementById('editFoodPortionFixed').checked,
+    multiplier: parseFloat(document.getElementById('editFoodMultiplier').value) || 1,
+    
+    // seasonRange formatını kullan
+    seasonRange: `[${seasonFrom},${seasonTo}]`
+  };
+
+  const originalName = document.getElementById('editFoodOriginalName').value;
+  const food = findFood(originalName);
+  if (!food || !food.category) {
+    showNotification("Yemek bulunamadı!", "warning");
+    return;
+  }
+
+  // Mevcut yemeği güncelle
+  Object.assign(food, updatedFood);
+
+  // Kategoriye taşıma işlemi
+  const newCategory = document.getElementById('editFoodMoveToCategory').value;
+  if (newCategory && newCategory !== food.category) {
+    const oldCategory = categories.find(cat => cat.name === food.category);
+    if (oldCategory) {
+      oldCategory.items = oldCategory.items.filter(item => item.name !== originalName);
+      const targetCategory = categories.find(cat => cat.name === newCategory);
+      if (targetCategory) {
+        targetCategory.items.push(food);
+        food.category = newCategory;
+      }
+    }
+  }
+
+  // Öğün verisindeki katsayıları kontrol et ve yeni maxQuantity'ye uydur
+  weeks.forEach((week, wIndex) => {
+    Object.values(week.days).forEach(day => {
+      ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
+        if (day.meals[mealType]) {
+          day.meals[mealType].forEach(item => {
+            if (item.name === updatedFood.name && item.quantity > updatedFood.maxQuantity) {
+              item.quantity = updatedFood.maxQuantity;
             }
+          });
         }
-    }
-
-    // Öğün verisindeki katsayıları kontrol et ve yeni maxQuantity’ye uydur
-    weeks.forEach((week, wIndex) => {
-        Object.values(week.days).forEach(day => {
-            ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
-                if (day.meals[mealType]) {
-                    day.meals[mealType].forEach(item => {
-                        if (item.name === updatedFood.name && item.quantity > updatedFood.maxQuantity) {
-                            item.quantity = updatedFood.maxQuantity;
-                        }
-                    });
-                }
-            });
-        });
+      });
     });
+  });
 
-    // LocalStorage'ı güncelle
-    let storedFoodList = JSON.parse(localStorage.getItem("food_list")) || {};
-    if (storedFoodList[food.category]) {
-        const index = storedFoodList[food.category].findIndex(f => f.name === originalName);
-        if (index !== -1) {
-            storedFoodList[food.category][index] = updatedFood;
-        } else {
-            storedFoodList[food.category].push(updatedFood);
-        }
-    } else {
-        storedFoodList[food.category] = [updatedFood];
-    }
-    localStorage.setItem("food_list", JSON.stringify(storedFoodList));
-
-    closeEditFoodPanel();
-    loadCategories();
-    renderMeals();
-    calculateMacros();
-    showNotification(`"${updatedFood.name}" yemeği güncellendi!`, "success");
+  closeEditFoodPanel();
+  loadCategories();
+  renderMeals();
+  calculateMacros();
+  showNotification(`"${updatedFood.name}" yemeği güncellendi!`, "success");
 }
+
+
 
 function calculateWeeklyAverages() {
     const week = weeks[selectedWeek - 1];
@@ -5141,47 +5194,156 @@ function toggleInput(checkboxId, inputId) {
         });
     }
 }
+// Mevsim bilgisini localStorage'a kaydetme fonksiyonu
+function saveSeasonInfoToLocalStorage(foodName, seasonRange) {
+  try {
+    const seasonInfo = {
+      name: foodName,
+      seasonRange: seasonRange,
+      updatedAt: new Date().toISOString()
+    };
+    
+    // Mevcut kaydedilmiş bilgileri al
+    const savedSeasonInfos = JSON.parse(localStorage.getItem('foodSeasonInfos') || '[]');
+    
+    // Aynı yemek için varolan kaydı güncelle veya yeni kayıt ekle
+    const existingIndex = savedSeasonInfos.findIndex(info => info.name === foodName);
+    if (existingIndex !== -1) {
+      savedSeasonInfos[existingIndex] = seasonInfo;
+    } else {
+      savedSeasonInfos.push(seasonInfo);
+    }
+    
+    // Güncellenmiş listeyi kaydet
+    localStorage.setItem('foodSeasonInfos', JSON.stringify(savedSeasonInfos));
+    
+    console.log(`Mevsim bilgisi kaydedildi: ${foodName}, Aralık: ${seasonRange}`);
+  } catch (error) {
+    console.error('Mevsim bilgisi kaydedilemedi:', error);
+    showNotification('Mevsim bilgisi kaydetme hatası', 'error');
+  }
+}
+
+// Mevsim bilgisini localStorage'dan yükleme fonksiyonu
+function loadSeasonInfoFromLocalStorage(foodName) {
+  try {
+    const savedSeasonInfos = JSON.parse(localStorage.getItem('foodSeasonInfos') || '[]');
+    const savedInfo = savedSeasonInfos.find(info => info.name === foodName);
+    
+    return savedInfo ? savedInfo.seasonRange : null;
+  } catch (error) {
+    console.error('Mevsim bilgisi yüklenemedi:', error);
+    return null;
+  }
+}
+
 
 // saveEditedRule fonksiyonu
-function saveEditedRule(event) {
-    event.preventDefault();
-  closeAddFoodModal();
+function saveEditedFood(event) {
+  event.preventDefault();
+  saveState();
 
-    const indexField = document.getElementById('editRuleIndex');
-    const isEditMode = indexField.value !== '';
-    const index = parseInt(indexField.value);
-
-    const rule = {
-        type: 'frequency',
-        frequency: parseInt(document.getElementById('freqCount').value) || 1,
-        scope: document.getElementById('freqScope').value,
-        weekRange: document.getElementById('freqWeekRange').value
-    };
-
-    rule.nameCheck = document.getElementById('freqNameCheck').checked;
-    rule.name = rule.nameCheck ? document.getElementById('freqName').value.trim() : '';
-    rule.tagsCheck = document.getElementById('freqTagCheck').checked;
-    rule.tags = rule.tagsCheck ? document.getElementById('freqTag').value.split(',').map(t => t.trim()).filter(t => t) : [];
-    rule.roleCheck = document.getElementById('freqRoleCheck').checked;
-    rule.role = rule.roleCheck ? document.getElementById('freqRole').value : '';
-    rule.catCheck = document.getElementById('freqCatCheck').checked;
-    rule.category = rule.catCheck ? document.getElementById('freqCat').value : '';
-    rule.mealTypeCheck = rule.scope === 'meal';
-    rule.mealType = rule.mealTypeCheck ? document.getElementById('freqMeal').value : '';
-
-    if (isEditMode) {
-        rules[index] = rule;
-        showNotification("Kural güncellendi!", "success");
-        console.log("Güncellenen kural:", JSON.stringify(rule, null, 2));
-    } else {
-        rules.push(rule);
-        showNotification("Yeni kural eklendi!", "success");
-        console.log("Eklenen kural:", JSON.stringify(rule, null, 2));
+  const mealTypes = [];
+  ['breakfast', 'lunch', 'dinner'].forEach(type => {
+    const checkbox = document.getElementById(`editMealType_${type}`);
+    if (checkbox && checkbox.checked) {
+      mealTypes.push(type);
     }
+  });
 
-    loadRules();
-    cancelEditRule();
+  // Güvenli erişim için null kontrolü ekleyelim
+  let seasonFrom = 1; // Varsayılan değer
+  let seasonTo = 12;  // Varsayılan değer
+  
+  const seasonFromElement = document.getElementById('editFoodSeasonFrom');
+  const seasonToElement = document.getElementById('editFoodSeasonTo');
+  
+  if (seasonFromElement && seasonFromElement.value) {
+    seasonFrom = parseInt(seasonFromElement.value);
+  }
+  
+  if (seasonToElement && seasonToElement.value) {
+    seasonTo = parseInt(seasonToElement.value);
+  }
+
+  const updatedFood = {
+    name: document.getElementById('editFoodName').value.trim() || document.getElementById('editFoodOriginalName').value,
+    calories: parseFloat(document.getElementById('editFoodCalories').value) || 0,
+    protein: parseFloat(document.getElementById('editFoodProtein').value) || 0,
+    carbs: parseFloat(document.getElementById('editFoodCarbs').value) || 0,
+    fat: parseFloat(document.getElementById('editFoodFat').value) || 0,
+    maxQuantity: parseFloat(document.getElementById('editFoodMaxQuantity').value) || 1,
+    minQuantity: parseFloat(document.getElementById('editFoodMinQuantity').value) || 0.5,
+    step: parseFloat(document.getElementById('editFoodStep').value) || 0.5,
+    role: document.getElementById('editFoodRole').value || 'mainDish',
+    tags: document.getElementById('editFoodTags').value.split(',').map(t => t.trim()).filter(t => t) || [],
+    mealType: mealTypes.length > 0 ? mealTypes : [],
+    keto: document.getElementById('editFoodKeto').checked,
+    lowcarb: document.getElementById('editFoodLowCarb').checked,
+    fillerLunch: document.getElementById('editFoodFillerLunch').checked,
+    fillerDinner: document.getElementById('editFoodFillerDinner').checked,
+    portionFixed: document.getElementById('editFoodPortionFixed').checked,
+    multiplier: parseFloat(document.getElementById('editFoodMultiplier').value) || 1,
+    
+    // seasonRange formatını kullan
+    seasonRange: `[${seasonFrom},${seasonTo}]`
+  };
+
+  const originalName = document.getElementById('editFoodOriginalName').value;
+  const food = findFood(originalName);
+  if (!food || !food.category) {
+    showNotification("Yemek bulunamadı!", "warning");
+    return;
+  }
+
+  // Mevsim bilgisini localStorage'a kaydet
+  saveSeasonInfoToLocalStorage(originalName, updatedFood.seasonRange);
+
+  // Mevcut yemeği güncelle
+  Object.assign(food, updatedFood);
+
+  // Kategoriye taşıma işlemi
+  const newCategory = document.getElementById('editFoodMoveToCategory').value;
+  if (newCategory && newCategory !== food.category) {
+    const oldCategory = categories.find(cat => cat.name === food.category);
+    if (oldCategory) {
+      oldCategory.items = oldCategory.items.filter(item => item.name !== originalName);
+      const targetCategory = categories.find(cat => cat.name === newCategory);
+      if (targetCategory) {
+        targetCategory.items.push(food);
+        food.category = newCategory;
+      }
+    }
+  }
+
+  // Öğün verisindeki katsayıları kontrol et ve yeni maxQuantity'ye uydur
+  weeks.forEach((week, wIndex) => {
+    Object.values(week.days).forEach(day => {
+      ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
+        if (day.meals[mealType]) {
+          day.meals[mealType].forEach(item => {
+            if (item.name === updatedFood.name && item.quantity > updatedFood.maxQuantity) {
+              item.quantity = updatedFood.maxQuantity;
+            }
+          });
+        }
+      });
+    });
+  });
+
+  closeEditFoodPanel();
+  loadCategories();
+  renderMeals();
+  calculateMacros();
+  showNotification(`"${updatedFood.name}" yemeği güncellendi!`, "success");
 }
+
+
+
+
+
+
+
 
 // handleRuleSave fonksiyonu
 function handleRuleSave() {
@@ -5505,12 +5667,14 @@ toggleMealSelect('freqScope', 'freqMeal'); // Sıklık Kuralı için ilk durumu 
 toggleMealSelect('pairScope', 'pairMeal'); // Birliktelik Kuralı için ilk durumu ayarla
 
 function updateRuleForm(isEdit = false) {
-    console.log(`updateRuleForm: Kural tipi "${document.getElementById('ruleType').value}" seçildi, isEdit: ${isEdit}`);
-    const defaultForm = document.getElementById("defaultRuleForm");
+    const ruleTypeSelect = isEdit ? document.getElementById('editRuleType') : document.getElementById('ruleType');
+    const ruleForm = isEdit ? document.getElementById('editRuleForm') : document.getElementById('ruleForm');
 
     if (!ruleTypeSelect || !ruleForm) {
         console.warn("Kural formu veya kural tipi seçimi bulunamadı!");
-        showNotification("Kural formu elemanları eksik, lütfen sayfayı yenileyin!", 'error', 3000);
+        if (typeof showNotification === 'function') {
+            showNotification("Kural formu elemanları eksik, lütfen sayfayı yenileyin!", 'error', 3000);
+        }
         return;
     }
 
@@ -5606,12 +5770,17 @@ function updateRuleForm(isEdit = false) {
     } else if (ruleType === 'compatibility') {
         ruleForm.innerHTML = `
             <div class="mb-2">
-                <label class="form-label" for="${isEdit ? 'editFood' : 'food'}">Yemek</label>
-                <input class="form-control" id="${isEdit ? 'editFood' : 'food'}" placeholder="örn: balık" type="text" required />
+                <label class="form-label" for="${isEdit ? 'editKeyword1' : 'keyword1'}">Yemek</label>
+                <input class="form-control" id="${isEdit ? 'editKeyword1' : 'keyword1'}" placeholder="örn: balık" type="text" required />
             </div>
             <div class="mb-2">
                 <label class="form-label" for="${isEdit ? 'editCompatibleFood' : 'compatibleFood'}">Uyumlu Yemek</label>
                 <input class="form-control" id="${isEdit ? 'editCompatibleFood' : 'compatibleFood'}" placeholder="örn: salata" type="text" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editCompatibilityDegree' : 'compatibilityDegree'}">Uyumluluk Düzeyi</label>
+                <input class="form-control" id="${isEdit ? 'editCompatibilityDegree' : 'compatibilityDegree'}" type="range" min="-5" max="5" value="0" />
+                <span id="${isEdit ? 'editDegreeValue' : 'degreeValue'}">0</span> (-5: Çok Uyumsuz, +5: Çok Uyumlu)
             </div>
             <div class="mb-2">
                 <label class="form-label" for="${isEdit ? 'editCompatibilityType' : 'compatibilityType'}">Uyumluluk Tipi</label>
@@ -5620,6 +5789,7 @@ function updateRuleForm(isEdit = false) {
                     <option value="or">Veya</option>
                 </select>
             </div>
+            <button class="btn btn-success w-100" type="button" onclick="handleRuleSave()">Kuralı Kaydet</button>
         `;
     } else if (ruleType === 'maxRoleCount') {
         ruleForm.innerHTML = `
@@ -5652,6 +5822,191 @@ function updateRuleForm(isEdit = false) {
         ruleForm.innerHTML = '<p>Lütfen bir kural tipi seçin.</p>';
     }
 }
+
+// Optional: Add range input value display functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const compatibilityDegreeInputs = document.querySelectorAll('input[type="range"][id^="compatibilityDegree"], input[type="range"][id^="editCompatibilityDegree"]');
+    
+    compatibilityDegreeInputs.forEach(input => {
+        const degreeValueSpan = document.getElementById(input.id.replace('compatibilityDegree', 'degreeValue'));
+        
+        input.addEventListener('input', () => {
+            if (degreeValueSpan) {
+                degreeValueSpan.textContent = input.value;
+            }
+        });
+    });
+});function updateRuleForm(isEdit = false) {
+    const ruleTypeSelect = isEdit ? document.getElementById('editRuleType') : document.getElementById('ruleType');
+    const ruleForm = isEdit ? document.getElementById('editRuleForm') : document.getElementById('ruleForm');
+
+    if (!ruleTypeSelect || !ruleForm) {
+        console.warn("Kural formu veya kural tipi seçimi bulunamadı!");
+        if (typeof showNotification === 'function') {
+            showNotification("Kural formu elemanları eksik, lütfen sayfayı yenileyin!", 'error', 3000);
+        }
+        return;
+    }
+
+    const ruleType = ruleTypeSelect.value;
+    console.log(`updateRuleForm: Kural tipi "${ruleType}" seçildi, isEdit: ${isEdit}`);
+
+    // Form içeriğini temizle
+    ruleForm.innerHTML = '';
+
+    // Kural tipine göre form HTML'sini oluştur
+    if (ruleType === 'frequency') {
+        ruleForm.innerHTML = `
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editFrequency' : 'frequency'}">Frekans</label>
+                <input class="form-control" id="${isEdit ? 'editFrequency' : 'frequency'}" type="number" min="1" placeholder="Frekans" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editFrequencyType' : 'frequencyType'}">Frekans Tipi</label>
+                <select class="form-select" id="${isEdit ? 'editFrequencyType' : 'frequencyType'}" required>
+                    <option value="min">En Az</option>
+                    <option value="max">En Fazla</option>
+                    <option value="exact">Tam</option>
+                </select>
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editScope' : 'scope'}">Kapsam</label>
+                <select class="form-select" id="${isEdit ? 'editScope' : 'scope'}" required>
+                    <option value="meal">Öğün</option>
+                    <option value="day">Gün</option>
+                    <option value="week">Hafta</option>
+                </select>
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editNames' : 'names'}">Yemek İsimleri (Virgülle ayırın)</label>
+                <input class="form-control" id="${isEdit ? 'editNames' : 'names'}" placeholder="örn: balık, tavuk" type="text" />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editMealType' : 'mealType'}">Öğün Türü</label>
+                <select class="form-select" id="${isEdit ? 'editMealType' : 'mealType'}">
+                    <option value="">Tümü</option>
+                    <option value="breakfast">Kahvaltı</option>
+                    <option value="lunch">Öğle</option>
+                    <option value="dinner">Akşam</option>
+                </select>
+            </div>
+        `;
+    } else if (ruleType === 'dependOn') {
+        ruleForm.innerHTML = `
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editFood' : 'food'}">Yemek</label>
+                <input class="form-control" id="${isEdit ? 'editFood' : 'food'}" placeholder="örn: mayonez" type="text" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editRequiredFood' : 'requiredFood'}">Bağımlı Olduğu Yemek</label>
+                <input class="form-control" id="${isEdit ? 'editRequiredFood' : 'requiredFood'}" placeholder="örn: köfte" type="text" required />
+            </div>
+        `;
+    } else if (ruleType === 'categoryLock') {
+        ruleForm.innerHTML = `
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editCategory' : 'category'}">Kategori</label>
+                <input class="form-control" id="${isEdit ? 'editCategory' : 'category'}" placeholder="örn: KAHVALTI" type="text" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editMealType' : 'mealType'}">Öğün Türü</label>
+                <select class="form-select" id="${isEdit ? 'editMealType' : 'mealType'}" required>
+                    <option value="breakfast">Kahvaltı</option>
+                    <option value="lunch">Öğle</option>
+                    <option value="dinner">Akşam</option>
+                </select>
+            </div>
+        `;
+    } else if (ruleType === 'pairWith' || ruleType === 'avoidPair') {
+        ruleForm.innerHTML = `
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editPairFood1' : 'pairFood1'}">Birinci Yemek</label>
+                <input class="form-control" id="${isEdit ? 'editPairFood1' : 'pairFood1'}" placeholder="örn: balık" type="text" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editPairFood2' : 'pairFood2'}">İkinci Yemek</label>
+                <input class="form-control" id="${isEdit ? 'editPairFood2' : 'pairFood2'}" placeholder="örn: salata" type="text" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editMealType' : 'mealType'}">Öğün Türü</label>
+                <select class="form-select" id="${isEdit ? 'editMealType' : 'mealType'}">
+                    <option value="">Tümü</option>
+                    <option value="breakfast">Kahvaltı</option>
+                    <option value="lunch">Öğle</option>
+                    <option value="dinner">Akşam</option>
+                </select>
+            </div>
+        `;
+    } else if (ruleType === 'compatibility') {
+        ruleForm.innerHTML = `
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editKeyword1' : 'keyword1'}">Yemek</label>
+                <input class="form-control" id="${isEdit ? 'editKeyword1' : 'keyword1'}" placeholder="örn: balık" type="text" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editCompatibleFood' : 'compatibleFood'}">Uyumlu Yemek</label>
+                <input class="form-control" id="${isEdit ? 'editCompatibleFood' : 'compatibleFood'}" placeholder="örn: salata" type="text" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editCompatibilityDegree' : 'compatibilityDegree'}">Uyumluluk Düzeyi</label>
+                <input class="form-control" id="${isEdit ? 'editCompatibilityDegree' : 'compatibilityDegree'}" type="range" min="-5" max="5" value="0" />
+                <span id="${isEdit ? 'editDegreeValue' : 'degreeValue'}">0</span> (-5: Çok Uyumsuz, +5: Çok Uyumlu)
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editCompatibilityType' : 'compatibilityType'}">Uyumluluk Tipi</label>
+                <select class="form-select" id="${isEdit ? 'editCompatibilityType' : 'compatibilityType'}" required>
+                    <option value="and">Ve</option>
+                    <option value="or">Veya</option>
+                </select>
+            </div>
+            <button class="btn btn-success w-100" type="button" onclick="handleRuleSave()">Kuralı Kaydet</button>
+        `;
+    } else if (ruleType === 'maxRoleCount') {
+        ruleForm.innerHTML = `
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editRole' : 'role'}">Rol</label>
+                <input class="form-control" id="${isEdit ? 'editRole' : 'role'}" placeholder="örn: mainDish" type="text" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editCount' : 'count'}">Maksimum Sayı</label>
+                <input class="form-control" id="${isEdit ? 'editCount' : 'count'}" type="number" min="0" placeholder="Maksimum sayı" required />
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editMealType' : 'mealType'}">Öğün Türleri (Birden fazla seçilebilir)</label>
+                <select class="form-select" id="${isEdit ? 'editMealType' : 'mealType'}" multiple required>
+                    <option value="breakfast">Kahvaltı</option>
+                    <option value="lunch">Öğle</option>
+                    <option value="dinner">Akşam</option>
+                </select>
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="${isEdit ? 'editScope' : 'scope'}">Kapsam</label>
+                <select class="form-select" id="${isEdit ? 'editScope' : 'scope'}" required>
+                    <option value="meal">Öğün</option>
+                    <option value="day">Gün</option>
+                    <option value="week">Hafta</option>
+                </select>
+            </div>
+        `;
+    } else {
+        ruleForm.innerHTML = '<p>Lütfen bir kural tipi seçin.</p>';
+    }
+}
+
+// Optional: Add range input value display functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const compatibilityDegreeInputs = document.querySelectorAll('input[type="range"][id^="compatibilityDegree"], input[type="range"][id^="editCompatibilityDegree"]');
+    
+    compatibilityDegreeInputs.forEach(input => {
+        const degreeValueSpan = document.getElementById(input.id.replace('compatibilityDegree', 'degreeValue'));
+        
+        input.addEventListener('input', () => {
+            if (degreeValueSpan) {
+                degreeValueSpan.textContent = input.value;
+            }
+        });
+    });
+});
     // Tüm formları varsayılan olarak gizle
     defaultForm.style.display = 'none';
     frequencyForm.style.display = 'none';
@@ -6195,11 +6550,12 @@ function addMealItem(mealType, keyword, role, quantity) {
     generatePlan(settings);
 }
 
+// generateFastPlan fonksiyonunu şu şekilde değiştirin:
 function generateFastPlan() {
     console.log("generateFastPlan başladı...");
     saveState();
 
-    // AvailableFoods’u tanımla
+    // AvailableFoods'u tanımla
     const availableFoods = categories.flatMap(cat => cat.items)
         .filter(f => f.calories > 0 && (dietMode === 'keto' ? f.keto : f.lowcarb));
 
@@ -6279,6 +6635,10 @@ function generateFastPlan() {
     weeks = plans[bestPlanIndex];
     selectedDay = "monday";
     selectedWeek = 1;
+    
+    // ÖNEMLİ: Her kahvaltıya Kurşun Geçirmez Kahve'yi zorunlu olarak ekle
+    forceBulletproofCoffee();
+    
     renderMeals();
     calculateMacros();
     console.log("En iyi plan seçildi:", bestPlanIndex + 1);
@@ -6288,6 +6648,63 @@ function generateFastPlan() {
         showNotification("Hızlı planlama tamamlandı! En iyi plan seçildi.", "success");
     }
 }
+
+// Bu fonksiyonu generateFastPlan fonksiyonu tanımının üstüne ekleyin
+function forceBulletproofCoffee() {
+    console.log("forceBulletproofCoffee: Kahvaltılara Kurşun Geçirmez Kahve ekleniyor...");
+    
+    // Kurşun Geçirmez Kahve'yi bul
+    let coffee = null;
+    
+    // Önce tam eşleşme kontrol et
+    for (const category of categories) {
+        coffee = category.items.find(item => item.name === "Kurşun Geçirmez Kahve");
+        if (coffee) break;
+    }
+    
+    // Tam eşleşme bulunamadıysa esnek arama yap
+    if (!coffee) {
+        for (const category of categories) {
+            coffee = category.items.find(item => 
+                item.name.toLowerCase().includes("kurşun") && 
+                item.name.toLowerCase().includes("kahve")
+            );
+            if (coffee) break;
+        }
+    }
+    
+    // Eğer hala bulunamadıysa sabit bir nesne oluştur
+    if (!coffee) {
+        coffee = {
+            name: "Kurşun Geçirmez Kahve",
+            calories: 200,
+            protein: 0,
+            carbs: 0,
+            fat: 22,
+            role: "drink",
+            quantity: 1
+        };
+        console.log("Varsayılan kahve nesnesi oluşturuldu");
+    }
+    
+    // Tüm haftalarda tüm günlerin kahvaltısına kahveyi ekle
+    weeks.forEach(week => {
+        Object.values(week.days).forEach(day => {
+            // Kahvaltıyı tamamen sıfırla
+            day.meals.breakfast = [];
+            
+            // Kahveyi ekle
+            day.meals.breakfast.push({
+                name: coffee.name,
+                quantity: 1,
+                role: coffee.role || "drink"
+            });
+        });
+    });
+    
+    console.log("Tüm kahvaltılara zorunlu olarak kahve eklendi!");
+}
+
 
 function getPlanningSettings() {
     const patientData = currentPatient ? JSON.parse(localStorage.getItem(`patient_${currentPatient}`) || '{}') : {};
@@ -6631,6 +7048,45 @@ function generatePlan(settings) {
         }
     }
 
+    function addFixedBreakfastToWeek(week, settings) {
+        if (!week || !week.days) return;
+
+        // Sabit kahvaltı yemeğini alma
+        const fixedBreakfastName = document.getElementById('fixedBreakfastMeal')?.value || "Kurşun Geçirmez Kahve";
+
+        // Tüm günlerde kahvaltıya sabit yemeği ekle
+        Object.values(week.days).forEach(day => {
+            // Kahvaltı dizisini oluştur veya sıfırla
+            day.meals.breakfast = [];
+
+            // Yemeği bul - esnek arama
+            const fixedBreakfastFood = availableFoods.find(f => 
+                f.name === fixedBreakfastName || 
+                f.name.toLowerCase().includes(fixedBreakfastName.toLowerCase())
+            );
+
+            // Eğer yemek bulunduysa ekle
+            if (fixedBreakfastFood) {
+                day.meals.breakfast.push({
+                    name: fixedBreakfastFood.name,
+                    quantity: 1,
+                    role: fixedBreakfastFood.role || "drink"
+                });
+                console.log(`Sabit kahvaltı eklendi: ${fixedBreakfastFood.name}`);
+            } else {
+                console.warn(`Sabit kahvaltı yemeği bulunamadı: ${fixedBreakfastName}`);
+
+                // Eğer kahve bulunamazsa, manuel olarak bir kahve girdisi ekle
+                day.meals.breakfast.push({
+                    name: "Kurşun Geçirmez Kahve",
+                    quantity: 1,
+                    role: "drink"
+                });
+                console.log("Manuel Kurşun Geçirmez Kahve eklendi");
+            }
+        });
+    }
+
     const availableFoods = categories.flatMap(cat => cat.items)
         .filter(f => {
             const isValid = f.calories > 0 && 
@@ -6640,9 +7096,6 @@ function generatePlan(settings) {
                                f.tags.some(t => t.toLowerCase().includes(df.toLowerCase()))
                            ) &&
                            isFoodInSeason(f);
-            if (f.name.toLowerCase().includes("pastırma")) {
-                console.log(`Pastırma kontrolü: Kalori=${f.calories}, Keto=${f.keto}, Lowcarb=${f.lowcarb}, Sevmediği yemek=${settings.dislikedFoods}, Mevsim uygun mu=${isFoodInSeason(f)}, Dahil mi=${isValid}`);
-            }
             return isValid;
         })
         .sort((a, b) => {
@@ -6675,12 +7128,14 @@ function generatePlan(settings) {
         showNotification("Makro hedefleri eksik, planlama yapılamadı!", "warning");
         return;
     }
-const excludedBySeason = categories.flatMap(cat => cat.items)
-    .filter(f => f.calories > 0 && !isFoodInSeason(f))
-    .map(f => f.name);
-if (excludedBySeason.length > 0) {
-    showNotification(`${excludedBySeason.length} yemek mevsim dışı olduğu için plana dahil edilmedi.`, "info");
-}
+
+    const excludedBySeason = categories.flatMap(cat => cat.items)
+        .filter(f => f.calories > 0 && !isFoodInSeason(f))
+        .map(f => f.name);
+    if (excludedBySeason.length > 0) {
+        showNotification(`${excludedBySeason.length} yemek mevsim dışı olduğu için plana dahil edilmedi.`, "info");
+    }
+
     const ruleAppliedFoods = new Set();
 
     prioritizedRules.forEach(rule => {
@@ -6844,23 +7299,44 @@ if (excludedBySeason.length > 0) {
                 const mealFoods = availableFoods.filter(f => isMealTypeCompatible(f, mealType) &&
                     !settings.dislikedFoods.some(df => f.name.toLowerCase().includes(df.toLowerCase()) || f.tags.some(t => t.toLowerCase().includes(df.toLowerCase()))));
                 const fillers = availableFoods.filter(f => (mealType === 'lunch' ? f.fillerLunch : f.fillerDinner) &&
-                    isMealTypeCompatible(f, mealType) && !currentMeal.some(item => item.name === f.name));
+                    isMealTypeCompatible(f, mealType) && !currentMeal.some(item => item.name === f.name) && isFoodInSeason(f));
 
                 if (mealType === 'breakfast') {
-                    currentMeal = [];
-                    const bulletproofCoffee = availableFoods.find(f => f.name === "Kurşun Geçirmez Kahve");
-                    if (bulletproofCoffee && isMealTypeCompatible(bulletproofCoffee, mealType)) {
-                        currentMeal.push({
-                            name: "Kurşun Geçirmez Kahve",
+                    // Kahvaltı öğününü sıfırla
+                    dayData.meals.breakfast = [];
+                    
+                    // Daha esnek bir arama yaklaşımı kullan - tam eşleşme veya içerik araması yap
+                    const bulletproofCoffee = availableFoods.find(f => 
+                        f.name === "Kurşun Geçirmez Kahve" || 
+                        f.name.toLowerCase().includes("kurşun geçirmez") && f.name.toLowerCase().includes("kahve")
+                    );
+                    
+                    if (bulletproofCoffee) {
+                        // Öğüne ekle
+                        dayData.meals.breakfast.push({
+                            name: bulletproofCoffee.name,
                             quantity: 1,
                             unit: "fincan",
-                            role: bulletproofCoffee.role || "drink",
-                            calories: bulletproofCoffee.calories || 90,
-                            protein: bulletproofCoffee.protein || 0,
-                            fat: bulletproofCoffee.fat || 10,
-                            carbs: bulletproofCoffee.carbs || 0
+                            role: bulletproofCoffee.role || "drink"
                         });
-                        console.log(`Kahvaltı: Kurşun Geçirmez Kahve eklendi.`);
+                        console.log(`Kahvaltı: ${bulletproofCoffee.name} başarıyla eklendi.`);
+                    } else {
+                        // Bulunamadıysa uyarı verelim - debugging için yararlı
+                        console.warn("DİKKAT: Kurşun Geçirmez Kahve yemek listesinde bulunamadı!");
+                        
+                        // Alternatif çözüm: Kahve içeren herhangi bir içecek ekle
+                        const anyBulletproofCoffee = availableFoods.find(f => 
+                            f.name.toLowerCase().includes("kahve") && f.role === "drink"
+                        );
+                        
+                        if (anyBulletproofCoffee) {
+                            dayData.meals.breakfast.push({
+                                name: anyBulletproofCoffee.name,
+                                quantity: 1,
+                                role: "drink"
+                            });
+                            console.log(`Kahvaltı: Alternatif olarak ${anyBulletproofCoffee.name} eklendi.`);
+                        }
                     }
                 } else {
                     const min = mealType === 'lunch' ? settings.lunchMin : settings.dinnerMin;
@@ -6885,35 +7361,35 @@ if (excludedBySeason.length > 0) {
 
                     // Ana yemek ekleme
                     while (currentMeal.length < max && mealFoods.length > 0) {
-                        const bestFood = findBestFood(mealFoods, {
-                            calories: mealTargets.calories - currentCalories,
-                            protein: mealTargets.protein - currentProtein,
-                            fat: mealTargets.fat - currentFat,
-                            carbs: mealTargets.carbs - currentCarbs
-                        }, currentMeal, mealType, prioritizedRules);
+    const bestFood = findBestFood(mealFoods, {
+      calories: mealTargets.calories - currentCalories,
+      protein: mealTargets.protein - currentProtein,
+      fat: mealTargets.fat - currentFat,
+      carbs: mealTargets.carbs - currentCarbs
+    }, currentMeal, mealType, prioritizedRules);
 
-                        if (!bestFood) {
-                            console.log(`Ana yemek ekleme (${mealType}): Uygun yemek bulunamadı.`);
-                            break;
-                        }
+    if (!bestFood) {
+      console.log(`Ana yemek ekleme (${mealType}): Uygun yemek bulunamadı.`);
+      break;
+    }
 
-                        if ((mealType === 'lunch' || mealType === 'dinner') && bestFood.role === 'mainDish') {
-                            const mainDishCount = currentMeal.filter(item => {
-                                const food = availableFoods.find(f => f.name === item.name);
-                                return food && food.role === 'mainDish';
-                            }).length;
-                            if (mainDishCount >= 1) {
-                                console.log(`Engellendi (${mealType}): ${bestFood.name} (mainDish, zaten bir mainDish var)`);
-                                mealFoods.splice(mealFoods.indexOf(bestFood), 1);
-                                continue;
-                            }
-                        }
+    if ((mealType === 'lunch' || mealType === 'dinner') && bestFood.role === 'mainDish') {
+      const mainDishCount = currentMeal.filter(item => {
+        const food = availableFoods.find(f => f.name === item.name);
+        return food && food.role === 'mainDish';
+      }).length;
+      if (mainDishCount >= 1) {
+        console.log(`Engellendi (${mealType}): ${bestFood.name} (mainDish, zaten bir mainDish var)`);
+        mealFoods.splice(mealFoods.indexOf(bestFood), 1);
+        continue;
+      }
+    }
 
-                        if ((mealType === 'lunch' || mealType === 'dinner') && checkKeywordConflict(bestFood.name, currentMeal, mealType)) {
-                            console.log(`Engellendi (${mealType}): ${bestFood.name} (etiket çakışması)`);
-                            mealFoods.splice(mealFoods.indexOf(bestFood), 1);
-                            continue;
-                        }
+    if ((mealType === 'lunch' || mealType === 'dinner') && checkKeywordConflict(bestFood.name, currentMeal, mealType)) {
+      console.log(`Engellendi (${mealType}): ${bestFood.name} (etiket çakışması)`);
+      mealFoods.splice(mealFoods.indexOf(bestFood), 1);
+      continue;
+    }
 
                         const quantity = calculateOptimalQuantity(bestFood, {
                             calories: mealTargets.calories - currentCalories,
@@ -6942,35 +7418,35 @@ if (excludedBySeason.length > 0) {
 
                     // Dolgu yemek ekleme
                     while ((currentProtein < mealTargets.protein * 0.95 || currentFat < mealTargets.fat * 0.95) && fillers.length > 0 && currentMeal.length < max) {
-                        const bestFiller = findBestFood(fillers, {
-                            calories: mealTargets.calories - currentCalories,
-                            protein: mealTargets.protein - currentProtein,
-                            fat: mealTargets.fat - currentFat,
-                            carbs: mealTargets.carbs - currentCarbs
-                        }, currentMeal, mealType, prioritizedRules);
+    const bestFiller = findBestFood(fillers, {
+      calories: mealTargets.calories - currentCalories,
+      protein: mealTargets.protein - currentProtein,
+      fat: mealTargets.fat - currentFat,
+      carbs: mealTargets.carbs - currentCarbs
+    }, currentMeal, mealType, prioritizedRules);
 
-                        if (!bestFiller) {
-                            console.log(`Dolgu yemek ekleme (${mealType}): Uygun dolgu yemeği bulunamadı.`);
-                            break;
-                        }
+    if (!bestFiller) {
+      console.log(`Dolgu yemek ekleme (${mealType}): Uygun dolgu yemeği bulunamadı.`);
+      break;
+    }
 
-                        if ((mealType === 'lunch' || mealType === 'dinner') && bestFiller.role === 'mainDish') {
-                            const mainDishCount = currentMeal.filter(item => {
-                                const food = availableFoods.find(f => f.name === item.name);
-                                return food && food.role === 'mainDish';
-                            }).length;
-                            if (mainDishCount >= 1) {
-                                console.log(`Engellendi (${mealType}): ${bestFiller.name} (mainDish, zaten bir mainDish var)`);
-                                fillers.splice(fillers.indexOf(bestFiller), 1);
-                                continue;
-                            }
-                        }
-
-                        if ((mealType === 'lunch' || mealType === 'dinner') && checkKeywordConflict(bestFiller.name, currentMeal, mealType)) {
-                            console.log(`Engellendi (${mealType}): ${bestFiller.name} (etiket çakışması)`);
-                            fillers.splice(fillers.indexOf(bestFiller), 1);
-                            continue;
-                        }
+    if ((mealType === 'lunch' || mealType === 'dinner') && bestFiller.role === 'mainDish') {
+      const mainDishCount = currentMeal.filter(item => {
+        const food = availableFoods.find(f => f.name === item.name);
+        return food && food.role === 'mainDish';
+      }).length;
+      if (mainDishCount >= 1) {
+        console.log(`Engellendi (${mealType}): ${bestFiller.name} (mainDish, zaten bir mainDish var)`);
+        fillers.splice(fillers.indexOf(bestFiller), 1);
+        continue;
+      }
+    }
+                         // BURAYA DOLGU YEMEKLERİ İÇİN KELİME ÇAKIŞMASI KONTROLÜ EKLİYORUZ
+    if ((mealType === 'lunch' || mealType === 'dinner') && checkKeywordConflict(bestFiller.name, currentMeal, mealType)) {
+      console.log(`Engellendi (${mealType}): ${bestFiller.name} (etiket çakışması - dolgu yemeği)`);
+      fillers.splice(fillers.indexOf(bestFiller), 1);
+      continue;
+    }
 
                         const quantity = calculateOptimalQuantity(bestFiller, {
                             calories: mealTargets.calories - currentCalories,
@@ -7005,190 +7481,174 @@ if (excludedBySeason.length > 0) {
         });
     });
 
-    weeks.forEach((week, weekIndex) => {
-        Object.values(week.days).forEach(day => {
-            ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
-                let mealItems = day.meals[mealType] || [];
-                prioritizedRules.filter(rule => rule.type === 'dependOn').forEach(rule => {
-                    const hasRequired = mealItems.some(item => item.name.toLowerCase().includes(rule.requiredFood.toLowerCase()));
-                    const hasFood = mealItems.some(item => item.name.toLowerCase().includes(rule.food.toLowerCase()));
-                    if (hasFood && !hasRequired) {
-                        day.meals[mealType] = mealItems.filter(item => !item.name.toLowerCase().includes(rule.food.toLowerCase()));
-                        console.log(`Son kontrol: (${rule.id}) ${rule.food} kaldırıldı çünkü ${rule.requiredFood} yok, öğün: ${mealType}`);
-                    }
-                });
-            });
-        });
-    });
-
     renderMeals();
     calculateMacros();
 
     // Kural doğrulama
-const appliedRules = [];
-const unappliedRules = [];
+    const appliedRules = [];
+    const unappliedRules = [];
 
-prioritizedRules.forEach(rule => {
-    let applied = false;
-    let reason = ''; // Uygulanmama nedeni
+    prioritizedRules.forEach(rule => {
+        let applied = false;
+        let reason = ''; // Uygulanmama nedeni
 
-    weeks.forEach(week => {
-        Object.values(week.days).forEach(day => {
-            ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
-                const mealItems = day.meals[mealType] || [];
+        weeks.forEach(week => {
+            Object.values(week.days).forEach(day => {
+                ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
+                    const mealItems = day.meals[mealType] || [];
 
-                if (rule.type === 'frequency') {
-                    const targetName = rule.name || (rule.names?.length ? rule.names.join(', ') : 'yemek');
-                    const countMatches = () => {
-                        if (rule.roleCheck && rule.role) {
-                            return mealItems.filter(item => {
+                    if (rule.type === 'frequency') {
+                        const targetName = rule.name || (rule.names?.length ? rule.names.join(', ') : 'yemek');
+                        const countMatches = () => {
+                            if (rule.roleCheck && rule.role) {
+                                return mealItems.filter(item => {
+                                    const food = availableFoods.find(f => f.name === item.name);
+                                    return food && food.role === rule.role;
+                                }).length;
+                            } else if (rule.nameCheck && rule.names?.length) {
+                                return mealItems.filter(item =>
+                                    rule.names.some(name => item.name.toLowerCase().includes(name.toLowerCase()))
+                                ).length;
+                            } else if (rule.nameCheck && rule.name) {
+                                return mealItems.filter(item => item.name.toLowerCase().includes(rule.name.toLowerCase())).length;
+                            }
+                            return 0;
+                        };
+
+                        if (rule.scope === 'meal' && rule.mealType === mealType) {
+                            const count = countMatches();
+                            if (rule.frequencyType === 'min' && count >= rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'min') {
+                                reason = `"${targetName}" en az ${rule.frequency} kez olmalı, ancak ${count} kez bulundu (öğün: ${mealType}).`;
+                            }
+                            if (rule.frequencyType === 'max' && count <= rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'max') {
+                                reason = `"${targetName}" maksimum ${rule.frequency} kez olmalı, ancak ${count} kez bulundu (öğün: ${mealType}).`;
+                            }
+                            if (rule.frequencyType === 'exact' && count === rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'exact') {
+                                reason = `"${targetName}" tam ${rule.frequency} kez olmalı, ancak ${count} kez bulundu (öğün: ${mealType}).`;
+                            }
+                        } else if (rule.scope === 'day') {
+                            let dailyCount = 0;
+                            ['breakfast', 'lunch', 'dinner'].forEach(mt => {
+                                const mealItems = day.meals[mt] || [];
+                                dailyCount += countMatches();
+                            });
+                            if (rule.frequencyType === 'min' && dailyCount >= rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'min') {
+                                reason = `"${targetName}" günde en az ${rule.frequency} kez olmalı, ancak ${dailyCount} kez bulundu.`;
+                            }
+                            if (rule.frequencyType === 'max' && dailyCount <= rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'max') {
+                                reason = `"${targetName}" günde maksimum ${rule.frequency} kez olmalı, ancak ${dailyCount} kez bulundu.`;
+                            }
+                            if (rule.frequencyType === 'exact' && dailyCount === rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'exact') {
+                                reason = `"${targetName}" günde tam ${rule.frequency} kez olmalı, ancak ${dailyCount} kez bulundu.`;
+                            }
+                        } else if (rule.scope === 'week') {
+                            let weeklyCount = 0;
+                            Object.values(week.days).forEach(day => {
+                                ['breakfast', 'lunch', 'dinner'].forEach(mt => {
+                                    const mealItems = day.meals[mt] || [];
+                                    weeklyCount += countMatches();
+                                });
+                            });
+                            if (rule.frequencyType === 'min' && weeklyCount >= rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'min') {
+                                reason = `"${targetName}" haftada en az ${rule.frequency} kez olmalı, ancak ${weeklyCount} kez bulundu.`;
+                            }
+                            if (rule.frequencyType === 'max' && weeklyCount <= rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'max') {
+                                reason = `"${targetName}" haftada maksimum ${rule.frequency} kez olmalı, ancak ${weeklyCount} kez bulundu.`;
+                            }
+                            if (rule.frequencyType === 'exact' && weeklyCount === rule.frequency) {
+                                applied = true;
+                            } else if (rule.frequencyType === 'exact') {
+                                reason = `"${targetName}" haftada tam ${rule.frequency} kez olmalı, ancak ${weeklyCount} kez bulundu.`;
+                            }
+                        }
+                    } else if (rule.type === 'dependOn' && rule.food && rule.requiredFood) {
+                        const hasFood = mealItems.some(item => item.name.toLowerCase().includes(rule.food.toLowerCase()));
+                        const hasRequired = mealItems.some(item => item.name.toLowerCase().includes(rule.requiredFood.toLowerCase()));
+                        if (hasFood && hasRequired) {
+                            applied = true;
+                        } else if (!hasFood) {
+                            applied = true; // Bağımlı yemek yoksa kural otomatik olarak uygulanmış sayılır
+                        } else {
+                            reason = `"${rule.food}" mevcut, ancak bağımlı olduğu "${rule.requiredFood}" bulunamadı (öğün: ${mealType}).`;
+                        }
+                    } else if (rule.type === 'maxRoleCount' && rule.role && rule.count !== undefined) {
+                        // mealType bir dizi olabilir veya tek bir değer
+                        const applicableMealTypes = Array.isArray(rule.mealType) ? rule.mealType : [rule.mealType];
+                        if (applicableMealTypes.includes(mealType)) {
+                            const roleCount = mealItems.filter(item => {
                                 const food = availableFoods.find(f => f.name === item.name);
                                 return food && food.role === rule.role;
                             }).length;
-                        } else if (rule.nameCheck && rule.names?.length) {
-                            return mealItems.filter(item =>
-                                rule.names.some(name => item.name.toLowerCase().includes(name.toLowerCase()))
-                            ).length;
-                        } else if (rule.nameCheck && rule.name) {
-                            return mealItems.filter(item => item.name.toLowerCase().includes(rule.name.toLowerCase())).length;
-                        }
-                        return 0;
-                    };
-
-                    if (rule.scope === 'meal' && rule.mealType === mealType) {
-                        const count = countMatches();
-                        if (rule.frequencyType === 'min' && count >= rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'min') {
-                            reason = `"${targetName}" en az ${rule.frequency} kez olmalı, ancak ${count} kez bulundu (öğün: ${mealType}).`;
-                        }
-                        if (rule.frequencyType === 'max' && count <= rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'max') {
-                            reason = `"${targetName}" maksimum ${rule.frequency} kez olmalı, ancak ${count} kez bulundu (öğün: ${mealType}).`;
-                        }
-                        if (rule.frequencyType === 'exact' && count === rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'exact') {
-                            reason = `"${targetName}" tam ${rule.frequency} kez olmalı, ancak ${count} kez bulundu (öğün: ${mealType}).`;
-                        }
-                    } else if (rule.scope === 'day') {
-                        let dailyCount = 0;
-                        ['breakfast', 'lunch', 'dinner'].forEach(mt => {
-                            const mealItems = day.meals[mt] || [];
-                            dailyCount += countMatches();
-                        });
-                        if (rule.frequencyType === 'min' && dailyCount >= rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'min') {
-                            reason = `"${targetName}" günde en az ${rule.frequency} kez olmalı, ancak ${dailyCount} kez bulundu.`;
-                        }
-                        if (rule.frequencyType === 'max' && dailyCount <= rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'max') {
-                            reason = `"${targetName}" günde maksimum ${rule.frequency} kez olmalı, ancak ${dailyCount} kez bulundu.`;
-                        }
-                        if (rule.frequencyType === 'exact' && dailyCount === rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'exact') {
-                            reason = `"${targetName}" günde tam ${rule.frequency} kez olmalı, ancak ${dailyCount} kez bulundu.`;
-                        }
-                    } else if (rule.scope === 'week') {
-                        let weeklyCount = 0;
-                        Object.values(week.days).forEach(day => {
-                            ['breakfast', 'lunch', 'dinner'].forEach(mt => {
-                                const mealItems = day.meals[mt] || [];
-                                weeklyCount += countMatches();
-                            });
-                        });
-                        if (rule.frequencyType === 'min' && weeklyCount >= rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'min') {
-                            reason = `"${targetName}" haftada en az ${rule.frequency} kez olmalı, ancak ${weeklyCount} kez bulundu.`;
-                        }
-                        if (rule.frequencyType === 'max' && weeklyCount <= rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'max') {
-                            reason = `"${targetName}" haftada maksimum ${rule.frequency} kez olmalı, ancak ${weeklyCount} kez bulundu.`;
-                        }
-                        if (rule.frequencyType === 'exact' && weeklyCount === rule.frequency) {
-                            applied = true;
-                        } else if (rule.frequencyType === 'exact') {
-                            reason = `"${targetName}" haftada tam ${rule.frequency} kez olmalı, ancak ${weeklyCount} kez bulundu.`;
-                        }
-                    }
-                } else if (rule.type === 'dependOn' && rule.food && rule.requiredFood) {
-                    const hasFood = mealItems.some(item => item.name.toLowerCase().includes(rule.food.toLowerCase()));
-                    const hasRequired = mealItems.some(item => item.name.toLowerCase().includes(rule.requiredFood.toLowerCase()));
-                    if (hasFood && hasRequired) {
-                        applied = true;
-                    } else if (!hasFood) {
-                        applied = true; // Bağımlı yemek yoksa kural otomatik olarak uygulanmış sayılır
-                    } else {
-                        reason = `"${rule.food}" mevcut, ancak bağımlı olduğu "${rule.requiredFood}" bulunamadı (öğün: ${mealType}).`;
-                    }
-                } else if (rule.type === 'maxRoleCount' && rule.role && rule.count !== undefined) {
-                    // mealType bir dizi olabilir veya tek bir değer
-                    const applicableMealTypes = Array.isArray(rule.mealType) ? rule.mealType : [rule.mealType];
-                    if (applicableMealTypes.includes(mealType)) {
-                        const roleCount = mealItems.filter(item => {
-                            const food = availableFoods.find(f => f.name === item.name);
-                            return food && food.role === rule.role;
-                        }).length;
-                        if (roleCount <= rule.count) {
-                            applied = true;
+                            if (roleCount <= rule.count) {
+                                applied = true;
+                            } else {
+                                reason = `"${rule.role}" rolü için maksimum ${rule.count} yemek olmalı, ancak ${roleCount} yemek bulundu (öğün: ${mealType}).`;
+                            }
                         } else {
-                            reason = `"${rule.role}" rolü için maksimum ${rule.count} yemek olmalı, ancak ${roleCount} yemek bulundu (öğün: ${mealType}).`;
+                            applied = true; // Kural bu öğün için geçerli değilse uygulanmış sayılır
                         }
-                    } else {
-                        applied = true; // Kural bu öğün için geçerli değilse uygulanmış sayılır
                     }
-                }
+                });
             });
         });
+
+        if (applied) {
+            appliedRules.push(`(${rule.id}) ${rule.type} (${rule.frequencyType || '-'})`);
+        } else {
+            unappliedRules.push({
+                rule: `(${rule.id}) ${rule.type} (${rule.frequencyType || '-'})`,
+                reason: reason || 'Uygun yemek bulunamadı veya kural kriterleri sağlanmadı.'
+            });
+            console.warn(`Kural uygulanmadı: ${JSON.stringify(rule)}, Neden: ${reason || 'Bilinmeyen neden'}`);
+        }
     });
 
-    if (applied) {
-        appliedRules.push(`(${rule.id}) ${rule.type} (${rule.frequencyType || '-'})`);
+    // ruleTextElement güncelleme
+    const ruleTextElement = document.getElementById("ruleTextElement");
+    if (ruleTextElement) {
+        ruleTextElement.innerHTML = `
+            <strong>Uygulanan kurallar:</strong> ${appliedRules.join(', ') || 'Yok'}<br>
+            <strong>Uygulanmayan kurallar:</strong><br>
+            ${unappliedRules.length > 0 ? 
+                unappliedRules.map(r => `${r.rule}: ${r.reason}`).join('<br>') : 
+                'Yok'}
+        `;
     } else {
-        unappliedRules.push({
-            rule: `(${rule.id}) ${rule.type} (${rule.frequencyType || '-'})`,
-            reason: reason || 'Uygun yemek bulunamadı veya kural kriterleri sağlanmadı.'
-        });
-        console.warn(`Kural uygulanmadı: ${JSON.stringify(rule)}, Neden: ${reason || 'Bilinmeyen neden'}`);
+        console.warn("ruleTextElement bulunamadı.");
     }
-});
 
-// ruleTextElement güncelleme
-const ruleTextElement = document.getElementById("ruleTextElement");
-if (ruleTextElement) {
-    ruleTextElement.innerHTML = `
-        <strong>Uygulanan kurallar:</strong> ${appliedRules.join(', ') || 'Yok'}<br>
-        <strong>Uygulanmayan kurallar:</strong><br>
-        ${unappliedRules.length > 0 ? 
-            unappliedRules.map(r => `${r.rule}: ${r.reason}`).join('<br>') : 
-            'Yok'}
-    `;
-} else {
-    console.warn("ruleTextElement bulunamadı.");
+    // Bildirim
+    console.log("Bildirim deneniyor: Uygulanan:", appliedRules, "Uygulanmayan:", unappliedRules);
+    if (typeof showNotification === 'function') {
+        const notificationMessage = `
+            Planlama tamamlandı!\n
+            Uygulanan Kurallar (${appliedRules.length}): ${appliedRules.join(', ') || 'Yok'}\n
+            Uygulanmayan Kurallar (${unappliedRules.length}):\n
+            ${unappliedRules.length > 0 ? 
+                unappliedRules.map(r => `${r.rule}: ${r.reason}`).join('\n') : 
+                'Yok'}
+        `;
+        showNotification(notificationMessage, 'success', 7000); // 7 saniye, daha uzun süre görünmesi için
+    }
 }
-
-// Bildirim
-console.log("Bildirim deneniyor: Uygulanan:", appliedRules, "Uygulanmayan:", unappliedRules);
-if (typeof showNotification === 'function') {
-    const notificationMessage = `
-        Planlama tamamlandı!\n
-        Uygulanan Kurallar (${appliedRules.length}): ${appliedRules.join(', ') || 'Yok'}\n
-        Uygulanmayan Kurallar (${unappliedRules.length}):\n
-        ${unappliedRules.length > 0 ? 
-            unappliedRules.map(r => `${r.rule}: ${r.reason}`).join('\n') : 
-            'Yok'}
-    `;
-    showNotification(notificationMessage, 'success', 7000); // 7 saniye, daha uzun süre görünmesi için
-}
-        }
-
-        function moveSelectedFoods() {
+        
+function moveSelectedFoods() {
             const selectedFoods = Array.from(document.querySelectorAll('#editCategories input[type="checkbox"]:checked')).map(input => input.value);
             const targetCategory = document.getElementById('editMoveToCategory').value;
             if (!targetCategory) {
@@ -7485,8 +7945,17 @@ function editFood(foodName) {
     // Mevsim aralığını yükle
     const seasonRangeInput = document.getElementById('editFoodSeasonRange');
     if (seasonRangeInput) {
-        let seasonRange = food.seasonRange || convertSeasonToRange(food.season || '4 mevsim');
-        seasonRangeInput.value = seasonRange;
+        // Önce localStorage'dan bilgiyi çek
+        const savedSeasonRange = loadSeasonInfoFromLocalStorage(normalizedName);
+        
+        // Eğer localStorage'da kayıt varsa onu kullan
+        if (savedSeasonRange) {
+            seasonRangeInput.value = savedSeasonRange;
+        } else {
+            // Yoksa, mevcut nesnenin bilgisini kullan
+            let seasonRange = food.seasonRange || convertSeasonToRange(food.season || '4 mevsim');
+            seasonRangeInput.value = seasonRange;
+        }
     }
 
     // Çift slider'ı başlat
@@ -7510,9 +7979,9 @@ function editFood(foodName) {
             endSlider.noUiSlider.set(range[1]);
         } catch (e) {
             console.error("Mevsim aralığı parse edilemedi:", seasonRangeInput.value);
-            startSlider.noUiSlider.set(4);
-            endSlider.noUiSlider.set(9);
-            seasonRangeInput.value = "[4,9]";
+            startSlider.noUiSlider.set(1);
+            endSlider.noUiSlider.set(12);
+            seasonRangeInput.value = "[1,12]";
         }
     }
 
@@ -7548,22 +8017,121 @@ function editFood(foodName) {
     panel.style.display = 'block';
 }
 
-// Eski season değerini seasonRange formatına çevir
-function convertSeasonToRange(season) {
-    switch (season) {
-        case "4 mevsim":
-            return "[1,12]"; // Tüm yıl
-        case "kış":
-            return "[12,2]"; // Aralık - Şubat
-        case "yaz":
-            return "[6,8]"; // Haziran - Ağustos
-        case "ilkbahar":
-            return "[3,5]"; // Mart - Mayıs
-        case "sonbahar":
-            return "[9,11]"; // Eylül - Kasım
-        default:
-            return "[4,9]"; // Varsayılan: Nisan - Eylül
+function saveEditedFood(event) {
+    event.preventDefault();
+    saveState();
+
+    const mealTypes = [];
+    ['breakfast', 'lunch', 'dinner'].forEach(type => {
+        const checkbox = document.getElementById(`editMealType_${type}`);
+        if (checkbox && checkbox.checked) {
+            mealTypes.push(type);
+        }
+    });
+
+    // Güvenli erişim için null kontrolü ekleyelim
+    let seasonFrom = 1; // Varsayılan değer
+    let seasonTo = 12;  // Varsayılan değer
+    
+    const seasonFromElement = document.getElementById('editStartMonthSlider');
+    const seasonToElement = document.getElementById('editEndMonthSlider');
+    
+    if (seasonFromElement && seasonFromElement.noUiSlider) {
+        seasonFrom = parseInt(seasonFromElement.noUiSlider.get());
     }
+    
+    if (seasonToElement && seasonToElement.noUiSlider) {
+        seasonTo = parseInt(seasonToElement.noUiSlider.get());
+    }
+
+    const updatedFood = {
+        name: document.getElementById('editFoodName').value.trim() || document.getElementById('editFoodOriginalName').value,
+        calories: parseFloat(document.getElementById('editFoodCalories').value) || 0,
+        protein: parseFloat(document.getElementById('editFoodProtein').value) || 0,
+        carbs: parseFloat(document.getElementById('editFoodCarbs').value) || 0,
+        fat: parseFloat(document.getElementById('editFoodFat').value) || 0,
+        maxQuantity: parseFloat(document.getElementById('editFoodMaxQuantity').value) || 1,
+        minQuantity: parseFloat(document.getElementById('editFoodMinQuantity').value) || 0.5,
+        step: parseFloat(document.getElementById('editFoodStep').value) || 0.5,
+        role: document.getElementById('editFoodRole').value || 'mainDish',
+        tags: document.getElementById('editFoodTags').value.split(',').map(t => t.trim()).filter(t => t) || [],
+        mealType: mealTypes.length > 0 ? mealTypes : [],
+        keto: document.getElementById('editFoodKeto').checked,
+        lowcarb: document.getElementById('editFoodLowCarb').checked,
+        fillerLunch: document.getElementById('editFoodFillerLunch').checked,
+        fillerDinner: document.getElementById('editFoodFillerDinner').checked,
+        portionFixed: document.getElementById('editFoodPortionFixed').checked,
+        multiplier: parseFloat(document.getElementById('editFoodMultiplier').value) || 1,
+        
+        // Slider'lardan gelen mevsim aralığını kaydet
+        seasonRange: `[${seasonFrom},${seasonTo}]`
+    };
+
+    const originalName = document.getElementById('editFoodOriginalName').value;
+    const food = findFood(originalName);
+    if (!food || !food.category) {
+        showNotification("Yemek bulunamadı!", "warning");
+        return;
+    }
+
+    // Mevsim bilgisini localStorage'a kaydet
+    saveSeasonInfoToLocalStorage(originalName, updatedFood.seasonRange);
+
+    // Mevcut yemeği güncelle
+    Object.assign(food, updatedFood);
+
+    // Kategoriye taşıma işlemi
+    const newCategory = document.getElementById('editFoodMoveToCategory').value;
+    if (newCategory && newCategory !== food.category) {
+        const oldCategory = categories.find(cat => cat.name === food.category);
+        if (oldCategory) {
+            oldCategory.items = oldCategory.items.filter(item => item.name !== originalName);
+            const targetCategory = categories.find(cat => cat.name === newCategory);
+            if (targetCategory) {
+                targetCategory.items.push(food);
+                food.category = newCategory;
+            }
+        }
+    }
+
+    // Öğün verisindeki katsayıları kontrol et ve yeni maxQuantity'ye uydur
+    weeks.forEach((week, wIndex) => {
+        Object.values(week.days).forEach(day => {
+            ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
+                if (day.meals[mealType]) {
+                    day.meals[mealType].forEach(item => {
+                        if (item.name === updatedFood.name && item.quantity > updatedFood.maxQuantity) {
+                            item.quantity = updatedFood.maxQuantity;
+                        }
+                    });
+                }
+            });
+        });
+    });
+
+    closeEditFoodPanel();
+    loadCategories();
+    renderMeals();
+    calculateMacros();
+    showNotification(`"${updatedFood.name}" yemeği güncellendi!`, "success");
+}
+
+// Mevsim bilgisini metin formatından aralığa çevirme
+function convertSeasonToRange(season) {
+  switch (season) {
+    case "4 mevsim":
+      return "[1,12]"; // Tüm yıl
+    case "kış":
+      return "[12,2]"; // Aralık - Şubat
+    case "yaz":
+      return "[6,8]"; // Haziran - Ağustos
+    case "ilkbahar":
+      return "[3,5]"; // Mart - Mayıs
+    case "sonbahar":
+      return "[9,11]"; // Eylül - Kasım
+    default:
+      return "[1,12]"; // Varsayılan: Tüm yıl
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8631,21 +9199,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </div>
                 <div class="row mb-2">
-                    <div class="col-3"><label class="form-label">Mevsim Aralığı</label></div>
-                    <div class="col-9">
-                        <div class="mb-2">
-                            <label class="form-label" for="foodStartMonthSlider">Başlangıç Ayı</label>
-                            <div id="foodStartMonthSlider"></div>
-                            <div id="foodStartMonthDisplay" style="margin-top: 5px; font-size: 0.9rem;"></div>
-                        </div>
-                        <div class="mb-2">
-                            <label class="form-label" for="foodEndMonthSlider">Bitiş Ayı</label>
-                            <div id="foodEndMonthSlider"></div>
-                            <div id="foodEndMonthDisplay" style="margin-top: 5px; font-size: 0.9rem;"></div>
-                        </div>
-                        <input type="hidden" id="foodSeasonRange" name="foodSeasonRange" value="[4,9]" />
+                    <div class="col-3">
+                      <label class="form-label" for="editFoodSeasonFrom">Mevsim Aralığı</label>
                     </div>
-                </div>
+                    <div class="col-9">
+                      <div class="d-flex align-items-center">
+                        <input type="number" min="1" max="12" class="form-control form-control-sm" id="editFoodSeasonFrom" placeholder="Ay" style="width: 80px;">
+                        <span class="mx-2">-</span>
+                        <input type="number" min="1" max="12" class="form-control form-control-sm" id="editFoodSeasonTo" placeholder="Ay" style="width: 80px;">
+                        <span class="ms-2" id="editFoodSeasonLabel">(Ocak → Aralık)</span>
+                      </div>
+                      <small class="form-text text-muted">Boş bırakırsanız tüm yıl kullanılabilir olacaktır.</small>
+                    </div>
+                  </div>
                 <div class="row mb-2">
                     <div class="col-3"><label class="form-label" for="foodPortionFixed">Porsiyon Sabit mi?</label></div>
                     <div class="col-9">
@@ -9102,6 +9668,7 @@ function syncMealTypeCheckboxesFromString(mealTypeString, prefix = 'editMealType
         });
     }
 }
+
 
 // Örnek: düzenleme modali açıldığında çalışmalı
 // Bu fonksiyon senin mevcut editFood fonksiyonunun sonunda çağrılabilir
