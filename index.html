@@ -851,12 +851,12 @@ function editFoodFromElement(el) {
 <div class="accordion-body" style="max-height: 300px; overflow-y: auto;">
 <div class="mb-2" id="compatibilityList"></div>
 <div class="mb-2">
-<label class="form-label" for="compatKeyword1">Kelime 1</label>
-<input class="form-control" id="compatKeyword1" placeholder="örn: balık" type="text"/>
+    <label class="form-label" for="sidebarCompatKeyword1">Kelime 1</label>
+    <input class="form-control" id="sidebarCompatKeyword1" placeholder="örn: balık" type="text"/>
 </div>
 <div class="mb-2">
-<label class="form-label" for="compatKeyword2">Kelime 2 (Virgülle ayırın)</label>
-<input class="form-control" id="compatKeyword2" placeholder="örn: süt,yoğurt" type="text"/>
+    <label class="form-label" for="sidebarCompatKeyword2">Kelime 2 (Virgülle ayırın)</label>
+    <input class="form-control" id="sidebarCompatKeyword2" placeholder="örn: süt,yoğurt" type="text"/>
 </div>
 <div class="mb-2">
 <label class="form-label" for="compatDegree">Derece (-5: Çok Uyumsuz, +5: Çok Uyumlu)</label>
@@ -3069,20 +3069,20 @@ function renderMealItem(item, mealType, index) {
 
     // Kural açıklamasını oluştur
     const getRuleDescription = (rule) => {
-        if (!rule) return '-';
-        switch (rule.type) {
-            case 'frequency':
-                const freqText = rule.frequencyType === 'max' ? 'en fazla' : 
-                                rule.frequencyType === 'min' ? 'en az' : '';
-                return `(${rule.id}) Rol: ${rule.role || 'herhangi'} her ${rule.mealType || 'öğünde'} ${freqText} ${rule.frequency} kez`;
-            case 'dependOn':
-                return `(${rule.id}) ${rule.food} yalnızca ${rule.requiredFood} ile eklensin`;
-            case 'compatibility':
-                return `(${rule.id}) ${rule.keyword1} ile ${rule.keyword2.join(', ')} (${rule.degree > 0 ? 'uyumlu' : 'uyumsuz'})`;
-            default:
-                return `(${rule.id}) ${rule.type}`;
-        }
-    };
+    if (!rule) return '-';
+    switch (rule.type) {
+        case 'frequency':
+            const freqText = rule.frequencyType === 'max' ? 'en fazla' : 
+                            rule.frequencyType === 'min' ? 'en az' : '';
+            return `(${rule.id}) Rol: ${rule.role || 'herhangi'} her ${rule.mealType || 'öğünde'} ${freqText} ${rule.frequency} kez`;
+        case 'dependOn':
+            return `(${rule.id}) ${rule.food} yalnızca ${rule.requiredFood} ile eklensin`;
+        case 'compatibility':
+            return `(${rule.id}) ${rule.keyword1} ile ${rule.keyword2.join(', ')} (${rule.degree > 0 ? 'Uyumlu' : 'Uyumsuz'}, Derece: ${rule.degree})`;
+        default:
+            return `(${rule.id}) ${rule.type}`;
+    }
+};
 
     const ruleText = appliedRule 
         ? `<span title="${getRuleDescription(appliedRule)}">${appliedRule.id} / ${appliedRule.type}</span>` 
@@ -5457,17 +5457,41 @@ function handleRuleSave() {
                 weekRange: pairWeekRange
             };
         } else if (ruleType === 'compatibility') {
-            const keyword1 = document.getElementById('compatKeyword1').value.trim();
-            const keyword2Input = document.getElementById('compatKeyword2').value.trim();
-            const keyword2 = keyword2Input ? keyword2Input.split(',').map(k => k.trim()).filter(k => k) : [];
-            const degree = parseInt(document.getElementById('compatDegree').value) || 0;
-            const conjunction = document.getElementById('compatConjunction').value;
-            if (!keyword1) {
-                showNotification("Kelime 1 boş olamaz!", "warning");
-                return;
-            }
-            newRule = { ...newRule, keyword1, keyword2, degree, conjunction };
-        } else if (ruleType === 'maxRoleCount') {
+    const keyword1El = document.getElementById('keyword1') || 
+                       document.getElementById('editKeyword1');
+    const keyword2El = document.getElementById('compatibleFood') || 
+                       document.getElementById('editCompatibleFood');
+    const degreeEl = document.getElementById('compatibilityDegree') || 
+                     document.getElementById('editCompatibilityDegree');
+    const conjunctionEl = document.getElementById('compatibilityType') || 
+                          document.getElementById('editCompatibilityType');
+
+    if (!keyword1El) {
+        showNotification("Kural formu yüklenemedi!", "warning");
+        return;
+    }
+
+    const keyword1 = keyword1El.value.trim();
+    const keyword2Input = keyword2El ? keyword2El.value.trim() : '';
+    const degree = parseInt(degreeEl ? degreeEl.value : 0);
+    const conjunction = conjunctionEl ? conjunctionEl.value : 'and';
+
+    const keyword2 = keyword2Input ? 
+        keyword2Input.split(',').map(k => k.trim()).filter(k => k) : [];
+
+    if (!keyword1) {
+        showNotification("Birinci kelime boş olamaz!", "warning");
+        return;
+    }
+
+    newRule = { 
+        ...newRule, 
+        keyword1, 
+        keyword2, 
+        degree, 
+        conjunction 
+    };
+} else if (ruleType === 'maxRoleCount') {
             const roleCheck = document.getElementById('ruleRoleCheck') ? document.getElementById('ruleRoleCheck').checked : true;
             const role = roleCheck && document.getElementById('ruleRole') ? document.getElementById('ruleRole').value : 'mainDish';
             const count = parseInt(document.getElementById('ruleCount').value) || 1;
@@ -5541,12 +5565,13 @@ function handleRuleSave() {
         showNotification("Kural eklendi!", "success");
 
         // Formu gizle
-        document.getElementById('defaultRuleForm').style.display = 'none';
-        document.getElementById('frequencyRuleForm').style.display = 'none';
-        document.getElementById('dependOnRuleForm').style.display = 'none';
-        document.getElementById('categoryLockRuleForm').style.display = 'none';
-        document.getElementById('pairRuleForm').style.display = 'none';
-        document.getElementById('compatibilityRuleForm').style.display = 'none';
+['defaultRuleForm', 'frequencyRuleForm', 'dependOnRuleForm', 
+ 'categoryLockRuleForm', 'pairRuleForm', 'compatibilityRuleForm'].forEach(formId => {
+    const form = document.getElementById(formId);
+    if (form) {
+        form.style.display = 'none';
+    }
+});
     }
 }
 
@@ -5836,7 +5861,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});function updateRuleForm(isEdit = false) {
+});
+
+function updateRuleForm(isEdit = false) {
     const ruleTypeSelect = isEdit ? document.getElementById('editRuleType') : document.getElementById('ruleType');
     const ruleForm = isEdit ? document.getElementById('editRuleForm') : document.getElementById('ruleForm');
 
@@ -6088,19 +6115,84 @@ function deleteRuleTemplate() {
     showNotification("Şablon silindi!");
 }
 
-function addCompatibilityRule() {
-    const keyword1 = document.getElementById('compatKeyword1').value.trim();
-    const keyword2Input = document.getElementById('compatKeyword2').value.trim();
-    const degree = parseInt(document.getElementById('compatDegree').value);
-    const conjunction = document.getElementById('compatConjunction').value;
-    if (!keyword1) {
-        showNotification("Lütfen birinci kelimeyi girin!", 'warning');
-        return;
+function checkCompatibility(food, currentMeal) {
+    // Hızlı kontroller önce
+    if (!food || !food.tags || !food.tags.length || !currentMeal || !currentMeal.length) {
+        return true; // Eksik veri durumunda uyumlu kabul et
     }
-    const keyword2 = keyword2Input ? keyword2Input.split(',').map(k => k.trim()).filter(k => k) : [];
-    compatibilityTable.push({ keyword1, keyword2, degree, conjunction });
-    loadCompatibilityRules();
-    showNotification("Uyumluluk kuralı eklendi!");
+
+    // Performans için rules dizisini kopyalama
+    const compatRules = rules.filter(rule => 
+        rule.type === 'compatibility' && rule.keyword1 && rule.keyword2 && rule.keyword2.length > 0
+    );
+
+    // Hiç kural yoksa hızlıca dön
+    if (!compatRules.length) return true;
+
+    // Food'un tag'lerini lowercase yapıp önbelleğe al (her seferinde dönüştürmemek için)
+    const foodTagsLower = food.tags.map(tag => tag.toLowerCase());
+    
+    // Öğündeki yemeklerin tag'lerini önbelleğe al
+    const mealTagsMap = new Map();
+    for (const item of currentMeal) {
+        if (!item) continue;
+        
+        const mealFood = typeof item === 'string' ? findFood(item) : item;
+        if (!mealFood || !mealFood.tags) continue;
+        
+        // Yemek adını anahtar, tag'leri değer olarak önbelleğe al
+        const mealName = mealFood.name;
+        if (!mealTagsMap.has(mealName)) {
+            mealTagsMap.set(mealName, mealFood.tags.map(tag => tag.toLowerCase()));
+        }
+    }
+
+    // Her kural için tek bir geçiş yap
+    for (const rule of compatRules) {
+        const keyword1Lower = rule.keyword1.toLowerCase();
+        const keyword2Lower = rule.keyword2.map(k => k.toLowerCase());
+        
+        // Kural keyword1 tag olarak mevcut mu?
+        const keyword1Match = foodTagsLower.includes(keyword1Lower);
+        if (!keyword1Match) continue; // Bu kural bu yemek için geçerli değil
+        
+        // Öğündeki diğer yemeklerde keyword2 var mı?
+        let hasCompatibleFood = false;
+        let hasSameTagFood = false;
+        
+        for (const [_, mealTags] of mealTagsMap) {
+            // Aynı yemekte hem keyword1 hem de keyword2 varsa, bu durumu işaretle
+            if (mealTags.includes(keyword1Lower) && 
+                mealTags.some(tag => keyword2Lower.includes(tag))) {
+                hasSameTagFood = true;
+                continue;
+            }
+            
+            // Diğer yemekte keyword2 tag'lerinden biri var mı?
+            if (mealTags.some(tag => keyword2Lower.includes(tag))) {
+                hasCompatibleFood = true;
+                break; // Bir tane bulmak yeterli
+            }
+        }
+        
+        // Eğer aynı yemekte hem keyword1 hem de keyword2 tag'leri varsa,
+        // bu kural geçerli değil
+        if (hasSameTagFood) continue;
+        
+        // Uyumluluk derecesine göre sonuç
+        if (rule.degree > 0 && !hasCompatibleFood) {
+            // Olumlu uyumluluk kuralı: Bu tag'lere sahip yemekler birlikte olmalı
+            // Ama öğünde uyumlu yemek yok, bu yüzden uyumlu değil
+            return false;
+        } else if (rule.degree < 0 && hasCompatibleFood) {
+            // Olumsuz uyumluluk kuralı: Bu tag'lere sahip yemekler birlikte olmamalı
+            // Ama öğünde uyumsuz yemek var, bu yüzden uyumlu değil
+            return false;
+        }
+    }
+    
+    // Tüm kurallar kontrol edildi ve hiçbiri uyumsuzluk çıkarmadı
+    return true;
 }
 
 function importFoodList() {
@@ -6922,37 +7014,43 @@ function checkDependOn(foodName, mealItems) {
     return mealItems.some(item => item.name.toLowerCase().includes(requiredFood));
 }
 
-function checkCompatibility(foodName, currentMeal) {
-    const compatRules = rules.filter(rule => rule.type === 'compatibility' && rule.keyword1.toLowerCase() === foodName.toLowerCase());
-    if (!compatRules.length) return true;
 
-    let canAdd = true;
-    compatRules.forEach(rule => {
-        const pairedFoods = rule.keyword2;
-        const pairedCount = pairedFoods.filter(kw => 
-            currentMeal.some(item => item.name.toLowerCase().includes(kw.toLowerCase()))
-        ).length;
-
-        if (rule.degree > 0) {
-            if (rule.conjunction === 'and' && pairedCount < pairedFoods.length) canAdd = false;
-            if (rule.conjunction === 'or' && pairedCount === 0) canAdd = false;
-        } else if (rule.degree < 0) {
-            if (pairedCount > 0) canAdd = false;
-            if (rule.degree === -5 && pairedFoods.length === 0 && currentMeal.length === 0) canAdd = false;
-        }
+// Mevcut findBestFood fonksiyonunda uyumluluk skorunu hesapla
+function findBestFood(foodList, targets, currentMeal, mealType, prioritizedRules) {
+    console.log('findBestFood çağrıldı:', { 
+        foodListLength: foodList.length, 
+        currentMealLength: currentMeal.length 
     });
-    return canAdd;
-}
 
-function findBestFood(foodList, targets, currentMeal, mealType, validRules) {
     return foodList
-        .filter(f => checkCompatibility(f.name, currentMeal) && checkDependOn(f.name, currentMeal) && !currentMeal.some(item => item.name === f.name))
+        .filter(food => {
+            if (!food) {
+                console.warn('Boş food filtrelemeden çıkarıldı');
+                return false;
+            }
+            const compatResult = checkCompatibility(food, currentMeal);
+            console.log('Compatibility kontrolü sonucu:', compatResult);
+            return compatResult;
+        })
         .map(food => {
+            let compatScore = currentMeal.reduce((total, mealItem) => {
+                const mealFood = 
+                    (mealItem && mealItem.name) ? mealItem : 
+                    (typeof mealItem === 'string' ? findFood(mealItem) : null);
+                
+                const compatValue = mealFood ? checkCompatibility(food, [mealFood]) : 0;
+                return total + (compatValue ? 1 : -1);
+            }, 0);
+
             const score = 
                 (targets.protein > 0 ? Math.min(food.protein / targets.protein, 1) * 0.4 : 0) +
                 (targets.fat > 0 ? Math.min(food.fat / targets.fat, 1) * 0.3 : 0) +
                 (targets.carbs > 0 ? Math.min(food.carbs / targets.carbs, 1) * 0.15 : 0) +
-                (targets.calories > 0 ? Math.min(food.calories / targets.calories, 1) * 0.15 : 0);
+                (targets.calories > 0 ? Math.min(food.calories / targets.calories, 1) * 0.15 : 0) +
+                (compatScore * 0.1);
+            
+            console.log('Food score:', { food: food.name, score });
+            
             return { food, score };
         })
         .sort((a, b) => b.score - a.score)[0]?.food;
