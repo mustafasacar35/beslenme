@@ -208,7 +208,7 @@
             "tahin",
             "keto"
           ],
-          "role": "sideDish",
+          "role": "supplement",
           "mealType": [
             "lunch",
             "dinner"
@@ -216,7 +216,7 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "ÖĞLEN",
           "portionFixed": false,
           "multiplier": 1,
@@ -433,7 +433,8 @@
           "tags": [
             "avokado",
             "omlet",
-            "keto"
+            "keto",
+            "yumurta"
           ],
           "role": "mainDish",
           "mealType": [
@@ -573,7 +574,8 @@
           "tags": [
             "yaban mersini",
             "smoothie",
-            "keto"
+            "keto",
+            "tost"
           ],
           "role": "drink",
           "mealType": [
@@ -2451,7 +2453,7 @@
           "protein": 17,
           "carbs": 3,
           "fat": 15,
-          "maxQuantity": 1.5,
+          "maxQuantity": 2,
           "minQuantity": 0.5,
           "step": 0.5,
           "tags": [
@@ -5491,7 +5493,7 @@
             "kurabiye",
             "keto"
           ],
-          "role": "sideDish",
+          "role": "dessert",
           "mealType": [
             "lunch",
             "dinner"
@@ -5705,7 +5707,7 @@
       "items": [
         {
           "name": "Yeşil Salata",
-          "calories": 50,
+          "calories": 55,
           "protein": 2,
           "carbs": 5,
           "fat": 3,
@@ -5716,11 +5718,13 @@
             "salata"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5742,11 +5746,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5768,11 +5774,14 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5793,11 +5802,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5819,11 +5830,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5845,11 +5858,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5872,11 +5887,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5898,11 +5915,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5923,11 +5942,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5950,11 +5971,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -5972,14 +5995,18 @@
           "step": 0.5,
           "tags": [
             "lor",
-            "keto"
+            "keto",
+            "salata"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6001,11 +6028,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6027,11 +6056,13 @@
             "salata"
           ],
           "role": "sideDish",
-          "mealType": [],
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6052,11 +6083,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6078,7 +6111,9 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
@@ -6106,11 +6141,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6132,11 +6169,14 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6158,11 +6198,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6183,11 +6225,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6210,11 +6254,14 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6236,11 +6283,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6262,11 +6311,13 @@
             "keto"
           ],
           "role": "sideDish",
-          "mealType": "lunch,dinner",
+          "mealType": [
+            "dinner"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6291,7 +6342,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6301,7 +6352,7 @@
         },
         {
           "name": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
-          "calories": 155,
+          "calories": 146,
           "protein": 3,
           "carbs": 2,
           "fat": 14,
@@ -6317,12 +6368,13 @@
           ],
           "role": "sideDish",
           "mealType": [
+            "lunch",
             "dinner"
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6348,12 +6400,13 @@
           ],
           "role": "sideDish",
           "mealType": [
-            "lunch"
+            "lunch",
+            "dinner"
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6382,7 +6435,7 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6410,7 +6463,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6436,11 +6489,11 @@
           ],
           "role": "sideDish",
           "mealType": [
-            "dinner"
+            "lunch"
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6450,7 +6503,7 @@
         },
         {
           "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon ile)",
-          "calories": 95,
+          "calories": 20,
           "protein": 3,
           "carbs": 2,
           "fat": 0,
@@ -6460,7 +6513,8 @@
           "tags": [
             "roka",
             "marul",
-            "keto"
+            "keto",
+            "salata"
           ],
           "role": "sideDish",
           "mealType": [
@@ -6468,7 +6522,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6478,7 +6532,7 @@
         },
         {
           "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
-          "calories": 95,
+          "calories": 146,
           "protein": 3,
           "carbs": 2,
           "fat": 14,
@@ -6498,7 +6552,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6527,7 +6581,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6537,7 +6591,7 @@
         },
         {
           "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
-          "calories": 20,
+          "calories": 29,
           "protein": 2,
           "carbs": 3,
           "fat": 1,
@@ -6554,7 +6608,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6584,7 +6638,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6664,7 +6718,8 @@
           "tags": [
             "roka",
             "marul",
-            "keto"
+            "keto",
+            "salata"
           ],
           "role": "sideDish",
           "mealType": [
@@ -6672,7 +6727,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6702,7 +6757,7 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6730,7 +6785,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6760,8 +6815,8 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6789,7 +6844,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6813,12 +6868,13 @@
           ],
           "role": "sideDish",
           "mealType": [
-            "lunch"
+            "lunch",
+            "dinner"
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6835,16 +6891,20 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "tags": [
-            "keto"
+            "keto",
+            "enginar",
+            "salata",
+            "yoğurt"
           ],
           "role": "sideDish",
           "mealType": [
+            "lunch",
             "dinner"
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6868,13 +6928,12 @@
           ],
           "role": "sideDish",
           "mealType": [
-            "lunch",
             "dinner"
           ],
           "keto": false,
           "lowcarb": true,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "category": "SALATALAR",
           "portionFixed": false,
           "multiplier": 1,
@@ -6901,7 +6960,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6929,7 +6988,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6958,7 +7017,7 @@
           ],
           "keto": true,
           "lowcarb": true,
-          "fillerLunch": false,
+          "fillerLunch": true,
           "fillerDinner": false,
           "category": "SALATALAR",
           "portionFixed": false,
@@ -6993,7 +7052,7 @@
           "isReversedSeason": false
         },
         {
-          "name": "Brokoli Salatası2",
+          "name": "Brokoli Salatası",
           "calories": 113,
           "protein": 4,
           "carbs": 4,
@@ -7003,11 +7062,13 @@
           "step": 0.5,
           "tags": [],
           "role": "sideDish",
-          "mealType": [],
+          "mealType": [
+            "dinner"
+          ],
           "keto": false,
           "lowcarb": false,
           "fillerLunch": false,
-          "fillerDinner": false,
+          "fillerDinner": true,
           "seasonRange": "[1,12]",
           "isReversedSeason": false,
           "portionFixed": false,
@@ -8480,7 +8541,8 @@
             "keto",
             "ekmek",
             "tost",
-            "poğaça"
+            "poğaça",
+            "smoothie"
           ],
           "role": "mainDish",
           "mealType": [
@@ -12218,30 +12280,30 @@
             ],
             "lunch": [
               {
-                "name": "Sahanda Yumurta (2 adet)",
+                "name": "Ketojenik Tost (Haşhaş Ezmesi Ekmeği + Kaşar + Hindi Füme)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz,marul,sirke,limon  ile)",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon ile)",
                 "quantity": 1
               },
               {
-                "name": "Yaban Mersinli Smoothie (1 porsiyon)",
+                "name": "* Yoğurtlu enginar",
                 "quantity": 1
+              },
+              {
+                "name": "Biberli peynir, 1 porsiyon",
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Tavuk Döner (100 gram)",
-                "quantity": 1.5
-              },
-              {
-                "name": "Un Helvası",
+                "name": "200 gram tavuk pirzola",
                 "quantity": 1
               },
               {
-                "name": "Ketojenik Tiramisu",
-                "quantity": 0.5
+                "name": "Yoğurtlu Kereviz Salatası",
+                "quantity": 1
               }
             ]
           }
@@ -12257,30 +12319,34 @@
             ],
             "lunch": [
               {
-                "name": "Haşlanmış Yumurta (1 adet) + Tereyağı ve Baharatlar",
+                "name": "Ketojenik tost (2 ince dilim lor ekmeği arasına 30 gram kaşar, yeşillikler, domates)",
                 "quantity": 1
               },
               {
-                "name": "30 gram pastırma",
+                "name": "Tulum /kaşar peyniri (50 gram)",
                 "quantity": 1
               },
               {
-                "name": "Yaban Mersinli Smoothie (1 porsiyon)",
+                "name": "* Yoğurtlu enginar",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Tavuk Keto Dürüm",
+                "name": "Urfa / Adana Kebap (150 gram, 1 porsiyon)",
                 "quantity": 1
               },
               {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "name": "Dilimlenmiş yarım turp + yarım pancar (1 dilim limon ile)",
                 "quantity": 1
               },
               {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "name": "Kelle Paça Çorbası",
                 "quantity": 1
+              },
+              {
+                "name": "Chia Tohumlu Puding",
+                "quantity": 0.5
               }
             ]
           }
@@ -12296,34 +12362,38 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik Tost (Tahin Ekmeği + Kaşar)",
+                "name": "Ketojenik Ispanaklı Börek (1 dilim)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon ile)",
+                "name": "Cherry domates (3 adet)",
                 "quantity": 1
               },
               {
-                "name": "Biberli peynir, 1 porsiyon",
+                "name": "Yaban Mersinli Smoothie (1 porsiyon)",
+                "quantity": 1
+              },
+              {
+                "name": "Lor Salatası",
                 "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Tavuk döner (200 gr)",
+                "name": "Karnabahar Köfte",
                 "quantity": 1
               },
               {
-                "name": "Kırmızı Pancar Salatası",
+                "name": "Sebzeli Karnabahar Pilavı",
                 "quantity": 1
               },
               {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "name": "Kelle Paça Çorbası",
                 "quantity": 1
               },
               {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
+                "name": "Keto Cheesecake",
+                "quantity": 0.5
               }
             ]
           }
@@ -12339,34 +12409,30 @@
             ],
             "lunch": [
               {
-                "name": "Susamlı Omlet",
+                "name": "2 adet lupin unlu poğaça (veya 4 adet Lorlu poğaça)",
                 "quantity": 1
               },
               {
-                "name": "2 dilim Hindi Füme",
+                "name": "Cherry Domates (2 adet)",
                 "quantity": 1
               },
               {
-                "name": "1 dilim Keten Tohumu Ekmeği",
+                "name": "Yaban Mersinli Smoothie (1 porsiyon)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Ciğer Kavurma (200 gram)",
+                "name": "Kabak Lazanya (1 porsiyon)",
                 "quantity": 1
               },
               {
-                "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+                "name": "Fırında Domates Soslu Sebze Kızartması",
                 "quantity": 1
               },
               {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "name": "Lor Salatası",
                 "quantity": 1
-              },
-              {
-                "name": "Chia Tohumlu Puding",
-                "quantity": 0.5
               }
             ]
           }
@@ -12382,34 +12448,30 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik Tost (Tahin Ekmeği + Kaşar)",
+                "name": "Karnabahar Pankek",
                 "quantity": 1
               },
               {
-                "name": "Dilimlenmiş yarım turp + yarım pancar (1 dilim limon ile)",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon, sirke ile)",
+                "quantity": 1
+              },
+              {
+                "name": "* Yoğurtlu enginar",
                 "quantity": 1
               },
               {
                 "name": "Biberli peynir, 1 porsiyon",
-                "quantity": 1
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Enginar Mantısı (1 porsiyon)",
+                "name": "Tavuk döner (200 gr)",
                 "quantity": 1
               },
               {
                 "name": "Mor Lahana Salatası",
                 "quantity": 1
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Kelle Paça Çorbası",
-                "quantity": 0.5
               }
             ]
           }
@@ -12425,29 +12487,25 @@
             ],
             "lunch": [
               {
-                "name": "Susamlı Omlet",
+                "name": "1 dilim Pırasalı Tava Böreği",
                 "quantity": 1
               },
               {
-                "name": "2 dilim Hindi Füme",
+                "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber",
                 "quantity": 1
               },
               {
-                "name": "1 dilim Keten Tohumu Ekmeği",
+                "name": "Yaban Mersinli Smoothie (1 porsiyon)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Etli Kereviz Yemeği",
+                "name": "Fırında Cevizli Peynirli Mantar Dolması (1 porsiyon)",
                 "quantity": 1
               },
               {
-                "name": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
-                "quantity": 2
-              },
-              {
-                "name": "Ketojenik Tiramisu",
+                "name": "Girit Ezmesi (yeşil peynir mezesi)",
                 "quantity": 1
               }
             ]
@@ -12464,34 +12522,26 @@
             ],
             "lunch": [
               {
-                "name": "Yoğurtlu çılbır",
+                "name": "100 gram Hellim Peynirli Ispanak",
                 "quantity": 1
               },
               {
-                "name": "Kasap sucuk (50 gram, tavada veya ızgarada)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz,marul,sirke,limon  ile)",
                 "quantity": 1
               },
               {
-                "name": "1 dilim Keten Tohumu Ekmeği",
-                "quantity": 0.5
+                "name": "Lor Salatası",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Ispanaklı ya da Pazılı Tavuk Dolması",
+                "name": "200  gram köfte (ekmeksiz, baharatlarla)",
                 "quantity": 1
               },
               {
-                "name": "Közlenmiş patlıcan salatası",
-                "quantity": 2
-              },
-              {
-                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "name": "Girit Ezmesi (yeşil peynir mezesi)",
                 "quantity": 1
-              },
-              {
-                "name": "Fırında Domates Soslu Sebze Kızartması",
-                "quantity": 0.5
               }
             ]
           }
@@ -12910,6 +12960,21 @@
         "et"
       ],
       "degree": 5,
+      "conjunction": "or"
+    },
+    {
+      "type": "compatibility",
+      "id": 48,
+      "keyword1": "smoothie",
+      "keyword2": [
+        "et",
+        "muffin",
+        "ekmek",
+        "börek",
+        "tost",
+        "poğaça"
+      ],
+      "degree": -5,
       "conjunction": "or"
     }
   ],
