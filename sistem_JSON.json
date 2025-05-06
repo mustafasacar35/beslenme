@@ -7658,35 +7658,6 @@
       "name": "EKMEKLER",
       "items": [
         {
-          "name": "Badem unu ekmeği (1 dilim)",
-          "calories": 147,
-          "protein": 6,
-          "carbs": 1.5,
-          "fat": 13,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "badem",
-            "keto",
-            "ekmek"
-          ],
-          "role": "bread",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "category": "EKMEKLER",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "1 dilim Keten Tohumu Ekmeği",
           "category": "EKMEKLER",
           "role": "bread",
@@ -8011,6 +7982,37 @@
           "tags": [
             "ekmek",
             "karabuğday",
+            "ekmeği"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Badem unu ekmeği (1 dilim)",
+          "category": "EKMEKLER",
+          "role": "bread",
+          "calories": 147,
+          "protein": 6,
+          "carbs": 1.5,
+          "fat": 13,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "badem",
+            "keto",
+            "ekmek",
             "ekmeği"
           ],
           "compatibilityTags": [],
