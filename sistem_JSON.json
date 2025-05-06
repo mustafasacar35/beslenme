@@ -7658,37 +7658,6 @@
       "name": "EKMEKLER",
       "items": [
         {
-          "name": "*Lor ekmeği (1 dilim)",
-          "calories": 55,
-          "protein": 6,
-          "carbs": 1,
-          "fat": 3,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto",
-            "ekmek",
-            "börek",
-            "muffin",
-            "tost"
-          ],
-          "role": "bread",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "category": "EKMEKLER",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Haşhaş ezmesi ekmeği (1 dilim)",
           "calories": 43,
           "protein": 3,
@@ -8011,6 +7980,39 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "portionFixed": true,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "*Lor ekmeği (1 dilim)",
+          "category": "EKMEKLER",
+          "role": "bread",
+          "calories": 55,
+          "protein": 6,
+          "carbs": 1,
+          "fat": 3,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keto",
+            "ekmek",
+            "börek",
+            "muffin",
+            "tost",
+            "ekmeği"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
