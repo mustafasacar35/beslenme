@@ -12830,14 +12830,26 @@
       "mealType": ""
     },
     {
-      "id": 52,
       "type": "compatibility",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "categoryCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": "lunch",
+      "roleCheck": false,
+      "role": "",
       "keyword1": "tahin",
       "keyword2": [
         "ekmek"
       ],
       "degree": 5,
-      "conjunction": "or"
+      "conjunction": "or",
+      "id": 52
     }
   ],
   "mealTemplates": [],
