@@ -7658,37 +7658,6 @@
       "name": "EKMEKLER",
       "items": [
         {
-          "name": "Pita Ekmeği",
-          "category": "EKMEKLER",
-          "role": "bread",
-          "calories": 105,
-          "protein": 4,
-          "carbs": 2,
-          "fat": 9,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "pita",
-            "ekmek",
-            "keto",
-            "ekmeği"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Hindistan Cevizli Ekmek (1 dilim)",
           "category": "EKMEKLER",
           "role": "bread",
@@ -8014,6 +7983,37 @@
             "ekmek",
             "keto",
             "muffin",
+            "ekmeği"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Pita Ekmeği",
+          "category": "EKMEKLER",
+          "role": "bread",
+          "calories": 105,
+          "protein": 4,
+          "carbs": 2,
+          "fat": 9,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "pita",
+            "ekmek",
+            "keto",
             "ekmeği"
           ],
           "compatibilityTags": [],
