@@ -7658,32 +7658,6 @@
       "name": "EKMEKLER",
       "items": [
         {
-          "name": "Keten Tohumlu Ekmek (1 dilim)",
-          "calories": 95,
-          "protein": 4,
-          "carbs": 2,
-          "fat": 8,
-          "maxQuantity": null,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keten tohumu",
-            "ekmek",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": "lunch,dinner",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "EKMEKLER",
-          "portionFixed": true,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "*Lor ekmeği (1 dilim)",
           "calories": 55,
           "protein": 6,
@@ -8005,6 +7979,37 @@
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": true,
+          "portionFixed": true,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Keten Tohumlu Ekmek (1 dilim)",
+          "category": "EKMEKLER",
+          "role": "sideDish",
+          "calories": 96,
+          "protein": 4,
+          "carbs": 2,
+          "fat": 8,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keten tohumu",
+            "ekmek",
+            "keto",
+            "ekmeği"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
           "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
