@@ -7745,35 +7745,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Hindistan Cevizli Ekmek (1 dilim)",
-          "calories": 101,
-          "protein": 3,
-          "carbs": 2,
-          "fat": 9,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "hindistan cevizi",
-            "ekmek",
-            "keto"
-          ],
-          "role": "bread",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "category": "EKMEKLER",
-          "portionFixed": true,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Keten Tohumlu Ekmek (1 dilim)",
           "calories": 95,
           "protein": 4,
@@ -7998,6 +7969,37 @@
           "fillerLunch": true,
           "fillerDinner": true,
           "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Hindistan Cevizli Ekmek (1 dilim)",
+          "category": "EKMEKLER",
+          "role": "bread",
+          "calories": 101,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 9,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "hindistan cevizi",
+            "ekmek",
+            "keto",
+            "ekmeği"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": true,
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
