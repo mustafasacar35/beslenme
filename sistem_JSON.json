@@ -7658,34 +7658,6 @@
       "name": "EKMEKLER",
       "items": [
         {
-          "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-          "calories": 43,
-          "protein": 3,
-          "carbs": 1,
-          "fat": 3,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "badem",
-            "keto"
-          ],
-          "role": "bread",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "category": "EKMEKLER",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "*Haşhaş ezmesi ekmeği (1 dilim)",
           "calories": 43,
           "protein": 3,
@@ -8005,6 +7977,36 @@
             "börek",
             "muffin",
             "tost",
+            "ekmeği"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Haşhaş ezmesi ekmeği (1 dilim)",
+          "category": "EKMEKLER",
+          "role": "bread",
+          "calories": 43,
+          "protein": 3,
+          "carbs": 1,
+          "fat": 3,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "haşhaş",
+            "keto",
             "ekmeği"
           ],
           "compatibilityTags": [],
@@ -9939,32 +9941,6 @@
             "keto"
           ],
           "role": "snack",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "Yeni Eklenenler",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
-          "name": "Haşhaş ezmesi ekmeği (1 dilim)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "sideDish",
           "mealType": [
             "lunch"
           ],
