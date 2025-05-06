@@ -13049,31 +13049,26 @@
     },
     {
       "type": "compatibility",
-      "id": 50,
-      "keyword1": "zeytin",
-      "keyword2": [
-        "ekmeği"
-      ],
-      "degree": 5,
-      "conjunction": "and"
-    },
-    {
-      "type": "frequency",
-      "scope": "daily",
-      "weekRange": "1",
+      "scope": "meal",
+      "weekRange": "all",
       "nameCheck": false,
       "names": [],
       "tagsCheck": false,
       "tags": [],
-      "categoryCheck": true,
-      "category": "EKMEKLER",
+      "categoryCheck": false,
+      "category": "",
       "mealTypeCheck": false,
       "mealType": "lunch",
       "roleCheck": false,
       "role": "",
-      "frequency": 1,
-      "frequencyType": "exact",
-      "id": 51
+      "keyword1": "zeytin",
+      "keyword2": [
+        "ekmeği",
+        "ekmek"
+      ],
+      "degree": 5,
+      "conjunction": "and",
+      "id": 50
     }
   ],
   "mealTemplates": [],
