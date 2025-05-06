@@ -12807,24 +12807,23 @@
     },
     {
       "type": "frequency",
-      "id": 36,
-      "frequency": 6,
-      "frequencyType": "max",
-      "scope": "week",
+      "scope": "weekly",
       "weekRange": "all",
       "nameCheck": true,
-      "nameOperator": "OR",
       "names": [
         "ekmeği"
       ],
       "tagsCheck": false,
       "tags": [],
-      "roleCheck": false,
-      "role": "",
-      "catCheck": false,
+      "categoryCheck": false,
       "category": "",
       "mealTypeCheck": false,
-      "mealType": ""
+      "mealType": "lunch",
+      "roleCheck": false,
+      "role": "",
+      "frequency": 8,
+      "frequencyType": "max",
+      "id": 36
     },
     {
       "type": "frequency",
