@@ -7658,35 +7658,6 @@
       "name": "EKMEKLER",
       "items": [
         {
-          "name": "*Haşhaş ezmesi ekmeği (1 dilim)",
-          "calories": 43,
-          "protein": 3,
-          "carbs": 1,
-          "fat": 3,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "keto",
-            "ekmek",
-            "haşhaş"
-          ],
-          "role": "bread",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "category": "EKMEKLER",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Karabuğday ekmeği 1 dilim 25 gr",
           "calories": 66,
           "protein": 1,
@@ -8007,6 +7978,37 @@
           "tags": [
             "haşhaş",
             "keto",
+            "ekmeği"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "*Haşhaş ezmesi ekmeği (1 dilim)",
+          "category": "EKMEKLER",
+          "role": "bread",
+          "calories": 43,
+          "protein": 3,
+          "carbs": 1,
+          "fat": 3,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "keto",
+            "ekmek",
+            "haşhaş",
             "ekmeği"
           ],
           "compatibilityTags": [],
