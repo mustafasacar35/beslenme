@@ -12856,7 +12856,7 @@
       "type": "frequency",
       "frequency": 1,
       "frequencyType": "exact",
-      "scope": "day",
+      "scope": "meal",
       "weekRange": "all",
       "nameCheck": true,
       "names": [
@@ -12868,8 +12868,8 @@
       "role": "",
       "catCheck": false,
       "category": "",
-      "mealTypeCheck": false,
-      "mealType": ""
+      "mealTypeCheck": true,
+      "mealType": "dinner"
     }
   ],
   "mealTemplates": [],
