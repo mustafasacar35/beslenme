@@ -32,31 +32,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "111",
-          "calories": 17,
-          "protein": 1,
-          "carbs": 1,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": false,
-          "lowcarb": false,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "seasonRange": "[11,12]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "KAHVALTI",
-          "compatibilityTags": []
-        },
-        {
           "name": "abc",
           "calories": 17,
           "protein": 1,
@@ -77,6 +52,31 @@
           "portionFixed": false,
           "multiplier": 1,
           "category": "KAHVALTI"
+        },
+        {
+          "name": "111",
+          "category": "KAHVALTI",
+          "role": "mainDish",
+          "calories": 17,
+          "protein": 1,
+          "carbs": 1,
+          "fat": 1,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "compatibilityTags": [],
+          "keto": false,
+          "lowcarb": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[2,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
