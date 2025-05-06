@@ -7658,37 +7658,6 @@
       "name": "EKMEKLER",
       "items": [
         {
-          "name": "1 dilim Keten Tohumu Ekmeği",
-          "category": "EKMEKLER",
-          "role": "bread",
-          "calories": 255,
-          "protein": 15,
-          "carbs": 15,
-          "fat": 15,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keten tohumu",
-            "ekmek",
-            "keto",
-            "muffin"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Pita Ekmeği",
           "category": "EKMEKLER",
           "role": "bread",
@@ -8013,6 +7982,38 @@
             "badem",
             "keto",
             "ekmek",
+            "ekmeği"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "1 dilim Keten Tohumu Ekmeği",
+          "category": "EKMEKLER",
+          "role": "bread",
+          "calories": 255,
+          "protein": 15,
+          "carbs": 15,
+          "fat": 15,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keten tohumu",
+            "ekmek",
+            "keto",
+            "muffin",
             "ekmeği"
           ],
           "compatibilityTags": [],
