@@ -5033,6 +5033,8 @@
         },
         {
           "name": "Ketojenik Yaprak Sarması (4 adet)",
+          "category": "AKŞAM",
+          "role": "mainDish",
           "calories": 246,
           "protein": 18,
           "carbs": 3,
@@ -5041,18 +5043,19 @@
           "minQuantity": 0.5,
           "step": 0.5,
           "tags": [
-            "sarma"
+            "sarma",
+            "et"
           ],
           "compatibilityTags": [],
-          "role": "mainDish",
-          "mealType": [],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "mealType": [],
+          "isReversedSeason": false
         }
       ]
     },
@@ -12565,7 +12568,17 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [],
+            "breakfast": [
+              {
+                "name": "Ketojenik Yaprak Sarması (4 adet)",
+                "calories": 246,
+                "carbs": 3,
+                "protein": 18,
+                "fat": 18,
+                "quantity": 1,
+                "role": "mainDish"
+              }
+            ],
             "lunch": [],
             "dinner": []
           }
