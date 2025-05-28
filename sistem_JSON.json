@@ -13355,14 +13355,26 @@
       "conjunction": "or"
     },
     {
-      "id": 56,
       "type": "compatibility",
-      "keyword1": "zwytin",
+      "scope": "meal",
+      "weekRange": "all",
+      "nameCheck": false,
+      "names": [],
+      "tagsCheck": false,
+      "tags": [],
+      "categoryCheck": false,
+      "category": "",
+      "mealTypeCheck": false,
+      "mealType": "lunch",
+      "roleCheck": false,
+      "role": "",
+      "keyword1": "zeytin",
       "keyword2": [
         "peynir"
       ],
       "degree": 5,
-      "direction": "both"
+      "conjunction": "and",
+      "id": 56
     }
   ],
   "mealTemplates": [],
