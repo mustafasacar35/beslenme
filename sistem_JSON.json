@@ -600,36 +600,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Karnabahar Pankek",
-          "calories": 268,
-          "protein": 15,
-          "carbs": 7,
-          "fat": 20,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "karnabahar",
-            "pankek",
-            "keto",
-            "ekmek",
-            "tost"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Susamlı Omlet",
           "calories": 282,
           "protein": 16,
@@ -2249,6 +2219,37 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "category": "ÖĞLEN"
+        },
+        {
+          "name": "Karnabahar Pankek",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 268,
+          "protein": 15,
+          "carbs": 7,
+          "fat": 20,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "karnabahar",
+            "pankek",
+            "keto",
+            "ekmek",
+            "tost"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[9,4]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
