@@ -4819,35 +4819,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Karnabahar mantı (150 gram karnabahar, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlarla",
-          "calories": 354,
-          "protein": 30,
-          "carbs": 0,
-          "fat": 26,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "et",
-            "karnabahar",
-            "kıyma",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Nohut yemeği (1 su bardağı nohut ile)",
           "calories": 260,
           "protein": 14,
@@ -5995,6 +5966,36 @@
           "seasonRange": "[10,4]",
           "mealType": [
             "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Karnabahar mantı (150 gram karnabahar, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlarla",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 354,
+          "protein": 30,
+          "carbs": 0,
+          "fat": 26,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "et",
+            "karnabahar",
+            "kıyma",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[9,4]",
+          "mealType": [
             "dinner"
           ],
           "isReversedSeason": false
