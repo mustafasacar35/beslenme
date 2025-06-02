@@ -1988,6 +1988,40 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Lor peynirli tabanlı keto pizza",
+          "calories": 487,
+          "protein": 35,
+          "carbs": 8,
+          "fat": 35,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "pizza",
+            "ekmek",
+            "börek",
+            "yumurta",
+            "peynir"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "yeşillik",
+            "çorba"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
