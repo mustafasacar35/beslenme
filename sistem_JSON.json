@@ -2109,6 +2109,37 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Peynir Topları (1 porsiyon)",
+          "calories": 223,
+          "protein": 10,
+          "carbs": 3,
+          "fat": 19,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "peynir"
+          ],
+          "compatibilityTags": [
+            "ekmek",
+            "yumurta",
+            "zeytin",
+            "domates",
+            "yeşillik"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
