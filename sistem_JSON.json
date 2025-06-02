@@ -5754,6 +5754,39 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Fırında Sebzeli Peynirli Güveç (1 porsiyon)",
+          "calories": 332,
+          "protein": 12,
+          "carbs": 8,
+          "fat": 28,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "peynir",
+            "güveç",
+            "kabak",
+            "patlıcan"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "çorba",
+            "ekmek"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
