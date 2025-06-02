@@ -7502,34 +7502,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Brüksel Lahana Salatası",
-          "calories": 155,
-          "protein": 3,
-          "carbs": 2,
-          "fat": 15,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "brüksel lahana",
-            "zeytinyağı",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "SALATALAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Yeşil Salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
           "calories": 83,
           "protein": 3,
@@ -8563,6 +8535,35 @@
           "seasonRange": "[10,5]",
           "mealType": [
             "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Brüksel Lahana Salatası",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 155,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 15,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "brüksel lahana",
+            "zeytinyağı",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[9,4]",
+          "mealType": [
             "dinner"
           ],
           "isReversedSeason": false
