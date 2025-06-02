@@ -5847,6 +5847,38 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Patlıcan Kebabı",
+          "calories": 388,
+          "protein": 20,
+          "carbs": 5,
+          "fat": 32,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "patlıcan",
+            "et",
+            "kebap"
+          ],
+          "compatibilityTags": [
+            "çorba",
+            "salata",
+            "tatlı",
+            "ekmek"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
@@ -13588,6 +13620,15 @@
                 "quantity": 1,
                 "role": "drink",
                 "unit": "fincan"
+              },
+              {
+                "name": "Patlıcan Kebabı (2 orta boy patlıcan, 200 gr kıyma ile)",
+                "calories": 500,
+                "carbs": 5,
+                "protein": 30,
+                "fat": 40,
+                "quantity": 1,
+                "role": "mainDish"
               }
             ],
             "lunch": [
