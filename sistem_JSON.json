@@ -1323,34 +1323,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "2 dilim Hindi Füme",
-          "calories": 50,
-          "protein": 6,
-          "carbs": 2,
-          "fat": 2,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "hindi",
-            "keto",
-            "et"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "Sebzeli Krep (2 adet yumurta, 1 yemek kaşığı lupin unu, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
           "calories": 340,
           "protein": 25,
@@ -2244,6 +2216,35 @@
             "lor",
             "ekmek",
             "peynir"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "2 dilim Hindi Füme",
+          "category": "ÖĞLEN",
+          "role": "sideDish",
+          "calories": 50,
+          "protein": 6,
+          "carbs": 2,
+          "fat": 2,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "hindi",
+            "keto",
+            "et"
           ],
           "compatibilityTags": [],
           "keto": true,
