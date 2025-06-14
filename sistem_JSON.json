@@ -9545,36 +9545,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Yoğurtlu enginar",
-          "category": "SALATALAR",
-          "role": "sideDish",
-          "calories": 274,
-          "protein": 10,
-          "carbs": 9,
-          "fat": 22,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto",
-            "enginar",
-            "salata",
-            "yoğurt"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber",
           "category": "SALATALAR",
           "role": "sideDish",
@@ -9865,6 +9835,36 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Yoğurtlu enginar",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 274,
+          "protein": 10,
+          "carbs": 9,
+          "fat": 22,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "keto",
+            "enginar",
+            "salata",
+            "yoğurt"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
           ],
           "isReversedSeason": false
         }
