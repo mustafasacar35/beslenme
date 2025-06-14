@@ -10799,6 +10799,34 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "isReversedSeason": false
+        },
+        {
+          "name": "Bitter çikolata (2 kare)",
+          "category": "ATIŞTIRMALIK",
+          "role": "snack",
+          "calories": 39,
+          "protein": 1,
+          "carbs": 2,
+          "fat": 3,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "çikolata",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -11622,33 +11650,6 @@
     {
       "name": "Yeni Eklenenler",
       "items": [
-        {
-          "name": "Bitter çikolata (2 kare)",
-          "calories": 39,
-          "protein": 1,
-          "carbs": 2,
-          "fat": 3,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "çikolata",
-            "keto"
-          ],
-          "role": "snack",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "Yeni Eklenenler",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
         {
           "name": "*Avokadolu omlet",
           "calories": 330,
