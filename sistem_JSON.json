@@ -11179,8 +11179,8 @@
           "carbs": 3,
           "fat": 15,
           "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
+          "minQuantity": 1,
+          "step": 1,
           "tags": [],
           "compatibilityTags": [],
           "keto": true,
@@ -13203,6 +13203,15 @@
                 "fat": 0,
                 "quantity": 1,
                 "role": "mainDish"
+              },
+              {
+                "name": "Tahin ekmeği",
+                "calories": 175,
+                "carbs": 3,
+                "protein": 7,
+                "fat": 15,
+                "quantity": 1,
+                "role": "bread"
               }
             ],
             "lunch": [
