@@ -7037,6 +7037,34 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Kıymalı karnabahar  (veya kıymalı lahana) yemeği (100 gram kıyma ile)",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "karnabahar",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -12626,33 +12654,6 @@
     {
       "name": "Yeni Eklenenler",
       "items": [
-        {
-          "name": "Kıymalı karnabahar  (veya kıymalı lahana) yemeği (100 gram kıyma ile)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "karnabahar",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "Yeni Eklenenler",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
         {
           "name": "150 gram tavuk pirzola ya da kanat",
           "calories": 0,
