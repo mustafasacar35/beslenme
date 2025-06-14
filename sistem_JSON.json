@@ -8934,6 +8934,36 @@
             "breakfast"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Yeşillikler (Marul, Roka, Maydanoz + Limon, Sirke)",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 20,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "yeşillik",
+            "turp",
+            "sabah",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "breakfast"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -10543,33 +10573,6 @@
     {
       "name": "SABAH YEŞİLLİKLERİ",
       "items": [
-        {
-          "name": "Yeşillikler (Marul, Roka, Maydanoz + Limon, Sirke)",
-          "calories": 20,
-          "protein": 3,
-          "carbs": 2,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "yeşillik",
-            "turp",
-            "sabah",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": "breakfast",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "GENEL",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
         {
           "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber + Zeytinyağı",
           "calories": 158,
