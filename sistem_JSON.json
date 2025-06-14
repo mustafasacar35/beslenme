@@ -138,34 +138,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Közlenmiş Kapya Biber",
-          "calories": 16,
-          "protein": 1,
-          "carbs": 3,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "biber",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "category": "ÖĞLEN",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "1 yemek kaşığı tahin",
           "calories": 92,
           "protein": 3,
@@ -2680,6 +2652,35 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Közlenmiş Kapya Biber",
+          "category": "ÖĞLEN",
+          "role": "sideDish",
+          "calories": 16,
+          "protein": 1,
+          "carbs": 3,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "biber",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
           ],
           "isReversedSeason": false
         }
