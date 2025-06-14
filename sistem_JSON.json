@@ -10950,6 +10950,33 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "category": "EKMEKLER"
+        },
+        {
+          "name": "Lupin unlu ekmek (1 dilim için)",
+          "category": "EKMEKLER",
+          "role": "bread",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -12599,32 +12626,6 @@
     {
       "name": "Yeni Eklenenler",
       "items": [
-        {
-          "name": "Lupin unlu ekmek (1 dilim için)",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "Yeni Eklenenler",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
         {
           "name": "Kıymalı karnabahar  (veya kıymalı lahana) yemeği (100 gram kıyma ile)",
           "calories": 0,
