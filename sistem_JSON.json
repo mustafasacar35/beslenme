@@ -7177,6 +7177,31 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Izgara biftek (200 gram)",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 224,
+          "protein": 24,
+          "carbs": 32,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -13239,31 +13264,6 @@
             "lunch"
           ],
           "isReversedSeason": false
-        },
-        {
-          "name": "Izgara biftek (200 gram)",
-          "category": "Yeni Eklenenler",
-          "role": "mainDish",
-          "calories": 224,
-          "protein": 24,
-          "carbs": 32,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
         }
       ]
     }
@@ -13279,6 +13279,15 @@
                 "quantity": 1,
                 "role": "drink",
                 "unit": "fincan"
+              },
+              {
+                "name": "Izgara biftek (200 gram)",
+                "calories": 224,
+                "carbs": 32,
+                "protein": 24,
+                "fat": 0,
+                "quantity": 1,
+                "role": "mainDish"
               }
             ],
             "lunch": [
