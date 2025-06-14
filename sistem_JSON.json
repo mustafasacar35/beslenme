@@ -4331,35 +4331,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Közlenmiş patlıcan salatası",
-          "calories": 178,
-          "protein": 4,
-          "carbs": 9,
-          "fat": 14,
-          "maxQuantity": 2,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "patlıcan",
-            "keto",
-            "salata"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Yarım su bardağı nohut+100 gr tavuk ya da kırmızı et ile nohut yemeği",
           "calories": 370,
           "protein": 30,
@@ -6958,6 +6929,36 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Közlenmiş patlıcan salatası",
+          "category": "AKŞAM",
+          "role": "sideDish",
+          "calories": 178,
+          "protein": 4,
+          "carbs": 9,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "patlıcan",
+            "keto",
+            "salata"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
           ],
           "isReversedSeason": false
         }
@@ -13903,7 +13904,7 @@
               },
               {
                 "name": "Közlenmiş patlıcan salatası",
-                "quantity": 2
+                "quantity": 1
               },
               {
                 "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
