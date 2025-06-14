@@ -2386,6 +2386,36 @@
             "lunch"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "*Avokadolu omlet",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 348,
+          "protein": 20,
+          "carbs": 4,
+          "fat": 28,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "avokado",
+            "keto",
+            "omlet",
+            "yumurta"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -11650,35 +11680,6 @@
     {
       "name": "Yeni Eklenenler",
       "items": [
-        {
-          "name": "*Avokadolu omlet",
-          "calories": 330,
-          "protein": 20,
-          "carbs": 4,
-          "fat": 28,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "avokado",
-            "keto",
-            "omlet",
-            "yumurta"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "Yeni Eklenenler",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
         {
           "name": "Karnabahar mantısı (150 gr kıyma ile)",
           "calories": 0,
