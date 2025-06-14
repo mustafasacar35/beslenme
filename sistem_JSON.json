@@ -4950,34 +4950,6 @@
           "category": "AKŞAM"
         },
         {
-          "name": "Avokadolu Karides Salatası",
-          "calories": 272,
-          "protein": 20,
-          "carbs": 3,
-          "fat": 20,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [],
-          "compatibilityTags": [
-            "avokado",
-            "karides",
-            "salata"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "AKŞAM"
-        },
-        {
           "name": "Ketojenik Yaprak Sarması (4 adet)",
           "category": "AKŞAM",
           "role": "mainDish",
@@ -6090,6 +6062,39 @@
           "compatibilityTags": [
             "salata",
             "meze"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Avokadolu Karides Salatası",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 272,
+          "protein": 20,
+          "carbs": 3,
+          "fat": 20,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "salata",
+            "et",
+            "karides"
+          ],
+          "compatibilityTags": [
+            "avokado",
+            "karides",
+            "salata"
           ],
           "keto": true,
           "lowcarb": true,
