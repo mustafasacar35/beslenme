@@ -8794,35 +8794,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Semizotu Salatası (2 avuç semizotu, 1 domates, 1 salatalık, 1 biber, 1 yemek kaşığı zeytinyağı)",
-          "calories": 158,
-          "protein": 3,
-          "carbs": 5,
-          "fat": 14,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "semizotu",
-            "salata",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "category": "SALATALAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Kırmızı Pancar Salatası (100 gr pancar, 1 ceviz, maydanoz, 1 tatlı kaşığı zeytinyağı)",
           "calories": 99,
           "protein": 3,
@@ -10277,6 +10248,36 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Semizotu Salatası (2 avuç semizotu, 1 domates, 1 salatalık, 1 biber, 1 yemek kaşığı zeytinyağı)",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 158,
+          "protein": 3,
+          "carbs": 5,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "semizotu",
+            "salata",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
             "dinner"
           ],
           "isReversedSeason": false
@@ -13188,7 +13189,7 @@
               },
               {
                 "name": "Semizotu Salatası (2 avuç semizotu, 1 domates, 1 salatalık, 1 biber, 1 yemek kaşığı zeytinyağı)",
-                "quantity": 0.5
+                "quantity": 1
               }
             ],
             "dinner": [
