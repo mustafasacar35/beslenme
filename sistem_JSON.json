@@ -5476,40 +5476,6 @@
           "category": "AKŞAM"
         },
         {
-          "name": "Lahmacun (2 adet)",
-          "calories": 292,
-          "protein": 20,
-          "carbs": 8,
-          "fat": 20,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "et",
-            "ekmek",
-            "börek",
-            "yumurta",
-            "tost"
-          ],
-          "compatibilityTags": [
-            "yeşillik",
-            "salata",
-            "çorba"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "AKŞAM"
-        },
-        {
           "name": "Patlıcan Salatalı Tavuk Şiş",
           "calories": 372,
           "protein": 24,
@@ -7236,6 +7202,41 @@
           ],
           "compatibilityTags": [
             "semizotu"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Lahmacun (2 adet)",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 292,
+          "protein": 20,
+          "carbs": 8,
+          "fat": 20,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "et",
+            "ekmek",
+            "börek",
+            "yumurta",
+            "tost"
+          ],
+          "compatibilityTags": [
+            "yeşillik",
+            "salata",
+            "çorba"
           ],
           "keto": true,
           "lowcarb": true,
