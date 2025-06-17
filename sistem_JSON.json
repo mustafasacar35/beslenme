@@ -5634,38 +5634,6 @@
           "category": "AKŞAM"
         },
         {
-          "name": "Tavuklu Kabak Noodle",
-          "calories": 430,
-          "protein": 35,
-          "carbs": 5,
-          "fat": 30,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "kabak",
-            "tavuk",
-            "et"
-          ],
-          "compatibilityTags": [
-            "salata",
-            "çorba",
-            "tatlı"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "AKŞAM"
-        },
-        {
           "name": "Kaşarlı Kabak Graten (1 porsiyon)",
           "category": "AKŞAM",
           "role": "mainDish",
@@ -7233,6 +7201,39 @@
             "keto"
           ],
           "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Tavuklu Kabak Noodle",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 430,
+          "protein": 35,
+          "carbs": 5,
+          "fat": 30,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "kabak",
+            "tavuk",
+            "et"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "çorba",
+            "tatlı"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
