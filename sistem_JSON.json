@@ -3445,34 +3445,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Patlıcan Musakka",
-          "calories": 213,
-          "protein": 18,
-          "carbs": 6,
-          "fat": 13,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "patlıcan",
-            "kıyma",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "İmam Bayıldı",
           "calories": 211,
           "protein": 11,
@@ -7233,6 +7205,37 @@
             "salata",
             "çorba",
             "tatlı"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Patlıcan Musakka",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 213,
+          "protein": 18,
+          "carbs": 6,
+          "fat": 13,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "patlıcan",
+            "kıyma",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "semizotu"
           ],
           "keto": true,
           "lowcarb": true,
