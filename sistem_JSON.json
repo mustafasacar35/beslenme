@@ -4498,33 +4498,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Tavuk Çorbası",
-          "calories": 114,
-          "protein": 10,
-          "carbs": 5,
-          "fat": 6,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "keto",
-            "çorba"
-          ],
-          "role": "soup",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "category": "AKŞAM",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Fırında Cevizli Peynirli Mantar Dolması (1 porsiyon)",
           "calories": 280,
           "protein": 14,
@@ -7249,6 +7222,34 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Tavuk Çorbası",
+          "category": "AKŞAM",
+          "role": "soup",
+          "calories": 114,
+          "protein": 10,
+          "carbs": 5,
+          "fat": 6,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "keto",
+            "çorba"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -10355,31 +10356,6 @@
           "fillerLunch": false,
           "fillerDinner": false,
           "category": "ÇORBALAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
-          "name": "Tavuk Çorbası",
-          "calories": 114,
-          "protein": 10,
-          "carbs": 5,
-          "fat": 6,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "tavuk",
-            "keto"
-          ],
-          "role": "soup",
-          "mealType": "dinner",
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "GENEL",
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
