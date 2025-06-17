@@ -8372,34 +8372,6 @@
           "category": "TATLILAR"
         },
         {
-          "name": "Cevizli Top (4 adet)",
-          "calories": 358,
-          "protein": 10,
-          "carbs": 3,
-          "fat": 34,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "hindistancevizi",
-            "tatlı"
-          ],
-          "compatibilityTags": [],
-          "role": "dessert",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "TATLILAR"
-        },
-        {
           "name": "*Kabak tatlısı (200gr kabak + 1 yemek kaşığı tahin)",
           "category": "TATLILAR",
           "role": "dessert",
@@ -8508,6 +8480,36 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Cevizli Top (4 adet)",
+          "category": "TATLILAR",
+          "role": "dessert",
+          "calories": 358,
+          "protein": 10,
+          "carbs": 3,
+          "fat": 34,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "hindistancevizi",
+            "tatlı",
+            "top"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
             "dinner"
           ],
           "isReversedSeason": false
