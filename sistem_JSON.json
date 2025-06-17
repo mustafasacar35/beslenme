@@ -2545,41 +2545,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Lor peynirli tabanlı keto pizza",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 487,
-          "protein": 35,
-          "carbs": 8,
-          "fat": 35,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "pizza",
-            "ekmek",
-            "börek",
-            "yumurta",
-            "peynir",
-            "sucuk"
-          ],
-          "compatibilityTags": [
-            "çorba"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Patlıcan Tost",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -2806,6 +2771,43 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Lor peynirli tabanlı keto pizza",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 487,
+          "protein": 35,
+          "carbs": 8,
+          "fat": 35,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "pizza",
+            "ekmek",
+            "börek",
+            "yumurta",
+            "peynir",
+            "sucuk"
+          ],
+          "compatibilityTags": [
+            "çorba",
+            "salata",
+            "yeşillik"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
           ],
           "isReversedSeason": false
         }
