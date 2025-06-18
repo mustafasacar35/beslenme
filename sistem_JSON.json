@@ -7589,34 +7589,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Fındık (10 adet)",
-          "calories": 70,
-          "protein": 2,
-          "carbs": 2,
-          "fat": 6,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "fındık",
-            "keto"
-          ],
-          "role": "snack",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "category": "KURUYEMİŞLER",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "10 adet Çiğ Badem",
           "category": "KURUYEMİŞLER",
           "role": "snack",
@@ -7836,6 +7808,36 @@
           "step": 0.5,
           "tags": [
             "badem",
+            "keto",
+            "kuruyemiş"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Fındık (10 adet)",
+          "category": "KURUYEMİŞLER",
+          "role": "snack",
+          "calories": 70,
+          "protein": 2,
+          "carbs": 2,
+          "fat": 6,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "fındık",
             "keto",
             "kuruyemiş"
           ],
