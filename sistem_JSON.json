@@ -7436,45 +7436,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Kaşarlı Kabak Graten (1 porsiyon)",
-          "category": "AKŞAM",
-          "role": "mainDish",
-          "calories": 152,
-          "protein": 7,
-          "carbs": 4,
-          "fat": 12,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "kaşar",
-            "peynir",
-            "kabak",
-            "börek",
-            "ekmek"
-          ],
-          "compatibilityTags": [
-            "domates",
-            "salata",
-            "kuruyemiş",
-            "yeşillik",
-            "zeytin"
-          ],
-          "incompatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Kabak Lazanya (1 porsiyon)",
           "category": "AKŞAM",
           "role": "mainDish",
@@ -7611,6 +7572,45 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Kaşarlı Kabak Graten (1 porsiyon)",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 152,
+          "protein": 7,
+          "carbs": 4,
+          "fat": 12,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "kaşar",
+            "peynir",
+            "kabak",
+            "börek",
+            "ekmek"
+          ],
+          "compatibilityTags": [
+            "domates",
+            "salata",
+            "kuruyemiş",
+            "yeşillik",
+            "zeytin"
+          ],
+          "incompatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
             "dinner"
           ],
           "isReversedSeason": false
