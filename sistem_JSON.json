@@ -2872,42 +2872,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Kabaklı Peynirli Muffin (4 adet)",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 208,
-          "protein": 12,
-          "carbs": 4,
-          "fat": 16,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "yumurta",
-            "ekmek",
-            "tost",
-            "peynir"
-          ],
-          "compatibilityTags": [
-            "kuruyemiş",
-            "zeytin",
-            "peynir",
-            "domates",
-            "yeşillik"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -2966,6 +2930,42 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Kabaklı Peynirli Muffin (4 adet)",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 208,
+          "protein": 12,
+          "carbs": 4,
+          "fat": 16,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "yumurta",
+            "ekmek",
+            "tost",
+            "peynir"
+          ],
+          "compatibilityTags": [
+            "kuruyemiş",
+            "zeytin",
+            "peynir",
+            "domates",
+            "yeşillik"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
