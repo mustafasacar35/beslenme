@@ -1281,40 +1281,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Pankek",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 234,
-          "protein": 15,
-          "carbs": 3,
-          "fat": 18,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "pankek",
-            "keto",
-            "ekmek",
-            "tost"
-          ],
-          "compatibilityTags": [
-            "domates",
-            "peynir",
-            "zeytin"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "1 dilim Ispanaklı Kabak Böreği",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -2957,6 +2923,42 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Pankek",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 234,
+          "protein": 15,
+          "carbs": 3,
+          "fat": 18,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "pankek",
+            "keto",
+            "ekmek",
+            "tost"
+          ],
+          "compatibilityTags": [
+            "domates",
+            "peynir",
+            "zeytin",
+            "yeşillik",
+            "kuruyemiş"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
