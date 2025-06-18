@@ -2613,31 +2613,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "tahin ekmeği ile tost (1 dilim kaşar) + kasap sucuk (50 gram)",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 410,
-          "protein": 20,
-          "carbs": 6,
-          "fat": 34,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Yumurta salatası (2 adet haşlanmış yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 yemek kaşığı zeytinyağı",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -2941,6 +2916,35 @@
             "peynir",
             "domates"
           ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "tahin ekmeği ile tost (1 dilim kaşar) + kasap sucuk (50 gram)",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 410,
+          "protein": 20,
+          "carbs": 6,
+          "fat": 34,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "tost",
+            "omlet",
+            "yumurta"
+          ],
+          "compatibilityTags": [],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
