@@ -5020,33 +5020,6 @@
           "seasonRange": "[1,12]"
         },
         {
-          "name": "Sarımsaklı Tereyağlı Karides",
-          "calories": 214,
-          "protein": 20,
-          "carbs": 2,
-          "fat": 14,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "karides",
-            "et"
-          ],
-          "compatibilityTags": [],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "AKŞAM"
-        },
-        {
           "name": "Kakaolu kurabiye",
           "category": "AKŞAM",
           "role": "dessert",
@@ -7529,6 +7502,39 @@
             "tatlı",
             "meze",
             "çorba"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Sarımsaklı Tereyağlı Karides",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 214,
+          "protein": 20,
+          "carbs": 2,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "karides",
+            "et"
+          ],
+          "compatibilityTags": [
+            "çorba",
+            "salata",
+            "meze",
+            "peynir"
           ],
           "keto": true,
           "lowcarb": true,
@@ -13421,20 +13427,16 @@
             ],
             "lunch": [
               {
+                "name": "Kabaklı Peynirli Muffin (4 adet)",
+                "quantity": 1
+              },
+              {
                 "name": "Zeytin (5 adet)",
                 "quantity": 2
               },
               {
-                "name": "Lor peynirli tabanlı keto pizza",
+                "name": "10 adet Badem",
                 "quantity": 1
-              },
-              {
-                "name": "Bitter Çikolata?",
-                "quantity": 0.5
-              },
-              {
-                "name": "2 dilim Hindi Füme",
-                "quantity": 0.5
               },
               {
                 "name": "Közlenmiş Kapya Biber",
@@ -13443,20 +13445,16 @@
             ],
             "dinner": [
               {
-                "name": "Tavuklu Kabak Noodle",
+                "name": "Sarımsaklı Tereyağlı Karides",
                 "quantity": 1
               },
               {
-                "name": "Yeşil Salata (marul, dereotu, roka, kırmızı lahana, 1 tatlı kaşığı zeytinyağı)",
+                "name": "Yoğurtlu enginar",
                 "quantity": 1
               },
               {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Baby Enginar Salatası",
-                "quantity": 1
+                "name": "Pita Ekmeği",
+                "quantity": 0.5
               }
             ]
           }
@@ -13473,33 +13471,25 @@
             ],
             "lunch": [
               {
-                "name": "Yoğurtlu çılbır",
+                "name": "1 adet Ispanaklı Muffin",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz,  limon ve sirke ile)",
+                "name": "Peynirli biber dolması (2 adet)",
                 "quantity": 1
               },
               {
-                "name": "1 dilim Keten Tohumu Ekmeği",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak Çekirdeği (1 yemek kaşığı)",
+                "name": "Zeytin (10 adet)",
                 "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Kıymalı Ispanak Yemeği",
+                "name": "Patlıcan Kebabı (2 orta boy patlıcan, 200 gr kıyma ile)",
                 "quantity": 1
               },
               {
-                "name": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
-                "quantity": 2
-              },
-              {
-                "name": "Ketojenik Tiramisu",
+                "name": "4 yemek kaşığı ev yoğurdu",
                 "quantity": 1
               }
             ]
@@ -13517,38 +13507,26 @@
             ],
             "lunch": [
               {
-                "name": "Haşlanmış Yumurta (1 adet) + Tereyağı ve Baharatlar",
+                "name": "Ispanaklı ve Lor Peynirli Omlet",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
+                "name": "Tereyağlı Kabak",
                 "quantity": 1
               },
               {
                 "name": "1 dilim  Badem Unu Ekmeği",
-                "quantity": 1
-              },
-              {
-                "name": "50 gram Kasap Sucuk",
-                "quantity": 1
-              },
-              {
-                "name": "Tulum /kaşar peyniri (50 gram)",
                 "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "*Tavuklu Mantar Sote (150 gr tavuk ile)",
+                "name": "Ketojenik Pizza",
                 "quantity": 1
               },
               {
-                "name": "Karnabahar Püresi",
+                "name": "Girit Ezmesi (yeşil peynir mezesi)",
                 "quantity": 1
-              },
-              {
-                "name": "Peynirli Patlıcan Topları (4 adet)",
-                "quantity": 0.5
               }
             ]
           }
@@ -13565,30 +13543,38 @@
             ],
             "lunch": [
               {
-                "name": "Ispanaklı ve Lor Peynirli Omlet",
+                "name": "Zeytinyağlı Deniz Börülcesi",
                 "quantity": 1
               },
               {
-                "name": "Semizotu Salatası",
-                "quantity": 1
-              },
-              {
-                "name": "1 dilim  Badem Unu Ekmeği",
+                "name": "Lor peynirli tabanlı keto pizza",
                 "quantity": 0.5
+              },
+              {
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon ile)",
+                "quantity": 1
+              },
+              {
+                "name": "10 adet Çiğ Badem",
+                "quantity": 0.5
+              },
+              {
+                "name": "Közlenmiş Kapya Biber",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Ketojenik  Lahana Sarması (4 adet)",
-                "quantity": 2
-              },
-              {
-                "name": "2 yemek kaşığı ev yoğurdu",
-                "quantity": 2
-              },
-              {
-                "name": "Chia Tohumlu Puding",
+                "name": "200 gram Somon Fileto (tavada veya ızgarada)",
                 "quantity": 1
+              },
+              {
+                "name": "Kırmızı Pancar Salatası (100 gram pancar, 1 adet ceviz, maydanoz, 1 tatlı kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Peynirli Patlıcan Topları (4 adet)",
+                "quantity": 0.5
               }
             ]
           }
@@ -13605,38 +13591,34 @@
             ],
             "lunch": [
               {
-                "name": "sebzeli omlet (2 adet yumurta, 2 dilim hindi füme, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+                "name": "Çilekli-Limonlu Smoothie (1 porsiyon)",
                 "quantity": 1
               },
               {
-                "name": "Zeytinyağlı Deniz Börülcesi",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon ile)",
                 "quantity": 1
               },
               {
-                "name": "1 dilim  Badem Unu Ekmeği",
+                "name": "Peynirli Patlıcan Topları (4 adet)",
                 "quantity": 1
               },
               {
-                "name": "Tulum /kaşar peyniri (50 gram)",
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 0.5
+              },
+              {
+                "name": "(1 porsiyon) Kahvaltılık Kuru Soğanlı Cevizli Lor Kavurması",
                 "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Kırmızı et ya da tavuklu bamya yemeği (100 gram et ile)",
+                "name": "200 gram Tavuk Eti ile Güveç (domates, biber ve soğan ile)",
                 "quantity": 1
               },
               {
-                "name": "Susamlı karnabahar kızartma (150 gram karnabahar, 1 yemek kaşığı zeytinyağı, 1 yemek kaşığı susam ve istenilen baharatlarla fırınlanacak.)",
+                "name": "Zeytinyağlı Deniz Börülcesi",
                 "quantity": 1
-              },
-              {
-                "name": "Peynirli Patlıcan Topları (4 adet)",
-                "quantity": 0.5
-              },
-              {
-                "name": "Cevizli Browni Kek",
-                "quantity": 0.5
               }
             ]
           }
@@ -13653,15 +13635,11 @@
             ],
             "lunch": [
               {
-                "name": "2 adet lupin unlu poğaça (veya 4 adet Lorlu poğaça)",
+                "name": "Sebzeli Omlet (1 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "30 gram pastırma",
-                "quantity": 1
-              },
-              {
-                "name": "Cevizli Top (4 adet)",
+                "name": "Biberli peynir (3 adet yeşil biber, 50 gr lor peyniri, 1 tatlı kaşığı zeytinyağı, biraz tuz ve istenilen baharatlar. Biberleri zeytinyağında soteleyip, üzerine peyniri ekleyin. Bir miktar tuz ve istediğiniz baharatları serpin.)",
                 "quantity": 1
               },
               {
@@ -13671,24 +13649,16 @@
             ],
             "dinner": [
               {
-                "name": "Bonfile Steak",
+                "name": "Tavuk Güveç",
                 "quantity": 1
               },
               {
-                "name": "Kırmızı Pancar Salatası",
+                "name": "Brokoli Salatası",
                 "quantity": 1
               },
               {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "name": "Baby Enginar Salatası",
                 "quantity": 1
-              },
-              {
-                "name": "Peynirli Patlıcan Topları (4 adet)",
-                "quantity": 1
-              },
-              {
-                "name": "Kabak Çekirdeği (1 avuç)",
-                "quantity": 0.5
               }
             ]
           }
@@ -13705,29 +13675,29 @@
             ],
             "lunch": [
               {
-                "name": "30 gram Beyaz Peynir",
-                "quantity": 2
-              },
-              {
-                "name": "1 dilim Keten Tohumu Ekmeği",
+                "name": "Kabaklı Omlet",
                 "quantity": 1
               },
               {
-                "name": "Cevizli Top (4 adet)",
+                "name": "2 dilim Hindi Füme",
+                "quantity": 1
+              },
+              {
+                "name": "Tulum /kaşar peyniri (50 gram)",
                 "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Tavuk Güveç",
+                "name": "200 gram köfte",
                 "quantity": 1
               },
               {
-                "name": "Beyaz Lahana Salatası",
+                "name": "Mor Lahana Salatası",
                 "quantity": 1
               },
               {
-                "name": "Peynirli Patlıcan Topları (4 adet)",
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               }
             ]
