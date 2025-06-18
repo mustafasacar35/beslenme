@@ -10155,34 +10155,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
-          "category": "SALATALAR",
-          "role": "sideDish",
-          "calories": 29,
-          "protein": 2,
-          "carbs": 3,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto",
-            "salata"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Salatalık + Cherry Domates + Maydanoz + Yeşil Biber",
           "category": "SALATALAR",
           "role": "sideDish",
@@ -10664,6 +10636,36 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 29,
+          "protein": 2,
+          "carbs": 3,
+          "fat": 1,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keto",
+            "salata",
+            "salatalıki domates"
+          ],
+          "compatibilityTags": [],
+          "incompatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
           ],
           "isReversedSeason": false
         }
