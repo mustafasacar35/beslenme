@@ -5995,38 +5995,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Tavuk sote (200 gram tavuk fleto,1adet orta boy domates, 1 adet yeşil biber, 1 yemek kaşığı zeytinyağı)",
-          "category": "AKŞAM",
-          "role": "mainDish",
-          "calories": 326,
-          "protein": 40,
-          "carbs": 10,
-          "fat": 14,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "tavuk",
-            "sebze",
-            "keto",
-            "et"
-          ],
-          "compatibilityTags": [
-            "salata"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "250 gram ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
           "category": "AKŞAM",
           "role": "mainDish",
@@ -7431,6 +7399,39 @@
             "tatlı",
             "çorba",
             "kuruyemiş"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Tavuk sote (200 gram tavuk fleto,1adet orta boy domates, 1 adet yeşil biber, 1 yemek kaşığı zeytinyağı)",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 326,
+          "protein": 40,
+          "carbs": 10,
+          "fat": 14,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "tavuk",
+            "sebze",
+            "keto",
+            "et"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "tatlı"
           ],
           "keto": true,
           "lowcarb": true,
