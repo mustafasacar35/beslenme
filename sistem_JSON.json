@@ -9955,33 +9955,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Dilimlenmiş yarım turp + yarım pancar",
-          "category": "SALATALAR",
-          "role": "sideDish",
-          "calories": 21,
-          "protein": 1,
-          "carbs": 2,
-          "fat": 1,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "keto"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Semizotu Salatası",
           "category": "SALATALAR",
           "role": "sideDish",
@@ -10547,6 +10520,35 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Dilimlenmiş yarım turp + yarım pancar",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 21,
+          "protein": 1,
+          "carbs": 2,
+          "fat": 1,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "keto",
+            "turp",
+            "panca"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
