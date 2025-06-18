@@ -1134,42 +1134,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "1 dilim Ispanaklı Kabak Böreği",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 154,
-          "protein": 14,
-          "carbs": 2,
-          "fat": 10,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "ıspanak",
-            "kabak",
-            "börek",
-            "keto",
-            "ekmek"
-          ],
-          "compatibilityTags": [
-            "peynir",
-            "zeytin",
-            "domates"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "1 yumurta, 1 çorba kaşığı badem unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)yumurta ve badem ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -3010,6 +2974,45 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "1 dilim Ispanaklı Kabak Böreği",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 154,
+          "protein": 14,
+          "carbs": 2,
+          "fat": 10,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "ıspanak",
+            "kabak",
+            "börek",
+            "keto",
+            "ekmek"
+          ],
+          "compatibilityTags": [
+            "peynir",
+            "zeytin",
+            "domates",
+            "tatlı",
+            "kuruyemiş"
+          ],
+          "incompatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
           ],
           "isReversedSeason": false
         }
