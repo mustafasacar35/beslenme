@@ -1914,38 +1914,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "1 adet Ispanaklı Muffin",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 308,
-          "protein": 18,
-          "carbs": 5,
-          "fat": 24,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "ıspanak",
-            "muffin",
-            "keto",
-            "ekmek"
-          ],
-          "compatibilityTags": [
-            "zeytin"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "*Avokadolu omlet",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -2974,6 +2942,40 @@
             "domates",
             "kuruyemiş",
             "peynir"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "1 adet Ispanaklı Muffin",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 308,
+          "protein": 18,
+          "carbs": 5,
+          "fat": 24,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "ıspanak",
+            "muffin",
+            "keto",
+            "ekmek"
+          ],
+          "compatibilityTags": [
+            "zeytin",
+            "peynir",
+            "yeşillik"
           ],
           "keto": true,
           "lowcarb": true,
