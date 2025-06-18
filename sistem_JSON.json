@@ -8853,34 +8853,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Kırmızı Pancar Salatası",
-          "calories": 99,
-          "protein": 3,
-          "carbs": 6,
-          "fat": 7,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "pancar",
-            "ceviz",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "category": "SALATALAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "1 Kase Yeşil Salata",
           "calories": 120,
           "protein": 2,
@@ -10615,6 +10587,36 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Kırmızı Pancar Salatası",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 99,
+          "protein": 3,
+          "carbs": 6,
+          "fat": 7,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "pancar",
+            "ceviz",
+            "keto",
+            "slaata"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
           ],
           "isReversedSeason": false
         }
