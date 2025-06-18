@@ -3545,33 +3545,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Mücver",
-          "calories": 541,
-          "protein": 18,
-          "carbs": 7,
-          "fat": 49,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "kabak",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Ispanaklı ya da Pazılı Tavuk Dolması",
           "calories": 247,
           "protein": 25,
@@ -7376,6 +7349,36 @@
             "kuruyemiş",
             "ekmek",
             "salata"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Mücver",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 541,
+          "protein": 18,
+          "carbs": 7,
+          "fat": 49,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "kabak",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "kuruyemiş"
           ],
           "keto": true,
           "lowcarb": true,
