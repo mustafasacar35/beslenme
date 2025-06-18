@@ -9614,35 +9614,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Yoğurtlu Kereviz Salatası",
-          "category": "SALATALAR",
-          "role": "sideDish",
-          "calories": 361,
-          "protein": 9,
-          "carbs": 7,
-          "fat": 33,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "kereviz",
-            "yoğurt",
-            "keto"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[10,4]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Somonlu Roka ve Avokado Salatası",
           "category": "SALATALAR",
           "role": "mainDish",
@@ -10740,6 +10711,36 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Yoğurtlu Kereviz Salatası",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 361,
+          "protein": 9,
+          "carbs": 7,
+          "fat": 33,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "kereviz",
+            "yoğurt",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "incompatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[10,4]",
+          "mealType": [
+            "dinner"
           ],
           "isReversedSeason": false
         }
