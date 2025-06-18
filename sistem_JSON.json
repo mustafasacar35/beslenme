@@ -808,36 +808,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Yumurtalı ıspanak /pazı /semizotu   kavurma (2 adet yumurta, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, tercihen soğan",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 244,
-          "protein": 13,
-          "carbs": 3,
-          "fat": 20,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "yumurta",
-            "zeytinyağı",
-            "ıspanak",
-            "keto"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Yumurtalı Lahana Kavurma",
           "calories": 258,
           "protein": 13,
@@ -2929,6 +2899,41 @@
             "zeytin",
             "kuruyemiş",
             "ekmek"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Yumurtalı ıspanak /pazı /semizotu   kavurma (2 adet yumurta, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, tercihen soğan",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 244,
+          "protein": 13,
+          "carbs": 3,
+          "fat": 20,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "yumurta",
+            "zeytinyağı",
+            "ıspanak",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "ekmek",
+            "peynir",
+            "kuruyemiş",
+            "domates"
           ],
           "keto": true,
           "lowcarb": true,
