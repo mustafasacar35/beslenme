@@ -4620,36 +4620,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Patlıcan kebabı (2 adet orta boy patlıcan,200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. Fırında ya da airfry da pişirilir)",
-          "calories": 500,
-          "protein": 30,
-          "carbs": 5,
-          "fat": 40,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "et",
-            "patlıcan",
-            "kıyma",
-            "kebap",
-            "keto"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "AKŞAM",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Nohut yemeği (1 su bardağı nohut ile)",
           "calories": 260,
           "protein": 14,
@@ -7551,6 +7521,41 @@
           "compatibilityTags": [
             "kuruyemiş",
             "tatlı",
+            "salata",
+            "mezde"
+          ],
+          "incompatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Patlıcan kebabı (2 adet orta boy patlıcan,200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. Fırında ya da airfry da pişirilir)",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 500,
+          "protein": 30,
+          "carbs": 5,
+          "fat": 40,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "et",
+            "patlıcan",
+            "kıyma",
+            "kebap",
+            "keto"
+          ],
+          "compatibilityTags": [
             "salata",
             "mezde"
           ],
