@@ -1595,39 +1595,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Avokadolu Omlet (1 porsiyon)",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 331,
-          "protein": 19,
-          "carbs": 3,
-          "fat": 27,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 0.5,
-          "tags": [
-            "avokado",
-            "omlet",
-            "keto",
-            "yumurta"
-          ],
-          "compatibilityTags": [
-            "zeytin",
-            "domates"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Peynirli biber dolması (2 adet)",
           "category": "ÖĞLEN",
           "role": "sideDish",
@@ -2982,6 +2949,41 @@
           "mealType": [
             "lunch",
             "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Avokadolu Omlet (1 porsiyon)",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 331,
+          "protein": 19,
+          "carbs": 3,
+          "fat": 27,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 0.5,
+          "tags": [
+            "avokado",
+            "omlet",
+            "keto",
+            "yumurta"
+          ],
+          "compatibilityTags": [
+            "zeytin",
+            "domates",
+            "kuruyemiş",
+            "peynir"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
           ],
           "isReversedSeason": false
         }
