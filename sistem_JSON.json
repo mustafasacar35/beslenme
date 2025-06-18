@@ -8170,33 +8170,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Ketojenik Yaş Pasta",
-          "calories": 286,
-          "protein": 10,
-          "carbs": 3,
-          "fat": 26,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "pasta",
-            "keto"
-          ],
-          "role": "dessert",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "category": "TATLILAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Ketojenik Tuzlu Kurabiye",
           "calories": 92,
           "protein": 3,
@@ -8749,6 +8722,35 @@
           "tags": [
             "kremalı",
             "kek",
+            "keto",
+            "tatlı"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Ketojenik Yaş Pasta",
+          "category": "TATLILAR",
+          "role": "dessert",
+          "calories": 286,
+          "protein": 10,
+          "carbs": 3,
+          "fat": 26,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "pasta",
             "keto",
             "tatlı"
           ],
