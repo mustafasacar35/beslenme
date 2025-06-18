@@ -2935,41 +2935,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Kabaklı Omlet",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 380,
-          "protein": 23,
-          "carbs": 9,
-          "fat": 28,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "yumurta",
-            "kabak",
-            "omlet",
-            "keto"
-          ],
-          "compatibilityTags": [
-            "zeytin",
-            "domates",
-            "peynir"
-          ],
-          "incompatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "sebzeli omlet (2 adet yumurta, 2 dilim hindi füme, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -2993,6 +2958,42 @@
             "zeytin",
             "peynir",
             "domates",
+            "kuruyemiş"
+          ],
+          "incompatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Kabaklı Omlet",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 380,
+          "protein": 23,
+          "carbs": 9,
+          "fat": 28,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "yumurta",
+            "kabak",
+            "omlet",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "zeytin",
+            "domates",
+            "peynir",
             "kuruyemiş"
           ],
           "incompatibilityTags": [],
