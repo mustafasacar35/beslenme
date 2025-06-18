@@ -2169,35 +2169,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "tahin ekmeği ile tost (1 dilim kaşar) + kasap sucuk (50 gram)",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 410,
-          "protein": 20,
-          "carbs": 6,
-          "fat": 34,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "tost",
-            "omlet",
-            "yumurta"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "2 adet lupin unlu poğaça (veya 4 adet Lorlu poğaça)",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -3009,6 +2980,35 @@
           "keto": true,
           "lowcarb": true,
           "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "tahin ekmeği ile tost (1 dilim kaşar) + kasap sucuk (50 gram)",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 410,
+          "protein": 20,
+          "carbs": 6,
+          "fat": 34,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "tost",
+            "omlet",
+            "yumurta"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
