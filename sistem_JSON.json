@@ -8268,33 +8268,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Keto Magnolia",
-          "calories": 247,
-          "protein": 6,
-          "carbs": 4,
-          "fat": 23,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "magnolia",
-            "keto"
-          ],
-          "role": "dessert",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "category": "TATLILAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
           "calories": 127,
           "protein": 4,
@@ -8635,6 +8608,35 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Keto Magnolia",
+          "category": "TATLILAR",
+          "role": "dessert",
+          "calories": 247,
+          "protein": 6,
+          "carbs": 4,
+          "fat": 23,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "magnolia",
+            "keto",
+            "tatlı"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
             "dinner"
           ],
           "isReversedSeason": false
