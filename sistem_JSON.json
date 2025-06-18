@@ -8700,34 +8700,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Ketojenik Tiramisu",
-          "category": "TATLILAR",
-          "role": "dessert",
-          "calories": 371,
-          "protein": 6,
-          "carbs": 8,
-          "fat": 35,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "tiramisu",
-            "keto"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Browni Kurabiye",
           "category": "TATLILAR",
           "role": "dessert",
@@ -8864,6 +8836,36 @@
             "tatlı"
           ],
           "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Ketojenik Tiramisu",
+          "category": "TATLILAR",
+          "role": "dessert",
+          "calories": 371,
+          "protein": 6,
+          "carbs": 8,
+          "fat": 35,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "tiramisu",
+            "keto",
+            "tatlı"
+          ],
+          "compatibilityTags": [],
+          "incompatibilityTags": [],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
