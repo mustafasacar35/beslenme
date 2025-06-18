@@ -6753,39 +6753,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Tavuklu Kabak Noodle",
-          "category": "AKŞAM",
-          "role": "mainDish",
-          "calories": 430,
-          "protein": 35,
-          "carbs": 5,
-          "fat": 30,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "kabak",
-            "tavuk",
-            "et"
-          ],
-          "compatibilityTags": [
-            "salata",
-            "çorba",
-            "tatlı"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Patlıcan Musakka",
           "category": "AKŞAM",
           "role": "mainDish",
@@ -7528,6 +7495,41 @@
             "meze"
           ],
           "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Tavuklu Kabak Noodle",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 430,
+          "protein": 35,
+          "carbs": 5,
+          "fat": 30,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "kabak",
+            "tavuk",
+            "et"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "çorba",
+            "tatlı",
+            "meze",
+            "çorba"
+          ],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
