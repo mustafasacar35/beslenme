@@ -6841,35 +6841,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "*Zeytinyağlı Deniz Börülcesi ya da brokoli salata (1 tatlı kaşığı zeytinyağı ile",
-          "category": "AKŞAM",
-          "role": "sideDish",
-          "calories": 105,
-          "protein": 4,
-          "carbs": 2,
-          "fat": 9,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "zeytin",
-            "zeytinyağı",
-            "keto"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Peynirli Patlıcan Topları (4 adet)",
           "category": "AKŞAM",
           "role": "supplement",
@@ -7477,6 +7448,36 @@
             "meze",
             "tatlı"
           ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "*Zeytinyağlı Deniz Börülcesi ya da brokoli salata (1 tatlı kaşığı zeytinyağı ile",
+          "category": "AKŞAM",
+          "role": "sideDish",
+          "calories": 105,
+          "protein": 4,
+          "carbs": 2,
+          "fat": 9,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "zeytin",
+            "zeytinyağı",
+            "keto",
+            "salata"
+          ],
+          "compatibilityTags": [],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
