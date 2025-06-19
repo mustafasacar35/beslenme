@@ -8706,34 +8706,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Chia Tohumlu Puding",
-          "category": "TATLILAR",
-          "role": "dessert",
-          "calories": 299,
-          "protein": 7,
-          "carbs": 7,
-          "fat": 27,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "chia",
-            "keto"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Browni Kurabiye",
           "category": "TATLILAR",
           "role": "dessert",
@@ -8900,6 +8872,35 @@
           ],
           "compatibilityTags": [],
           "incompatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Chia Tohumlu Puding",
+          "category": "TATLILAR",
+          "role": "dessert",
+          "calories": 299,
+          "protein": 7,
+          "carbs": 7,
+          "fat": 27,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "chia",
+            "keto",
+            "tatlı"
+          ],
+          "compatibilityTags": [],
           "keto": true,
           "lowcarb": true,
           "fillerLunch": false,
