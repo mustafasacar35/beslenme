@@ -8682,34 +8682,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Kuruyemişli Keto Topları",
-          "category": "TATLILAR",
-          "role": "dessert",
-          "calories": 167,
-          "protein": 5,
-          "carbs": 3,
-          "fat": 15,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "tatlı"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Browni Kurabiye",
           "category": "TATLILAR",
           "role": "dessert",
@@ -8913,6 +8885,35 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Kuruyemişli Keto Topları",
+          "category": "TATLILAR",
+          "role": "dessert",
+          "calories": 167,
+          "protein": 5,
+          "carbs": 3,
+          "fat": 15,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "tatlı",
+            "top"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
             "dinner"
           ],
           "isReversedSeason": false
