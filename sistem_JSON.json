@@ -7854,6 +7854,8 @@
         },
         {
           "name": "Kıymalı Patlıcan Kapama",
+          "category": "AKŞAM",
+          "role": "mainDish",
           "calories": 322,
           "protein": 23,
           "carbs": 8,
@@ -7866,10 +7868,10 @@
             "kıyma",
             "patlıcan"
           ],
-          "compatibilityTags": [],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
+          "compatibilityTags": [
+            "salata",
+            "ekmek",
+            "meze"
           ],
           "keto": true,
           "lowcarb": true,
@@ -7877,7 +7879,11 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -13984,6 +13990,15 @@
                 "fat": 21,
                 "quantity": 1,
                 "role": "sideDish"
+              },
+              {
+                "name": "Kıymalı Patlıcan Kapama",
+                "calories": 322,
+                "carbs": 8,
+                "protein": 23,
+                "fat": 22,
+                "quantity": 1,
+                "role": "mainDish"
               }
             ],
             "lunch": [],
