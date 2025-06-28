@@ -2662,38 +2662,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Yumurtalı Lahana Kavurma",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 258,
-          "protein": 13,
-          "carbs": 11,
-          "fat": 18,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "yumurta",
-            "lahana"
-          ],
-          "compatibilityTags": [
-            "kuruyemiş",
-            "domates"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Pankek",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -3259,6 +3227,39 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Yumurtalı Lahana Kavurma",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 258,
+          "protein": 13,
+          "carbs": 11,
+          "fat": 18,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "yumurta",
+            "lahana"
+          ],
+          "compatibilityTags": [
+            "kuruyemiş",
+            "domates",
+            "yoğurt"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
           ],
           "isReversedSeason": false
         }
