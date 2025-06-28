@@ -7690,6 +7690,32 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Haydari",
+          "calories": 192,
+          "protein": 7,
+          "carbs": 5,
+          "fat": 16,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "yoğurt"
+          ],
+          "compatibilityTags": [],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
