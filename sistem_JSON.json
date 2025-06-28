@@ -7945,6 +7945,33 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Patlıcanlı Tavuk Sote",
+          "calories": 340,
+          "protein": 30,
+          "carbs": 10,
+          "fat": 20,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "patlıcan",
+            "et",
+            "tavuk"
+          ],
+          "compatibilityTags": [],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
