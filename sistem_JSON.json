@@ -9669,33 +9669,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Girit Ezmesi",
-          "calories": 449,
-          "protein": 16,
-          "carbs": 4,
-          "fat": 41,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "peynir",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "category": "SALATALAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Beyaz Lahana Salatası",
           "calories": 172,
           "protein": 3,
@@ -11723,6 +11696,34 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Girit Ezmesi",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 449,
+          "protein": 16,
+          "carbs": 4,
+          "fat": 41,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "peynir",
+            "keto"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
             "dinner"
           ],
           "isReversedSeason": false
@@ -14515,7 +14516,7 @@
             "dinner": [
               {
                 "name": "Patlıcan Salatalı Tavuk Şiş",
-                "quantity": 1
+                "quantity": 0.5
               },
               {
                 "name": "Girit Ezmesi",
