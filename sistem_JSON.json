@@ -3132,6 +3132,40 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Fırınlanmış Peynirli Taze Fasulye Graten",
+          "calories": 286,
+          "protein": 17,
+          "carbs": 5,
+          "fat": 22,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "fasülye",
+            "peynir",
+            "yumurta"
+          ],
+          "compatibilityTags": [
+            "yeşillik",
+            "salata",
+            "çorba",
+            "tatlı",
+            "kuruyemiş"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
