@@ -13534,6 +13534,61 @@
       "items": []
     }
   ],
+  "weeks": [
+    {
+      "days": {
+        "monday": {
+          "meals": {
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
+          }
+        },
+        "tuesday": {
+          "meals": {
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
+          }
+        },
+        "wednesday": {
+          "meals": {
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
+          }
+        },
+        "thursday": {
+          "meals": {
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
+          }
+        },
+        "friday": {
+          "meals": {
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
+          }
+        },
+        "saturday": {
+          "meals": {
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
+          }
+        },
+        "sunday": {
+          "meals": {
+            "breakfast": [],
+            "lunch": [],
+            "dinner": []
+          }
+        }
+      }
+    }
+  ],
   "rules": [
     {
       "type": "frequency",
@@ -14541,109 +14596,6 @@
       "dislikedFoods": [],
       "weeks": []
     },
-    "patient_80-1": {
-      "name": "80-1",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 80,
-      "activity": 1,
-      "dietMode": "keto",
-      "coefficients": {
-        "carb": 0.3,
-        "protein": 0.8,
-        "fat": 1.2
-      },
-      "weeks": []
-    },
-    "patient_80-3": {
-      "name": "80-3",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 80,
-      "activity": 3,
-      "weeks": []
-    },
-    "patient_mustafa up4": {
-      "name": "mustafa up4",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [
-        "omlet",
-        "balık"
-      ],
-      "dislikedFoods": [
-        "zeytin"
-      ],
-      "weeks": []
-    },
-    "patient_null": {
-      "weight": 100,
-      "activity": 3,
-      "dietMode": "keto",
-      "coefficients": {
-        "carb": 0.3,
-        "protein": 0.8,
-        "fat": 1.2
-      },
-      "weeks": []
-    },
-    "patient_M": {
-      "name": "M",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [
-        "OMLET"
-      ],
-      "dislikedFoods": [
-        "zeytin"
-      ],
-      "weeks": []
-    },
-    "patient_must6": {
-      "name": "must6",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weeks": []
-    },
-    "patient_77 - 3": {
-      "name": "77 - 3",
-      "likedFoods": [],
-      "dislikedFoods": [
-        "balık",
-        "ciğer"
-      ],
-      "weight": 77,
-      "activity": 3,
-      "dietMode": "keto",
-      "coefficients": {
-        "carb": 0.3,
-        "protein": 0.8,
-        "fat": 1.2
-      },
-      "weeks": []
-    },
-    "patient_70-3": {
-      "name": "70-3",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 70,
-      "activity": 3,
-      "weeks": []
-    },
-    "patient_60-3": {
-      "name": "60-3",
-      "likedFoods": [
-        "OMLET"
-      ],
-      "dislikedFoods": [
-        "zeytin"
-      ],
-      "weight": 60,
-      "activity": 3,
-      "weeks": []
-    },
     "patient_deneme34": {
       "name": "deneme34",
       "weight": 42,
@@ -15423,6 +15375,20 @@
       "dislikedFoods": [],
       "weeks": []
     },
+    "patient_80-1": {
+      "name": "80-1",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 80,
+      "activity": 1,
+      "dietMode": "keto",
+      "coefficients": {
+        "carb": 0.3,
+        "protein": 0.8,
+        "fat": 1.2
+      },
+      "weeks": []
+    },
     "patient_m100-2": {
       "name": "m100-2",
       "weight": 100,
@@ -15431,12 +15397,89 @@
       "dislikedFoods": [],
       "weeks": []
     },
+    "patient_80-3": {
+      "name": "80-3",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 80,
+      "activity": 3,
+      "weeks": []
+    },
+    "patient_mustafa up4": {
+      "name": "mustafa up4",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "omlet",
+        "balık"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ],
+      "weeks": []
+    },
+    "patient_null": {
+      "weight": 100,
+      "activity": 3,
+      "dietMode": "keto",
+      "coefficients": {
+        "carb": 0.3,
+        "protein": 0.8,
+        "fat": 1.2
+      },
+      "weeks": []
+    },
+    "patient_M": {
+      "name": "M",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "OMLET"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ],
+      "weeks": []
+    },
+    "patient_must6": {
+      "name": "must6",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weeks": []
+    },
+    "patient_77 - 3": {
+      "name": "77 - 3",
+      "likedFoods": [],
+      "dislikedFoods": [
+        "balık",
+        "ciğer"
+      ],
+      "weight": 77,
+      "activity": 3,
+      "dietMode": "keto",
+      "coefficients": {
+        "carb": 0.3,
+        "protein": 0.8,
+        "fat": 1.2
+      },
+      "weeks": []
+    },
     "patient_1000//3": {
       "name": "1000//3",
       "weight": 100,
       "activity": 3,
       "likedFoods": [],
       "dislikedFoods": [],
+      "weeks": []
+    },
+    "patient_70-3": {
+      "name": "70-3",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 70,
+      "activity": 3,
       "weeks": []
     },
     "patient_nnn": {
@@ -15481,6 +15524,18 @@
         "protein": 0.8,
         "fat": 1.2
       },
+      "weeks": []
+    },
+    "patient_60-3": {
+      "name": "60-3",
+      "likedFoods": [
+        "OMLET"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ],
+      "weight": 60,
+      "activity": 3,
       "weeks": []
     },
     "patient_fff": {
