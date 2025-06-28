@@ -2003,39 +2003,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Yumurta salatası (2 adet haşlanmış yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 yemek kaşığı zeytinyağı",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 272,
-          "protein": 12,
-          "carbs": 2,
-          "fat": 24,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "yumurta",
-            "zeytin",
-            "zeytinyağı",
-            "keto",
-            "salata"
-          ],
-          "compatibilityTags": [
-            "kuruyemiş"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Menemen (2  yumurta ile)",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -3258,6 +3225,40 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "category": "ÖĞLEN"
+        },
+        {
+          "name": "Yumurta salatası (2 adet haşlanmış yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 yemek kaşığı zeytinyağı",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 272,
+          "protein": 12,
+          "carbs": 2,
+          "fat": 24,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "yumurta",
+            "zeytin",
+            "zeytinyağı",
+            "keto",
+            "salata"
+          ],
+          "compatibilityTags": [
+            "kuruyemiş",
+            "peynir"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
