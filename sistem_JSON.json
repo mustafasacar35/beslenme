@@ -9652,33 +9652,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Brokoli Salatası",
-          "calories": 101,
-          "protein": 1,
-          "carbs": 4,
-          "fat": 9,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "brokoli",
-            "keto"
-          ],
-          "role": "sideDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "category": "SALATALAR",
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Girit Ezmesi",
           "calories": 449,
           "protein": 16,
@@ -11700,6 +11673,35 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Brokoli Salatası",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 101,
+          "protein": 1,
+          "carbs": 4,
+          "fat": 9,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "brokoli",
+            "keto",
+            "salata"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
           ],
           "isReversedSeason": false
         }
