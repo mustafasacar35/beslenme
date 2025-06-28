@@ -11521,36 +11521,6 @@
           "seasonRange": "[1,12]"
         },
         {
-          "name": "Lor peynirli avokado salatası",
-          "calories": 272,
-          "protein": 10,
-          "carbs": 4,
-          "fat": 24,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "lor",
-            "peynir",
-            "avokado",
-            "salata"
-          ],
-          "compatibilityTags": [],
-          "role": "sideDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "SALATALAR"
-        },
-        {
           "name": "Kuşkonmaz & Yumurta Salatası",
           "calories": 205,
           "protein": 10,
@@ -11722,6 +11692,37 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Lor peynirli avokado salatası",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 272,
+          "protein": 10,
+          "carbs": 4,
+          "fat": 24,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "lor",
+            "peynir",
+            "avokado",
+            "salata"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
           ],
           "isReversedSeason": false
         }
