@@ -7655,6 +7655,33 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Cevizli biber yoğurtlaması",
+          "calories": 285,
+          "protein": 6,
+          "carbs": 9,
+          "fat": 25,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "ceviz",
+            "biber",
+            "yoğurt"
+          ],
+          "compatibilityTags": [],
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
