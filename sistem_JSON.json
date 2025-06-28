@@ -6914,37 +6914,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Zeytinyağlı Deniz Börülcesi",
-          "category": "AKŞAM",
-          "role": "sideDish",
-          "calories": 168,
-          "protein": 4,
-          "carbs": 2,
-          "fat": 16,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "deniz börülcesi",
-            "zeytinyağı",
-            "keto",
-            "meze"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Lahmacun (2 adet)",
           "category": "AKŞAM",
           "role": "mainDish",
@@ -8256,6 +8225,38 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Zeytinyağlı Deniz Börülcesi",
+          "category": "AKŞAM",
+          "role": "sideDish",
+          "calories": 168,
+          "protein": 4,
+          "carbs": 2,
+          "fat": 16,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "deniz börülcesi",
+            "zeytinyağı",
+            "keto",
+            "meze",
+            "salata"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
             "dinner"
           ],
           "isReversedSeason": false
