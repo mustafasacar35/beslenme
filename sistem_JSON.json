@@ -3102,36 +3102,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "Yoğurtlu Tavuk Salatası",
-          "calories": 298,
-          "protein": 28,
-          "carbs": 6,
-          "fat": 18,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "tavuk",
-            "et",
-            "salata",
-            "yoğurt"
-          ],
-          "compatibilityTags": [],
-          "role": "mainDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "ÖĞLEN"
-        },
-        {
           "name": "Girit Usulü Zeytinli Meze",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -3261,6 +3231,39 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Yoğurtlu Tavuk Salatası",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
+          "calories": 298,
+          "protein": 28,
+          "carbs": 6,
+          "fat": 18,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "tavuk",
+            "et",
+            "salata",
+            "yoğurt"
+          ],
+          "compatibilityTags": [
+            "kuruyemiş"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
           ],
           "isReversedSeason": false
         }
@@ -14497,38 +14500,30 @@
             ],
             "lunch": [
               {
-                "name": "Fırınlanmış Peynirli Taze Fasulye Graten",
+                "name": "Peynirli Zeytin Ezmesi",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+                "name": "Yoğurtlu Tavuk Salatası",
                 "quantity": 1
               },
               {
-                "name": "1 dilim Keto Ekmek ",
+                "name": "Cevizli Top (4 adet)",
                 "quantity": 0.5
-              },
-              {
-                "name": "Közlenmiş Kapya Biber",
-                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "*Kıymalı lahana/kabak /patlıcan  yemeği (150 gr kıyma)",
+                "name": "Tavuk Güveç",
                 "quantity": 1
               },
               {
-                "name": "Göçmen Salatası",
+                "name": "Kırmızı Pancar Salatası",
                 "quantity": 1
               },
               {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "name": "Peynirli Patlıcan Topları (4 adet)",
                 "quantity": 1
-              },
-              {
-                "name": "Kabak Çekirdeği (1 avuç)",
-                "quantity": 0.5
               }
             ]
           }
@@ -14545,7 +14540,11 @@
             ],
             "lunch": [
               {
-                "name": "Yumurtalı Lahana Kavurma",
+                "name": "Fırınlanmış Peynirli Taze Fasulye Graten",
+                "quantity": 1
+              },
+              {
+                "name": "Semizotu Salatası (2 avuç semizotu, 1 domates, 1 salatalık, 1 biber, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
@@ -14553,21 +14552,21 @@
                 "quantity": 1
               },
               {
-                "name": "tahin ekmeği ile tost (1 dilim kaşar) + kasap sucuk (50 gram)",
-                "quantity": 1
-              },
-              {
-                "name": "Peynir Topları (1 porsiyon)",
-                "quantity": 1
+                "name": "Dilimlenmiş yarım turp + yarım pancar",
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Kıymalı ıspanak",
+                "name": "Kıyma Kebap",
                 "quantity": 1
               },
               {
-                "name": "Cevizli biber yoğurtlaması",
+                "name": "Mevsim salata (marul, dereotu, roka, kırmızı lahana, turp + 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              },
+              {
+                "name": "Peynirli Patlıcan Topları (4 adet)",
                 "quantity": 1
               }
             ]
@@ -14585,25 +14584,33 @@
             ],
             "lunch": [
               {
-                "name": "1 adet Sebzeli Muffin",
+                "name": "Yeşillikler (4 yaprak marul, 4 yaprak roka, 4 dal maydanoz + limon, sirke ile)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
+                "name": "Lor peynirli tabanlı keto pizza",
                 "quantity": 1
+              },
+              {
+                "name": "5 adet Ceviz",
+                "quantity": 1
+              },
+              {
+                "name": "10 adet yaban mersini ya da 5 adet çilek",
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "İmam Bayıldı",
+                "name": "Fırınlanmış Peynirli Taze Fasulye Graten",
                 "quantity": 1
               },
               {
-                "name": "Yeşil Salata",
+                "name": "Roka Salatası",
                 "quantity": 1
               },
               {
-                "name": "Kakaolu kurabiye",
+                "name": "Kelle Paça Çorbası",
                 "quantity": 1
               }
             ]
@@ -14621,21 +14628,29 @@
             ],
             "lunch": [
               {
-                "name": "1 adet Sebzeli Muffin",
+                "name": "Fırında Menemen",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon, sirke ve 1 yemek  kaşığı zeytinyağı ile)",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
+              },
+              {
+                "name": "Peynirli Patlıcan Topları (4 adet)",
+                "quantity": 0.5
               }
             ],
             "dinner": [
               {
-                "name": "Ciğer Kavurma (200 gram)",
+                "name": "Kıymalı Patlıcan Kapama",
                 "quantity": 1
               },
               {
-                "name": "Brokoli Salatası",
+                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Yoğurtlu enginar",
                 "quantity": 1
               }
             ]
@@ -14653,25 +14668,29 @@
             ],
             "lunch": [
               {
-                "name": "Ketojenik Tost (Tahin Ekmeği + Kaşar)",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 1
               },
               {
-                "name": "Kuşkonmaz & Yumurta Salatası",
+                "name": "Lor peynirli tabanlı keto pizza",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Urfa / Adana Kebap (150 gram, 1 porsiyon)",
+                "name": "Sarımsaklı Tereyağlı Karides",
                 "quantity": 1
               },
               {
-                "name": "Kapya Biberli Labne Mezesi",
+                "name": "Yoğurtlu Kırmızı Pancar Salatası (100 gram pancar, 2 yemek kaşığı yoğurt, 1 tatlı kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Baby Enginar Salatası",
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik Yaş Pasta",
                 "quantity": 1
               }
             ]
@@ -14689,38 +14708,26 @@
             ],
             "lunch": [
               {
-                "name": "1 dilim Ispanaklı Kabak Böreği",
+                "name": "Peynirli Kabaklı Poğaça (2 adet)",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
+                "name": "Zeytinyağlı Deniz Börülcesi",
                 "quantity": 1
               },
               {
-                "name": "Peynirli Patlıcan Topları (4 adet)",
-                "quantity": 0.5
-              },
-              {
-                "name": "Kakaolu kurabiye",
+                "name": "30 gram pastırma",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Kıymalı Lahana / Kabak / Yeşil Fasulye Yemeği",
+                "name": "Kıymalı Semizotu Yemeği",
                 "quantity": 1
               },
               {
-                "name": "Roka salatası (yarım bağ roka, 1 adet küçük salatalık, 3 adet cherry domates, yarım kırmızı soğan + limon, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlar ile)",
+                "name": "Izgara Kabak Ruloları",
                 "quantity": 1
-              },
-              {
-                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
-                "quantity": 1
-              },
-              {
-                "name": "Fındık (10 adet)",
-                "quantity": 0.5
               }
             ]
           }
@@ -14737,26 +14744,30 @@
             ],
             "lunch": [
               {
-                "name": "Yoğurtlu çılbır",
+                "name": "Susamlı Omlet",
                 "quantity": 1
               },
               {
-                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+                "name": "Zeytin (10 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Cevizli Kaşık Salatası",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Somonlu Roka ve Avokado Salatası",
+                "name": "Tavuklu Kabak Noodle",
                 "quantity": 1
               },
               {
-                "name": "Yoğurtlu Kabak Mezesi",
+                "name": "Semizotu Salatası (2 avuç semizotu, 1 domates, 1 salatalık, 1 biber, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Fırında Sucuklu Kaşarlı Lokmalar (4 adet)",
-                "quantity": 0.5
+                "name": "Chia Puding",
+                "quantity": 1
               }
             ]
           }
@@ -15771,6 +15782,109 @@
       "dislikedFoods": [],
       "weeks": []
     },
+    "patient_80-1": {
+      "name": "80-1",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 80,
+      "activity": 1,
+      "dietMode": "keto",
+      "coefficients": {
+        "carb": 0.3,
+        "protein": 0.8,
+        "fat": 1.2
+      },
+      "weeks": []
+    },
+    "patient_80-3": {
+      "name": "80-3",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 80,
+      "activity": 3,
+      "weeks": []
+    },
+    "patient_mustafa up4": {
+      "name": "mustafa up4",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "omlet",
+        "balık"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ],
+      "weeks": []
+    },
+    "patient_null": {
+      "weight": 100,
+      "activity": 3,
+      "dietMode": "keto",
+      "coefficients": {
+        "carb": 0.3,
+        "protein": 0.8,
+        "fat": 1.2
+      },
+      "weeks": []
+    },
+    "patient_M": {
+      "name": "M",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "OMLET"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ],
+      "weeks": []
+    },
+    "patient_must6": {
+      "name": "must6",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weeks": []
+    },
+    "patient_77 - 3": {
+      "name": "77 - 3",
+      "likedFoods": [],
+      "dislikedFoods": [
+        "balık",
+        "ciğer"
+      ],
+      "weight": 77,
+      "activity": 3,
+      "dietMode": "keto",
+      "coefficients": {
+        "carb": 0.3,
+        "protein": 0.8,
+        "fat": 1.2
+      },
+      "weeks": []
+    },
+    "patient_70-3": {
+      "name": "70-3",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 70,
+      "activity": 3,
+      "weeks": []
+    },
+    "patient_60-3": {
+      "name": "60-3",
+      "likedFoods": [
+        "OMLET"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ],
+      "weight": 60,
+      "activity": 3,
+      "weeks": []
+    },
     "patient_deneme34": {
       "name": "deneme34",
       "weight": 42,
@@ -16550,20 +16664,6 @@
       "dislikedFoods": [],
       "weeks": []
     },
-    "patient_80-1": {
-      "name": "80-1",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 80,
-      "activity": 1,
-      "dietMode": "keto",
-      "coefficients": {
-        "carb": 0.3,
-        "protein": 0.8,
-        "fat": 1.2
-      },
-      "weeks": []
-    },
     "patient_m100-2": {
       "name": "m100-2",
       "weight": 100,
@@ -16572,89 +16672,12 @@
       "dislikedFoods": [],
       "weeks": []
     },
-    "patient_80-3": {
-      "name": "80-3",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 80,
-      "activity": 3,
-      "weeks": []
-    },
-    "patient_mustafa up4": {
-      "name": "mustafa up4",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [
-        "omlet",
-        "balık"
-      ],
-      "dislikedFoods": [
-        "zeytin"
-      ],
-      "weeks": []
-    },
-    "patient_null": {
-      "weight": 100,
-      "activity": 3,
-      "dietMode": "keto",
-      "coefficients": {
-        "carb": 0.3,
-        "protein": 0.8,
-        "fat": 1.2
-      },
-      "weeks": []
-    },
-    "patient_M": {
-      "name": "M",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [
-        "OMLET"
-      ],
-      "dislikedFoods": [
-        "zeytin"
-      ],
-      "weeks": []
-    },
-    "patient_must6": {
-      "name": "must6",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weeks": []
-    },
-    "patient_77 - 3": {
-      "name": "77 - 3",
-      "likedFoods": [],
-      "dislikedFoods": [
-        "balık",
-        "ciğer"
-      ],
-      "weight": 77,
-      "activity": 3,
-      "dietMode": "keto",
-      "coefficients": {
-        "carb": 0.3,
-        "protein": 0.8,
-        "fat": 1.2
-      },
-      "weeks": []
-    },
     "patient_1000//3": {
       "name": "1000//3",
       "weight": 100,
       "activity": 3,
       "likedFoods": [],
       "dislikedFoods": [],
-      "weeks": []
-    },
-    "patient_70-3": {
-      "name": "70-3",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 70,
-      "activity": 3,
       "weeks": []
     },
     "patient_nnn": {
@@ -16699,18 +16722,6 @@
         "protein": 0.8,
         "fat": 1.2
       },
-      "weeks": []
-    },
-    "patient_60-3": {
-      "name": "60-3",
-      "likedFoods": [
-        "OMLET"
-      ],
-      "dislikedFoods": [
-        "zeytin"
-      ],
-      "weight": 60,
-      "activity": 3,
       "weeks": []
     },
     "patient_fff": {
