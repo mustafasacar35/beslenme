@@ -2326,6 +2326,10 @@ function toggleSidebar() {
 
 function updateDietMode(mode) {
     dietMode = mode;
+    // --- SEÇİLİ HAFTANIN MODUNU GÜNCELLE ---
+    if (weeks[selectedWeek - 1]) {
+        weeks[selectedWeek - 1].dietMode = mode;
+    }
     const carbMultiplier = mode === 'keto' ? 0.3 : 0.6;
     const proteinMultiplier = 0.8;
     const fatMultiplier = mode === 'keto' ? 1.2 : 1.0;
@@ -2617,6 +2621,7 @@ function deleteSelectedCategory() {
     calculateMacros();
     toggleSidebar();
     showNotification("Yemekler eklendi!");
+    updateGitHubData(); // Otomatik kaydet
 }
 
         function toggleAddFoodForm() {
@@ -2766,11 +2771,16 @@ function deleteSelectedCategory() {
         }
 
         function selectWeek(week) {
-            selectedWeek = week;
-            renderWeekTabs();
-            renderMeals();
-            calculateMacros();
-        }
+    selectedWeek = week;
+    // --- SEÇİLEN HAFTANIN MODUNU YÜKLE ---
+    const mode = weeks[selectedWeek - 1]?.dietMode || "keto";
+    dietMode = mode;
+    document.getElementById('dietModeSelect').value = mode;
+    updateDietMode(mode);
+    renderWeekTabs();
+    renderMeals();
+    calculateMacros();
+}
 
         function selectDay(day) {
             selectedDay = day;
@@ -2781,8 +2791,12 @@ function deleteSelectedCategory() {
 
         function addWeek() {
     if (typeof saveState === 'function') {
-        saveState(); // İşlemden önce durumu kaydet
+        saveState();
     }
+    // --- DİYET MODU BELİRLE ---
+    let mode = "keto";
+    if (weeks.length >= 9 && weeks.length < 13) mode = "lowcarb";
+    if (weeks.length >= 13) mode = "lowcarb";
     weeks.push({
         days: {
             monday: { meals: { breakfast: [], lunch: [], dinner: [] } },
@@ -2792,15 +2806,25 @@ function deleteSelectedCategory() {
             friday: { meals: { breakfast: [], lunch: [], dinner: [] } },
             saturday: { meals: { breakfast: [], lunch: [], dinner: [] } },
             sunday: { meals: { breakfast: [], lunch: [], dinner: [] } }
-        }
+        },
+        dietMode: mode // <-- HER HAFTA İÇİN MODU KAYDET
     });
     selectedWeek = weeks.length;
     renderWeekTabs();
     renderMeals();
-    calculateMacros(); // Grafikleri güncelle
-    if (typeof showNotification === 'function') {
-        showNotification("Yeni hafta eklendi!", "success");
+    calculateMacros();
+
+    if (typeof generatePlan === 'function') {
+        const lastWeekIndex = weeks.length - 1;
+        generatePlan(getPlanningSettings(), lastWeekIndex);
     }
+    if (typeof showNotification === 'function') {
+        showNotification("Yeni hafta eklendi ve otomatik planlama yapıldı!", "success");
+    }
+    // --- DİYET MODU OTOMATİK AYARLA ---
+    dietMode = mode;
+    document.getElementById('dietModeSelect').value = mode;
+    updateDietMode(dietMode);
 }
 
 function deleteWeek() {
@@ -3340,6 +3364,62 @@ if (hasKeywordOrTagConflict(food, dayMeals[mealType])) {
     });
 
 // --- UYUMLU YAN YEMEKLERİ OTOMATİK EKLE ---
+if (food.role === "mainDish" && Array.isArray(food.compatibilityTags) && food.compatibilityTags.length > 0) {
+    const compatTags = food.compatibilityTags.map(t => t.toLowerCase());
+    const alreadyAdded = dayMeals[mealType].map(item => item.name);
+    const usedTags = new Set();
+    dayMeals[mealType].forEach(item => {
+        const f = findFood(item.name);
+        if (f) {
+            if (Array.isArray(f.compatibilityTags)) {
+                f.compatibilityTags.forEach(tag => usedTags.add(tag.toLowerCase()));
+            }
+            if (Array.isArray(f.tags)) {
+                f.tags.forEach(tag => usedTags.add(tag.toLowerCase()));
+            }
+        }
+    });
+    let compatibleFood = null;
+    const patientData = currentPatient ? JSON.parse(localStorage.getItem(`patient_${currentPatient}`) || '{}') : {};
+    const macroTolerance = parseFloat(document.getElementById('calorieFlexibility').value) / 100 || 0.1;
+    for (const tag of compatTags) {
+        if (usedTags.has(tag)) continue;
+        for (const cat of categories) {
+            for (const item of cat.items) {
+                if (
+                    item.role !== "mainDish" &&
+                    !alreadyAdded.includes(item.name) &&
+                    !hasKeywordOrTagConflict(item, dayMeals[mealType])
+                ) {
+                    const allTags = [
+                        ...(item.name ? item.name.toLowerCase().split(/\s+/) : []),
+                        ...(item.tags ? item.tags.map(t => t.toLowerCase()) : []),
+                        ...(item.compatibilityTags ? item.compatibilityTags.map(t => t.toLowerCase()) : [])
+                    ];
+                    if (allTags.includes(tag)) {
+                        if (canAddFoodToMealWithMacros(dayMeals[mealType], item, macroTolerance, patientData)) {
+                            compatibleFood = item;
+                        }
+                        break;
+                    }
+                }
+            }
+            if (compatibleFood) break;
+        }
+        if (compatibleFood) break;
+    }
+    if (compatibleFood) {
+        dayMeals[mealType].push({
+            name: compatibleFood.name,
+            calories: compatibleFood.calories || 0,
+            carbs: compatibleFood.carbs || 0,
+            protein: compatibleFood.protein || 0,
+            fat: compatibleFood.fat || 0,
+            quantity: 1,
+            role: compatibleFood.role || 'sideDish'
+        });
+    }
+}
     // Eğer eklenen yemek ana yemekse ve uyumluluk etiketi varsa
     if (food.role === "mainDish" && Array.isArray(food.compatibilityTags) && food.compatibilityTags.length > 0) {
     const compatTags = food.compatibilityTags.map(t => t.toLowerCase());
@@ -4554,13 +4634,52 @@ function showNotification(message, type = 'success', duration = 5000) {
 function handlePatientChange() {
     currentPatient = document.getElementById('patientSelect').value;
     console.log("Hasta seçildi:", currentPatient);
+
     if (currentPatient) {
+        // Hasta verisini ve planını yükle
         loadPatientData();
         loadCategories();
         calculateMacros();
-        generateAutoPlan(); // Otomatik planlamayı tetikler
+
+        // --- HASTAYA AİT PLANLARI (weeks) YÜKLE ---
+        let loadedWeeks = null;
+
+        // 1. window değişkeni (öncelik)
+        if (window[`weeks_patient_${currentPatient}`] && Array.isArray(window[`weeks_patient_${currentPatient}`]) && window[`weeks_patient_${currentPatient}`].length > 0) {
+            loadedWeeks = window[`weeks_patient_${currentPatient}`];
+        }
+        // 2. localStorage (JSON'dan gelmiş olabilir)
+        else if (localStorage.getItem(`patient_${currentPatient}`)) {
+            try {
+                const patientObj = JSON.parse(localStorage.getItem(`patient_${currentPatient}`));
+                if (patientObj && Array.isArray(patientObj.weeks) && patientObj.weeks.length > 0) {
+                    loadedWeeks = patientObj.weeks;
+                }
+            } catch (e) {
+                console.warn("localStorage weeks parse hatası:", e);
+            }
+        }
+        // 3. window.patients (JSON'dan topluca yüklenmişse)
+        else if (window.patients && window.patients[`patient_${currentPatient}`] && Array.isArray(window.patients[`patient_${currentPatient}`].weeks) && window.patients[`patient_${currentPatient}`].weeks.length > 0) {
+            loadedWeeks = window.patients[`patient_${currentPatient}`].weeks;
+        }
+
+        // Sonuç: Eğer weeks bulunduysa ata, yoksa sıfırdan başlat
+        if (loadedWeeks && loadedWeeks.length > 0) {
+            window.weeks = JSON.parse(JSON.stringify(loadedWeeks));
+        } else {
+            window.weeks = [];
+            initializeWeeks();
+        }
+
+        // Seçili hafta ve gün sıfırla
+        selectedWeek = 1;
+        selectedDay = "monday";
+
+        renderWeekTabs();
+        renderDayTabs();
         renderMeals();
-        showNotification(`Hasta "${currentPatient}" seçildi ve planlama yapıldı!`, 'success', 3000); // Ek bildirim
+        showNotification(`Hasta "${currentPatient}" seçildi ve planı yüklendi!`, 'success', 3000);
     } else {
         currentPatient = null;
         loadPatientData();
@@ -4806,17 +4925,19 @@ async function testGitHubToken(token) {
 
 
     const data = {
-        categories,
-        weeks,
-        rules,
-        mealTemplates,
-        compatibilityTable,
-        patients: Object.keys(localStorage).filter(key => key.startsWith('patient_'))
-            .reduce((obj, key) => {
-                obj[key] = JSON.parse(localStorage.getItem(key));
-                return obj;
-            }, {})
-    };
+    categories,
+    rules,
+    mealTemplates,
+    compatibilityTable,
+    patients: Object.keys(localStorage)
+        .filter(key => key.startsWith('patient_'))
+        .reduce((obj, key) => {
+            obj[key] = JSON.parse(localStorage.getItem(key));
+            // Her hastanın planını da ekle
+            obj[key].weeks = window[`weeks_${key}`] || [];
+            return obj;
+        }, {})
+};
 
     // window.patients'ı da güncelle
     window.patients = data.patients;
@@ -6923,27 +7044,33 @@ function generateFastPlan() {
     console.log("generateFastPlan başladı...");
     saveState();
 
+    // 1. Uygun yemekleri filtrele
     const availableFoods = categories.flatMap(cat => cat.items)
         .filter(f => f.calories > 0 && (dietMode === 'keto' ? f.keto : f.lowcarb));
 
     const plans = [];
     const sapmalar = [];
-    for (let i = 0; i < 5; i++) {
-        weeks = [{
-            days: {
-                monday: { meals: { breakfast: [], lunch: [], dinner: [] } },
-                tuesday: { meals: { breakfast: [], lunch: [], dinner: [] } },
-                wednesday: { meals: { breakfast: [], lunch: [], dinner: [] } },
-                thursday: { meals: { breakfast: [], lunch: [], dinner: [] } },
-                friday: { meals: { breakfast: [], lunch: [], dinner: [] } },
-                saturday: { meals: { breakfast: [], lunch: [], dinner: [] } },
-                sunday: { meals: { breakfast: [], lunch: [], dinner: [] } }
-            }
-        }];
+    const PLAN_COUNT = 5;
 
+    for (let i = 0; i < PLAN_COUNT; i++) {
+        // Her deneme için haftayı sıfırla
+        weeks[selectedWeek - 1] = {
+    days: {
+        monday: { meals: { breakfast: [], lunch: [], dinner: [] } },
+        tuesday: { meals: { breakfast: [], lunch: [], dinner: [] } },
+        wednesday: { meals: { breakfast: [], lunch: [], dinner: [] } },
+        thursday: { meals: { breakfast: [], lunch: [], dinner: [] } },
+        friday: { meals: { breakfast: [], lunch: [], dinner: [] } },
+        saturday: { meals: { breakfast: [], lunch: [], dinner: [] } },
+        sunday: { meals: { breakfast: [], lunch: [], dinner: [] } }
+    }
+};
+
+        // 2. Ayarları al ve planı oluştur
         const settings = getPlanningSettings();
         generatePlan(settings);
 
+        // 3. Sapmaları hesapla
         let totalProteinSapma = 0;
         let totalFatSapma = 0;
         let daysCounted = 0;
@@ -6960,16 +7087,19 @@ function generateFastPlan() {
                     return sum + (food ? food.fat * (item.quantity || 1) : 0);
                 }, 0);
 
-                const mealRatio = mealType === 'breakfast' ?
-                    (1 - (settings.lunchCalorieRatio || 40) / 100 - (settings.dinnerCalorieRatio || 30) / 100) :
-                    mealType === 'lunch' ? (settings.lunchCalorieRatio || 40) / 100 :
-                    (settings.dinnerCalorieRatio || 30) / 100;
+                // Hedef oranları
+                const mealRatio = mealType === 'breakfast'
+                    ? (1 - (settings.lunchCalorieRatio || 40) / 100 - (settings.dinnerCalorieRatio || 30) / 100)
+                    : mealType === 'lunch'
+                        ? (settings.lunchCalorieRatio || 40) / 100
+                        : (settings.dinnerCalorieRatio || 30) / 100;
 
                 const targetProtein = (settings.targetProtein || 56) * mealRatio;
                 const targetFat = (settings.targetFat || 84) * mealRatio;
 
-                totalProteinSapma += Math.abs(mealProtein - targetProtein) / targetProtein;
-                totalFatSapma += Math.abs(mealFat - targetFat) / targetFat;
+                // Sapma oranı
+                totalProteinSapma += Math.abs(mealProtein - targetProtein) / (targetProtein || 1);
+                totalFatSapma += Math.abs(mealFat - targetFat) / (targetFat || 1);
                 daysCounted++;
             });
         });
@@ -6982,6 +7112,7 @@ function generateFastPlan() {
         console.log(`Plan ${i + 1}: Protein sapma ${avgProteinSapma.toFixed(2)}, Yağ sapma ${avgFatSapma.toFixed(2)}`);
     }
 
+    // 4. En iyi planı seç
     let bestPlanIndex = 0;
     let minSapma = Infinity;
     sapmalar.forEach((sapma, index) => {
@@ -6996,7 +7127,10 @@ function generateFastPlan() {
     selectedDay = "monday";
     selectedWeek = 1;
 
-    forceBulletproofCoffee();
+    // 5. Kahvaltıya sabit kahve ekle
+    if (typeof forceBulletproofCoffee === "function") {
+        forceBulletproofCoffee();
+    }
 
     renderMeals();
     calculateMacros();
@@ -7005,7 +7139,9 @@ function generateFastPlan() {
     if (typeof showNotification === 'function') {
         showNotification("Hızlı planlama tamamlandı! En iyi plan seçildi.", "success");
     }
-    updateCompatibilityStatus();
+    if (typeof updateCompatibilityStatus === 'function') {
+        updateCompatibilityStatus();
+    }
 }
 
 // Bu fonksiyonu generateFastPlan fonksiyonu tanımının üstüne ekleyin
@@ -7344,54 +7480,47 @@ function shuffleArray(array) {
 }
 // Mevcut findBestFood fonksiyonunda uyumluluk skorunu hesapla
 function findBestFood(foodList, targets, currentMeal, mealType, prioritizedRules) {
-    console.log('findBestFood çağrıldı:', { 
-        foodListLength: foodList.length, 
-        currentMealLength: currentMeal.length 
-    });
-
-    // 1. Uyumlu yemekleri filtrele
+    // Uyumlu yemekleri filtrele
     const filteredFoods = foodList
         .filter(food => {
-            if (!food) {
-                console.warn('Boş food filtrelemeden çıkarıldı');
-                return false;
+            if (!food) return false;
+            // Uyum kontrolü (ör: checkCompatibility fonksiyonu)
+            if (typeof checkCompatibility === "function") {
+                return checkCompatibility(food, currentMeal);
             }
-            const compatResult = checkCompatibility(food, currentMeal);
-            //console.log('Compatibility kontrolü sonucu:', compatResult);
-            return compatResult;
+            return true;
         })
         .map(food => {
-            let compatScore = currentMeal.reduce((total, mealItem) => {
-                const mealFood = 
-                    (mealItem && mealItem.name) ? mealItem : 
-                    (typeof mealItem === 'string' ? findFood(mealItem) : null);
-                const compatValue = mealFood ? checkCompatibility(food, [mealFood]) : 0;
-                return total + (compatValue ? 1 : -1);
-            }, 0);
-
-            const score = 
+            // Uyum skorunu hesapla
+            let compatScore = 0;
+            if (typeof checkCompatibility === "function") {
+                compatScore = currentMeal.reduce((total, mealItem) => {
+                    const mealFood = (mealItem && mealItem.name) ? mealItem : (typeof mealItem === 'string' ? findFood(mealItem) : null);
+                    const compatValue = mealFood ? checkCompatibility(food, [mealFood]) : 0;
+                    return total + (compatValue ? 1 : -1);
+                }, 0);
+            }
+            // Makro hedeflerine yakınlık skorunu hesapla
+            const score =
                 (targets.protein > 0 ? Math.min(food.protein / targets.protein, 1) * 0.4 : 0) +
                 (targets.fat > 0 ? Math.min(food.fat / targets.fat, 1) * 0.3 : 0) +
                 (targets.carbs > 0 ? Math.min(food.carbs / targets.carbs, 1) * 0.15 : 0) +
                 (targets.calories > 0 ? Math.min(food.calories / targets.calories, 1) * 0.15 : 0) +
                 (compatScore * 0.1);
-            
-            //console.log('Food score:', { food: food.name, score });
             return { food, score };
         });
 
     if (filteredFoods.length === 0) return null;
 
-    // 2. En yüksek puanı bul
+    // En yüksek puanı bul
     const maxScore = Math.max(...filteredFoods.map(f => f.score));
-
-    // 3. En yüksek puanlı yemekleri al
+    // En yüksek puanlı yemekleri al
     const topFoods = filteredFoods.filter(f => f.score === maxScore);
-
-    // 4. Rastgele birini seç (eşit puanlılar arasında)
+    // Rastgele birini seç (eşit puanlılar arasında)
     const selected = topFoods[Math.floor(Math.random() * topFoods.length)];
     return selected.food;
 }
+
 function calculateOptimalQuantity(food, targets, currentMeal, mealType, availableFoods) {
     const minQty = food.minQuantity || 0.5;
     const maxQty = food.maxQuantity || 1;
@@ -7584,34 +7713,27 @@ function generatePlan(settings) {
     }
 
     const availableFoods = categories.flatMap(cat => cat.items)
-    .filter(f => {
-        if (f.calories <= 0) return false;
-        // Sadece keto/lowcarb filtrelemesi
-        if (dietMode === 'keto') {
-            return f.keto === true;
-        } else if (dietMode === 'lowcarb') {
-            return f.keto === true || f.lowcarb === true;
-        }
-        return false;
-    })
-    .filter(f =>
-        !settings.dislikedFoods.some(df =>
-            f.name.toLowerCase().includes(df.toLowerCase()) ||
-            (f.tags && f.tags.some(t => t.toLowerCase().includes(df.toLowerCase())))
-        )
-    )
-    .filter(isFoodInSeason)
-    .sort((a, b) => {
-        const aLiked = settings.likedFoods.some(lf =>
-            a.name.toLowerCase().includes(lf.toLowerCase()) ||
-            (a.tags && a.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())))
-        );
-        const bLiked = settings.likedFoods.some(lf =>
-            b.name.toLowerCase().includes(lf.toLowerCase()) ||
-            (b.tags && b.tags.some(t => t.toLowerCase().includes(lf.toLowerCase())))
-        );
-        return bLiked - aLiked;
-    });
+        .filter(f => {
+            const isValid = f.calories > 0 &&
+                (dietMode === 'keto' ? f.keto : f.lowcarb) &&
+                !settings.dislikedFoods.some(df =>
+                    f.name.toLowerCase().includes(df.toLowerCase()) ||
+                    f.tags.some(t => t.toLowerCase().includes(df.toLowerCase()))
+                ) &&
+                isFoodInSeason(f);
+            return isValid;
+        })
+        .sort((a, b) => {
+            const aLiked = settings.likedFoods.some(lf =>
+                a.name.toLowerCase().includes(lf.toLowerCase()) ||
+                a.tags.some(t => t.toLowerCase().includes(lf.toLowerCase()))
+            );
+            const bLiked = settings.likedFoods.some(lf =>
+                b.name.toLowerCase().includes(lf.toLowerCase()) ||
+                b.tags.some(t => t.toLowerCase().includes(lf.toLowerCase()))
+            );
+            return bLiked - aLiked;
+        });
 
     console.log("availableFoods filtrelendi:", availableFoods.map(f => f.name));
 
@@ -7672,26 +7794,21 @@ function generatePlan(settings) {
                         if (rule.frequencyType === 'min' && count < rule.frequency) {
                             let remaining = rule.frequency - count;
                             while (remaining > 0 && matchingFoods.length > 0) {
-    const food = matchingFoods[Math.floor(Math.random() * matchingFoods.length)];
-    // TAG ÇAKIŞMASI KONTROLÜ EKLENDİ!
-    if (
-        !mealItems.some(item => item.name === food.name) &&
-        isMealTypeCompatible(food, rule.mealType) &&
-        !hasTagConflictWithMeal(food, mealItems)
-    ) {
-        const quantity = calculateOptimalQuantity(food, {
-            calories: targetCalories,
-            protein: targetProtein,
-            fat: targetFat,
-            carbs: targetCarbs
-        }, mealItems, rule.mealType, availableFoods);
-        mealItems.push({ name: food.name, quantity });
-        ruleAppliedFoods.add(food.name);
-        remaining -= quantity;
-    } else {
-        matchingFoods = matchingFoods.filter(f => f.name !== food.name);
-    }
-}
+                                const food = matchingFoods[Math.floor(Math.random() * matchingFoods.length)];
+                                if (!mealItems.some(item => item.name === food.name) && isMealTypeCompatible(food, rule.mealType)) {
+                                    const quantity = calculateOptimalQuantity(food, {
+                                        calories: targetCalories,
+                                        protein: targetProtein,
+                                        fat: targetFat,
+                                        carbs: targetCarbs
+                                    }, mealItems, rule.mealType, availableFoods);
+                                    mealItems.push({ name: food.name, quantity });
+                                    ruleAppliedFoods.add(food.name);
+                                    remaining -= quantity;
+                                } else {
+                                    matchingFoods = matchingFoods.filter(f => f.name !== food.name);
+                                }
+                            }
                         } else if (rule.frequencyType === 'max' && count > rule.frequency) {
                             let excess = count - rule.frequency;
                             while (excess > 0) {
@@ -7705,26 +7822,21 @@ function generatePlan(settings) {
                             if (count < rule.frequency) {
                                 let remaining = rule.frequency - count;
                                 while (remaining > 0 && matchingFoods.length > 0) {
-    const food = matchingFoods[Math.floor(Math.random() * matchingFoods.length)];
-    // TAG ÇAKIŞMASI KONTROLÜ EKLENDİ!
-    if (
-        !mealItems.some(item => item.name === food.name) &&
-        isMealTypeCompatible(food, rule.mealType) &&
-        !hasTagConflictWithMeal(food, mealItems)
-    ) {
-        const quantity = calculateOptimalQuantity(food, {
-            calories: targetCalories,
-            protein: targetProtein,
-            fat: targetFat,
-            carbs: targetCarbs
-        }, mealItems, rule.mealType, availableFoods);
-        mealItems.push({ name: food.name, quantity });
-        ruleAppliedFoods.add(food.name);
-        remaining -= quantity;
-    } else {
-        matchingFoods = matchingFoods.filter(f => f.name !== food.name);
-    }
-}
+                                    const food = matchingFoods[Math.floor(Math.random() * matchingFoods.length)];
+                                    if (!mealItems.some(item => item.name === food.name) && isMealTypeCompatible(food, rule.mealType)) {
+                                        const quantity = calculateOptimalQuantity(food, {
+                                            calories: targetCalories,
+                                            protein: targetProtein,
+                                            fat: targetFat,
+                                            carbs: targetCarbs
+                                        }, mealItems, rule.mealType, availableFoods);
+                                        mealItems.push({ name: food.name, quantity });
+                                        ruleAppliedFoods.add(food.name);
+                                        remaining -= quantity;
+                                    } else {
+                                        matchingFoods = matchingFoods.filter(f => f.name !== food.name);
+                                    }
+                                }
                             } else if (count > rule.frequency) {
                                 let excess = count - rule.frequency;
                                 while (excess > 0) {
@@ -7895,111 +8007,6 @@ function generatePlan(settings) {
                         currentProtein += foodProtein;
                         currentFat += foodFat;
                         currentCarbs += foodCarbs;
-
-
-                        // Şablon ekleme mantığı
-const mealTemplatesForType = mealTemplates.filter(t => t.mealType === mealType);
-if (mealTemplatesForType.length > 0 && currentMeal.length === 1) { // Sadece ana yemek varsa uygula
-    // Uygun şablonu bul (ör: ana yemek ismiyle veya rol ile eşleşen)
-    const selectedTemplate = mealTemplatesForType.find(t =>
-        t.items.some(i => i.keyword.toLowerCase() === bestFood.name.toLowerCase() || (bestFood.tags && bestFood.tags.includes(i.keyword.toLowerCase())))
-    );
-    if (selectedTemplate) {
-        selectedTemplate.items.forEach(tmplItem => {
-            if (tmplItem.role !== 'mainDish') {
-                // Şablondaki yan yemek sistemde var mı?
-                const food = categories.flatMap(cat => cat.items)
-                    .find(f =>
-                        (f.name.toLowerCase() === tmplItem.keyword.toLowerCase() ||
-                         (f.tags && f.tags.map(t => t.toLowerCase()).includes(tmplItem.keyword.toLowerCase())))
-                        && isMealTypeCompatible(f, mealType)
-                    );
-                if (food && !currentMeal.some(i => i.name === food.name)) {
-                    currentMeal.push({ name: food.name, quantity: tmplItem.quantity || 1 });
-                }
-            }
-        });
-    }
-}
-                        if (
-    bestFood.role === 'mainDish' &&
-    Array.isArray(bestFood.compatibilityTags) &&
-    bestFood.compatibilityTags.length > 0
-) {
-    const compatTags = bestFood.compatibilityTags.map(t => t.toLowerCase());
-    const alreadyAdded = currentMeal.map(item => item.name);
-
-    // Kurallar gereği eklenmiş ve bu etiketi karşılayan yemekleri bul
-    const ruleAddedFoods = new Set();
-    for (const item of currentMeal) {
-        const foodObj = findFood(item.name);
-        if (!foodObj) continue;
-        // Eğer bu yemek mainDish değilse ve tag'larından biri uyumluluk etiketlerinden birini karşılıyorsa
-        if (
-            foodObj.role !== 'mainDish' &&
-            (
-                (foodObj.compatibilityTags && foodObj.compatibilityTags.some(tag => compatTags.includes(tag.toLowerCase()))) ||
-                (foodObj.tags && foodObj.tags.some(tag => compatTags.includes(tag.toLowerCase())))
-            )
-        ) {
-            // O etiketi karşılayan yemek olarak işaretle
-            (foodObj.compatibilityTags || foodObj.tags || []).forEach(tag => {
-                if (compatTags.includes(tag.toLowerCase())) {
-                    ruleAddedFoods.add(tag.toLowerCase());
-                }
-            });
-        }
-    }
-
-    // Her bir uyumluluk etiketi için, o etiketi karşılayan ve henüz eklenmemiş bir yemek eklemeye çalış
-    for (const tag of compatTags) {
-        if (ruleAddedFoods.has(tag)) continue; // Zaten kural gereği eklenmişse atla
-
-        // Uygun adayları bul
-        const candidates = categories.flatMap(cat => cat.items)
-            .filter(item =>
-                item.role !== 'mainDish' &&
-                isMealTypeCompatible(item, mealType) &&
-                !alreadyAdded.includes(item.name) &&
-                (
-                    (item.compatibilityTags && item.compatibilityTags.map(t => t.toLowerCase()).includes(tag)) ||
-                    (item.tags && item.tags.map(t => t.toLowerCase()).includes(tag))
-                )
-            );
-
-        // Makro ve kural kontrolüyle ekle
-        for (const candidate of candidates) {
-            // Makro sınırlarını ve kuralı kontrol et
-            const newCalories = currentCalories + candidate.calories;
-            const newProtein = currentProtein + candidate.protein;
-            const newFat = currentFat + candidate.fat;
-            const newCarbs = currentCarbs + candidate.carbs;
-
-            // Makro ve max kontrolü
-            if (
-                newCalories <= mealTargets.calories * (1 + macroTolerance) &&
-                newProtein <= mealTargets.protein * (1 + macroTolerance) &&
-                newFat <= mealTargets.fat * (1 + macroTolerance) &&
-                newCarbs <= mealTargets.carbs * (1 + macroTolerance) &&
-                currentMeal.length < max
-            ) {
-                // Kural çakışması veya tekrar kontrolü
-                if (
-                    !currentMeal.some(i => i.name === candidate.name) &&
-                    !hasTagConflictWithMeal(candidate, currentMeal)
-                ) {
-                    currentMeal.push({ name: candidate.name, quantity: 1 });
-                    alreadyAdded.push(candidate.name);
-                    currentCalories = newCalories;
-                    currentProtein = newProtein;
-                    currentFat = newFat;
-                    currentCarbs = newCarbs;
-                    break; // Sadece bir yemek ekle, sonraki etikete geç
-                }
-            }
-        }
-    }
-}
                         console.log(`Eklendi (${mealType}): ${bestFood.name} (${quantity}x), Kalori: ${currentCalories}/${mealTargets.calories}, Protein: ${currentProtein}/${mealTargets.protein}, Yağ: ${currentFat}/${mealTargets.fat}`);
                     } else {
                         console.log(`Engellendi (${mealType}): ${bestFood.name} (kalori sınırı aşıldı)`);
@@ -8083,6 +8090,8 @@ if (mealTemplatesForType.length > 0 && currentMeal.length === 1) { // Sadece ana
 
     renderMeals();
     calculateMacros();
+
+
 
     const appliedRules = [];
     const unappliedRules = [];
@@ -8215,74 +8224,6 @@ if (mealTemplatesForType.length > 0 && currentMeal.length === 1) { // Sadece ana
         }
     });
 
-    // Aynı gün, aynı yemek (ekmek hariç) birden fazla öğünde olmasın
-    weeks.forEach(week => {
-        Object.values(week.days).forEach(day => {
-            const seen = new Set();
-            ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
-                day.meals[mealType] = (day.meals[mealType] || []).filter(item => {
-                    const food = findFood(item.name);
-                    // Ekmek ise tekrarına izin ver
-                    if (food && food.role === 'bread') return true;
-                    const key = (food ? food.name : item.name);
-                    if (seen.has(key)) {
-                        // Bu yemek zaten başka bir öğünde var, çıkar
-                        return false;
-                    }
-                    seen.add(key);
-                    return true;
-                });
-            });
-        });
-    });
-
-    // MainDish yanına uyumlu yan yemek ekle
-weeks.forEach(week => {
-    Object.values(week.days).forEach(day => {
-        ['lunch', 'dinner'].forEach(mealType => {
-            const meal = day.meals[mealType] || [];
-            // Sadece bir ana yemek varsa uygula
-            const mainDish = meal.find(item => {
-                const food = findFood(item.name);
-                return food && food.role === 'mainDish';
-            });
-            if (!mainDish) return;
-
-            const mainFood = findFood(mainDish.name);
-            if (!mainFood || !mainFood.compatibilityTags || mainFood.compatibilityTags.length === 0) return;
-
-            // Uyumlu yan yemek bul
-            const compatTags = mainFood.compatibilityTags.map(t => t.toLowerCase());
-            // Sadece mainDish olmayan ve aynı öğünde olmayanlardan seç
-            const alreadyNames = meal.map(i => i.name);
-
-            // --- DÜZELTME: Etiket eşleşmesini sadece tag'lerde ve compatibilityTags'te ara, isimde değil ---
-            // Ayrıca, çakışma kontrolü ve uyumluluk kontrolü ekle
-            const candidate = categories.flatMap(cat => cat.items)
-                .filter(f =>
-                    f.role !== 'mainDish' &&
-                    !alreadyNames.includes(f.name) &&
-                    f.mealType && (Array.isArray(f.mealType) ? f.mealType.includes(mealType) : f.mealType === mealType) &&
-                    (
-                        (Array.isArray(f.compatibilityTags) && f.compatibilityTags.some(tag => compatTags.includes(tag.toLowerCase())))
-                        ||
-                        (Array.isArray(f.tags) && f.tags.some(tag => compatTags.includes(tag.toLowerCase())))
-                    ) &&
-                    // Aynı öğünde etiket çakışması olmasın
-                    !hasTagConflictWithMeal(f, meal)
-                )[0];
-
-            if (candidate) {
-                meal.push({
-                    name: candidate.name,
-                    quantity: candidate.minQuantity || 1
-                });
-                day.meals[mealType] = meal;
-            }
-        });
-    });
-});
-
     const ruleTextElement = document.getElementById("ruleTextElement");
     if (ruleTextElement) {
         ruleTextElement.innerHTML = `
@@ -8328,7 +8269,36 @@ function moveSelectedFoods() {
             showNotification("Yemekler taşındı!");
         }
 
-
+weeks.forEach(week => {
+    Object.values(week.days).forEach(day => {
+        ['breakfast', 'lunch', 'dinner'].forEach(mealType => {
+            const meal = day.meals[mealType] || [];
+            // Sadece mainDish olanları bul
+            const mainDishes = meal.filter(item => {
+                const food = findFood(item.name);
+                return food && food.role === 'mainDish';
+            });
+            // Eğer 1'den fazla varsa, sadece ilkini bırak, diğerlerini sil
+            if (mainDishes.length > 1) {
+                const firstMain = mainDishes[0].name;
+                day.meals[mealType] = meal.filter(item => {
+                    const food = findFood(item.name);
+                    return !(food && food.role === 'mainDish' && item.name !== firstMain);
+                });
+            }
+            // Eğer hiç yoksa, rastgele bir mainDish ekle
+            if (mainDishes.length === 0) {
+                // Uygun bir mainDish bul
+                const candidates = categories.flatMap(cat => cat.items)
+                    .filter(f => f.role === 'mainDish' && isMealTypeCompatible(f, mealType));
+                if (candidates.length > 0) {
+                    const randomMain = candidates[Math.floor(Math.random() * candidates.length)];
+                    day.meals[mealType].push({ name: randomMain.name, quantity: 1 });
+                }
+            }
+        });
+    });
+});
         const excludedBySeason = categories.flatMap(cat => cat.items)
     .filter(f => f.calories > 0 && !isFoodInSeason(f))
     .map(f => f.name);
@@ -9206,7 +9176,9 @@ function saveState() {
         food_list: JSON.parse(localStorage.getItem("food_list")) || {},
         selectedDay: selectedDay
     };
-
+if (currentPatient) {
+        window[`weeks_patient_${currentPatient}`] = JSON.parse(JSON.stringify(weeks));
+    }
     // Eğer mevcut indeksten sonra yeni bir işlem yapılıyorsa, eski ileri işlemleri sil
     if (historyIndex < history.length - 1) {
         history = history.slice(0, historyIndex + 1);
