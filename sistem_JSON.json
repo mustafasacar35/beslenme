@@ -13560,6 +13560,31 @@
       "name": "KOLLAJEN",
       "items": [
         {
+          "name": "Toz kollajen 1 ölçek",
+          "category": "KOLLAJEN",
+          "role": "mainDish",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
           "name": "Kollajen (1 ölçek 10 gram)",
           "category": "KOLLAJEN",
           "role": "supplement",
@@ -13574,31 +13599,6 @@
             "kollajen",
             "keto"
           ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
-          "name": "Toz kollajen 1 ölçek",
-          "category": "KOLLAJEN",
-          "role": "mainDish",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [],
           "compatibilityTags": [],
           "keto": true,
           "lowcarb": true,
@@ -14588,7 +14588,7 @@
                 "quantity": 1
               },
               {
-                "name": "Kollajen",
+                "name": "Kollajen (1 ölçek 10 gram)",
                 "calories": 40,
                 "carbs": 0,
                 "protein": 10,
