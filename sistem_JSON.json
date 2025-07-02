@@ -6011,34 +6011,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Kollajen",
-          "category": "AKŞAM",
-          "role": "supplement",
-          "calories": 40,
-          "protein": 10,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "keto",
-            "ek"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Tereyağlı Kabak",
           "category": "AKŞAM",
           "role": "sideDish",
@@ -8386,6 +8358,34 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Kollajen",
+          "category": "AKŞAM",
+          "role": "supplement",
+          "calories": 40,
+          "protein": 10,
+          "carbs": 0,
+          "fat": 0,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "keto",
+            "ek"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -14586,6 +14586,15 @@
               {
                 "name": "1 Kase (roka, dereotu, tere)",
                 "quantity": 1
+              },
+              {
+                "name": "Kollajen",
+                "calories": 40,
+                "carbs": 0,
+                "protein": 10,
+                "fat": 0,
+                "quantity": 1,
+                "role": "supplement"
               }
             ]
           }
