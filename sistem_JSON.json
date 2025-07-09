@@ -8254,39 +8254,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Peynirli Patlıcan Topları (4 adet)",
-          "category": "AKŞAM",
-          "role": "supplement",
-          "calories": 328,
-          "protein": 14,
-          "carbs": 5,
-          "fat": 28,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "peynir",
-            "patlıcan",
-            "top"
-          ],
-          "compatibilityTags": [
-            "çorba",
-            "salata"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Fırında Kremalı Karnabahar",
           "category": "AKŞAM",
           "role": "mainDish",
@@ -8415,6 +8382,38 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Peynirli Patlıcan Topları (4 adet)",
+          "category": "AKŞAM",
+          "role": "supplement",
+          "calories": 328,
+          "protein": 14,
+          "carbs": 5,
+          "fat": 28,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "peynir",
+            "patlıcan",
+            "top"
+          ],
+          "compatibilityTags": [
+            "çorba",
+            "salata"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
           ],
           "isReversedSeason": false
         }
