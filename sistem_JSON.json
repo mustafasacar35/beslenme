@@ -9529,36 +9529,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Ketojenik Kremalı Kek",
-          "category": "TATLILAR",
-          "role": "dessert",
-          "calories": 332,
-          "protein": 8,
-          "carbs": 3,
-          "fat": 32,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "kremalı",
-            "kek",
-            "keto",
-            "tatlı"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Ketojenik Yaş Pasta",
           "category": "TATLILAR",
           "role": "dessert",
@@ -9845,6 +9815,36 @@
           "fillerLunch": false,
           "fillerDinner": true,
           "portionFixed": true,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Ketojenik Kremalı Kek",
+          "category": "TATLILAR",
+          "role": "dessert",
+          "calories": 332,
+          "protein": 8,
+          "carbs": 3,
+          "fat": 32,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "kremalı",
+            "kek",
+            "keto",
+            "tatlı"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
