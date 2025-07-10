@@ -3306,6 +3306,30 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Peynirli patlıcan rulosu",
+          "calories": 426,
+          "protein": 24,
+          "carbs": 15,
+          "fat": 30,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [],
+          "compatibilityTags": [],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": false,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
