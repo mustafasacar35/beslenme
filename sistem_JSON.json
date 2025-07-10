@@ -8451,6 +8451,36 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Nohutlu köz patlıcan mezesi",
+          "calories": 125,
+          "protein": 5,
+          "carbs": 6,
+          "fat": 9,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "nohut",
+            "patlıcan",
+            "meze"
+          ],
+          "compatibilityTags": [
+            "yoğurt"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": false,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
