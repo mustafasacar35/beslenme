@@ -3274,6 +3274,8 @@
         },
         {
           "name": "Patlıcan Böreği",
+          "category": "ÖĞLEN",
+          "role": "mainDish",
           "calories": 186,
           "protein": 8,
           "carbs": 7,
@@ -3292,18 +3294,18 @@
             "kuruyemiş",
             "yoğurt"
           ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
           "keto": true,
-          "lowcarb": false,
+          "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -14746,6 +14748,15 @@
                 "quantity": 1,
                 "role": "drink",
                 "unit": "fincan"
+              },
+              {
+                "name": "Patlıcan Böreği",
+                "calories": 186,
+                "carbs": 7,
+                "protein": 8,
+                "fat": 14,
+                "quantity": 1,
+                "role": "mainDish"
               }
             ],
             "lunch": [
