@@ -11763,6 +11763,36 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Enginar Salatası",
+          "calories": 106,
+          "protein": 3,
+          "carbs": 10,
+          "fat": 6,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "enginar",
+            "salata"
+          ],
+          "compatibilityTags": [
+            "ekmek",
+            "çorba",
+            "kuruyemiş"
+          ],
+          "role": "sideDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
