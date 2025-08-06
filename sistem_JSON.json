@@ -15464,6 +15464,16 @@
       "scope": "meal",
       "food": "mayonez",
       "requiredFood": "köfte"
+    },
+    {
+      "id": 60,
+      "type": "compatibility",
+      "keyword1": "domates",
+      "keyword2": [
+        "zeytin"
+      ],
+      "degree": 5,
+      "conjunction": "or"
     }
   ],
   "mealTemplates": [
