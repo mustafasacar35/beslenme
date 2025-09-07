@@ -3257,37 +3257,6 @@
           "category": "ÖĞLEN"
         },
         {
-          "name": "Girit Usulü Zeytinli Meze",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 320,
-          "protein": 13,
-          "carbs": 4,
-          "fat": 28,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "zeytin",
-            "peynir",
-            "ceviz"
-          ],
-          "compatibilityTags": [
-            "yumurta"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Yumurtalı Lahana Kavurma",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -3488,6 +3457,37 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Girit Usulü Zeytinli Meze",
+          "category": "ÖĞLEN",
+          "role": "sideDish",
+          "calories": 320,
+          "protein": 13,
+          "carbs": 4,
+          "fat": 28,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "zeytin",
+            "peynir",
+            "ceviz"
+          ],
+          "compatibilityTags": [
+            "yumurta"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -8349,40 +8349,6 @@
           "category": "AKŞAM"
         },
         {
-          "name": "Taze Fasulyeli Kıymalı Sote",
-          "calories": 322,
-          "protein": 24,
-          "carbs": 7,
-          "fat": 22,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "fasülye",
-            "kıyma",
-            "et"
-          ],
-          "compatibilityTags": [
-            "salata",
-            "yoğurt",
-            "kuruyemiş",
-            "soğan"
-          ],
-          "role": "mainDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "AKŞAM"
-        },
-        {
           "name": "Kıymalı Bamya Sote",
           "calories": 294,
           "protein": 18,
@@ -8921,6 +8887,40 @@
           "lowcarb": true,
           "fillerLunch": false,
           "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Taze Fasulyeli Kıymalı Sote",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 322,
+          "protein": 24,
+          "carbs": 7,
+          "fat": 22,
+          "maxQuantity": 1,
+          "minQuantity": 0.5,
+          "step": 0.5,
+          "tags": [
+            "fasülye",
+            "kıyma",
+            "et"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "yoğurt",
+            "kuruyemiş",
+            "soğan"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]",
@@ -15171,21 +15171,21 @@
             ],
             "lunch": [
               {
-                "name": "2 adet lupin unlu poğaça (veya 4 adet Lorlu poğaça)",
+                "name": "Girit Usulü Zeytinli Meze",
                 "quantity": 1
               },
               {
-                "name": "Zeytin (5 adet)",
-                "quantity": 2
+                "name": "Peynirli Zeytin Ezmesi",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Kerevizli Çökertme Kebabı (200 gr kıyma ve 1 küçük boy kereviz ile)",
+                "name": "Sarımsaklı Tereyağlı Karides",
                 "quantity": 1
               },
               {
-                "name": "2 avuç yeşil salata + bir tatlı kaşığı zeytin yağı",
+                "name": "Labneli Pancar Salatası",
                 "quantity": 1
               }
             ]
@@ -15203,22 +15203,34 @@
             ],
             "lunch": [
               {
-                "name": "Fırında Menemen",
+                "name": "Ketojenik Ispanaklı Börek (1 dilim)",
                 "quantity": 1
               },
               {
-                "name": "Cevizli Kaşık Salatası",
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
+                "quantity": 1
+              },
+              {
+                "name": "Peynirli Patlıcan Topları (4 adet)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Ciğer Kavurma (1 porsiyon)",
+                "name": "Hünkar Beğendi",
                 "quantity": 1
               },
               {
-                "name": "*Zeytinyağlı Deniz Börülcesi ya da brokoli salata (1 tatlı kaşığı zeytinyağı ile",
+                "name": "Yeşil Salata",
                 "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Ketojenik Kremalı Kek",
+                "quantity": 0.5
               }
             ]
           }
@@ -15235,25 +15247,25 @@
             ],
             "lunch": [
               {
-                "name": "Mevsim yeşillikleri (dereotu, roka, maydanoz, marul, sirke, limon ile)",
+                "name": "Menemen (2 adet yumurta, 1 adet domates, 1 adet biber, 1/4 soğan)",
                 "quantity": 1
               },
               {
-                "name": "Taze Fasulyeli Kıymalı Sote",
-                "quantity": 1
-              },
-              {
-                "name": "Avokado (yarım)",
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal tere,  limon+1 yemek kaşığı zeytinyağı ile)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Patlıcan kebabı (2 adet orta boy patlıcan, 200 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. fırında ya da airfry'da pişirilir)",
+                "name": "Lahana Mücver",
                 "quantity": 1
               },
               {
-                "name": "Kabak kavurması (1 adet kabak + 1 domates + 1 biber) + 1 yemek kaşığı zeytinyağı ile)",
+                "name": "Brokoli Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               }
             ]
@@ -15271,22 +15283,30 @@
             ],
             "lunch": [
               {
-                "name": "Izgara Kabak Ruloları",
+                "name": "*Avokadolu omlet",
                 "quantity": 1
               },
               {
-                "name": "Ketojenik Tost (Tahin Ekmeği + Kaşar)",
-                "quantity": 0.5
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Ketojenik Pizza",
+                "name": "*Mantarlı tavuk sote",
                 "quantity": 1
               },
               {
-                "name": "Roka salatası (yarım bağ roka, 1 adet küçük salatalık, 3 adet cherry domates, yarım kırmızı soğan + limon, 1 tatlı kaşığı zeytinyağı ve istenilen baharatlar ile)",
+                "name": "Yoğurtlu Kabak Mezesi",
                 "quantity": 1
+              },
+              {
+                "name": "Ketojenik Yaş Pasta",
+                "quantity": 0.5
+              },
+              {
+                "name": "Fındık (10 adet)",
+                "quantity": 0.5
               }
             ]
           }
@@ -15303,15 +15323,19 @@
             ],
             "lunch": [
               {
-                "name": "Yumurtalı Lahana Kavurma",
+                "name": "Sebzeli Omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "3 adet Cherry Domates + 1 yemek kaşığı zeytinyağı, Kekik ve Pul Biber",
+                "name": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "30 gram pastırma",
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "tahin ekmeği ile tost (1 dilim kaşar) + kasap sucuk (50 gram)",
                 "quantity": 1
               }
             ],
@@ -15321,11 +15345,15 @@
                 "quantity": 1
               },
               {
-                "name": "Kırmızı Pancar Salatası",
+                "name": "Semizotu Salatası (2 avuç semizotu, 1 domates, 1 salatalık, 1 biber, 1 yemek kaşığı zeytinyağı)",
                 "quantity": 1
               },
               {
-                "name": "Kelle Paça Çorbası",
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "San Sebastian Cheesecake",
                 "quantity": 1
               }
             ]
@@ -15343,21 +15371,25 @@
             ],
             "lunch": [
               {
-                "name": "Fırında Menemen",
+                "name": "1 dilim Ketojenik Ispanaklı Börek",
                 "quantity": 1
               },
               {
-                "name": "Peynirli Zeytin Ezmesi",
+                "name": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke,limon ve 1 yemek kaşığı zeytinyağı ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Peynirli Patlıcan Topları (4 adet)",
                 "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "Patlıcan Kebabı (2 orta boy patlıcan, 200 gr kıyma ile)",
+                "name": "200 gram Tavuk Eti ile Güveç (domates, biber ve soğan ile)",
                 "quantity": 1
               },
               {
-                "name": "Yeşil Salata",
+                "name": "Roka, turp ve pancar dilimleri + limon ve 1 yemek kaşığı zeytinyağı ile",
                 "quantity": 1
               }
             ]
@@ -15375,25 +15407,29 @@
             ],
             "lunch": [
               {
-                "name": "Haşlanmış Yumurta (2 adet) + Tereyağı ve Baharatlar",
+                "name": "Taze Fasulyeli Yumurta Kavurması",
                 "quantity": 1
               },
               {
-                "name": "Peynirli biber dolması (2 adet)",
-                "quantity": 1
+                "name": "Zeytin (5 adet)",
+                "quantity": 2
               },
               {
-                "name": "10 adet Badem",
-                "quantity": 0.5
+                "name": "tahin ekmeği ile tost (1 dilim kaşar) + kasap sucuk (50 gram)",
+                "quantity": 1
               }
             ],
             "dinner": [
               {
-                "name": "*Tavuklu kabak makarna",
+                "name": "150 gram tavuk pirzola ya da kanat",
                 "quantity": 1
               },
               {
-                "name": "Cevizli Kabak Salatası",
+                "name": "Lor peynirli avokado salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
                 "quantity": 1
               }
             ]
@@ -16466,20 +16502,6 @@
       "dislikedFoods": [],
       "weeks": []
     },
-    "patient_80-1": {
-      "name": "80-1",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 80,
-      "activity": 1,
-      "dietMode": "keto",
-      "coefficients": {
-        "carb": 0.3,
-        "protein": 0.8,
-        "fat": 1.2
-      },
-      "weeks": []
-    },
     "patient_80-3": {
       "name": "80-3",
       "likedFoods": [],
@@ -16499,6 +16521,5011 @@
       "dislikedFoods": [
         "zeytin"
       ],
+      "weeks": []
+    },
+    "patient_deneme34": {
+      "name": "deneme34",
+      "weight": 42,
+      "activity": 3,
+      "likedFoods": [
+        "muz"
+      ],
+      "dislikedFoods": [
+        "ekmek"
+      ],
+      "weeks": []
+    },
+    "patient_m100-2": {
+      "name": "m100-2",
+      "weight": 100,
+      "activity": 2,
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weeks": []
+    },
+    "patient_patient_001_detailed": {
+      "id": "patient_001",
+      "version": "1.0",
+      "lastUpdated": "2025-08-31T18:51:04.424Z",
+      "status": "aktif",
+      "personalInfo": {
+        "id": "patient_001",
+        "firstName": "Ahmet",
+        "lastName": "Yılmaz",
+        "age": 35,
+        "gender": "erkek",
+        "phone": "0532 123 4567",
+        "email": "",
+        "height": 175,
+        "weight": 80,
+        "activityLevel": 3,
+        "createdDate": "2025-08-31T18:21:03.508Z"
+      },
+      "healthInfo": {
+        "diseases": [],
+        "allergies": [],
+        "medications": [],
+        "notes": "Diyabet hastası"
+      },
+      "nutritionPreferences": {
+        "likedFoods": [],
+        "dislikedFoods": [],
+        "dietType": "lowcarb",
+        "calorieMethod": "automatic",
+        "targetMacros": {}
+      },
+      "planningSettings": {
+        "dietType": "lowcarb",
+        "mealCount": 5,
+        "mealLines": {
+          "breakfast": 3,
+          "snack1": 2,
+          "lunch": 4,
+          "snack2": 2,
+          "dinner": 4,
+          "night": 1
+        },
+        "planningFactors": {
+          "version": "1.0",
+          "lastUpdated": "2025-08-17T00:00:00.000Z",
+          "factors": [
+            {
+              "id": "allergies",
+              "priority": 1,
+              "name": "Alerjiler",
+              "description": "Kesin dışlanması gereken besinler",
+              "type": "exclusion",
+              "scope": "global",
+              "enabled": false
+            },
+            {
+              "id": "liked_foods",
+              "priority": 2,
+              "name": "Sevilen Yemekler",
+              "description": "Hastanın tercih ettiği besinler",
+              "type": "preference",
+              "scope": "meal",
+              "enabled": true
+            },
+            {
+              "id": "medical_conditions",
+              "priority": 3,
+              "name": "Tıbbi Durumlar",
+              "description": "Sağlık durumuna göre kısıtlamalar",
+              "type": "medical",
+              "scope": "global",
+              "enabled": true
+            },
+            {
+              "id": "macro_targets",
+              "priority": 4,
+              "name": "Hedef Makro Değerleri",
+              "description": "Karbonhidrat, protein, yağ hedefleri",
+              "type": "nutritional",
+              "scope": "daily",
+              "enabled": true
+            },
+            {
+              "id": "calorie_distribution",
+              "priority": 5,
+              "name": "Kalori Dağılımı",
+              "description": "Öğünler arası kalori paylaşımı",
+              "type": "nutritional",
+              "scope": "daily",
+              "enabled": true
+            },
+            {
+              "id": "meal_timing",
+              "priority": 6,
+              "name": "Öğün Zamanlaması",
+              "description": "Hangi saatte ne yenileceği",
+              "type": "timing",
+              "scope": "daily",
+              "enabled": true
+            },
+            {
+              "id": "food_groups",
+              "priority": 7,
+              "name": "Besin Grupları",
+              "description": "Protein, sebze, meyve dengeleri",
+              "type": "nutritional",
+              "scope": "meal",
+              "enabled": true
+            },
+            {
+              "id": "portion_sizes",
+              "priority": 8,
+              "name": "Porsiyon Büyüklükleri",
+              "description": "Her besinin miktarı",
+              "type": "quantity",
+              "scope": "meal",
+              "enabled": true
+            },
+            {
+              "id": "seasonal_foods",
+              "priority": 9,
+              "name": "Mevsimsel Besinler",
+              "description": "Mevsime uygun ürün seçimi",
+              "type": "seasonal",
+              "scope": "weekly",
+              "enabled": true
+            },
+            {
+              "id": "repetition_frequency",
+              "priority": 10,
+              "name": "Tekrar Sıklığı",
+              "description": "Aynı yemeğin hangi sıklıkla tekrarlanacağı",
+              "type": "variety",
+              "scope": "weekly",
+              "enabled": true
+            },
+            {
+              "id": "food_compatibility",
+              "priority": 11,
+              "name": "Yemek Uyumluluğu",
+              "description": "Ana yemeğin uyumluluk taglarına göre yan yemeklerin magnetik çekimi ve uyumlu menü oluşumu",
+              "type": "compatibility",
+              "scope": "meal",
+              "enabled": true
+            },
+            {
+              "id": "tag_conflicts",
+              "priority": 12,
+              "name": "Tag Çakışması",
+              "description": "Aynı öğünde aynı tagları içeren yemeklerin çakışmasını önler ve menü çeşitliliğini artırır",
+              "type": "conflict",
+              "scope": "meal",
+              "enabled": true
+            },
+            {
+              "id": "system_rules",
+              "priority": 13,
+              "name": "Sistem Kuralları",
+              "description": "Kurallar sekmesinden oluşturulan aktif sistem kuralları",
+              "type": "rules",
+              "scope": "system",
+              "enabled": true
+            },
+            {
+              "id": "auto_planning_methods",
+              "priority": 14,
+              "name": "Otomatik Planlama Yöntemleri",
+              "description": "Makro hedeflere ulaşma algoritmaları ve iterasyon ayarları",
+              "type": "algorithm",
+              "scope": "system",
+              "enabled": true
+            }
+          ]
+        },
+        "customRules": [],
+        "ruleHierarchy": [],
+        "useSystemRules": true,
+        "likedFoodsBoost": 25,
+        "varietyLevel": "medium"
+      },
+      "weeklyPlans": [
+        {
+          "weekId": "week_001",
+          "patientId": "patient_001",
+          "weekNumber": 1,
+          "startDate": "2025-08-31T18:21:03.509Z",
+          "endDate": "2025-09-07T18:21:03.509Z",
+          "status": "draft",
+          "title": "İlk Hafta Planı",
+          "description": "Otomatik oluşturulan başlangıç planı",
+          "createdDate": "2025-08-31T18:21:03.509Z",
+          "createdBy": "system",
+          "targets": {
+            "macros": {},
+            "waterIntake": 2500,
+            "exerciseMinutes": 30,
+            "sleepHours": 8
+          },
+          "days": [
+            {
+              "dayNumber": 1,
+              "dayName": "Pazartesi",
+              "date": "2025-08-31",
+              "meals": [
+                {
+                  "mealType": "breakfast",
+                  "mealName": "Kahvaltı",
+                  "time": "08:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack1",
+                  "mealName": "Kuşluk",
+                  "time": "10:30",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "lunch",
+                  "mealName": "Öğle Yemeği",
+                  "time": "13:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack2",
+                  "mealName": "İkindi",
+                  "time": "16:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "dinner",
+                  "mealName": "Akşam Yemeği",
+                  "time": "19:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                }
+              ],
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "notes": "",
+              "completed": false
+            },
+            {
+              "dayNumber": 2,
+              "dayName": "Salı",
+              "date": "2025-09-01",
+              "meals": [
+                {
+                  "mealType": "breakfast",
+                  "mealName": "Kahvaltı",
+                  "time": "08:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack1",
+                  "mealName": "Kuşluk",
+                  "time": "10:30",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "lunch",
+                  "mealName": "Öğle Yemeği",
+                  "time": "13:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack2",
+                  "mealName": "İkindi",
+                  "time": "16:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "dinner",
+                  "mealName": "Akşam Yemeği",
+                  "time": "19:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                }
+              ],
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "notes": "",
+              "completed": false
+            },
+            {
+              "dayNumber": 3,
+              "dayName": "Çarşamba",
+              "date": "2025-09-02",
+              "meals": [
+                {
+                  "mealType": "breakfast",
+                  "mealName": "Kahvaltı",
+                  "time": "08:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack1",
+                  "mealName": "Kuşluk",
+                  "time": "10:30",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "lunch",
+                  "mealName": "Öğle Yemeği",
+                  "time": "13:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack2",
+                  "mealName": "İkindi",
+                  "time": "16:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "dinner",
+                  "mealName": "Akşam Yemeği",
+                  "time": "19:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                }
+              ],
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "notes": "",
+              "completed": false
+            },
+            {
+              "dayNumber": 4,
+              "dayName": "Perşembe",
+              "date": "2025-09-03",
+              "meals": [
+                {
+                  "mealType": "breakfast",
+                  "mealName": "Kahvaltı",
+                  "time": "08:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack1",
+                  "mealName": "Kuşluk",
+                  "time": "10:30",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "lunch",
+                  "mealName": "Öğle Yemeği",
+                  "time": "13:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack2",
+                  "mealName": "İkindi",
+                  "time": "16:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "dinner",
+                  "mealName": "Akşam Yemeği",
+                  "time": "19:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                }
+              ],
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "notes": "",
+              "completed": false
+            },
+            {
+              "dayNumber": 5,
+              "dayName": "Cuma",
+              "date": "2025-09-04",
+              "meals": [
+                {
+                  "mealType": "breakfast",
+                  "mealName": "Kahvaltı",
+                  "time": "08:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack1",
+                  "mealName": "Kuşluk",
+                  "time": "10:30",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "lunch",
+                  "mealName": "Öğle Yemeği",
+                  "time": "13:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack2",
+                  "mealName": "İkindi",
+                  "time": "16:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "dinner",
+                  "mealName": "Akşam Yemeği",
+                  "time": "19:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                }
+              ],
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "notes": "",
+              "completed": false
+            },
+            {
+              "dayNumber": 6,
+              "dayName": "Cumartesi",
+              "date": "2025-09-05",
+              "meals": [
+                {
+                  "mealType": "breakfast",
+                  "mealName": "Kahvaltı",
+                  "time": "08:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack1",
+                  "mealName": "Kuşluk",
+                  "time": "10:30",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "lunch",
+                  "mealName": "Öğle Yemeği",
+                  "time": "13:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack2",
+                  "mealName": "İkindi",
+                  "time": "16:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "dinner",
+                  "mealName": "Akşam Yemeği",
+                  "time": "19:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                }
+              ],
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "notes": "",
+              "completed": false
+            },
+            {
+              "dayNumber": 7,
+              "dayName": "Pazar",
+              "date": "2025-09-06",
+              "meals": [
+                {
+                  "mealType": "breakfast",
+                  "mealName": "Kahvaltı",
+                  "time": "08:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "breakfast_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack1",
+                  "mealName": "Kuşluk",
+                  "time": "10:30",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack1_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "lunch",
+                  "mealName": "Öğle Yemeği",
+                  "time": "13:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "lunch_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "snack2",
+                  "mealName": "İkindi",
+                  "time": "16:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "snack2_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                },
+                {
+                  "mealType": "dinner",
+                  "mealName": "Akşam Yemeği",
+                  "time": "19:00",
+                  "foods": [
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_1",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_2",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_3",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    },
+                    {
+                      "foodId": null,
+                      "foodName": "dinner_food_4",
+                      "portion": 1,
+                      "unit": "porsiyon",
+                      "calories": 0,
+                      "carbs": 0,
+                      "protein": 0,
+                      "fat": 0,
+                      "notes": ""
+                    }
+                  ],
+                  "totals": {
+                    "calories": 0,
+                    "carbs": 0,
+                    "protein": 0,
+                    "fat": 0
+                  }
+                }
+              ],
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "notes": "",
+              "completed": false
+            }
+          ],
+          "summary": {
+            "totalMeals": 0,
+            "averageCalories": 0,
+            "macroDistribution": {
+              "carbs": 0,
+              "protein": 0,
+              "fat": 0
+            },
+            "varietyScore": 0,
+            "completed": false
+          },
+          "notes": [],
+          "modifications": [],
+          "feedback": null,
+          "dateRange": "31.08.2025 - 07.09.2025",
+          "criteriaSnapshot": {
+            "hierarchy": [
+              {
+                "id": "allergies",
+                "priority": 1
+              },
+              {
+                "id": "liked_foods",
+                "priority": 2
+              },
+              {
+                "id": "medical_conditions",
+                "priority": 3
+              },
+              {
+                "id": "macro_targets",
+                "priority": 4
+              },
+              {
+                "id": "calorie_distribution",
+                "priority": 5
+              },
+              {
+                "id": "meal_timing",
+                "priority": 6
+              },
+              {
+                "id": "food_compatibility",
+                "priority": 7
+              },
+              {
+                "id": "food_groups",
+                "priority": 8
+              },
+              {
+                "id": "portion_sizes",
+                "priority": 9
+              },
+              {
+                "id": "seasonal_foods",
+                "priority": 10
+              },
+              {
+                "id": "repetition_frequency",
+                "priority": 11
+              },
+              {
+                "id": "tag_conflicts",
+                "priority": 12
+              },
+              {
+                "id": "system_rules",
+                "priority": 13
+              },
+              {
+                "id": "auto_planning_methods",
+                "priority": 14
+              }
+            ],
+            "enabled": {
+              "allergies": true,
+              "liked_foods": true,
+              "medical_conditions": true,
+              "macro_targets": true,
+              "calorie_distribution": true,
+              "meal_timing": true,
+              "food_compatibility": true,
+              "food_groups": true,
+              "portion_sizes": true,
+              "seasonal_foods": true,
+              "repetition_frequency": true,
+              "tag_conflicts": true,
+              "system_rules": true,
+              "auto_planning_methods": true
+            }
+          }
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "dateRange": "31/08 - 06/09"
+        },
+        {
+          "weekNumber": 2,
+          "startDate": "2025-09-01",
+          "endDate": "2025-09-07",
+          "dateRange": "01.09.2025 - 07.09.2025",
+          "status": "active",
+          "createdDate": "2025-08-31T18:21:12.481Z",
+          "createdBy": "dietitian_001",
+          "plan": {
+            "monday": {
+              "date": "2025-09-01",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "date": "2025-09-02",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "date": "2025-09-03",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "date": "2025-09-04",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "date": "2025-09-05",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "date": "2025-09-06",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "date": "2025-09-07",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          },
+          "notes": "",
+          "criteriaSnapshot": {
+            "hierarchy": [
+              {
+                "id": "allergies",
+                "priority": 1
+              },
+              {
+                "id": "liked_foods",
+                "priority": 2
+              },
+              {
+                "id": "medical_conditions",
+                "priority": 3
+              },
+              {
+                "id": "macro_targets",
+                "priority": 4
+              },
+              {
+                "id": "calorie_distribution",
+                "priority": 5
+              },
+              {
+                "id": "meal_timing",
+                "priority": 6
+              },
+              {
+                "id": "food_compatibility",
+                "priority": 7
+              },
+              {
+                "id": "food_groups",
+                "priority": 8
+              },
+              {
+                "id": "portion_sizes",
+                "priority": 9
+              },
+              {
+                "id": "seasonal_foods",
+                "priority": 10
+              },
+              {
+                "id": "repetition_frequency",
+                "priority": 11
+              },
+              {
+                "id": "tag_conflicts",
+                "priority": 12
+              },
+              {
+                "id": "system_rules",
+                "priority": 13
+              },
+              {
+                "id": "auto_planning_methods",
+                "priority": 14
+              }
+            ],
+            "enabled": {
+              "allergies": true,
+              "liked_foods": true,
+              "medical_conditions": true,
+              "macro_targets": true,
+              "calorie_distribution": true,
+              "meal_timing": true,
+              "food_compatibility": true,
+              "food_groups": true,
+              "portion_sizes": true,
+              "seasonal_foods": true,
+              "repetition_frequency": true,
+              "tag_conflicts": true,
+              "system_rules": true,
+              "auto_planning_methods": true
+            }
+          }
+        },
+        {
+          "weekNumber": 2,
+          "startDate": "2025-09-01",
+          "endDate": "2025-09-07",
+          "dateRange": "01.09.2025 - 07.09.2025",
+          "status": "active",
+          "createdDate": "2025-08-31T18:21:14.244Z",
+          "createdBy": "dietitian_001",
+          "plan": {
+            "monday": {
+              "date": "2025-09-01",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "protein": 0,
+                "carbs": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "date": "2025-09-02",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "protein": 0,
+                "carbs": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "date": "2025-09-03",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "protein": 0,
+                "carbs": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "date": "2025-09-04",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "protein": 0,
+                "carbs": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "date": "2025-09-05",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "protein": 0,
+                "carbs": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "date": "2025-09-06",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "protein": 0,
+                "carbs": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "date": "2025-09-07",
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "protein": 0,
+                "carbs": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "protein": 0,
+            "carbs": 0,
+            "fat": 0
+          },
+          "notes": ""
+        },
+        {
+          "weekNumber": 1,
+          "plan": {
+            "monday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "tuesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "wednesday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "thursday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "friday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "saturday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            },
+            "sunday": {
+              "meals": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": []
+              },
+              "dailyTotals": {
+                "calories": 0,
+                "carbs": 0,
+                "protein": 0,
+                "fat": 0
+              }
+            }
+          },
+          "weeklyAverages": {
+            "calories": 0,
+            "carbs": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "planHistory": [],
+      "medicalTeam": {
+        "assignedDoctor": null,
+        "assignedDietitian": null,
+        "permissions": {
+          "doctorCanEdit": true,
+          "dietitianCanEdit": true,
+          "patientCanView": true
+        }
+      },
+      "nutritionTracking": {
+        "dailyLogs": [],
+        "weeklyAverages": [],
+        "monthlyReports": [],
+        "goals": {
+          "weightGoal": null,
+          "targetDate": null,
+          "weeklyWeightChange": 0
+        }
+      },
+      "preferences": {
+        "language": "tr",
+        "notifications": {
+          "mealReminders": true,
+          "waterReminders": true,
+          "exerciseReminders": false
+        },
+        "display": {
+          "showCalories": true,
+          "showMacros": true,
+          "showPortions": true
+        }
+      },
+      "lastSelectedWeek": 1
+    },
+    "patient_nnn": {
+      "name": "nnn",
+      "weight": 77,
+      "activity": 3,
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weeks": []
+    },
+    "patient_deneme3": {
+      "name": "deneme3",
+      "weight": 100,
+      "activity": 3,
+      "likedFoods": [
+        "zittin"
+      ],
+      "dislikedFoods": [
+        "piinir"
+      ],
+      "weeks": []
+    },
+    "patient_80-5": {
+      "name": "80-5",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 80,
+      "activity": 5,
+      "dietMode": "keto",
+      "coefficients": {
+        "carb": 0.3,
+        "protein": 0.8,
+        "fat": 1.2
+      },
+      "weeks": []
+    },
+    "patient_50-3": {
+      "name": "50-3",
+      "likedFoods": [
+        "OMLET"
+      ],
+      "dislikedFoods": [
+        "zeytin"
+      ],
+      "weight": 50,
+      "activity": 3,
+      "weeks": []
+    },
+    "patient_80-1": {
+      "name": "80-1",
+      "likedFoods": [],
+      "dislikedFoods": [],
+      "weight": 80,
+      "activity": 1,
+      "dietMode": "keto",
+      "coefficients": {
+        "carb": 0.3,
+        "protein": 0.8,
+        "fat": 1.2
+      },
       "weeks": []
     },
     "patient_null": {
@@ -16567,18 +21594,6 @@
       ],
       "weight": 60,
       "activity": 3,
-      "weeks": []
-    },
-    "patient_deneme34": {
-      "name": "deneme34",
-      "weight": 42,
-      "activity": 3,
-      "likedFoods": [
-        "muz"
-      ],
-      "dislikedFoods": [
-        "ekmek"
-      ],
       "weeks": []
     },
     "patient_mustafa": {
@@ -17348,40 +22363,12 @@
       "dislikedFoods": [],
       "weeks": []
     },
-    "patient_m100-2": {
-      "name": "m100-2",
-      "weight": 100,
-      "activity": 2,
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weeks": []
-    },
     "patient_1000//3": {
       "name": "1000//3",
       "weight": 100,
       "activity": 3,
       "likedFoods": [],
       "dislikedFoods": [],
-      "weeks": []
-    },
-    "patient_nnn": {
-      "name": "nnn",
-      "weight": 77,
-      "activity": 3,
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weeks": []
-    },
-    "patient_deneme3": {
-      "name": "deneme3",
-      "weight": 100,
-      "activity": 3,
-      "likedFoods": [
-        "zittin"
-      ],
-      "dislikedFoods": [
-        "piinir"
-      ],
       "weeks": []
     },
     "patient_rezeeee": {
@@ -17394,38 +22381,12 @@
       "dislikedFoods": [],
       "weeks": []
     },
-    "patient_80-5": {
-      "name": "80-5",
-      "likedFoods": [],
-      "dislikedFoods": [],
-      "weight": 80,
-      "activity": 5,
-      "dietMode": "keto",
-      "coefficients": {
-        "carb": 0.3,
-        "protein": 0.8,
-        "fat": 1.2
-      },
-      "weeks": []
-    },
     "patient_fff": {
       "name": "fff",
       "weight": 56,
       "activity": 3,
       "likedFoods": [],
       "dislikedFoods": [],
-      "weeks": []
-    },
-    "patient_50-3": {
-      "name": "50-3",
-      "likedFoods": [
-        "OMLET"
-      ],
-      "dislikedFoods": [
-        "zeytin"
-      ],
-      "weight": 50,
-      "activity": 3,
       "weeks": []
     }
   }
