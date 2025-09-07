@@ -8227,31 +8227,6 @@
           "category": "AKŞAM"
         },
         {
-          "name": "Peynirli Zeytin Ezmesi",
-          "calories": 119,
-          "protein": 3,
-          "carbs": 2,
-          "fat": 11,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [],
-          "compatibilityTags": [],
-          "role": "sideDish",
-          "mealType": [
-            "lunch",
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": true,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "category": "AKŞAM"
-        },
-        {
           "name": "Kapya Biberli Labne Mezesi",
           "calories": 175,
           "protein": 5,
@@ -8925,6 +8900,32 @@
           "multiplier": 1,
           "seasonRange": "[1,12]",
           "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "Peynirli Zeytin Ezmesi",
+          "category": "AKŞAM",
+          "role": "sideDish",
+          "calories": 119,
+          "protein": 3,
+          "carbs": 2,
+          "fat": 11,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "lunch",
             "dinner"
           ],
           "isReversedSeason": false
