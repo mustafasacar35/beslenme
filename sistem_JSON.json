@@ -9905,6 +9905,36 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Et Döner",
+          "calories": 419,
+          "protein": 23,
+          "carbs": 3,
+          "fat": 35,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "et"
+          ],
+          "compatibilityTags": [
+            "ekmek",
+            "çorba",
+            "salata",
+            "meze"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
