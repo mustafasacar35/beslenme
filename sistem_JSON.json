@@ -3783,6 +3783,38 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Güveçte Sucuklu yumurta",
+          "calories": 321,
+          "protein": 20,
+          "carbs": 4,
+          "fat": 25,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "yumurta",
+            "sucuk",
+            "et",
+            "güveç"
+          ],
+          "compatibilityTags": [
+            "peynir",
+            "zeytin",
+            "ekmek"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
