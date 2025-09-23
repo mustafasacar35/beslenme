@@ -14192,6 +14192,38 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Pazı Çorbası",
+          "calories": 96,
+          "protein": 2,
+          "carbs": 4,
+          "fat": 8,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "pazı",
+            "çorba"
+          ],
+          "compatibilityTags": [
+            "ekmek",
+            "salata",
+            "et",
+            "salata",
+            "meze"
+          ],
+          "role": "soup",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
