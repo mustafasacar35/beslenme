@@ -14948,6 +14948,40 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Yulaf ekmeği",
+          "calories": 218,
+          "protein": 16,
+          "carbs": 16,
+          "fat": 10,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "ekmek",
+            "muffin",
+            "tost",
+            "börek",
+            "yulaf"
+          ],
+          "compatibilityTags": [
+            "zeytin",
+            "çorba",
+            "peynir"
+          ],
+          "role": "bread",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": false,
+          "lowcarb": true,
+          "fillerLunch": true,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
