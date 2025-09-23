@@ -10684,6 +10684,32 @@
             "dinner"
           ],
           "isReversedSeason": false
+        },
+        {
+          "name": "Ketojenik Muhallebi",
+          "calories": 412,
+          "protein": 8,
+          "carbs": 5,
+          "fat": 40,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [],
+          "compatibilityTags": [
+            "tatlı"
+          ],
+          "role": "mainDish",
+          "mealType": [
+            "lunch",
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]"
         }
       ]
     },
