@@ -3514,7 +3514,8 @@
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "ÖĞLEN"
         },
         {
           "name": "Patlıcan Böreği",
@@ -3541,7 +3542,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "ÖĞLEN"
         },
         {
           "name": "Zeytinyağlı Taze Fasülye",
@@ -3593,7 +3595,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "ÖĞLEN"
         },
         {
           "name": "Kahvaltılık Doımates Tava",
@@ -3645,7 +3648,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "ÖĞLEN"
         },
         {
           "name": "Ispanaklı Mantar Dolması",
@@ -3729,7 +3733,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "ÖĞLEN"
         },
         {
           "name": "Nohut Simitleri",
@@ -3875,7 +3880,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "ÖĞLEN"
         },
         {
           "name": "Nohutlu Sebzeli Pankek",
@@ -9408,7 +9414,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "AKŞAM"
         },
         {
           "name": "Patlıcan Tava",
@@ -9460,7 +9467,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "AKŞAM"
         },
         {
           "name": "Nohutlu Köz patlıcan mezesi",
@@ -9487,7 +9495,8 @@
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "AKŞAM"
         },
         {
           "name": "Kıymalı Taze fasülye",
@@ -9538,7 +9547,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "AKŞAM"
         },
         {
           "name": "Fırında Kıymalı Kabak sandal",
@@ -9689,7 +9699,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "AKŞAM"
         },
         {
           "name": "Köz Biberli Mantar Salatası",
@@ -9847,31 +9858,6 @@
           "seasonRange": "[1,12]"
         },
         {
-          "name": "Zeytinyağlı Taze Börülce",
-          "calories": 152,
-          "protein": 4,
-          "carbs": 7,
-          "fat": 12,
-          "maxQuantity": 1,
-          "minQuantity": 1,
-          "step": 1,
-          "tags": [
-            "börülce"
-          ],
-          "compatibilityTags": [],
-          "role": "mainDish",
-          "mealType": [
-            "dinner"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]"
-        },
-        {
           "name": "Zeytinyağlı Bakla",
           "calories": 194,
           "protein": 10,
@@ -9894,7 +9880,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "AKŞAM"
         },
         {
           "name": "Tavuklu Nohut Yemeği",
@@ -9972,7 +9959,8 @@
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "AKŞAM"
         },
         {
           "name": "Tavuk Fajita",
@@ -10001,7 +9989,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "AKŞAM"
         },
         {
           "name": "Et Döner",
@@ -10032,6 +10021,37 @@
           "portionFixed": false,
           "multiplier": 1,
           "seasonRange": "[1,12]"
+        },
+        {
+          "name": "Zeytinyağlı Taze Börülce",
+          "category": "AKŞAM",
+          "role": "mainDish",
+          "calories": 152,
+          "protein": 4,
+          "carbs": 7,
+          "fat": 12,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "börülce"
+          ],
+          "compatibilityTags": [
+            "ekmek",
+            "kuruyemiş",
+            "salata"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
+            "dinner"
+          ],
+          "isReversedSeason": false
         }
       ]
     },
@@ -11345,7 +11365,8 @@
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "TATLILAR"
         },
         {
           "name": "Ketojenij Kazandibi",
@@ -11397,7 +11418,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "TATLILAR"
         },
         {
           "name": "Hurma topları",
@@ -11474,7 +11496,8 @@
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "TATLILAR"
         },
         {
           "name": "Damla  Sakızlı Kurabiye",
@@ -11501,7 +11524,8 @@
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "TATLILAR"
         },
         {
           "name": "Haşlanmış Yumurta Kapama",
@@ -13752,7 +13776,8 @@
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "SALATALAR"
         }
       ]
     },
@@ -14350,7 +14375,8 @@
           "fillerDinner": true,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "ÇORBALAR"
         },
         {
           "name": "Közlenmiş Kırmızı Biber Çorbası",
@@ -14895,7 +14921,8 @@
           "fillerDinner": false,
           "portionFixed": false,
           "multiplier": 1,
-          "seasonRange": "[1,12]"
+          "seasonRange": "[1,12]",
+          "category": "EKMEKLER"
         },
         {
           "name": "Yulaf Lavaş",
@@ -16780,51 +16807,282 @@
       "days": {
         "monday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1,
+                "role": "drink",
+                "unit": "fincan"
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Maydanozlu Poğaça (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon+1 tatlı kaşığı zeytinyağı )",
+                "quantity": 1
+              },
+              {
+                "name": "Közlenmiş Kapya Biber 🧲✨",
+                "quantity": 1,
+                "role": "sideDish",
+                "magnet": true,
+                "magnetTags": [
+                  "yeşillik"
+                ]
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Zeytinyağlı Taze Börülce",
+                "quantity": 1
+              },
+              {
+                "name": "1 Kase Yeşil Salata",
+                "quantity": 1
+              },
+              {
+                "name": "1 dilim Keten Tohumu Ekmeği 🌸",
+                "quantity": 1,
+                "magnet": false,
+                "filler": true,
+                "role": "bread",
+                "magnetTags": []
+              }
+            ]
           }
         },
         "tuesday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1,
+                "role": "drink",
+                "unit": "fincan"
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Pankek",
+                "quantity": 1
+              },
+              {
+                "name": "Lor Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Keten Tohumu (salata üzerine 1 tatlı kaşığı)",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Somonlu Roka ve Avokado Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Zeytinyağlı Deniz Börülcesi",
+                "quantity": 1
+              }
+            ]
           }
         },
         "wednesday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1,
+                "role": "drink",
+                "unit": "fincan"
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Ispanaklı ve Lor Peynirli Omlet",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon, sirke ve 1 yemek  kaşığı zeytinyağı ile)",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "200  gram köfte (ekmeksiz, baharatlarla)",
+                "quantity": 1
+              },
+              {
+                "name": "Kapya Biberli Labne Mezesi",
+                "quantity": 1
+              }
+            ]
           }
         },
         "thursday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1,
+                "role": "drink",
+                "unit": "fincan"
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Tahinli Kabak Böreği",
+                "quantity": 1
+              },
+              {
+                "name": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Patlıcan kebabı (2 adet orta boy patlıcan, 150 gram kıyma ile yapılan köfte: patlıcanlar halka halka doğranıp çöp şişe bir patlıcan bir köfte şeklinde dizilir. Fırında ya da airfry da pişirilir)",
+                "quantity": 1
+              },
+              {
+                "name": "2 yemek kaşığı ev yoğurdu",
+                "quantity": 2
+              }
+            ]
           }
         },
         "friday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1,
+                "role": "drink",
+                "unit": "fincan"
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Fırınlanmış Peynirli Taze Fasulye Graten",
+                "quantity": 1
+              },
+              {
+                "name": "Kapya Biberli Labne Mezesi",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (4 yaprak marul, 4 yaprak roka, 4 dal maydanoz + limon, sirke ile) 🧲✨",
+                "quantity": 0.5,
+                "role": "sideDish",
+                "magnet": true,
+                "magnetTags": [
+                  "yeşillik",
+                  "salata"
+                ]
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Lahana Mücver",
+                "quantity": 1
+              },
+              {
+                "name": "Cevizli Kabak Salatası",
+                "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              }
+            ]
           }
         },
         "saturday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1,
+                "role": "drink",
+                "unit": "fincan"
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Peynirli Patlıcan rulosu",
+                "quantity": 1
+              },
+              {
+                "name": "50 gram Kasap Sucuk",
+                "quantity": 1
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Nohutlu Köz patlıcan mezesi",
+                "quantity": 1
+              },
+              {
+                "name": "2 avuç yeşil salata + bir tatlı kaşığı zeytin yağı",
+                "quantity": 1
+              },
+              {
+                "name": "Kenevir Tohumu (salata üzerine 1 yemek kaşığı)",
+                "quantity": 1
+              },
+              {
+                "name": "Yoğurtlu enginar 🌸",
+                "quantity": 1,
+                "magnet": false,
+                "filler": true,
+                "role": "sideDish",
+                "magnetTags": []
+              }
+            ]
           }
         },
         "sunday": {
           "meals": {
-            "breakfast": [],
-            "lunch": [],
-            "dinner": []
+            "breakfast": [
+              {
+                "name": "Kurşun Geçirmez Kahve",
+                "quantity": 1,
+                "role": "drink",
+                "unit": "fincan"
+              }
+            ],
+            "lunch": [
+              {
+                "name": "Peynirli Kabaklı Poğaça (2 adet)",
+                "quantity": 1
+              },
+              {
+                "name": "Yeşillikler (4 yaprak marul, 4 yaprak roka, 4 dal maydanoz + limon, sirke ile)",
+                "quantity": 1
+              },
+              {
+                "name": "Közlenmiş Kapya Biber 🧲✨",
+                "quantity": 1,
+                "role": "sideDish",
+                "magnet": true,
+                "magnetTags": [
+                  "yeşillik"
+                ]
+              }
+            ],
+            "dinner": [
+              {
+                "name": "Lahana Mücver",
+                "quantity": 1
+              },
+              {
+                "name": "Yoğurtlu enginar",
+                "quantity": 1
+              }
+            ]
           }
         }
       }
