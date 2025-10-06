@@ -13250,36 +13250,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "1 Kase Yeşil Salata",
-          "category": "SALATALAR",
-          "role": "sideDish",
-          "calories": 120,
-          "protein": 2,
-          "carbs": 1,
-          "fat": 12,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "yeşillik",
-            "zeytinyağı",
-            "keto",
-            "salata"
-          ],
-          "compatibilityTags": [],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": true,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "3 adet Cherry Domates + 1 yemek kaşığı zeytinyağı, Kekik ve Pul Biber",
           "category": "SALATALAR",
           "role": "sideDish",
@@ -13911,6 +13881,36 @@
           "seasonRange": "[1,12]",
           "mealType": [
             "lunch",
+            "dinner"
+          ],
+          "isReversedSeason": false
+        },
+        {
+          "name": "1 Kase Yeşil Salata",
+          "category": "SALATALAR",
+          "role": "sideDish",
+          "calories": 120,
+          "protein": 2,
+          "carbs": 1,
+          "fat": 12,
+          "maxQuantity": 1,
+          "minQuantity": 1,
+          "step": 1,
+          "tags": [
+            "yeşillik",
+            "zeytinyağı",
+            "keto",
+            "salata"
+          ],
+          "compatibilityTags": [],
+          "keto": true,
+          "lowcarb": true,
+          "fillerLunch": false,
+          "fillerDinner": true,
+          "portionFixed": false,
+          "multiplier": 1,
+          "seasonRange": "[1,12]",
+          "mealType": [
             "dinner"
           ],
           "isReversedSeason": false
@@ -17099,7 +17099,7 @@
             ],
             "lunch": [
               {
-                "name": "Taze Fasulyeli Yumurta Kavurması",
+                "name": "Pankek",
                 "quantity": 1
               },
               {
@@ -17109,22 +17109,16 @@
             ],
             "dinner": [
               {
-                "name": "Et Döner",
+                "name": "Tepsi Kebabı",
                 "quantity": 1
               },
               {
-                "name": "2 yemek kaşığı ev yoğurdu",
+                "name": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
                 "quantity": 2
               },
               {
-                "name": "Zeytinyağlı Deniz Börülcesi 🧲✨",
-                "quantity": 0.5,
-                "role": "sideDish",
-                "magnet": true,
-                "magnetTags": [
-                  "salata",
-                  "meze"
-                ]
+                "name": "Közlenmiş patlıcan salatası",
+                "quantity": 0.5
               }
             ]
           }
